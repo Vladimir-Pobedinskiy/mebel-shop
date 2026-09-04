@@ -9,7 +9,7 @@
 ## Стек
 
 Nuxt 3 · Vue 3 (`script setup`) · TypeScript · Pinia · SCSS
-GSAP + ScrollTrigger · Lenis · Swiper · vee-validate + yup · vue-final-modal
+GSAP + ScrollTrigger · Swiper · vee-validate + yup · vue-final-modal
 @nuxtjs/sitemap · @nuxtjs/robots · nuxt-schema-org · @nuxt/image · @sidebase/nuxt-auth
 
 ## Запуск
@@ -37,7 +37,7 @@ npm run build && npm run preview
 ```
 assets/        scss/{general,mixins,ui}, fonts/, icons/*.svg (nuxt-icons)
 components/    App/, UI/, Home/, Catalog/, Product/, Cart/, Checkout/, Blog/, ...
-composables/   usePageSeo, useSiteSchemaOrg, useLenisSmoothScroll, useGsapReveal,
+composables/   usePageSeo, useSiteSchemaOrg, useGsapReveal,
                useMagneticHover, useFlyToCart, useToaster, useScreenHandler, ...
 interfaces/    I*.ts по разделам
 layouts/       default.vue, error-layout.vue
@@ -71,9 +71,8 @@ db.json, routes.json
 
 ## Анимации
 
-GSAP-анимации живут в `useGsapReveal` (reveal секций, split-заголовки, параллакс),
-плавный скролл — `useLenisSmoothScroll` (останавливается на время блокировки страницы
-в модалках и бургере). Микровзаимодействия: магнитные кнопки (`useMagneticHover`),
+GSAP-анимации живут в `useGsapReveal` (reveal секций, split-заголовки, параллакс).
+Микровзаимодействия: магнитные кнопки (`useMagneticHover`),
 курсор-точка (`AppCursor`), «полёт» товара в корзину (`useFlyToCart`), тосты (`useToaster`).
 
 Все эффекты уважают `prefers-reduced-motion`: JS-анимации не создаются,

@@ -1,5 +1,3 @@
-import { stopSmoothScroll, startSmoothScroll } from '@/composables/useLenisSmoothScroll'
-
 export const useScrollController = {
 	scrollPosition: 0,
 	paddingOffset: 0,
@@ -7,8 +5,6 @@ export const useScrollController = {
 	disableScroll() {
 		this.scrollPosition = window.scrollY
 		this.paddingOffset = window.innerWidth - document.documentElement.clientWidth
-		// Lenis крутит свой rAF-скролл и конфликтует с фиксированным body — останавливаем
-		stopSmoothScroll()
 		document.body.classList.add('lock-js')
 		const header = document.querySelector('header') as HTMLElement
 		const burgerNav = document.querySelector('.burger-nav') as HTMLElement
@@ -37,8 +33,5 @@ export const useScrollController = {
 			top: this.scrollPosition,
 			behavior: 'auto',
 		})
-
-		// Возвращаем плавный скролл ровно в ту же точку, иначе Lenis дёрнет страницу вверх
-		startSmoothScroll(this.scrollPosition)
 	},
 }

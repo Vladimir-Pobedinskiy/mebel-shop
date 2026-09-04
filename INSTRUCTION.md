@@ -33,9 +33,9 @@ Nuxt 3 (`^3.17`) + Vue 3 `script setup` + TypeScript + SCSS + Pinia.
 
 **dependencies:** `nuxt`, `vue`, `vue-router`, `pinia`, `@pinia/nuxt`, `@nuxt/image`,
 `nuxt-icons`, `@hypernym/nuxt-gsap`, `nuxt-schema-org`, `@nuxtjs/seo`,
-`@formkit/auto-animate`, `@headlessui/vue`, `@vueuse/core`, `lenis`, `swiper`, `glightbox`,
+`@formkit/auto-animate`, `@headlessui/vue`, `@vueuse/core`, `swiper`, `glightbox`,
 `normalize.css`, `typograf`, `vee-validate`, `yup`, `vue-final-modal`, `vue-imask`,
-`vue-multiselect`, `vue3-marquee`, `scrollmagic` + `@types/scrollmagic`,
+`vue-multiselect`, `vue3-marquee`,
 `vue-yandex-maps`, `@sidebase/nuxt-auth`.
 
 **devDependencies:** `@nuxt/eslint(-config)`, `eslint`, `eslint-config-prettier`,
@@ -90,8 +90,8 @@ BASE_URL="http://localhost:3001"
 ```
 assets/        css/main.css, scss/{general,mixins,ui}, fonts/, icons/*.svg (nuxt-icons)
 components/    App/, UI/, Home/, Catalog/, Product/, Cart/, Checkout/, ...
-composables/   usePageSeo, useLenisSmoothScroll, useScreenHandler, useScrollController,
-               useScrollMagic, useSwipeHandler, useGLightbox
+composables/   usePageSeo, useScreenHandler, useScrollController,
+               useSwipeHandler, useGLightbox
 interfaces/    I*.ts по папкам-разделам
 layouts/       default.vue (<main class="main"><slot/></main>), error-layout.vue
 middleware/    add-trailing-slash.global.ts, auth.global.ts
@@ -308,7 +308,6 @@ usePageSeo(computed(() => data.value))
 
 Всё уже есть в стеке — новые библиотеки не тянуть.
 
-- **Lenis** (`useLenisSmoothScroll`) — плавный скролл на всех страницах; отключать в модалках.
 - **GSAP + ScrollTrigger** (`@hypernym/nuxt-gsap`, плагин уже включён в конфиге):
   - reveal секций: `y: 40, opacity: 0 → 1`, `stagger`, `start: 'top 80%'`;
   - посимвольный / пословный reveal заголовков hero и секций;
@@ -375,6 +374,6 @@ npm run build && npm run preview
 - [ ] Корзина и избранное переживают перезагрузку страницы.
 - [ ] Адаптив от 360px до 2560px, без горизонтального скролла.
 - [ ] Клавиатурная навигация и фокус-стили в шапке, модалках, формах; `aria-label` на иконках.
-- [ ] `prefers-reduced-motion` отключает GSAP/Lenis-анимации.
+- [ ] `prefers-reduced-motion` отключает GSAP-анимации.
 - [ ] `npm run lint` и `npm run build` проходят чисто.
 - [ ] Нет чужих ключей и счётчиков из донора.

@@ -23,7 +23,8 @@ logs
 .env.*
 !.env.example
 
-# Others
-.eslintcache
-.stylelintcache
-package-lock.json
+# MCP config with tokens
+.mcp.json
+
+# Claude Code settings
+.claude/

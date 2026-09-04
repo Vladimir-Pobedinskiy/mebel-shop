@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { useLenisSmoothScroll } from '@/composables/useLenisSmoothScroll'
 import { useSiteSchemaOrg } from '@/composables/useSiteSchemaOrg'
-
-// Плавный скролл на всех страницах; при prefers-reduced-motion Lenis не инициализируется
-useLenisSmoothScroll()
 
 // Organization + WebSite для всех страниц сразу
 useSiteSchemaOrg()
