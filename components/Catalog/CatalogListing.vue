@@ -12,10 +12,16 @@ const props = withDefaults(
 		sortOptions: ISelect[]
 		perPage?: number
 		pending?: boolean
+		/** блок «запросите консультацию» — только у коммерческих разделов */
+		showConsult?: boolean
+		/** раздел, о котором спрашивают: уходит в заявку */
+		consultSubject?: string
 	}>(),
 	{
 		perPage: 12,
 		pending: false,
+		showConsult: false,
+		consultSubject: '',
 	}
 )
 
@@ -25,6 +31,7 @@ const perPageValue = computed(() => props.perPage)
 const { store, visibleProducts, total, totalPages } = useCatalogFilters(productsList, perPageValue)
 
 const isFiltersOpen = ref<boolean>(false)
+const isConsultOpen = ref<boolean>(false)
 
 const listRef = ref<HTMLElement | null>(null)
 
@@ -69,8 +76,28 @@ watch(
 					:page-total="totalPages"
 					:show-more="false"
 				/>
+
+				<div v-if="showConsult" class="catalog-listing__consult">
+					<div class="catalog-listing__consult-body">
+						<p class="catalog-listing__consult-title h4">Не нашли подходящее?</p>
+						<p class="catalog-listing__consult-text text-s">
+							Расскажите про проём и задачу — подберём модель или посчитаем мебель по вашим размерам.
+						</p>
+					</div>
+
+					<UIButton
+						class="catalog-listing__consult-btn"
+						as="button"
+						type="button"
+						label="Запросить консультацию"
+						show-icon
+						@click="isConsultOpen = true"
+					/>
+				</div>
 			</div>
 		</div>
+
+		<ModalConsult v-if="showConsult" v-model="isConsultOpen" :subject="consultSubject" />
 	</div>
 </template>
 
@@ -167,6 +194,38 @@ watch(
 
 	&__pagination {
 		margin-top: 12px;
+	}
+
+	&__consult {
+		display: flex;
+		flex-direction: column;
+		margin-top: 12px;
+		padding: 24px 20px;
+		border: 1px solid variables.$color-line;
+		border-radius: variables.$radius-m;
+		background-color: variables.$color-muted;
+		gap: 16px;
+
+		@media (min-width: variables.$tablet) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 28px 32px;
+			gap: 24px;
+		}
+	}
+
+	&__consult-title {
+		margin: 0 0 6px;
+	}
+
+	&__consult-text {
+		margin: 0;
+		color: variables.$color-ink-soft;
+	}
+
+	&__consult-btn {
+		flex: 0 0 auto;
 	}
 }
 </style>

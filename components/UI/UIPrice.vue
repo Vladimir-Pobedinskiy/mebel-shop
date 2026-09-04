@@ -9,12 +9,15 @@ const props = withDefaults(
 		size?: string
 		/** показывать бейдж с процентом скидки */
 		showDiscount?: boolean
+		/** цена зависит от конфигурации — выводим её как «от 118 700 ₽» */
+		isFrom?: boolean
 		isLight?: boolean
 	}>(),
 	{
 		oldPrice: null,
 		size: 'medium',
 		showDiscount: true,
+		isFrom: false,
 		isLight: false,
 	}
 )
@@ -24,7 +27,9 @@ const percent = computed(() => discountPercent(props.price, props.oldPrice))
 
 <template>
 	<div :class="['price', `price_${size}`, { price_light: isLight }]">
-		<span class="price__current">{{ priceFormatter(price) }}</span>
+		<span class="price__current">
+			<span v-if="isFrom" class="price__from">от </span>{{ priceFormatter(price) }}
+		</span>
 
 		<template v-if="percent">
 			<span class="price__old text-s">{{ priceFormatter(oldPrice as number) }}</span>
@@ -49,6 +54,11 @@ const percent = computed(() => discountPercent(props.price, props.oldPrice))
 		letter-spacing: -0.01em;
 		color: variables.$color-ink;
 		white-space: nowrap;
+	}
+
+	&__from {
+		color: variables.$color-ink-soft;
+		font-weight: 400;
 	}
 
 	&__old {

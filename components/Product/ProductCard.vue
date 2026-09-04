@@ -7,7 +7,7 @@ import { useScreenHandler } from '@/composables/useScreenHandler'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 import { useFlyToCart } from '@/composables/useFlyToCart'
 import { useToaster } from '@/composables/useToaster'
-import { screens } from '@/utils/utils'
+import { screens, declOfNum } from '@/utils/utils'
 
 const props = withDefaults(
 	defineProps<{
@@ -28,6 +28,36 @@ const { isMatchedScreen } = useScreenHandler(screens.desktopSmall)
 const { isReducedMotion } = useGsapReveal()
 const { flyToCart } = useFlyToCart()
 const { showToast } = useToaster()
+
+/* Коммерческие поля есть только у товаров корпусной мебели —
+   по ним включаются срок изготовления, габариты, свотчи и быстрый заказ */
+const isCommerce = computed(() => Boolean(props.product.availabilityType || props.product.priceFrom))
+
+// «В наличии» либо срок изготовления; у остальных категорий остаётся текст из db.json
+const availabilityLabel = computed(() => {
+	const { availabilityType, productionDays, availability } = props.product
+	if (!availabilityType) return availability
+	if (availabilityType === 'in-stock') return 'В наличии, отгрузка со склада'
+	if (!productionDays) return availability
+	return `Изготовление ${productionDays} ${declOfNum(productionDays, ['рабочий день', 'рабочих дня', 'рабочих дней'])}`
+})
+
+const dimensionsLabel = computed(() => {
+	const dimensions = props.product.dimensions
+	if (!dimensions) return ''
+	return `Ш ${dimensions.width} × Г ${dimensions.depth} × В ${dimensions.height} мм`
+})
+
+/* Модалку монтируем только после первого клика: на странице до 12 карточек */
+const isQuickOrderUsed = ref<boolean>(false)
+const isQuickOrderOpen = ref<boolean>(false)
+
+const openQuickOrder = () => {
+	isQuickOrderUsed.value = true
+	nextTick(() => {
+		isQuickOrderOpen.value = true
+	})
+}
 
 const isInCart = computed(() => storeCart.isInCart(props.product.id))
 const isFavorite = computed(() => storeFavorites.isFavorite(props.product.id))
@@ -150,11 +180,36 @@ const onTiltLeave = () => {
 			<UIRating class="product-card__rating" :rating="product.rating" :reviews-count="product.reviewsCount" />
 
 			<p :class="['product-card__availability text-xs', { 'product-card__availability_out': !product.inStock }]">
-				{{ product.availability }}
+				{{ availabilityLabel }}
 			</p>
 
-			<UIPrice class="product-card__price" :price="product.price" :old-price="product.oldPrice" size="medium" />
+			<p v-if="dimensionsLabel" class="product-card__dimensions text-xs">{{ dimensionsLabel }}</p>
+
+			<ul v-if="product.variants?.length" class="product-card__colors">
+				<li v-for="variant in product.variants" :key="variant.name">
+					<UIColorSwatch
+						:color-hex="variant.color"
+						:label="variant.label"
+						size="small"
+						@select="navigateTo(product.url)"
+					/>
+				</li>
+			</ul>
+
+			<UIPrice
+				class="product-card__price"
+				:price="product.price"
+				:old-price="product.oldPrice"
+				:is-from="product.priceFrom"
+				size="medium"
+			/>
+
+			<button v-if="isCommerce" class="product-card__quick text-xs hover-underline" type="button" @click="openQuickOrder">
+				Быстрый заказ
+			</button>
 		</div>
+
+		<ModalQuickOrder v-if="isQuickOrderUsed" v-model="isQuickOrderOpen" :product="product" />
 	</article>
 </template>
 
@@ -312,9 +367,35 @@ const onTiltLeave = () => {
 		}
 	}
 
+	&__dimensions {
+		color: variables.$color-ink-soft;
+	}
+
+	&__colors {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+
 	&__price {
 		margin-top: auto;
 		padding-top: 8px;
+	}
+
+	&__quick {
+		align-self: flex-start;
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+		color: variables.$color-ink-soft;
+		cursor: pointer;
+		transition: color 0.3s ease-in-out;
+
+		@media (min-width: variables.$desktop-small) {
+			&:hover {
+				color: variables.$color-accent;
+			}
+		}
 	}
 
 	&_small &__body {

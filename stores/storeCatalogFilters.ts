@@ -5,34 +5,81 @@ import type { LocationQuery } from 'vue-router'
 export interface ICatalogFiltersState {
 	priceFrom: number | null
 	priceTo: number | null
+	widthFrom: number | null
+	widthTo: number | null
+	heightFrom: number | null
+	heightTo: number | null
 	material: string[]
 	color: string[]
 	brand: string[]
 	collection: string[]
+	style: string[]
+	constructionType: string[]
+	bodyMaterial: string[]
+	facadeMaterial: string[]
+	availability: string[]
 	inStock: boolean
 }
+
+/* Имя диапазона в db.json → пара ключей состояния `<name>From` / `<name>To` */
+export type ICatalogRangeName = 'price' | 'width' | 'height'
 
 const createEmptyState = (): ICatalogFiltersState => ({
 	priceFrom: null,
 	priceTo: null,
+	widthFrom: null,
+	widthTo: null,
+	heightFrom: null,
+	heightTo: null,
 	material: [],
 	color: [],
 	brand: [],
 	collection: [],
+	style: [],
+	constructionType: [],
+	bodyMaterial: [],
+	facadeMaterial: [],
+	availability: [],
 	inStock: false,
 })
 
-const MULTI_KEYS: (keyof ICatalogFiltersState)[] = ['material', 'color', 'brand', 'collection']
+export const MULTI_KEYS: (keyof ICatalogFiltersState)[] = [
+	'material',
+	'color',
+	'brand',
+	'collection',
+	'style',
+	'constructionType',
+	'bodyMaterial',
+	'facadeMaterial',
+	'availability',
+]
+
+export const RANGE_KEYS: ICatalogRangeName[] = ['price', 'width', 'height']
+
+/* Группу фильтров из db.json показываем только если стор умеет её применять */
+export const isMultiKey = (name: string): name is keyof ICatalogFiltersState =>
+	MULTI_KEYS.includes(name as keyof ICatalogFiltersState)
+
+export const isRangeKey = (name: string): name is ICatalogRangeName => RANGE_KEYS.includes(name as ICatalogRangeName)
 
 export const useCatalogFiltersStore = defineStore('catalogFilters', () => {
 	const filters = ref<ICatalogFiltersState>(createEmptyState())
 	const sort = ref<string>('popular')
 	const page = ref<number>(1)
 
+	const rangeValue = (name: ICatalogRangeName) => ({
+		from: filters.value[`${name}From`] as number | null,
+		to: filters.value[`${name}To`] as number | null,
+	})
+
 	// Количество применённых фильтров — для бейджа на кнопке «Фильтры»
 	const activeCount = computed(() => {
 		let count = 0
-		if (filters.value.priceFrom !== null || filters.value.priceTo !== null) count += 1
+		RANGE_KEYS.forEach(name => {
+			const { from, to } = rangeValue(name)
+			if (from !== null || to !== null) count += 1
+		})
 		MULTI_KEYS.forEach(key => {
 			count += (filters.value[key] as string[]).length
 		})
@@ -53,11 +100,12 @@ export const useCatalogFiltersStore = defineStore('catalogFilters', () => {
 		page.value = 1
 	}
 
-	const setPrice = (from: number | null, to: number | null) => {
-		filters.value.priceFrom = from
-		filters.value.priceTo = to
+	const setRange = (name: ICatalogRangeName, from: number | null, to: number | null) => {
+		filters.value = { ...filters.value, [`${name}From`]: from, [`${name}To`]: to }
 		page.value = 1
 	}
+
+	const setPrice = (from: number | null, to: number | null) => setRange('price', from, to)
 
 	const setInStock = (value: boolean) => {
 		filters.value.inStock = value
@@ -83,8 +131,11 @@ export const useCatalogFiltersStore = defineStore('catalogFilters', () => {
 	const toQuery = computed<Record<string, string>>(() => {
 		const query: Record<string, string> = {}
 
-		if (filters.value.priceFrom !== null) query.priceFrom = String(filters.value.priceFrom)
-		if (filters.value.priceTo !== null) query.priceTo = String(filters.value.priceTo)
+		RANGE_KEYS.forEach(name => {
+			const { from, to } = rangeValue(name)
+			if (from !== null) query[`${name}From`] = String(from)
+			if (to !== null) query[`${name}To`] = String(to)
+		})
 		MULTI_KEYS.forEach(key => {
 			const list = filters.value[key] as string[]
 			if (list.length) query[key] = list.join(',')
@@ -101,10 +152,12 @@ export const useCatalogFiltersStore = defineStore('catalogFilters', () => {
 		const state = createEmptyState()
 		const readString = (value: unknown) => (Array.isArray(value) ? value[0] : value)
 
-		const priceFrom = readString(query.priceFrom)
-		const priceTo = readString(query.priceTo)
-		if (priceFrom) state.priceFrom = Number(priceFrom)
-		if (priceTo) state.priceTo = Number(priceTo)
+		RANGE_KEYS.forEach(name => {
+			const from = readString(query[`${name}From`])
+			const to = readString(query[`${name}To`])
+			if (from) (state[`${name}From`] as number | null) = Number(from)
+			if (to) (state[`${name}To`] as number | null) = Number(to)
+		})
 
 		MULTI_KEYS.forEach(key => {
 			const value = readString(query[key])
@@ -124,7 +177,9 @@ export const useCatalogFiltersStore = defineStore('catalogFilters', () => {
 		page,
 		activeCount,
 		isEmpty,
+		rangeValue,
 		toggleValue,
+		setRange,
 		setPrice,
 		setInStock,
 		setSort,

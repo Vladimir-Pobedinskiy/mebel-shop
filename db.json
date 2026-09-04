@@ -69,7 +69,7 @@
             "url": "/catalog/krovati/",
             "label": "Кровати",
             "img": {
-              "url": "/img/categories/krovati.svg",
+              "url": "/img/categories/krovati.jpg",
               "alt": "Кровати"
             },
             "children": [
@@ -95,7 +95,7 @@
             "url": "/catalog/shkafy/",
             "label": "Шкафы и гардеробные",
             "img": {
-              "url": "/img/categories/shkafy.svg",
+              "url": "/img/categories/shkafy.jpg",
               "alt": "Шкафы и гардеробные"
             },
             "children": [
@@ -121,7 +121,7 @@
             "url": "/catalog/kuhni/",
             "label": "Кухни",
             "img": {
-              "url": "/img/categories/kuhni.svg",
+              "url": "/img/categories/kuhni.jpg",
               "alt": "Кухни"
             },
             "children": [
@@ -207,7 +207,7 @@
             "url": "/catalog/tumby/",
             "label": "Тумбы и комоды",
             "img": {
-              "url": "/img/categories/tumby.svg",
+              "url": "/img/categories/tumby.jpg",
               "alt": "Тумбы и комоды"
             },
             "children": [
@@ -615,7 +615,7 @@
           "title": "Кровати",
           "text": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
           "img": {
-            "url": "/img/categories/krovati.svg",
+            "url": "/img/categories/krovati.jpg",
             "alt": "Кровати"
           },
           "link": {
@@ -651,7 +651,7 @@
           "title": "Шкафы и гардеробные",
           "text": "Распашные и раздвижные шкафы, гардеробные системы под потолок. Доводчики Blum, зеркальные и стеклянные фасады, подсветка полок.",
           "img": {
-            "url": "/img/categories/shkafy.svg",
+            "url": "/img/categories/shkafy.jpg",
             "alt": "Шкафы и гардеробные"
           },
           "link": {
@@ -687,7 +687,7 @@
           "title": "Кухни",
           "text": "Кухонные гарнитуры на заказ: прямые, угловые и с островом. Фасады из МДФ с эмалью и шпоном, кварцевые и HPL-столешницы.",
           "img": {
-            "url": "/img/categories/kuhni.svg",
+            "url": "/img/categories/kuhni.jpg",
             "alt": "Кухни"
           },
           "link": {
@@ -795,7 +795,7 @@
           "title": "Тумбы и комоды",
           "text": "Комоды, ТВ-тумбы и прикроватные тумбы. Шпон дуба и ореха, крашеный МДФ, направляющие с доводчиками и скрытые ручки.",
           "img": {
-            "url": "/img/categories/tumby.svg",
+            "url": "/img/categories/tumby.jpg",
             "alt": "Тумбы и комоды"
           },
           "link": {
@@ -973,11 +973,11 @@
           "colorHex": "#c19a5b",
           "sizes": "1780×2120×1200 мм",
           "img": {
-            "url": "/img/products/krovat-verona-160-1.svg",
+            "url": "/img/products/krovat-verona-160-1.jpg",
             "alt": "Кровать Verona 160×200"
           },
           "imgHover": {
-            "url": "/img/products/krovat-verona-160-2.svg",
+            "url": "/img/products/krovat-verona-160-2.jpg",
             "alt": "Кровать Verona 160×200 — вид сбоку"
           },
           "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -1009,11 +1009,11 @@
           "colorHex": "#2f4a3f",
           "sizes": "1800×2150×1300 мм",
           "img": {
-            "url": "/img/products/krovat-aurora-1.svg",
+            "url": "/img/products/krovat-aurora-1.jpg",
             "alt": "Кровать Aurora с подъёмным механизмом"
           },
           "imgHover": {
-            "url": "/img/products/krovat-aurora-2.svg",
+            "url": "/img/products/krovat-aurora-2.jpg",
             "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
           },
           "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -1045,11 +1045,11 @@
           "colorHex": "#c8a271",
           "sizes": "1800×620×2300 мм",
           "img": {
-            "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+            "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
             "alt": "Шкаф распашной Bergen"
           },
           "imgHover": {
-            "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+            "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
             "alt": "Шкаф распашной Bergen — вид сбоку"
           },
           "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -1085,11 +1085,11 @@
           "colorHex": "#e5d8c4",
           "sizes": "3200×600×2200 мм",
           "img": {
-            "url": "/img/products/kuhnya-luna-3-2-1.svg",
+            "url": "/img/products/kuhnya-luna-3-2-1.webp",
             "alt": "Кухня Luna прямая 3.2 м"
           },
           "imgHover": {
-            "url": "/img/products/kuhnya-luna-3-2-2.svg",
+            "url": "/img/products/kuhnya-luna-3-2-2.webp",
             "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
           },
           "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -1121,11 +1121,11 @@
           "colorHex": "#3b3a38",
           "sizes": "3400×2100×2300 мм",
           "img": {
-            "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+            "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
             "alt": "Кухня Urban угловая"
           },
           "imgHover": {
-            "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+            "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
             "alt": "Кухня Urban угловая — вид сбоку"
           },
           "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -1313,11 +1313,11 @@
           "colorHex": "#3b3a38",
           "sizes": "1800×420×450 мм",
           "img": {
-            "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+            "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
             "alt": "ТВ-тумба Horizon 1800"
           },
           "imgHover": {
-            "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+            "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
             "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
           },
           "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -1742,98 +1742,30 @@
     ],
     "categories": [
       {
-        "id": 1,
-        "slug": "divany",
-        "title": "Диваны",
-        "description": "Прямые, угловые и модульные диваны с механизмами трансформации. Съёмные чехлы, антивандальные ткани и наполнители повышенной плотности.",
+        "id": 9,
+        "slug": "korpusnaya-mebel",
+        "title": "Корпусная мебель",
+        "description": "Шкафы, комоды, тумбы, обеденные и рабочие столы — серийные модели со склада и изготовление по вашим размерам.",
         "img": {
-          "url": "/img/categories/divany.svg",
-          "alt": "Диваны"
+          "url": "/img/categories/korpusnaya-mebel.jpg",
+          "alt": "Корпусная мебель"
         },
-        "productsCount": 5,
+        "productsCount": 3,
         "collections": [
           {
-            "url": "/catalog/divany/milano/",
-            "label": "Коллекция Milano"
+            "url": "/catalog/shkafy/",
+            "label": "Шкафы и гардеробные"
           },
           {
-            "url": "/catalog/divany/osaka/",
-            "label": "Коллекция Osaka"
+            "url": "/catalog/tumby/",
+            "label": "Комоды и тумбы"
           },
           {
-            "url": "/catalog/divany/nord/",
-            "label": "Коллекция Nord"
-          },
-          {
-            "url": "/catalog/divany/loft/",
-            "label": "Коллекция Loft"
-          },
-          {
-            "url": "/catalog/divany/sofia/",
-            "label": "Коллекция Sofia"
+            "url": "/catalog/stoly-i-stulya/",
+            "label": "Столы и стулья"
           }
         ],
-        "url": "/catalog/divany/"
-      },
-      {
-        "id": 2,
-        "slug": "krovati",
-        "title": "Кровати",
-        "description": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
-        "img": {
-          "url": "/img/categories/krovati.svg",
-          "alt": "Кровати"
-        },
-        "productsCount": 4,
-        "collections": [
-          {
-            "url": "/catalog/krovati/verona/",
-            "label": "Коллекция Verona"
-          },
-          {
-            "url": "/catalog/krovati/aurora/",
-            "label": "Коллекция Aurora"
-          },
-          {
-            "url": "/catalog/krovati/kyoto/",
-            "label": "Коллекция Kyoto"
-          },
-          {
-            "url": "/catalog/krovati/bianca/",
-            "label": "Коллекция Bianca"
-          }
-        ],
-        "url": "/catalog/krovati/"
-      },
-      {
-        "id": 3,
-        "slug": "shkafy",
-        "title": "Шкафы и гардеробные",
-        "description": "Распашные и раздвижные шкафы, гардеробные системы под потолок. Доводчики Blum, зеркальные и стеклянные фасады, подсветка полок.",
-        "img": {
-          "url": "/img/categories/shkafy.svg",
-          "alt": "Шкафы и гардеробные"
-        },
-        "productsCount": 4,
-        "collections": [
-          {
-            "url": "/catalog/shkafy/horizon/",
-            "label": "Коллекция Horizon"
-          },
-          {
-            "url": "/catalog/shkafy/bergen/",
-            "label": "Коллекция Bergen"
-          },
-          {
-            "url": "/catalog/shkafy/atelier/",
-            "label": "Коллекция Atelier"
-          },
-          {
-            "url": "/catalog/shkafy/nova/",
-            "label": "Коллекция Nova"
-          }
-        ],
-        "url": "/catalog/shkafy/"
+        "url": "/catalog/korpusnaya-mebel/"
       },
       {
         "id": 4,
@@ -1841,7 +1773,7 @@
         "title": "Кухни",
         "description": "Кухонные гарнитуры на заказ: прямые, угловые и с островом. Фасады из МДФ с эмалью и шпоном, кварцевые и HPL-столешницы.",
         "img": {
-          "url": "/img/categories/kuhni.svg",
+          "url": "/img/categories/kuhni.jpg",
           "alt": "Кухни"
         },
         "productsCount": 5,
@@ -1868,134 +1800,6 @@
           }
         ],
         "url": "/catalog/kuhni/"
-      },
-      {
-        "id": 5,
-        "slug": "stoly-i-stulya",
-        "title": "Столы и стулья",
-        "description": "Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой.",
-        "img": {
-          "url": "/img/categories/stoly-i-stulya.svg",
-          "alt": "Столы и стулья"
-        },
-        "productsCount": 5,
-        "collections": [
-          {
-            "url": "/catalog/stoly-i-stulya/tavolo/",
-            "label": "Коллекция Tavolo"
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/oak/",
-            "label": "Коллекция Oak"
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/vienna/",
-            "label": "Коллекция Vienna"
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/como/",
-            "label": "Коллекция Como"
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/loft/",
-            "label": "Коллекция Loft"
-          }
-        ],
-        "url": "/catalog/stoly-i-stulya/"
-      },
-      {
-        "id": 6,
-        "slug": "kresla",
-        "title": "Кресла",
-        "description": "Кресла для гостиной и кабинета: реклайнеры, кресла-качалки, лаунж-модели. Букле, велюр, натуральная кожа и рогожка.",
-        "img": {
-          "url": "/img/categories/kresla.svg",
-          "alt": "Кресла"
-        },
-        "productsCount": 4,
-        "collections": [
-          {
-            "url": "/catalog/kresla/bergen/",
-            "label": "Коллекция Bergen"
-          },
-          {
-            "url": "/catalog/kresla/comfort/",
-            "label": "Коллекция Comfort"
-          },
-          {
-            "url": "/catalog/kresla/nest/",
-            "label": "Коллекция Nest"
-          },
-          {
-            "url": "/catalog/kresla/kyoto/",
-            "label": "Коллекция Kyoto"
-          }
-        ],
-        "url": "/catalog/kresla/"
-      },
-      {
-        "id": 7,
-        "slug": "tumby",
-        "title": "Тумбы и комоды",
-        "description": "Комоды, ТВ-тумбы и прикроватные тумбы. Шпон дуба и ореха, крашеный МДФ, направляющие с доводчиками и скрытые ручки.",
-        "img": {
-          "url": "/img/categories/tumby.svg",
-          "alt": "Тумбы и комоды"
-        },
-        "productsCount": 4,
-        "collections": [
-          {
-            "url": "/catalog/tumby/bergen/",
-            "label": "Коллекция Bergen"
-          },
-          {
-            "url": "/catalog/tumby/horizon/",
-            "label": "Коллекция Horizon"
-          },
-          {
-            "url": "/catalog/tumby/aurora/",
-            "label": "Коллекция Aurora"
-          },
-          {
-            "url": "/catalog/tumby/atelier/",
-            "label": "Коллекция Atelier"
-          }
-        ],
-        "url": "/catalog/tumby/"
-      },
-      {
-        "id": 8,
-        "slug": "osveshchenie",
-        "title": "Освещение",
-        "description": "Люстры, подвесы, бра и торшеры. Латунь, матовое стекло, текстильные абажуры. Совместимы с диммерами и умным домом.",
-        "img": {
-          "url": "/img/categories/osveshchenie.svg",
-          "alt": "Освещение"
-        },
-        "productsCount": 5,
-        "collections": [
-          {
-            "url": "/catalog/osveshchenie/sole/",
-            "label": "Коллекция Sole"
-          },
-          {
-            "url": "/catalog/osveshchenie/orbit/",
-            "label": "Коллекция Orbit"
-          },
-          {
-            "url": "/catalog/osveshchenie/nordic/",
-            "label": "Коллекция Nordic"
-          },
-          {
-            "url": "/catalog/osveshchenie/linea/",
-            "label": "Коллекция Linea"
-          },
-          {
-            "url": "/catalog/osveshchenie/rail/",
-            "label": "Коллекция Rail"
-          }
-        ],
-        "url": "/catalog/osveshchenie/"
       }
     ]
   },
@@ -2467,7 +2271,7 @@
       "title": "Кровати",
       "description": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
       "img": {
-        "url": "/img/categories/krovati.svg",
+        "url": "/img/categories/krovati.jpg",
         "alt": "Кровати"
       },
       "productsCount": 4,
@@ -2672,11 +2476,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -2708,11 +2512,11 @@
         "colorHex": "#2f4a3f",
         "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -2744,11 +2548,11 @@
         "colorHex": "#d9bd94",
         "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
@@ -2780,11 +2584,11 @@
         "colorHex": "#f2ece1",
         "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
@@ -2839,7 +2643,7 @@
       "title": "Шкафы и гардеробные",
       "description": "Распашные и раздвижные шкафы, гардеробные системы под потолок. Доводчики Blum, зеркальные и стеклянные фасады, подсветка полок.",
       "img": {
-        "url": "/img/categories/shkafy.svg",
+        "url": "/img/categories/shkafy.jpg",
         "alt": "Шкафы и гардеробные"
       },
       "productsCount": 4,
@@ -3034,21 +2838,34 @@
         "rating": 4.7,
         "reviewsCount": 39,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 22 рабочих дня",
         "material": "ЛДСП Egger",
         "color": "Графит",
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
-        "url": "/product/shkaf-kupe-horizon-2400/"
+        "url": "/product/shkaf-kupe-horizon-2400/",
+        "style": "Современный",
+        "constructionType": "Шкаф-купе",
+        "bodyMaterial": "ЛДСП Egger 16 мм",
+        "facadeMaterial": "ЛДСП с зеркалом",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 2400,
+          "depth": 600,
+          "height": 2500
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 22,
+        "priceFrom": true
       },
       {
         "id": 11,
@@ -3076,15 +2893,28 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
-        "url": "/product/shkaf-raspashnoj-bergen/"
+        "url": "/product/shkaf-raspashnoj-bergen/",
+        "style": "Скандинавский",
+        "constructionType": "Распашной",
+        "bodyMaterial": "ЛДСП 16 мм",
+        "facadeMaterial": "Шпон дуба",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 1800,
+          "depth": 620,
+          "height": 2300
+        },
+        "availabilityType": "in-stock",
+        "productionDays": null,
+        "priceFrom": false
       },
       {
         "id": 12,
@@ -3106,21 +2936,34 @@
         "rating": 4.9,
         "reviewsCount": 18,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 25 рабочих дней",
         "material": "Алюминий и МДФ",
         "color": "Тёплый белый",
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
-        "url": "/product/garderobnaya-sistema-atelier/"
+        "url": "/product/garderobnaya-sistema-atelier/",
+        "style": "Современный",
+        "constructionType": "Гардеробная система",
+        "bodyMaterial": "Алюминиевый профиль",
+        "facadeMaterial": "МДФ эмаль",
+        "purpose": "Для гардеробной",
+        "dimensions": {
+          "width": 3000,
+          "depth": 550,
+          "height": 2600
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 25,
+        "priceFrom": true
       },
       {
         "id": 13,
@@ -3148,11 +2991,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -3207,7 +3050,7 @@
       "title": "Кухни",
       "description": "Кухонные гарнитуры на заказ: прямые, угловые и с островом. Фасады из МДФ с эмалью и шпоном, кварцевые и HPL-столешницы.",
       "img": {
-        "url": "/img/categories/kuhni.svg",
+        "url": "/img/categories/kuhni.jpg",
         "alt": "Кухни"
       },
       "productsCount": 5,
@@ -3427,11 +3270,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -3463,11 +3306,11 @@
         "colorHex": "#3b3a38",
         "sizes": "3400×2100×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -3499,11 +3342,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -3535,11 +3378,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -3566,11 +3409,11 @@
         "colorHex": "#7e8c78",
         "sizes": "3600×600×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         "shortDescription": "Кухня Neoclassic: мдф эмаль, пыльно-зелёный. Размеры 3600×600×2300 мм.",
@@ -4424,7 +4267,7 @@
       "title": "Тумбы и комоды",
       "description": "Комоды, ТВ-тумбы и прикроватные тумбы. Шпон дуба и ореха, крашеный МДФ, направляющие с доводчиками и скрытые ручки.",
       "img": {
-        "url": "/img/categories/tumby.svg",
+        "url": "/img/categories/tumby.jpg",
         "alt": "Тумбы и комоды"
       },
       "productsCount": 4,
@@ -4630,11 +4473,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -4666,11 +4509,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -4702,11 +4545,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -4738,11 +4581,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -7065,28 +6908,28 @@
       "colorHex": "#c19a5b",
       "sizes": "1780×2120×1200 мм",
       "img": {
-        "url": "/img/products/krovat-verona-160-1.svg",
+        "url": "/img/products/krovat-verona-160-1.jpg",
         "alt": "Кровать Verona 160×200"
       },
       "imgHover": {
-        "url": "/img/products/krovat-verona-160-2.svg",
+        "url": "/img/products/krovat-verona-160-2.jpg",
         "alt": "Кровать Verona 160×200 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         {
-          "url": "/img/products/krovat-verona-160-3.svg",
+          "url": "/img/products/krovat-verona-160-3.jpg",
           "alt": "Кровать Verona 160×200 — в интерьере"
         },
         {
-          "url": "/img/products/krovat-verona-160-4.svg",
+          "url": "/img/products/krovat-verona-160-4.jpg",
           "alt": "Кровать Verona 160×200 — детали"
         }
       ],
@@ -7181,11 +7024,11 @@
         "colorHex": "#2f4a3f",
         "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -7217,11 +7060,11 @@
         "colorHex": "#d9bd94",
         "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
@@ -7253,11 +7096,11 @@
         "colorHex": "#f2ece1",
         "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
@@ -7384,28 +7227,28 @@
       "colorHex": "#2f4a3f",
       "sizes": "1800×2150×1300 мм",
       "img": {
-        "url": "/img/products/krovat-aurora-1.svg",
+        "url": "/img/products/krovat-aurora-1.jpg",
         "alt": "Кровать Aurora с подъёмным механизмом"
       },
       "imgHover": {
-        "url": "/img/products/krovat-aurora-2.svg",
+        "url": "/img/products/krovat-aurora-2.jpg",
         "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         {
-          "url": "/img/products/krovat-aurora-3.svg",
+          "url": "/img/products/krovat-aurora-3.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — в интерьере"
         },
         {
-          "url": "/img/products/krovat-aurora-4.svg",
+          "url": "/img/products/krovat-aurora-4.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — детали"
         }
       ],
@@ -7504,11 +7347,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -7540,11 +7383,11 @@
         "colorHex": "#d9bd94",
         "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
@@ -7576,11 +7419,11 @@
         "colorHex": "#f2ece1",
         "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
@@ -7707,28 +7550,28 @@
       "colorHex": "#d9bd94",
       "sizes": "1700×2100×900 мм",
       "img": {
-        "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+        "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
         "alt": "Кровать Kyoto низкая"
       },
       "imgHover": {
-        "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+        "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
         "alt": "Кровать Kyoto низкая — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         {
-          "url": "/img/products/krovat-kyoto-nizkaya-3.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-3.jpg",
           "alt": "Кровать Kyoto низкая — в интерьере"
         },
         {
-          "url": "/img/products/krovat-kyoto-nizkaya-4.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-4.jpg",
           "alt": "Кровать Kyoto низкая — детали"
         }
       ],
@@ -7827,11 +7670,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -7863,11 +7706,11 @@
         "colorHex": "#2f4a3f",
         "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -7899,11 +7742,11 @@
         "colorHex": "#f2ece1",
         "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
@@ -8030,28 +7873,28 @@
       "colorHex": "#f2ece1",
       "sizes": "1580×2120×1150 мм",
       "img": {
-        "url": "/img/products/krovat-bianca-140-1.svg",
+        "url": "/img/products/krovat-bianca-140-1.jpg",
         "alt": "Кровать Bianca 140×200"
       },
       "imgHover": {
-        "url": "/img/products/krovat-bianca-140-2.svg",
+        "url": "/img/products/krovat-bianca-140-2.jpg",
         "alt": "Кровать Bianca 140×200 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         {
-          "url": "/img/products/krovat-bianca-140-3.svg",
+          "url": "/img/products/krovat-bianca-140-3.jpg",
           "alt": "Кровать Bianca 140×200 — в интерьере"
         },
         {
-          "url": "/img/products/krovat-bianca-140-4.svg",
+          "url": "/img/products/krovat-bianca-140-4.jpg",
           "alt": "Кровать Bianca 140×200 — детали"
         }
       ],
@@ -8150,11 +7993,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -8186,11 +8029,11 @@
         "colorHex": "#2f4a3f",
         "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -8222,11 +8065,11 @@
         "colorHex": "#d9bd94",
         "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
@@ -8346,35 +8189,35 @@
       "rating": 4.7,
       "reviewsCount": 39,
       "inStock": true,
-      "availability": "В наличии на складе",
+      "availability": "Под заказ, 22 рабочих дня",
       "deliveryDays": 3,
       "material": "ЛДСП Egger",
       "color": "Графит",
       "colorHex": "#3b3a38",
       "sizes": "2400×600×2500 мм",
       "img": {
-        "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+        "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
         "alt": "Шкаф-купе Horizon 2400"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+        "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
         "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-3.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-3.jpg",
           "alt": "Шкаф-купе Horizon 2400 — в интерьере"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-4.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-4.jpg",
           "alt": "Шкаф-купе Horizon 2400 — детали"
         }
       ],
@@ -8440,7 +8283,222 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/shkaf-kupe-horizon-2400/"
+      "url": "/product/shkaf-kupe-horizon-2400/",
+      "style": "Современный",
+      "constructionType": "Шкаф-купе",
+      "bodyMaterial": "ЛДСП Egger 16 мм",
+      "facadeMaterial": "ЛДСП с зеркалом",
+      "purpose": "Для спальни",
+      "dimensions": {
+        "width": 2400,
+        "depth": 600,
+        "height": 2500
+      },
+      "availabilityType": "made-to-order",
+      "productionDays": 22,
+      "priceFrom": true,
+      "setContents": [
+        {
+          "label": "Корпус",
+          "value": "Боковины, дно, крышка и вкладная задняя стенка 8 мм"
+        },
+        {
+          "label": "Двери",
+          "value": "Две раздвижные двери на алюминиевом профиле с доводчиками"
+        },
+        {
+          "label": "Наполнение",
+          "value": "Пять полок, штанга для верхней одежды, два выдвижных ящика"
+        },
+        {
+          "label": "Крепёж",
+          "value": "Комплект крепежа, регулируемые опоры и инструкция по сборке"
+        }
+      ],
+      "filling": [
+        {
+          "label": "Полки",
+          "value": "Переставные, шаг 32 мм, нагрузка до 25 кг на полку"
+        },
+        {
+          "label": "Штанга",
+          "value": "Овальная штанга с усиленным креплением, длина 1 100 мм"
+        },
+        {
+          "label": "Ящики",
+          "value": "Направляющие скрытого монтажа с доводчиком, полное выдвижение"
+        },
+        {
+          "label": "Опции",
+          "value": "Брючница, выдвижные корзины и LED-подсветка полок — по запросу"
+        }
+      ],
+      "hardware": [
+        {
+          "brand": "Blum",
+          "description": "Доводчики раздвижной системы, плавное закрывание без удара"
+        },
+        {
+          "brand": "Hettich",
+          "description": "Направляющие ящиков скрытого монтажа, ресурс 50 000 циклов"
+        },
+        {
+          "brand": "Boyard",
+          "description": "Профильные ручки и регулируемые опоры с антикоррозийным покрытием"
+        }
+      ],
+      "finishes": [
+        {
+          "label": "Графит",
+          "colorHex": "#3b3a38",
+          "priceDiff": 0
+        },
+        {
+          "label": "Тёплый белый",
+          "colorHex": "#f2ece2",
+          "priceDiff": 0
+        },
+        {
+          "label": "Дуб натуральный",
+          "colorHex": "#c3a077",
+          "priceDiff": 6400
+        },
+        {
+          "label": "Зеркальные двери",
+          "colorHex": "#d8dee0",
+          "priceDiff": 11200
+        }
+      ],
+      "modifications": [
+        "Изменение ширины от 1 600 до 4 000 мм и высоты до потолка, включая антресоль",
+        "Глубина корпуса 450 или 600 мм — от неё зависит полезная глубина полок",
+        "Замена материала фасадов: ЛДСП, МДФ с эмалью, зеркало, лакобель",
+        "Смена схемы наполнения: штанги, полки, корзины, брючница, обувные полки",
+        "Добавление LED-подсветки с датчиком движения и доводчиков на все двери"
+      ],
+      "configurations": [
+        {
+          "title": "Базовая конфигурация 2 400 мм",
+          "img": {
+            "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+            "alt": "Шкаф-купе Horizon 2400 — базовая конфигурация"
+          },
+          "description": "Две двери ЛДСП, пять полок, штанга и два ящика. Глубина 600 мм, высота 2 500 мм.",
+          "priceDiff": "базовая цена"
+        },
+        {
+          "title": "С антресолью до потолка",
+          "img": {
+            "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+            "alt": "Шкаф-купе Horizon 2400 — с антресолью"
+          },
+          "description": "Корпус наращивается до высоты помещения, сверху добавляется антресольная секция.",
+          "priceDiff": "+18% к базовой цене"
+        },
+        {
+          "title": "Зеркальные двери и подсветка",
+          "img": {
+            "url": "/img/products/shkaf-kupe-horizon-2400-3.jpg",
+            "alt": "Шкаф-купе Horizon 2400 — зеркальные двери"
+          },
+          "description": "Зеркало на всю высоту дверей, LED-подсветка полок с датчиком движения.",
+          "priceDiff": "+26% к базовой цене"
+        }
+      ],
+      "priceFactors": [
+        {
+          "title": "Габариты корпуса",
+          "text": "Цена считается от площади фасадов и количества секций: рост ширины с 2 400 до 3 200 мм добавляет около 20%."
+        },
+        {
+          "title": "Материал дверей",
+          "text": "ЛДСП входит в базовую цену, зеркало дороже примерно на 12%, лакобель и комбинированные двери — на 15–20%."
+        },
+        {
+          "title": "Наполнение",
+          "text": "Каждый дополнительный ящик, корзина или брючница добавляют от 2 до 6% стоимости."
+        },
+        {
+          "title": "Фурнитура",
+          "text": "Базовая раздвижная система с доводчиками входит в цену; премиальный профиль считается отдельно."
+        },
+        {
+          "title": "Сложность монтажа",
+          "text": "Неровные стены, короба и антресоль под потолок увеличивают трудоёмкость сборки."
+        }
+      ],
+      "productionTerm": "22 рабочих дня",
+      "warranty": {
+        "term": "24 месяца",
+        "text": "Гарантия распространяется на корпус, раздвижную систему и фурнитуру. Регулировку дверей и замену доводчиков в гарантийный срок делаем бесплатно."
+      },
+      "deliveryPrice": [
+        {
+          "title": "Доставка по городу",
+          "value": "от 1 500 ₽, бесплатно при заказе от 100 000 ₽"
+        },
+        {
+          "title": "Доставка по России",
+          "value": "по тарифу транспортной компании, расчёт при оформлении"
+        },
+        {
+          "title": "Сборка",
+          "value": "от 8% стоимости изделия, минимум 3 000 ₽"
+        },
+        {
+          "title": "Подъём на этаж",
+          "value": "лифт — бесплатно, без лифта — 200 ₽ за этаж за место"
+        }
+      ],
+      "liftingTerms": "Подъём с грузовым лифтом входит в стоимость доставки. Если упаковка не проходит в лифт, подъём считается по этажам — 200 ₽ за этаж за место. Такелаж через окно рассчитывается отдельно после осмотра.",
+      "orderSteps": [
+        {
+          "step": 1,
+          "title": "Заявка",
+          "text": "Оставьте заявку на сайте или позвоните — менеджер ответит в течение 15 минут в рабочее время."
+        },
+        {
+          "step": 2,
+          "title": "Замер и проект",
+          "text": "Замерщик выезжает бесплатно, конструктор готовит 3D-проект и смету за два рабочих дня."
+        },
+        {
+          "step": 3,
+          "title": "Договор и оплата",
+          "text": "Подписываем договор с фиксированной ценой, предоплата 50%, остаток — после доставки."
+        },
+        {
+          "step": 4,
+          "title": "Производство",
+          "text": "Изготовление 22 рабочих дня, о каждом этапе сообщаем в мессенджере."
+        },
+        {
+          "step": 5,
+          "title": "Доставка и сборка",
+          "text": "Привозим, поднимаем, собираем, выставляем двери по уровню и убираем упаковку."
+        }
+      ],
+      "files": [
+        {
+          "title": "Спецификация модели, PDF",
+          "url": "/files/specification.pdf",
+          "size": "420 КБ",
+          "type": "pdf"
+        },
+        {
+          "title": "Чертёж с габаритами, DWG",
+          "url": "/files/drawing.dwg",
+          "size": "180 КБ",
+          "type": "dwg"
+        },
+        {
+          "title": "3D-модель для визуализации",
+          "url": "/files/model-3d.zip",
+          "size": "2,4 МБ",
+          "type": "3d"
+        }
+      ],
+      "video": null
     },
     "related": [
       {
@@ -8469,15 +8527,28 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
-        "url": "/product/shkaf-raspashnoj-bergen/"
+        "url": "/product/shkaf-raspashnoj-bergen/",
+        "style": "Скандинавский",
+        "constructionType": "Распашной",
+        "bodyMaterial": "ЛДСП 16 мм",
+        "facadeMaterial": "Шпон дуба",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 1800,
+          "depth": 620,
+          "height": 2300
+        },
+        "availabilityType": "in-stock",
+        "productionDays": null,
+        "priceFrom": false
       },
       {
         "id": 12,
@@ -8499,21 +8570,34 @@
         "rating": 4.9,
         "reviewsCount": 18,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 25 рабочих дней",
         "material": "Алюминий и МДФ",
         "color": "Тёплый белый",
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
-        "url": "/product/garderobnaya-sistema-atelier/"
+        "url": "/product/garderobnaya-sistema-atelier/",
+        "style": "Современный",
+        "constructionType": "Гардеробная система",
+        "bodyMaterial": "Алюминиевый профиль",
+        "facadeMaterial": "МДФ эмаль",
+        "purpose": "Для гардеробной",
+        "dimensions": {
+          "width": 3000,
+          "depth": 550,
+          "height": 2600
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 25,
+        "priceFrom": true
       },
       {
         "id": 13,
@@ -8541,11 +8625,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -8672,28 +8756,28 @@
       "colorHex": "#c8a271",
       "sizes": "1800×620×2300 мм",
       "img": {
-        "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+        "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
         "alt": "Шкаф распашной Bergen"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+        "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
         "alt": "Шкаф распашной Bergen — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
           "alt": "Шкаф распашной Bergen"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-3.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-3.jpg",
           "alt": "Шкаф распашной Bergen — в интерьере"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-4.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-4.jpg",
           "alt": "Шкаф распашной Bergen — детали"
         }
       ],
@@ -8759,7 +8843,20 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/shkaf-raspashnoj-bergen/"
+      "url": "/product/shkaf-raspashnoj-bergen/",
+      "style": "Скандинавский",
+      "constructionType": "Распашной",
+      "bodyMaterial": "ЛДСП 16 мм",
+      "facadeMaterial": "Шпон дуба",
+      "purpose": "Для спальни",
+      "dimensions": {
+        "width": 1800,
+        "depth": 620,
+        "height": 2300
+      },
+      "availabilityType": "in-stock",
+      "productionDays": null,
+      "priceFrom": false
     },
     "related": [
       {
@@ -8782,21 +8879,34 @@
         "rating": 4.7,
         "reviewsCount": 39,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 22 рабочих дня",
         "material": "ЛДСП Egger",
         "color": "Графит",
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
-        "url": "/product/shkaf-kupe-horizon-2400/"
+        "url": "/product/shkaf-kupe-horizon-2400/",
+        "style": "Современный",
+        "constructionType": "Шкаф-купе",
+        "bodyMaterial": "ЛДСП Egger 16 мм",
+        "facadeMaterial": "ЛДСП с зеркалом",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 2400,
+          "depth": 600,
+          "height": 2500
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 22,
+        "priceFrom": true
       },
       {
         "id": 12,
@@ -8818,21 +8928,34 @@
         "rating": 4.9,
         "reviewsCount": 18,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 25 рабочих дней",
         "material": "Алюминий и МДФ",
         "color": "Тёплый белый",
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
-        "url": "/product/garderobnaya-sistema-atelier/"
+        "url": "/product/garderobnaya-sistema-atelier/",
+        "style": "Современный",
+        "constructionType": "Гардеробная система",
+        "bodyMaterial": "Алюминиевый профиль",
+        "facadeMaterial": "МДФ эмаль",
+        "purpose": "Для гардеробной",
+        "dimensions": {
+          "width": 3000,
+          "depth": 550,
+          "height": 2600
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 25,
+        "priceFrom": true
       },
       {
         "id": 13,
@@ -8860,11 +8983,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -8984,35 +9107,35 @@
       "rating": 4.9,
       "reviewsCount": 18,
       "inStock": true,
-      "availability": "В наличии на складе",
+      "availability": "Под заказ, 25 рабочих дней",
       "deliveryDays": 5,
       "material": "Алюминий и МДФ",
       "color": "Тёплый белый",
       "colorHex": "#f5f0e8",
       "sizes": "3000×550×2600 мм",
       "img": {
-        "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+        "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
         "alt": "Гардеробная система Atelier"
       },
       "imgHover": {
-        "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+        "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
         "alt": "Гардеробная система Atelier — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-3.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-3.jpg",
           "alt": "Гардеробная система Atelier — в интерьере"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-4.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-4.jpg",
           "alt": "Гардеробная система Atelier — детали"
         }
       ],
@@ -9078,7 +9201,20 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/garderobnaya-sistema-atelier/"
+      "url": "/product/garderobnaya-sistema-atelier/",
+      "style": "Современный",
+      "constructionType": "Гардеробная система",
+      "bodyMaterial": "Алюминиевый профиль",
+      "facadeMaterial": "МДФ эмаль",
+      "purpose": "Для гардеробной",
+      "dimensions": {
+        "width": 3000,
+        "depth": 550,
+        "height": 2600
+      },
+      "availabilityType": "made-to-order",
+      "productionDays": 25,
+      "priceFrom": true
     },
     "related": [
       {
@@ -9101,21 +9237,34 @@
         "rating": 4.7,
         "reviewsCount": 39,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 22 рабочих дня",
         "material": "ЛДСП Egger",
         "color": "Графит",
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
-        "url": "/product/shkaf-kupe-horizon-2400/"
+        "url": "/product/shkaf-kupe-horizon-2400/",
+        "style": "Современный",
+        "constructionType": "Шкаф-купе",
+        "bodyMaterial": "ЛДСП Egger 16 мм",
+        "facadeMaterial": "ЛДСП с зеркалом",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 2400,
+          "depth": 600,
+          "height": 2500
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 22,
+        "priceFrom": true
       },
       {
         "id": 11,
@@ -9143,15 +9292,28 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
-        "url": "/product/shkaf-raspashnoj-bergen/"
+        "url": "/product/shkaf-raspashnoj-bergen/",
+        "style": "Скандинавский",
+        "constructionType": "Распашной",
+        "bodyMaterial": "ЛДСП 16 мм",
+        "facadeMaterial": "Шпон дуба",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 1800,
+          "depth": 620,
+          "height": 2300
+        },
+        "availabilityType": "in-stock",
+        "productionDays": null,
+        "priceFrom": false
       },
       {
         "id": 13,
@@ -9179,11 +9341,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -9310,28 +9472,28 @@
       "colorHex": "#ddd3c4",
       "sizes": "1200×1200×2400 мм",
       "img": {
-        "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+        "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
         "alt": "Шкаф угловой Nova"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+        "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
         "alt": "Шкаф угловой Nova — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-3.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-3.jpg",
           "alt": "Шкаф угловой Nova — в интерьере"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-4.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-4.jpg",
           "alt": "Шкаф угловой Nova — детали"
         }
       ],
@@ -9420,21 +9582,34 @@
         "rating": 4.7,
         "reviewsCount": 39,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 22 рабочих дня",
         "material": "ЛДСП Egger",
         "color": "Графит",
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
-        "url": "/product/shkaf-kupe-horizon-2400/"
+        "url": "/product/shkaf-kupe-horizon-2400/",
+        "style": "Современный",
+        "constructionType": "Шкаф-купе",
+        "bodyMaterial": "ЛДСП Egger 16 мм",
+        "facadeMaterial": "ЛДСП с зеркалом",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 2400,
+          "depth": 600,
+          "height": 2500
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 22,
+        "priceFrom": true
       },
       {
         "id": 11,
@@ -9462,15 +9637,28 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.svg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
-        "url": "/product/shkaf-raspashnoj-bergen/"
+        "url": "/product/shkaf-raspashnoj-bergen/",
+        "style": "Скандинавский",
+        "constructionType": "Распашной",
+        "bodyMaterial": "ЛДСП 16 мм",
+        "facadeMaterial": "Шпон дуба",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 1800,
+          "depth": 620,
+          "height": 2300
+        },
+        "availabilityType": "in-stock",
+        "productionDays": null,
+        "priceFrom": false
       },
       {
         "id": 12,
@@ -9492,21 +9680,34 @@
         "rating": 4.9,
         "reviewsCount": 18,
         "inStock": true,
-        "availability": "В наличии на складе",
+        "availability": "Под заказ, 25 рабочих дней",
         "material": "Алюминий и МДФ",
         "color": "Тёплый белый",
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
-        "url": "/product/garderobnaya-sistema-atelier/"
+        "url": "/product/garderobnaya-sistema-atelier/",
+        "style": "Современный",
+        "constructionType": "Гардеробная система",
+        "bodyMaterial": "Алюминиевый профиль",
+        "facadeMaterial": "МДФ эмаль",
+        "purpose": "Для гардеробной",
+        "dimensions": {
+          "width": 3000,
+          "depth": 550,
+          "height": 2600
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 25,
+        "priceFrom": true
       }
     ],
     "reviews": [
@@ -9633,28 +9834,28 @@
       "colorHex": "#e5d8c4",
       "sizes": "3200×600×2200 мм",
       "img": {
-        "url": "/img/products/kuhnya-luna-3-2-1.svg",
+        "url": "/img/products/kuhnya-luna-3-2-1.webp",
         "alt": "Кухня Luna прямая 3.2 м"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-luna-3-2-2.svg",
+        "url": "/img/products/kuhnya-luna-3-2-2.webp",
         "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         {
-          "url": "/img/products/kuhnya-luna-3-2-3.svg",
+          "url": "/img/products/kuhnya-luna-3-2-3.webp",
           "alt": "Кухня Luna прямая 3.2 м — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-luna-3-2-4.svg",
+          "url": "/img/products/kuhnya-luna-3-2-4.webp",
           "alt": "Кухня Luna прямая 3.2 м — детали"
         }
       ],
@@ -9749,11 +9950,11 @@
         "colorHex": "#3b3a38",
         "sizes": "3400×2100×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -9785,11 +9986,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -9821,11 +10022,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -9852,11 +10053,11 @@
         "colorHex": "#7e8c78",
         "sizes": "3600×600×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         "shortDescription": "Кухня Neoclassic: мдф эмаль, пыльно-зелёный. Размеры 3600×600×2300 мм.",
@@ -9983,28 +10184,28 @@
       "colorHex": "#3b3a38",
       "sizes": "3400×2100×2300 мм",
       "img": {
-        "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+        "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
         "alt": "Кухня Urban угловая"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+        "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
         "alt": "Кухня Urban угловая — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         {
-          "url": "/img/products/kuhnya-urban-uglovaya-3.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-3.webp",
           "alt": "Кухня Urban угловая — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-urban-uglovaya-4.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-4.webp",
           "alt": "Кухня Urban угловая — детали"
         }
       ],
@@ -10103,11 +10304,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -10139,11 +10340,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -10175,11 +10376,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -10206,11 +10407,11 @@
         "colorHex": "#7e8c78",
         "sizes": "3600×600×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         "shortDescription": "Кухня Neoclassic: мдф эмаль, пыльно-зелёный. Размеры 3600×600×2300 мм.",
@@ -10337,28 +10538,28 @@
       "colorHex": "#8a5a3c",
       "sizes": "4200×2400×2300 мм",
       "img": {
-        "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+        "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
         "alt": "Кухня Eco с островом"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+        "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
         "alt": "Кухня Eco с островом — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-3.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-3.webp",
           "alt": "Кухня Eco с островом — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-4.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-4.webp",
           "alt": "Кухня Eco с островом — детали"
         }
       ],
@@ -10457,11 +10658,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -10493,11 +10694,11 @@
         "colorHex": "#3b3a38",
         "sizes": "3400×2100×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -10529,11 +10730,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -10560,11 +10761,11 @@
         "colorHex": "#7e8c78",
         "sizes": "3600×600×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         "shortDescription": "Кухня Neoclassic: мдф эмаль, пыльно-зелёный. Размеры 3600×600×2300 мм.",
@@ -10691,28 +10892,28 @@
       "colorHex": "#efe6d5",
       "sizes": "3000×600×2200 мм",
       "img": {
-        "url": "/img/products/kuhnya-village-1.svg",
+        "url": "/img/products/kuhnya-village-1.jpg",
         "alt": "Кухня Village классическая"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-village-2.svg",
+        "url": "/img/products/kuhnya-village-2.jpg",
         "alt": "Кухня Village классическая — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         {
-          "url": "/img/products/kuhnya-village-3.svg",
+          "url": "/img/products/kuhnya-village-3.webp",
           "alt": "Кухня Village классическая — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-village-4.svg",
+          "url": "/img/products/kuhnya-village-4.jpg",
           "alt": "Кухня Village классическая — детали"
         }
       ],
@@ -10811,11 +11012,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -10847,11 +11048,11 @@
         "colorHex": "#3b3a38",
         "sizes": "3400×2100×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -10883,11 +11084,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -10914,11 +11115,11 @@
         "colorHex": "#7e8c78",
         "sizes": "3600×600×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         "shortDescription": "Кухня Neoclassic: мдф эмаль, пыльно-зелёный. Размеры 3600×600×2300 мм.",
@@ -11040,28 +11241,28 @@
       "colorHex": "#7e8c78",
       "sizes": "3600×600×2300 мм",
       "img": {
-        "url": "/img/products/kuhnya-neoclassic-1.svg",
+        "url": "/img/products/kuhnya-neoclassic-1.webp",
         "alt": "Кухня Neoclassic"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-neoclassic-2.svg",
+        "url": "/img/products/kuhnya-neoclassic-2.webp",
         "alt": "Кухня Neoclassic — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-neoclassic-1.svg",
+          "url": "/img/products/kuhnya-neoclassic-1.webp",
           "alt": "Кухня Neoclassic"
         },
         {
-          "url": "/img/products/kuhnya-neoclassic-2.svg",
+          "url": "/img/products/kuhnya-neoclassic-2.webp",
           "alt": "Кухня Neoclassic — вид сбоку"
         },
         {
-          "url": "/img/products/kuhnya-neoclassic-3.svg",
+          "url": "/img/products/kuhnya-neoclassic-3.webp",
           "alt": "Кухня Neoclassic — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-neoclassic-4.svg",
+          "url": "/img/products/kuhnya-neoclassic-4.webp",
           "alt": "Кухня Neoclassic — детали"
         }
       ],
@@ -11160,11 +11361,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -11196,11 +11397,11 @@
         "colorHex": "#3b3a38",
         "sizes": "3400×2100×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-urban-uglovaya-1.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-1.webp",
           "alt": "Кухня Urban угловая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-urban-uglovaya-2.svg",
+          "url": "/img/products/kuhnya-urban-uglovaya-2.webp",
           "alt": "Кухня Urban угловая — вид сбоку"
         },
         "shortDescription": "Кухня Urban угловая: пластик hpl, графит. Размеры 3400×2100×2300 мм.",
@@ -11232,11 +11433,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -11268,11 +11469,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -14456,28 +14657,28 @@
       "colorHex": "#c8a271",
       "sizes": "1200×450×900 мм",
       "img": {
-        "url": "/img/products/komod-bergen-6-1.svg",
+        "url": "/img/products/komod-bergen-6-1.jpg",
         "alt": "Комод Bergen 6 ящиков"
       },
       "imgHover": {
-        "url": "/img/products/komod-bergen-6-2.svg",
+        "url": "/img/products/komod-bergen-6-2.jpg",
         "alt": "Комод Bergen 6 ящиков — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         {
-          "url": "/img/products/komod-bergen-6-3.svg",
+          "url": "/img/products/komod-bergen-6-3.jpg",
           "alt": "Комод Bergen 6 ящиков — в интерьере"
         },
         {
-          "url": "/img/products/komod-bergen-6-4.svg",
+          "url": "/img/products/komod-bergen-6-4.jpg",
           "alt": "Комод Bergen 6 ящиков — детали"
         }
       ],
@@ -14572,11 +14773,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -14608,11 +14809,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -14644,11 +14845,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -14775,28 +14976,28 @@
       "colorHex": "#3b3a38",
       "sizes": "1800×420×450 мм",
       "img": {
-        "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+        "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
         "alt": "ТВ-тумба Horizon 1800"
       },
       "imgHover": {
-        "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+        "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
         "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
           "alt": "ТВ-тумба Horizon 1800"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-3.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-3.jpg",
           "alt": "ТВ-тумба Horizon 1800 — в интерьере"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-4.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-4.jpg",
           "alt": "ТВ-тумба Horizon 1800 — детали"
         }
       ],
@@ -14891,11 +15092,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -14927,11 +15128,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -14963,11 +15164,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -15094,28 +15295,28 @@
       "colorHex": "#d9bd94",
       "sizes": "450×400×520 мм",
       "img": {
-        "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+        "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
         "alt": "Прикроватная тумба Aurora"
       },
       "imgHover": {
-        "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+        "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
         "alt": "Прикроватная тумба Aurora — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-3.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-3.jpg",
           "alt": "Прикроватная тумба Aurora — в интерьере"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-4.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-4.jpg",
           "alt": "Прикроватная тумба Aurora — детали"
         }
       ],
@@ -15210,11 +15411,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -15246,11 +15447,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -15282,11 +15483,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -15413,28 +15614,28 @@
       "colorHex": "#8a5a3c",
       "sizes": "1400×450×860 мм",
       "img": {
-        "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+        "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
         "alt": "Комод Atelier с зеркалом"
       },
       "imgHover": {
-        "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+        "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
         "alt": "Комод Atelier с зеркалом — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-3.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-3.jpg",
           "alt": "Комод Atelier с зеркалом — в интерьере"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-4.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-4.jpg",
           "alt": "Комод Atelier с зеркалом — детали"
         }
       ],
@@ -15529,11 +15730,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -15565,11 +15766,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.svg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -15601,11 +15802,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -17602,11 +17803,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -17638,11 +17839,11 @@
         "colorHex": "#f2ece1",
         "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/krovat-bianca-140-1.svg",
+          "url": "/img/products/krovat-bianca-140-1.jpg",
           "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-bianca-140-2.svg",
+          "url": "/img/products/krovat-bianca-140-2.jpg",
           "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
@@ -17674,11 +17875,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -17710,11 +17911,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.svg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -17750,11 +17951,11 @@
         "colorHex": "#e5d8c4",
         "sizes": "3200×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-luna-3-2-1.svg",
+          "url": "/img/products/kuhnya-luna-3-2-1.webp",
           "alt": "Кухня Luna прямая 3.2 м"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-luna-3-2-2.svg",
+          "url": "/img/products/kuhnya-luna-3-2-2.webp",
           "alt": "Кухня Luna прямая 3.2 м — вид сбоку"
         },
         "shortDescription": "Кухня Luna прямая 3.2 м: мдф эмаль, тёплый бежевый. Размеры 3200×600×2200 мм.",
@@ -17786,11 +17987,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.svg",
+          "url": "/img/products/kuhnya-village-1.jpg",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.svg",
+          "url": "/img/products/kuhnya-village-2.jpg",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -17978,11 +18179,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.svg",
+          "url": "/img/products/komod-bergen-6-1.jpg",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.svg",
+          "url": "/img/products/komod-bergen-6-2.jpg",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -18014,11 +18215,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.svg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -18213,11 +18414,11 @@
         "colorHex": "#d9bd94",
         "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/krovat-kyoto-nizkaya-1.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-1.jpg",
           "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/krovat-kyoto-nizkaya-2.svg",
+          "url": "/img/products/krovat-kyoto-nizkaya-2.jpg",
           "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
@@ -18249,11 +18450,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.svg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -18285,11 +18486,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "4200×2400×2300 мм",
         "img": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-1.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-1.webp",
           "alt": "Кухня Eco с островом"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-eco-s-ostrovom-2.svg",
+          "url": "/img/products/kuhnya-eco-s-ostrovom-2.webp",
           "alt": "Кухня Eco с островом — вид сбоку"
         },
         "shortDescription": "Кухня Eco с островом: шпон ореха, орех американский. Размеры 4200×2400×2300 мм.",
@@ -18393,11 +18594,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.svg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -20484,11 +20685,11 @@
         "colorHex": "#c19a5b",
         "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/krovat-verona-160-1.svg",
+          "url": "/img/products/krovat-verona-160-1.jpg",
           "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/krovat-verona-160-2.svg",
+          "url": "/img/products/krovat-verona-160-2.jpg",
           "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
@@ -20520,11 +20721,11 @@
         "colorHex": "#2f4a3f",
         "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/krovat-aurora-1.svg",
+          "url": "/img/products/krovat-aurora-1.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/krovat-aurora-2.svg",
+          "url": "/img/products/krovat-aurora-2.jpg",
           "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
@@ -20934,7 +21135,7 @@
           "quantity": 1,
           "variant": null,
           "img": {
-            "url": "/img/products/komod-atelier-s-zerkalom-1.svg",
+            "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
             "alt": "Комод Atelier с зеркалом"
           },
           "url": "/product/komod-atelier-s-zerkalom/"
@@ -23242,5 +23443,473 @@
         }
       }
     ]
+  },
+  "korpusnaya-mebel": {
+    "seo": {
+      "h1": "Корпусная мебель от производителя",
+      "title": "Корпусная мебель от производителя — купить с доставкой — Мебель Шоп",
+      "meta": [
+        {
+          "name": "description",
+          "content": "Корпусная мебель от производителя: шкафы, гардеробные, комоды, тумбы и столы. Изготовление по вашим размерам за 14–25 дней, доставка по России, сборка и гарантия 24 месяца."
+        },
+        {
+          "name": "keywords",
+          "content": "корпусная мебель, корпусная мебель от производителя, корпусная мебель на заказ"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "canonical": ""
+    },
+    "schemaOrg": [],
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Главная"
+      },
+      {
+        "url": "/catalog/",
+        "label": "Каталог"
+      },
+      {
+        "url": "/catalog/korpusnaya-mebel/",
+        "label": "Корпусная мебель"
+      }
+    ],
+    "category": {
+      "id": 9,
+      "slug": "korpusnaya-mebel",
+      "title": "Корпусная мебель",
+      "description": "Шкафы, комоды, тумбы, обеденные и рабочие столы — серийные модели со склада и изготовление по вашим размерам.",
+      "img": {
+        "url": "/img/categories/korpusnaya-mebel.jpg",
+        "alt": "Корпусная мебель"
+      },
+      "productsCount": 3,
+      "collections": [
+        {
+          "url": "/catalog/shkafy/",
+          "label": "Шкафы и гардеробные"
+        },
+        {
+          "url": "/catalog/tumby/",
+          "label": "Комоды и тумбы"
+        },
+        {
+          "url": "/catalog/stoly-i-stulya/",
+          "label": "Столы и стулья"
+        }
+      ],
+      "url": "/catalog/korpusnaya-mebel/"
+    },
+    "intro": "Корпусная мебель — основная специализация нашего производства: мы делаем шкафы и гардеробные системы, комоды и тумбы, обеденные и рабочие столы. Корпус собирается из ЛДСП Egger 16 мм или влагостойкой плиты 18 мм, все кромки закрываются ПВХ 2 мм, крепёж — эксцентриковые стяжки и шканты, поэтому изделие держит геометрию даже после переезда. Фасады доступны в четырёх исполнениях: ЛДСП, МДФ с эмалью, шпон дуба и ореха, массив. Фурнитура Blum и Hettich с доводчиками и ресурсом 50 000 циклов. Любую модель из каталога пересчитываем под ваш проём: меняем ширину, высоту и глубину, добавляем ящики, полки и подсветку — шкаф до потолка даёт на четверть больше полезного объёма, чем серийный на 2,2 метра. Расчёт по чертежу занимает один рабочий день, изготовление — от 14 до 25 рабочих дней. Доставляем по России, собираем на месте, гарантия 24 месяца на корпус и фурнитуру.",
+    "filters": [
+      {
+        "name": "price",
+        "label": "Цена, ₽",
+        "type": "range",
+        "min": 86400,
+        "max": 164900
+      },
+      {
+        "name": "availability",
+        "label": "Наличие",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "made-to-order",
+            "label": "Под заказ",
+            "count": 2
+          },
+          {
+            "value": "in-stock",
+            "label": "В наличии",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "style",
+        "label": "Стиль",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "Современный",
+            "label": "Современный",
+            "count": 2
+          },
+          {
+            "value": "Скандинавский",
+            "label": "Скандинавский",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "constructionType",
+        "label": "Тип конструкции",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "Шкаф-купе",
+            "label": "Шкаф-купе",
+            "count": 1
+          },
+          {
+            "value": "Распашной",
+            "label": "Распашной",
+            "count": 1
+          },
+          {
+            "value": "Гардеробная система",
+            "label": "Гардеробная система",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "bodyMaterial",
+        "label": "Материал корпуса",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "ЛДСП Egger 16 мм",
+            "label": "ЛДСП Egger 16 мм",
+            "count": 1
+          },
+          {
+            "value": "ЛДСП 16 мм",
+            "label": "ЛДСП 16 мм",
+            "count": 1
+          },
+          {
+            "value": "Алюминиевый профиль",
+            "label": "Алюминиевый профиль",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "facadeMaterial",
+        "label": "Материал фасадов",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "ЛДСП с зеркалом",
+            "label": "ЛДСП с зеркалом",
+            "count": 1
+          },
+          {
+            "value": "Шпон дуба",
+            "label": "Шпон дуба",
+            "count": 1
+          },
+          {
+            "value": "МДФ эмаль",
+            "label": "МДФ эмаль",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "color",
+        "label": "Цвет",
+        "type": "color",
+        "options": [
+          {
+            "value": "Графит",
+            "label": "Графит",
+            "count": 1,
+            "colorHex": "#3b3a38"
+          },
+          {
+            "value": "Дуб натуральный",
+            "label": "Дуб натуральный",
+            "count": 1,
+            "colorHex": "#c8a271"
+          },
+          {
+            "value": "Тёплый белый",
+            "label": "Тёплый белый",
+            "count": 1,
+            "colorHex": "#f5f0e8"
+          }
+        ]
+      },
+      {
+        "name": "collection",
+        "label": "Коллекция",
+        "type": "checkbox",
+        "options": [
+          {
+            "value": "Horizon",
+            "label": "Horizon",
+            "count": 1
+          },
+          {
+            "value": "Bergen",
+            "label": "Bergen",
+            "count": 1
+          },
+          {
+            "value": "Atelier",
+            "label": "Atelier",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "width",
+        "label": "Ширина, мм",
+        "type": "range",
+        "min": 1800,
+        "max": 3000
+      },
+      {
+        "name": "height",
+        "label": "Высота, мм",
+        "type": "range",
+        "min": 2300,
+        "max": 2600
+      }
+    ],
+    "sortOptions": [
+      {
+        "value": "popular",
+        "label": "По популярности"
+      },
+      {
+        "value": "new",
+        "label": "Сначала новинки"
+      },
+      {
+        "value": "price-asc",
+        "label": "Сначала дешевле"
+      },
+      {
+        "value": "price-desc",
+        "label": "Сначала дороже"
+      },
+      {
+        "value": "discount",
+        "label": "По размеру скидки"
+      },
+      {
+        "value": "rating",
+        "label": "По рейтингу"
+      }
+    ],
+    "products": [
+      {
+        "id": 10,
+        "slug": "shkaf-kupe-horizon-2400",
+        "title": "Шкаф-купе Horizon 2400",
+        "category": "Шкафы и гардеробные",
+        "categorySlug": "shkafy",
+        "collection": "Horizon",
+        "brand": "Мебель Шоп",
+        "price": 118700,
+        "oldPrice": 139000,
+        "currency": "RUB",
+        "badges": [
+          {
+            "name": "sale",
+            "label": "Скидка"
+          }
+        ],
+        "rating": 4.7,
+        "reviewsCount": 39,
+        "inStock": true,
+        "availability": "Под заказ, 22 рабочих дня",
+        "material": "ЛДСП Egger",
+        "color": "Графит",
+        "colorHex": "#3b3a38",
+        "sizes": "2400×600×2500 мм",
+        "img": {
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "alt": "Шкаф-купе Horizon 2400"
+        },
+        "imgHover": {
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
+        },
+        "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
+        "url": "/product/shkaf-kupe-horizon-2400/",
+        "style": "Современный",
+        "constructionType": "Шкаф-купе",
+        "bodyMaterial": "ЛДСП Egger 16 мм",
+        "facadeMaterial": "ЛДСП с зеркалом",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 2400,
+          "depth": 600,
+          "height": 2500
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 22,
+        "priceFrom": true,
+        "variants": [
+          {
+            "name": "graphite",
+            "label": "Графит",
+            "color": "#3b3a38",
+            "priceDiff": 0
+          },
+          {
+            "name": "olive",
+            "label": "Оливковый",
+            "color": "#6f7a55",
+            "priceDiff": 3400
+          },
+          {
+            "name": "terracotta",
+            "label": "Терракотовый",
+            "color": "#b4632a",
+            "priceDiff": 5200
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "slug": "shkaf-raspashnoj-bergen",
+        "title": "Шкаф распашной Bergen",
+        "category": "Шкафы и гардеробные",
+        "categorySlug": "shkafy",
+        "collection": "Bergen",
+        "brand": "Nordhaus",
+        "price": 86400,
+        "oldPrice": null,
+        "currency": "RUB",
+        "badges": [
+          {
+            "name": "hit",
+            "label": "Хит"
+          }
+        ],
+        "rating": 4.8,
+        "reviewsCount": 26,
+        "inStock": true,
+        "availability": "В наличии на складе",
+        "material": "Шпон дуба",
+        "color": "Дуб натуральный",
+        "colorHex": "#c8a271",
+        "sizes": "1800×620×2300 мм",
+        "img": {
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "alt": "Шкаф распашной Bergen"
+        },
+        "imgHover": {
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "alt": "Шкаф распашной Bergen — вид сбоку"
+        },
+        "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
+        "url": "/product/shkaf-raspashnoj-bergen/",
+        "style": "Скандинавский",
+        "constructionType": "Распашной",
+        "bodyMaterial": "ЛДСП 16 мм",
+        "facadeMaterial": "Шпон дуба",
+        "purpose": "Для спальни",
+        "dimensions": {
+          "width": 1800,
+          "depth": 620,
+          "height": 2300
+        },
+        "availabilityType": "in-stock",
+        "productionDays": null,
+        "priceFrom": false,
+        "variants": [
+          {
+            "name": "oak",
+            "label": "Дуб натуральный",
+            "color": "#c8a271",
+            "priceDiff": 0
+          },
+          {
+            "name": "white",
+            "label": "Тёплый белый",
+            "color": "#f5f0e8",
+            "priceDiff": 2600
+          },
+          {
+            "name": "graphite",
+            "label": "Графит",
+            "color": "#3b3a38",
+            "priceDiff": 4100
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "slug": "garderobnaya-sistema-atelier",
+        "title": "Гардеробная система Atelier",
+        "category": "Шкафы и гардеробные",
+        "categorySlug": "shkafy",
+        "collection": "Atelier",
+        "brand": "Atelier",
+        "price": 164900,
+        "oldPrice": null,
+        "currency": "RUB",
+        "badges": [
+          {
+            "name": "new",
+            "label": "Новинка"
+          }
+        ],
+        "rating": 4.9,
+        "reviewsCount": 18,
+        "inStock": true,
+        "availability": "Под заказ, 25 рабочих дней",
+        "material": "Алюминий и МДФ",
+        "color": "Тёплый белый",
+        "colorHex": "#f5f0e8",
+        "sizes": "3000×550×2600 мм",
+        "img": {
+          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "alt": "Гардеробная система Atelier"
+        },
+        "imgHover": {
+          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "alt": "Гардеробная система Atelier — вид сбоку"
+        },
+        "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
+        "url": "/product/garderobnaya-sistema-atelier/",
+        "style": "Современный",
+        "constructionType": "Гардеробная система",
+        "bodyMaterial": "Алюминиевый профиль",
+        "facadeMaterial": "МДФ эмаль",
+        "purpose": "Для гардеробной",
+        "dimensions": {
+          "width": 3000,
+          "depth": 550,
+          "height": 2600
+        },
+        "availabilityType": "made-to-order",
+        "productionDays": 25,
+        "priceFrom": true,
+        "variants": [
+          {
+            "name": "white",
+            "label": "Тёплый белый",
+            "color": "#f5f0e8",
+            "priceDiff": 0
+          },
+          {
+            "name": "oak",
+            "label": "Дуб натуральный",
+            "color": "#c8a271",
+            "priceDiff": 3900
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "perPage": 12,
+      "total": 3,
+      "totalPages": 1
+    }
   }
 }

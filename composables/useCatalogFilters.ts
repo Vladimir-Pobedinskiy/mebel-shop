@@ -2,10 +2,17 @@ import { computed, watch } from 'vue'
 import type { ComputedRef } from 'vue'
 import type { LocationQuery } from 'vue-router'
 import type { IProduct } from '@/interfaces/product/IProduct'
-import { useCatalogFiltersStore } from '@/stores/storeCatalogFilters'
+import { useCatalogFiltersStore, MULTI_KEYS, RANGE_KEYS } from '@/stores/storeCatalogFilters'
+import { discountPercent } from '@/utils/utils'
 
 /* Query-параметры, которыми владеет каталог. Остальные параметры страницы не трогаем. */
-const QUERY_KEYS = ['priceFrom', 'priceTo', 'material', 'color', 'brand', 'collection', 'inStock', 'sort', 'page']
+export const QUERY_KEYS = [
+	...RANGE_KEYS.flatMap(name => [`${name}From`, `${name}To`]),
+	...MULTI_KEYS.map(key => String(key)),
+	'inStock',
+	'sort',
+	'page',
+]
 
 /* Сравнение наборов query-параметров без оглядки на порядок ключей */
 const stringifyQuery = (query: Record<string, string>) =>
@@ -60,21 +67,53 @@ export const useCatalogFilters = (products: ComputedRef<IProduct[]>, perPage: Co
 		store.fromQuery(route.query)
 	})
 
-	const matchesList = (list: string[], value: string) => !list.length || list.includes(value)
+	// Пустой список фильтра означает «не выбрано»; товар без такого поля из выборки выпадает
+	const matchesList = (list: string[], value?: string) => !list.length || (!!value && list.includes(value))
+
+	// Габарит проверяем, только если фильтр задан: товары без dimensions отсекаются осознанно
+	const matchesRange = (value: number | undefined, from: number | null, to: number | null) => {
+		if (from === null && to === null) return true
+		if (value === undefined) return false
+		return (from === null || value >= from) && (to === null || value <= to)
+	}
 
 	const filteredProducts = computed(() => {
-		const { priceFrom, priceTo, material, color, brand, collection, inStock } = store.filters
+		const {
+			priceFrom,
+			priceTo,
+			widthFrom,
+			widthTo,
+			heightFrom,
+			heightTo,
+			material,
+			color,
+			brand,
+			collection,
+			style,
+			constructionType,
+			bodyMaterial,
+			facadeMaterial,
+			availability,
+			inStock,
+		} = store.filters
 
 		return products.value.filter(product => {
 			if (priceFrom !== null && product.price < priceFrom) return false
 			if (priceTo !== null && product.price > priceTo) return false
 			if (inStock && !product.inStock) return false
+			if (!matchesRange(product.dimensions?.width, widthFrom, widthTo)) return false
+			if (!matchesRange(product.dimensions?.height, heightFrom, heightTo)) return false
 
 			return (
 				matchesList(material, product.material) &&
 				matchesList(color, product.color) &&
 				matchesList(brand, product.brand) &&
-				matchesList(collection, product.collection)
+				matchesList(collection, product.collection) &&
+				matchesList(style, product.style) &&
+				matchesList(constructionType, product.constructionType) &&
+				matchesList(bodyMaterial, product.bodyMaterial) &&
+				matchesList(facadeMaterial, product.facadeMaterial) &&
+				matchesList(availability, product.availabilityType)
 			)
 		})
 	})
@@ -89,6 +128,9 @@ export const useCatalogFilters = (products: ComputedRef<IProduct[]>, perPage: Co
 				return list.sort((a, b) => b.price - a.price)
 			case 'rating':
 				return list.sort((a, b) => b.rating - a.rating)
+			case 'discount':
+				// Товары без старой цены уходят в конец: скидки у них нет
+				return list.sort((a, b) => discountPercent(b.price, b.oldPrice) - discountPercent(a.price, a.oldPrice))
 			case 'new':
 				// Сначала помеченные бейджем «Новинка», внутри группы — свежие id
 				return list.sort((a, b) => {

@@ -8,6 +8,8 @@ import type { ISelect } from '@/interfaces/ISelect'
 /* Страница категории каталога: /catalog/<slug>/ и /catalog/<slug>/<collection>/ */
 export interface ICategoryPage extends IPageBase {
 	category: ICategory
+	/** Коммерческое вступление раздела — есть только у корпусной мебели */
+	intro?: string
 	filters: IFilter[]
 	sortOptions: ISelect[]
 	products: IProduct[]

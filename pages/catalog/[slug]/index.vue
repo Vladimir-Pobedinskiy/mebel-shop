@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ICategoryPage } from '@/interfaces/catalog/ICategoryPage'
+import { QUERY_KEYS } from '@/composables/useCatalogFilters'
 
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
@@ -20,6 +21,14 @@ if (error.value) {
 }
 
 usePageSeo(computed(() => data.value))
+
+/* Фильтры, сортировка и страницы живут в query. В индекс идёт только чистый URL раздела,
+   комбинации закрываем noindex — ссылки при этом остаются обходимыми */
+const isQueryView = computed(() => QUERY_KEYS.some(key => route.query[key] !== undefined))
+
+useHead(() => ({
+	meta: isQueryView.value ? [{ name: 'robots', content: 'noindex, follow' }] : [],
+}))
 </script>
 
 <template>
@@ -41,6 +50,8 @@ usePageSeo(computed(() => data.value))
 					:filters="data.filters || []"
 					:sort-options="data.sortOptions || []"
 					:per-page="data.pagination?.perPage || 12"
+					:show-consult="Boolean(data.intro)"
+					:consult-subject="data.seo.h1"
 				/>
 			</div>
 		</template>
