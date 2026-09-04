@@ -1,0 +1,23 @@
+@use '../general/variables';
+
+.custom-scrollbar {
+	scrollbar-color: variables.$color-ink transparent;
+	scrollbar-width: thin;
+
+	/* Для Chrome и других браузеров, кроме Firefox */
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 8px;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		background-color: variables.$color-ink;
+		border: 3px solid transparent; /* регулируйте это значение по необходимости */
+		background-clip: padding-box; /* используем padding-box для сохранения border-radius */
+	}
+}

@@ -1,0 +1,61 @@
+/* Брейкпоинты (дублируются в utils/utils.ts → screens) */
+$mobile: 480px;
+$mobile-big: 576px;
+$tablet: 768px;
+$tablet-big: 992px;
+$desktop-small: 1024px;
+$desktop: 1200px;
+$desktop-big: 1400px;
+$full-hd-display: 1920px;
+$two-k-display: 2560px;
+$four-k-display: 3840px;
+$mobile-for-max-width: 479px;
+$mobile-big-for-max-width: 575px;
+$tablet-for-max-width: 767px;
+$tablet-big-for-max-width: 991px;
+$desktop-small-for-max-width: 1023px;
+$desktop-for-max-width: 1199px;
+$desktop-big-for-max-width: 1399px;
+
+/* Шрифты */
+$font: 'Montserrat', 'Arial', sans-serif;
+$font-secondary: 'Steppe', 'Arial', sans-serif;
+
+/* Палитра — тёплая «премиум-мебельная» */
+$color-bg: #f7f4ef; // тёплый песочный фон
+$color-surface: #ffffff;
+$color-ink: #1c1a17; // основной текст
+$color-ink-soft: #6b6357; // вторичный текст
+$color-accent: #b4632a; // терракота / орех — CTA
+$color-accent-hover: #9a5323;
+$color-accent-soft: #f0e0d3;
+$color-accent-2: #2f4a3f; // глубокий зелёный — акцент секций
+$color-accent-2-hover: #24382f;
+$color-line: #e4ddd2; // границы и разделители
+$color-line-strong: #cfc4b4;
+$color-muted: #f1ebe2; // подложки карточек и полей
+$color-black: #000000;
+$color-white: #ffffff;
+
+/* Служебные цвета */
+$color-success: #7bc542;
+$color-warning: #ffc33f;
+$color-error: #ff5b4c;
+
+/* Соц-сети */
+$color-viber: #615eee;
+$color-instagram: #d82d7e;
+$color-vk: #0077ff;
+$color-whatsapp: #27b43d;
+$color-telegram: #00b2ff;
+
+/* Сетка */
+$container-width: 1392px;
+$padding-offset: max(16px, calc((100% - 1360px) / 2));
+
+/* Скругления и тени */
+$radius-s: 8px;
+$radius-m: 16px;
+$radius-l: 24px;
+$shadow-soft: 0 20px 60px rgba(28, 26, 23, 8%);
+$shadow-hover: 0 24px 70px rgba(28, 26, 23, 14%);

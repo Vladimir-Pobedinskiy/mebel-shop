@@ -1,0 +1,47 @@
+@mixin line-clamp($lines: 1) {
+	@if $lines <= 1 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	} @else {
+		display: -webkit-box;
+		overflow: hidden;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: $lines;
+		text-overflow: ellipsis;
+	}
+}
+
+// использование: @include line-clamp(3);
+
+@mixin anim-opacity-transform {
+	opacity: 0;
+	transform: translateY(20px);
+	will-change: transform, opacity;
+	transition:
+		opacity 1s ease-in-out,
+		transform 1s ease-in-out;
+
+	&.visible {
+		opacity: 1;
+		transform: translateY(0);
+		transition:
+			opacity 1s ease-in-out,
+			transform 1s ease-in-out;
+	}
+}
+
+// использование: @include anim_opacity_transform;
+
+@mixin anim-opacity {
+	opacity: 0;
+	will-change: opacity;
+	transition: opacity 1s ease-in-out;
+
+	&.visible {
+		opacity: 1;
+		transition: opacity 1s ease-in-out;
+	}
+}
+
+// использование: @include anim_opacity;
