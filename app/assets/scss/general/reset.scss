@@ -1,0 +1,86 @@
+@use 'variables';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*:focus-visible {
+	outline: 2px dashed variables.$color-accent;
+	outline-offset: 1px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	padding: 0;
+	color: inherit;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+}
+
+input {
+	border: 0;
+}
+
+textarea {
+	overflow-y: auto;
+	resize: none;
+}

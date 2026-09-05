@@ -1,6 +1,6 @@
-import type { IPageBase } from '@/interfaces/IPageBase'
-import type { IImg } from '@/interfaces/IImg'
-import type { IAdvantage } from '@/interfaces/IAdvantage'
+import type { IPageBase } from '~~/interfaces/IPageBase'
+import type { IImg } from '~~/interfaces/IImg'
+import type { IAdvantage } from '~~/interfaces/IAdvantage'
 
 export interface IAboutCounter {
 	value: number

@@ -1,0 +1,48 @@
+@use '../general/variables';
+
+.rubber-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	min-width: 44px;
+	height: 44px;
+	overflow: hidden;
+	color: variables.$color-ink;
+	text-align: center;
+	pointer-events: all;
+	background-color: transparent;
+	border: 1px solid variables.$color-line-strong;
+	border-radius: 999px;
+	transition: all 0.6s ease-in-out;
+	will-change: width;
+
+	@media (min-width: variables.$desktop-small) {
+		&:hover {
+			width: 154px;
+			color: variables.$color-white;
+			cursor: pointer;
+			background-color: variables.$color-accent;
+			border-color: variables.$color-accent;
+			transition: all 0.6s ease-in-out;
+
+			.rubber-button__title {
+				width: 98px;
+				margin-right: 8px;
+				transition: all 0.6s ease-in-out;
+			}
+		}
+	}
+
+	&__title {
+		width: 0;
+		overflow: hidden;
+		transition: all 0.6s ease-in-out;
+		will-change: width;
+	}
+
+	&__icon-arrow {
+		width: 20px;
+		height: 20px;
+	}
+}

@@ -1,7 +1,7 @@
-import type { IPageBase } from '@/interfaces/IPageBase'
-import type { IImg } from '@/interfaces/IImg'
-import type { ILink } from '@/interfaces/ILink'
-import type { IPagination } from '@/interfaces/IPagination'
+import type { IPageBase } from '~~/interfaces/IPageBase'
+import type { IImg } from '~~/interfaces/IImg'
+import type { ILink } from '~~/interfaces/ILink'
+import type { IPagination } from '~~/interfaces/IPagination'
 
 /* Карточка проекта в списке */
 export interface IProjectPreview {

@@ -49,8 +49,9 @@ jobs:
           node-version: 24
           cache: 'npm'
 
+      # Ставим строго по package-lock.json: сборка на Pages должна повторять локальную
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # В сборке линтера больше нет — проверяем код отдельным шагом
       - name: Lint

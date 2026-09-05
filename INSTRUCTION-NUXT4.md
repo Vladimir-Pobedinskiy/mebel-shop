@@ -10,10 +10,10 @@
 
 ## 0. Доноры и что берём из каждого
 
-| Донор | Путь | Что берём |
-| --- | --- | --- |
+| Донор          | Путь                               | Что берём                                                                                                                                                                                              |
+| -------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `avto-landing` | `d:\work\my_projects\avto-landing` | Структура Nuxt 4 (`app/`), версии пакетов, `eslint.config.mjs`, `stylelint.config.mjs`, `.prettierrc`, `.editorconfig`, `tsconfig.json`, `.prettierignore`, husky 9, `lint-staged`, набор npm-скриптов |
-| `rexas` | `d:\work\my_projects\rexas` | Флоу регистрации: страницы, формы, модалка кода подтверждения, серверные эндпоинты, секция `auth` в `nuxt.config.ts` |
+| `rexas`        | `d:\work\my_projects\rexas`        | Флоу регистрации: страницы, формы, модалка кода подтверждения, серверные эндпоинты, секция `auth` в `nuxt.config.ts`                                                                                   |
 
 **Не копировать из доноров:** `.nuxt`, `.output`, `node_modules`, `.git`, `dist`,
 `.env`, ключи (`YANDEX_MAPS_API_KEY`, `PUBLIC_CAPTCHA_KEY`, `API_KEY_CDEK`,
@@ -82,11 +82,11 @@ mebel-shop/
 
 В Nuxt 4 `~` и `@` указывают на `app/`, а `~~` и `@@` — на корень проекта.
 
-| Было | Стало | Сколько |
-| --- | --- | --- |
-| `@/interfaces/...` | `~~/interfaces/...` | 192 вхождения в 130 файлах (+4 в `server/`) |
-| `@/assets`, `@/composables`, `@/stores`, `@/utils` | без изменений | 307 вхождений — эти папки уезжают в `app/`, алиас продолжает резолвиться |
-| `@use '@/assets/scss/...'` в SCSS | без изменений | 130 вхождений |
+| Было                                               | Стало               | Сколько                                                                  |
+| -------------------------------------------------- | ------------------- | ------------------------------------------------------------------------ |
+| `@/interfaces/...`                                 | `~~/interfaces/...` | 192 вхождения в 130 файлах (+4 в `server/`)                              |
+| `@/assets`, `@/composables`, `@/stores`, `@/utils` | без изменений       | 307 вхождений — эти папки уезжают в `app/`, алиас продолжает резолвиться |
+| `@use '@/assets/scss/...'` в SCSS                  | без изменений       | 130 вхождений                                                            |
 
 То есть правится только `interfaces`. Замену делать разом и потом проверять
 `npx nuxt prepare` + `npm run lint`, а не глазами.
@@ -119,15 +119,15 @@ mebel-shop/
 
 ### 4.2. Нужны только нам — версию подобрать при установке
 
-| Пакет | Зачем | Примечание |
-| --- | --- | --- |
-| `@nuxt/image` | `NuxtImg` в 25 файлах | нужна версия с поддержкой Nuxt 4 |
-| `@nuxtjs/sitemap` | `sitemap.xml` с динамическими URL | ставим отдельно, см. 4.4 |
-| `@nuxtjs/robots` | `robots.txt` | ставим отдельно, см. 4.4 |
-| `@sidebase/nuxt-auth` | авторизация | в `rexas` `^1.1.1` под Nuxt 4 — брать от неё и выше |
-| `@headlessui/vue` | 3 файла | если под Vue 3.5 конфликт — переписать эти 3 места руками |
-| `vue-multiselect` | 1 файл (`plugins/vue-multiselect.ts`) | в `rexas` `^3.4.0` |
-| `vue-yandex-maps` | карта салонов, подключается только при ключе | оставить как есть |
+| Пакет                 | Зачем                                        | Примечание                                                |
+| --------------------- | -------------------------------------------- | --------------------------------------------------------- |
+| `@nuxt/image`         | `NuxtImg` в 25 файлах                        | нужна версия с поддержкой Nuxt 4                          |
+| `@nuxtjs/sitemap`     | `sitemap.xml` с динамическими URL            | ставим отдельно, см. 4.4                                  |
+| `@nuxtjs/robots`      | `robots.txt`                                 | ставим отдельно, см. 4.4                                  |
+| `@sidebase/nuxt-auth` | авторизация                                  | в `rexas` `^1.1.1` под Nuxt 4 — брать от неё и выше       |
+| `@headlessui/vue`     | 3 файла                                      | если под Vue 3.5 конфликт — переписать эти 3 места руками |
+| `vue-multiselect`     | 1 файл (`plugins/vue-multiselect.ts`)        | в `rexas` `^3.4.0`                                        |
+| `vue-yandex-maps`     | карта салонов, подключается только при ключе | оставить как есть                                         |
 
 ### 4.3. Убрать из `package.json`
 
@@ -160,19 +160,19 @@ mebel-shop/
 
 ## 5. Конфиги (копия из `avto-landing`, с оговорками)
 
-| Файл | Действие |
-| --- | --- |
-| `eslint.config.mjs` | заменить целиком: `withNuxt` + `eslint-plugin-prettier`. Требует `nuxt prepare` до запуска — его делает `postinstall` |
+| Файл                   | Действие                                                                                                                   |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `eslint.config.mjs`    | заменить целиком: `withNuxt` + `eslint-plugin-prettier`. Требует `nuxt prepare` до запуска — его делает `postinstall`      |
 | `stylelint.config.cjs` | **удалить**, вместо него `stylelint.config.mjs` из `avto-landing` (ESM, `recess-order`, `recommended-vue`, `postcss-scss`) |
-| `.prettierrc` | заменить (добавляется `vueIndentScriptAndStyle: false`) |
-| `.editorconfig` | добавить — сейчас его нет |
-| `tsconfig.json` | заменить на форму с `references` на `.nuxt/tsconfig.{app,server,shared,node}.json` |
-| `.prettierignore` | заменить |
-| `config.d.ts` | добавить, если после обновления `swiper` ругается на `swiper/css` |
-| `.husky/pre-commit` | обновить под husky 9: убрать строку с `husky.sh`, оставить `npx lint-staged` |
-| `lint-staged` | секция из `avto-landing`: `eslint --fix`, `stylelint --fix`, `prettier --write` |
-| `.gitignore` | оставить наш (в донорском игнорируется `INSTRUCTION.md` — нам это не нужно) |
-| `ecosystem.config.cjs` | оставить как есть |
+| `.prettierrc`          | заменить (добавляется `vueIndentScriptAndStyle: false`)                                                                    |
+| `.editorconfig`        | добавить — сейчас его нет                                                                                                  |
+| `tsconfig.json`        | заменить на форму с `references` на `.nuxt/tsconfig.{app,server,shared,node}.json`                                         |
+| `.prettierignore`      | заменить                                                                                                                   |
+| `config.d.ts`          | добавить, если после обновления `swiper` ругается на `swiper/css`                                                          |
+| `.husky/pre-commit`    | обновить под husky 9: убрать строку с `husky.sh`, оставить `npx lint-staged`                                               |
+| `lint-staged`          | секция из `avto-landing`: `eslint --fix`, `stylelint --fix`, `prettier --write`                                            |
+| `.gitignore`           | оставить наш (в донорском игнорируется `INSTRUCTION.md` — нам это не нужно)                                                |
+| `ecosystem.config.cjs` | оставить как есть                                                                                                          |
 
 Новый `stylelint.config.mjs` строже старого (`recess-order` требует порядок свойств).
 Прогнать `npm run lint:styles:fix` один раз и закоммитить результат отдельным коммитом,
@@ -188,9 +188,10 @@ mebel-shop/
 
 1. `compatibilityDate: '2025-07-15'` (как у обоих доноров).
 2. `modules`: состав по 4.4, без `@nuxtjs/seo`.
-3. Подключить `pinia-plugin-persistedstate/nuxt` и секцию `piniaPluginPersistedstate`
-   (в `avto-landing` и `rexas` он есть). Переводить на него избранное и сравнение
-   не обязательно, но корзина должна переживать перезагрузку страницы.
+3. `pinia-plugin-persistedstate` **не подключать**, хотя он есть у обоих доноров.
+   Корзина, избранное и сравнение уже персистятся через `useLocalStorage` из
+   `@vueuse/core` с `initOnMounted` — это осознанный обход гидрации, при котором
+   пустой SSR-пейлоад не затирает localStorage. Плагин задвоил бы механизм.
 4. `auth.provider.endpoints`: добавить `signUp: { path: '/auth-registration/', method: 'post' }`.
 5. `auth.provider.session.dataType` — по образцу `rexas`, поля под нас:
    `{ id: 'string | number', fio: 'string', email: 'string', tel: 'string' }`.
@@ -230,12 +231,12 @@ mebel-shop/
 
 ### 8.1. Страницы — `app/pages/`
 
-| Файл | Эндпоинт данных | Содержимое |
-| --- | --- | --- |
-| `login.vue` | `GET /api/login/` | `h1` из seo + `AuthLoginForm` |
-| `registration.vue` | `GET /api/registration/` | `h1` + `AuthRegistrationForm` |
-| `password-recovery.vue` | `GET /api/password-recovery/` | `h1` + `AuthPasswordRecoveryForm` |
-| `new-password.vue` | `GET /api/new-password/` | `h1` + `AuthNewPasswordForm` |
+| Файл                       | Эндпоинт данных                  | Содержимое                                  |
+| -------------------------- | -------------------------------- | ------------------------------------------- |
+| `login.vue`                | `GET /api/login/`                | `h1` из seo + `AuthLoginForm`               |
+| `registration.vue`         | `GET /api/registration/`         | `h1` + `AuthRegistrationForm`               |
+| `password-recovery.vue`    | `GET /api/password-recovery/`    | `h1` + `AuthPasswordRecoveryForm`           |
+| `new-password.vue`         | `GET /api/new-password/`         | `h1` + `AuthNewPasswordForm`                |
 | `success-registration.vue` | `GET /api/success-registration/` | `h1` + кнопка **на главную** (кабинета нет) |
 
 Структура файла — как в `rexas`: `useAsyncData` → `usePageError(error)` → `usePageSeo(data)`.
@@ -244,12 +245,20 @@ mebel-shop/
 
 ### 8.2. Компоненты — `app/components/Auth/`
 
+**Идиома форм — наша, не донорская.** `rexas` пишет формы на компонентах `<Form>`/`<Field>`
+из `vee-validate`; в `mebel-shop` все формы (`ModalCallback`, `ProductRequestForm` и прочие)
+собраны на `useForm`/`useField` + `useFormSubmit` + `useToaster`, а поля зовутся
+`name`, `phone`, `agreement` (не `fio`, `tel`, `agree`). Из донора берём **логику и
+последовательность шагов**, пишем в своём стиле — иначе в проекте окажутся две несовместимые
+школы форм. Поля сессии — те же, что уже отдаёт `/api/auth-session/`: `id`, `name`, `phone`, `email`.
+
 - `AuthLoginForm.vue` — email + пароль, ссылки «Забыли пароль?» → `/password-recovery/`
   и «Регистрация» → `/registration/`.
-- `AuthRegistrationForm.vue` — по донорской схеме, **без** блока капчи и
-  **без** `AuthSignInWithSocials`. Поля: `fio`, `email`, `tel`, `password`,
-  `repeatPassword`, `agree`. Yup-схему с русскими сообщениями взять из донора один в один
-  (там аккуратно разобраны спецсимволы, цифры и латиница в ФИО), правило `captchaToken` убрать.
+- `AuthRegistrationForm.vue` — по донорскому сценарию, **без** блока капчи и
+  **без** `AuthSignInWithSocials`. Поля: `name`, `email`, `phone`, `password`,
+  `repeatPassword`, `agreement`. Правила валидации с русскими сообщениями взять из донора
+  (там аккуратно разобраны спецсимволы, цифры и латиница в имени), переложив на `yup`
+  в нашей записи; правило `captchaToken` убрать.
 - `AuthPasswordRecoveryForm.vue` — email → код → переход на `/new-password/`.
 - `AuthNewPasswordForm.vue` — новый пароль + повтор.
 
@@ -297,6 +306,25 @@ mebel-shop/
 - В `AppHeader` иконка пользователя ведёт на `/login/`.
 - В `middleware/auth.global.ts` список защищённых путей оставить как есть
   (`/personal-account/`), кабинет мы не делаем.
+
+### 8.7. Настройка `@sidebase/nuxt-auth` — важное
+
+`auth.baseURL` должен быть **относительным** (`'/api/'`), а не адресом json-server.
+Модуль ходит по своим эндпоинтам сам, минуя всё, что не указано в его конфиге. Пока там
+стоял `${process.env.BASE_URL}/api/`, каждый `signIn`/`signUp` уходил POST-запросом прямо
+в json-server, а тот на singular-ресурсе отвечает на POST **заменой значения**: первый же
+вызов затирал заглушки `auth-login` и `auth-registration` телом формы, после чего вход
+переставал работать до `git checkout db.json`.
+
+С относительным адресом запросы идут через `server/api/auth-*`, которые читают заглушку
+через GET и ничего не перезаписывают. Ключ `originEnvKey` убран: он называет переменную
+окружения с origin, а туда подставлялся сам URL.
+
+### 8.8. Пререндер страниц авторизации
+
+`/success-registration/` и `/new-password/` открываются переходом из скрипта, ссылок
+на них в разметке нет — краулер `nuxt generate` их не найдёт. Все пять адресов
+перечислены явно в `nitro.prerender.routes`.
 
 ---
 
@@ -347,18 +375,18 @@ npx serve .output/public
 
 ## 11. Порядок этапов
 
-| Этап | Содержание | Проверка |
-| --- | --- | --- |
-| 1 | Закоммитить текущие изменения, завести ветку `nuxt4` | `git status` чистый |
-| 2 | `git mv` в `app/`, замена `@/interfaces` → `~~/interfaces` | структура из §3 |
-| 3 | `package.json`: версии, удаления, скрипты; `npm install` | установка без конфликтов пиров |
-| 4 | Конфиги и линтеры из `avto-landing`, husky 9 | `npm run lint` (после `nuxt prepare`) |
-| 5 | `nuxt.config.ts` по §6 | `npm run dev` поднимается |
-| 6 | Разбор ломающих изменений по §7 | все страницы открываются без ошибок в консоли |
-| 7 | `db.json` + серверные эндпоинты регистрации (§8.4–8.5) | `curl` по каждому новому адресу |
-| 8 | Страницы и формы авторизации (§8.1–8.3, §8.6) | флоу проходится в dev целиком |
-| 9 | Демо-режим форм (§9), sitemap/robots/ссылки | `npm run generate` локально |
-| 10 | Пуш в `main`, деплой, проверка живого сайта | все новые адреса открываются на Pages |
+| Этап | Содержание                                                 | Проверка                                      |
+| ---- | ---------------------------------------------------------- | --------------------------------------------- |
+| 1    | Закоммитить текущие изменения, завести ветку `nuxt4`       | `git status` чистый                           |
+| 2    | `git mv` в `app/`, замена `@/interfaces` → `~~/interfaces` | структура из §3                               |
+| 3    | `package.json`: версии, удаления, скрипты; `npm install`   | установка без конфликтов пиров                |
+| 4    | Конфиги и линтеры из `avto-landing`, husky 9               | `npm run lint` (после `nuxt prepare`)         |
+| 5    | `nuxt.config.ts` по §6                                     | `npm run dev` поднимается                     |
+| 6    | Разбор ломающих изменений по §7                            | все страницы открываются без ошибок в консоли |
+| 7    | `db.json` + серверные эндпоинты регистрации (§8.4–8.5)     | `curl` по каждому новому адресу               |
+| 8    | Страницы и формы авторизации (§8.1–8.3, §8.6)              | флоу проходится в dev целиком                 |
+| 9    | Демо-режим форм (§9), sitemap/robots/ссылки                | `npm run generate` локально                   |
+| 10   | Пуш в `main`, деплой, проверка живого сайта                | все новые адреса открываются на Pages         |
 
 После каждого этапа — `npm run lint` и коммит. Этапы 2 и 4 дают огромные механические
 диффы: коммитить их отдельно от содержательных правок.

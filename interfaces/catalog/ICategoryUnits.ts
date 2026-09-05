@@ -1,7 +1,7 @@
-import type { IImg } from '@/interfaces/IImg'
-import type { ILink } from '@/interfaces/ILink'
-import type { IAdvantage } from '@/interfaces/IAdvantage'
-import type { ITextItem, IFaqItem, IDeliveryOption } from '@/interfaces/content/IContentPages'
+import type { IImg } from '~~/interfaces/IImg'
+import type { ILink } from '~~/interfaces/ILink'
+import type { IAdvantage } from '~~/interfaces/IAdvantage'
+import type { ITextItem, IFaqItem, IDeliveryOption } from '~~/interfaces/content/IContentPages'
 
 /* Коммерческие блоки категорийной страницы. Все поля опциональны в ICategoryPage:
    они есть только у разделов с продающим контентом, остальные категории рендерятся как раньше. */

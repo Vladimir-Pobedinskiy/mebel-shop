@@ -1,0 +1,84 @@
+@use '../general/variables';
+
+.hover-link {
+	transition: color 0.4s ease-in-out;
+
+	&.active.active-exact {
+		color: variables.$color-accent !important;
+		transition: color 0.4s ease-in-out;
+
+		@media (min-width: variables.$desktop-small) {
+			cursor: default;
+		}
+	}
+
+	@media (min-width: variables.$desktop-small) {
+		&:hover {
+			color: variables.$color-accent !important;
+			transition: color 0.4s ease-in-out;
+		}
+	}
+}
+
+.hover-scale {
+	@media (min-width: variables.$desktop-small) {
+		overflow: hidden;
+		cursor: pointer;
+		will-change: transform;
+
+		&:hover {
+			.hover-scale-img-wrapper img {
+				transform: scale(1.06);
+				transition: transform 0.6s ease-in-out;
+			}
+		}
+	}
+
+	.hover-scale-img-wrapper {
+		overflow: hidden;
+		border-radius: variables.$radius-m;
+	}
+
+	.hover-scale-img-wrapper img {
+		transform: scale(1);
+		transition: transform 0.6s ease-in-out;
+	}
+}
+
+.hover-lift {
+	@media (min-width: variables.$desktop-small) {
+		transition:
+			transform 0.4s ease-in-out,
+			box-shadow 0.4s ease-in-out;
+		will-change: transform;
+
+		&:hover {
+			box-shadow: variables.$shadow-hover;
+			transform: translateY(-6px);
+		}
+	}
+}
+
+.hover-underline {
+	@media (min-width: variables.$desktop-small) {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			content: '';
+			background-color: currentcolor;
+			transform: scaleX(0);
+			transform-origin: right center;
+			transition: transform 0.4s ease-in-out;
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+			transform-origin: left center;
+		}
+	}
+}

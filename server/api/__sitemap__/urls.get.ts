@@ -1,7 +1,7 @@
-import type { ICatalogPage } from '@/interfaces/catalog/ICatalogPage'
-import type { ICategoryPage } from '@/interfaces/catalog/ICategoryPage'
-import type { IBlogPage } from '@/interfaces/article/IBlogPage'
-import type { IPortfolioPage } from '@/interfaces/portfolio/IPortfolioPage'
+import type { ICatalogPage } from '~~/interfaces/catalog/ICatalogPage'
+import type { ICategoryPage } from '~~/interfaces/catalog/ICategoryPage'
+import type { IBlogPage } from '~~/interfaces/article/IBlogPage'
+import type { IPortfolioPage } from '~~/interfaces/portfolio/IPortfolioPage'
 
 interface ISitemapUrl {
 	loc: string

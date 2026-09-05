@@ -1,6 +1,6 @@
 import checker from 'vite-plugin-checker'
 
-// Страницы магазинного флоу и личного кабинета: закрыты от индексации
+// Страницы магазинного флоу, авторизации и личного кабинета: закрыты от индексации
 const noindexRoutes = [
 	'/cart/',
 	'/checkout/',
@@ -9,6 +9,10 @@ const noindexRoutes = [
 	'/compare/',
 	'/search/',
 	'/login/',
+	'/registration/',
+	'/success-registration/',
+	'/password-recovery/',
+	'/new-password/',
 	'/personal-account/**',
 ]
 
@@ -25,7 +29,7 @@ const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 const withBase = (route: string) => (baseURL === '/' ? route : `${baseURL.replace(/\/$/, '')}${route}`)
 
 export default defineNuxtConfig({
-	compatibilityDate: '2024-11-01',
+	compatibilityDate: '2025-07-15',
 	devtools: { enabled: false },
 	devServer: {
 		port: 3000,
@@ -47,18 +51,18 @@ export default defineNuxtConfig({
 				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 				{ name: 'format-detection', content: 'telephone=no' },
 				{ name: 'msapplication-TileColor', content: '#b4632a' },
-				{ name: 'msapplication-config', content: '/favicon/browserconfig.xml' },
+				{ name: 'msapplication-config', content: withBase('/favicon/browserconfig.xml') },
 				{ name: 'theme-color', content: '#f7f4ef' },
 			],
 			link: [
-				{ rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
-				{ rel: 'icon', type: 'image/svg+xml', href: '/favicon/favicon.svg' },
-				{ rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
-				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
-				{ rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon/favicon-48x48.png' },
-				{ rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
-				{ rel: 'manifest', href: '/favicon/site.webmanifest' },
-				{ rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: '#b4632a' },
+				{ rel: 'icon', type: 'image/x-icon', href: withBase('/favicon/favicon.ico') },
+				{ rel: 'icon', type: 'image/svg+xml', href: withBase('/favicon/favicon.svg') },
+				{ rel: 'icon', type: 'image/png', sizes: '16x16', href: withBase('/favicon/favicon-16x16.png') },
+				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: withBase('/favicon/favicon-32x32.png') },
+				{ rel: 'icon', type: 'image/png', sizes: '48x48', href: withBase('/favicon/favicon-48x48.png') },
+				{ rel: 'apple-touch-icon', sizes: '180x180', href: withBase('/favicon/apple-touch-icon.png') },
+				{ rel: 'manifest', href: withBase('/favicon/site.webmanifest') },
+				{ rel: 'mask-icon', href: withBase('/favicon/safari-pinned-tab.svg'), color: '#b4632a' },
 			],
 		},
 	},
@@ -109,12 +113,21 @@ export default defineNuxtConfig({
 			priority: 0.7,
 		},
 	},
-	yandexMaps: {
-		apikey: process.env.YANDEX_MAPS_KEY || '',
-		lang: 'ru_RU',
-	},
+	/* Настройки карт задаются только вместе с самим модулем: без ключа он не
+	   подключён, и типа для ключа yandexMaps в конфиге тогда не существует */
+	...(process.env.YANDEX_MAPS_KEY
+		? {
+				yandexMaps: {
+					apikey: process.env.YANDEX_MAPS_KEY,
+					lang: 'ru_RU',
+				},
+			}
+		: {}),
 	nitro: {
 		prerender: {
+			/* Страницы авторизации краулер сам не найдёт: на /success-registration/
+			   и /new-password/ переходят из скрипта, ссылок на них в разметке нет */
+			routes: ['/login/', '/registration/', '/password-recovery/', '/new-password/', '/success-registration/'],
 			// Страницы ещё нет, а ссылки на неё в шапке и подвале есть:
 			// без этого краулер получает 404 и роняет nuxt generate.
 			// Регулярка, а не строка: при сборке в подпапку домена путь идёт с префиксом.
@@ -167,8 +180,11 @@ export default defineNuxtConfig({
 	auth: {
 		globalAppMiddleware: false,
 		disableServerSideAuth: false,
-		originEnvKey: process.env.BASE_URL,
-		baseURL: `${process.env.BASE_URL}/api/`,
+		/* Свой /api/, а не адрес json-server. Модуль ходит по этим путям сам,
+		   и POST напрямую в json-server перезаписывал бы ключ-заглушку телом
+		   запроса: singular-ресурс отвечает на POST заменой значения.
+		   Наши обработчики в server/api/auth-* читают заглушку через GET */
+		baseURL: '/api/',
 		provider: {
 			type: 'local',
 			pages: {
@@ -176,8 +192,19 @@ export default defineNuxtConfig({
 			},
 			endpoints: {
 				signIn: { path: '/auth-login/', method: 'post' },
+				signUp: { path: '/auth-registration/', method: 'post' },
 				signOut: { path: '/auth-logout/', method: 'post' },
 				getSession: { path: '/auth-session/', method: 'get' },
+			},
+			// Форма полей сессии: из неё модуль выводит типы для useAuth().data.
+			// Поля те же, что отдаёт /api/auth-session/ в db.json
+			session: {
+				dataType: {
+					id: 'string | number',
+					name: 'string',
+					phone: 'string',
+					email: 'string',
+				},
 			},
 			token: {
 				signInResponseTokenPointer: '/token',

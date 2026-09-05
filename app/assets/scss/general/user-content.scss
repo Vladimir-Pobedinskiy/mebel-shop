@@ -1,0 +1,73 @@
+@use 'variables';
+
+.user-content {
+	color: variables.$color-ink;
+
+	img {
+		margin-bottom: 40px;
+		border-radius: variables.$radius-m;
+
+		@media (min-width: variables.$desktop) {
+			margin-bottom: 64px;
+		}
+	}
+
+	p {
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: variables.$color-accent;
+		text-decoration: underline;
+	}
+
+	ul {
+		margin-bottom: 24px;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 8px;
+
+			&::before {
+				position: absolute;
+				top: 9px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				content: '';
+				background-color: variables.$color-accent;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	th,
+	td {
+		padding: 16px 12px;
+		text-align: left;
+		border-bottom: 1px solid variables.$color-line;
+	}
+
+	tr {
+		td {
+			&:first-child {
+				margin-right: 12px;
+				color: variables.$color-ink-soft;
+
+				@media (min-width: variables.$desktop) {
+					min-width: 268px;
+				}
+			}
+		}
+	}
+}

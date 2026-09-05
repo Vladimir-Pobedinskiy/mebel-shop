@@ -1,4 +1,4 @@
-import type { IPageBase } from '@/interfaces/IPageBase'
+import type { IPageBase } from '~~/interfaces/IPageBase'
 
 export interface ICheckoutStep {
 	name: string

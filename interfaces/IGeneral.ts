@@ -1,6 +1,6 @@
-import type { ILink } from '@/interfaces/ILink'
-import type { ILinkWithTitle } from '@/interfaces/ILinkWithTitle'
-import type { IImg } from '@/interfaces/IImg'
+import type { ILink } from '~~/interfaces/ILink'
+import type { ILinkWithTitle } from '~~/interfaces/ILinkWithTitle'
+import type { IImg } from '~~/interfaces/IImg'
 
 export interface IMenuCategory {
 	url: string

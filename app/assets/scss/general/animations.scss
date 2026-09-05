@@ -1,0 +1,133 @@
+@use 'variables';
+
+/* progress-circular */
+@keyframes progress-circular {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.3s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+	opacity: 1;
+}
+
+/* fade-in */
+.fade-in-enter-active,
+.fade-in-leave-active {
+	transition:
+		opacity 0.3s ease-out,
+		transform 0.3s ease-out;
+}
+
+.fade-in-enter-from,
+.fade-in-leave-to {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.fade-in-enter-to,
+.fade-in-leave-from {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* fade-in-blur */
+@keyframes fade-in-blur {
+	from {
+		opacity: 0;
+		filter: blur(1rem);
+	}
+
+	to {
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+/* blur-in */
+.blur-in-enter-active,
+.blur-in-leave-active {
+	transition: all 0.4s ease-out;
+}
+
+.blur-in-enter-from,
+.blur-in-leave-to {
+	opacity: 0;
+	filter: blur(1rem);
+	transform: translateY(-20px);
+}
+
+/* slide-down-header */
+@keyframes slide-down-header {
+	from {
+		transform: translateY(-120%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+/* split-reveal заголовков (см. composables/useGsapReveal.ts) */
+.split-word {
+	display: inline-block;
+}
+
+.split-mask {
+	display: inline-block;
+	padding-bottom: 0.12em;
+	margin-bottom: -0.12em;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.split-inner {
+	display: inline-block;
+	will-change: transform;
+}
+
+/* «Полёт» товара в корзину (см. composables/useFlyToCart.ts):
+   клон картинки живёт в body и удаляется по завершении твина */
+.fly-to-cart {
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+	background-color: variables.$color-muted;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: variables.$radius-m;
+	will-change: transform, width, height;
+}
+
+/* Счётчик корзины: короткий отскок при изменении количества */
+@keyframes counter-bump {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	35% {
+		transform: scale(1.35);
+	}
+
+	70% {
+		transform: scale(0.92);
+	}
+}
