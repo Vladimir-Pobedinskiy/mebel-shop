@@ -36,84 +36,24 @@
         "title": "Каталог мебели",
         "categories": [
           {
-            "url": "/catalog/divany/",
-            "label": "Диваны",
+            "url": "/catalog/korpusnaya-mebel/",
+            "label": "Корпусная мебель",
             "img": {
-              "url": "/img/categories/divany.svg",
-              "alt": "Диваны"
+              "url": "/img/categories/korpusnaya-mebel.jpg",
+              "alt": "Корпусная мебель"
             },
             "children": [
               {
-                "url": "/catalog/divany/milano/",
-                "label": "Коллекция Milano"
+                "url": "/catalog/shkafy/",
+                "label": "Шкафы и гардеробные"
               },
               {
-                "url": "/catalog/divany/osaka/",
-                "label": "Коллекция Osaka"
+                "url": "/catalog/tumby/",
+                "label": "Комоды и тумбы"
               },
               {
-                "url": "/catalog/divany/nord/",
-                "label": "Коллекция Nord"
-              },
-              {
-                "url": "/catalog/divany/loft/",
-                "label": "Коллекция Loft"
-              },
-              {
-                "url": "/catalog/divany/sofia/",
-                "label": "Коллекция Sofia"
-              }
-            ]
-          },
-          {
-            "url": "/catalog/krovati/",
-            "label": "Кровати",
-            "img": {
-              "url": "/img/categories/krovati.jpg",
-              "alt": "Кровати"
-            },
-            "children": [
-              {
-                "url": "/catalog/krovati/verona/",
-                "label": "Коллекция Verona"
-              },
-              {
-                "url": "/catalog/krovati/aurora/",
-                "label": "Коллекция Aurora"
-              },
-              {
-                "url": "/catalog/krovati/kyoto/",
-                "label": "Коллекция Kyoto"
-              },
-              {
-                "url": "/catalog/krovati/bianca/",
-                "label": "Коллекция Bianca"
-              }
-            ]
-          },
-          {
-            "url": "/catalog/shkafy/",
-            "label": "Шкафы и гардеробные",
-            "img": {
-              "url": "/img/categories/shkafy.jpg",
-              "alt": "Шкафы и гардеробные"
-            },
-            "children": [
-              {
-                "url": "/catalog/shkafy/horizon/",
-                "label": "Коллекция Horizon"
-              },
-              {
-                "url": "/catalog/shkafy/bergen/",
-                "label": "Коллекция Bergen"
-              },
-              {
-                "url": "/catalog/shkafy/atelier/",
-                "label": "Коллекция Atelier"
-              },
-              {
-                "url": "/catalog/shkafy/nova/",
-                "label": "Коллекция Nova"
+                "url": "/catalog/stoly-i-stulya/",
+                "label": "Столы и стулья"
               }
             ]
           },
@@ -146,118 +86,6 @@
                 "label": "Коллекция Neoclassic"
               }
             ]
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/",
-            "label": "Столы и стулья",
-            "img": {
-              "url": "/img/categories/stoly-i-stulya.svg",
-              "alt": "Столы и стулья"
-            },
-            "children": [
-              {
-                "url": "/catalog/stoly-i-stulya/tavolo/",
-                "label": "Коллекция Tavolo"
-              },
-              {
-                "url": "/catalog/stoly-i-stulya/oak/",
-                "label": "Коллекция Oak"
-              },
-              {
-                "url": "/catalog/stoly-i-stulya/vienna/",
-                "label": "Коллекция Vienna"
-              },
-              {
-                "url": "/catalog/stoly-i-stulya/como/",
-                "label": "Коллекция Como"
-              },
-              {
-                "url": "/catalog/stoly-i-stulya/loft/",
-                "label": "Коллекция Loft"
-              }
-            ]
-          },
-          {
-            "url": "/catalog/kresla/",
-            "label": "Кресла",
-            "img": {
-              "url": "/img/categories/kresla.svg",
-              "alt": "Кресла"
-            },
-            "children": [
-              {
-                "url": "/catalog/kresla/bergen/",
-                "label": "Коллекция Bergen"
-              },
-              {
-                "url": "/catalog/kresla/comfort/",
-                "label": "Коллекция Comfort"
-              },
-              {
-                "url": "/catalog/kresla/nest/",
-                "label": "Коллекция Nest"
-              },
-              {
-                "url": "/catalog/kresla/kyoto/",
-                "label": "Коллекция Kyoto"
-              }
-            ]
-          },
-          {
-            "url": "/catalog/tumby/",
-            "label": "Тумбы и комоды",
-            "img": {
-              "url": "/img/categories/tumby.jpg",
-              "alt": "Тумбы и комоды"
-            },
-            "children": [
-              {
-                "url": "/catalog/tumby/bergen/",
-                "label": "Коллекция Bergen"
-              },
-              {
-                "url": "/catalog/tumby/horizon/",
-                "label": "Коллекция Horizon"
-              },
-              {
-                "url": "/catalog/tumby/aurora/",
-                "label": "Коллекция Aurora"
-              },
-              {
-                "url": "/catalog/tumby/atelier/",
-                "label": "Коллекция Atelier"
-              }
-            ]
-          },
-          {
-            "url": "/catalog/osveshchenie/",
-            "label": "Освещение",
-            "img": {
-              "url": "/img/categories/osveshchenie.svg",
-              "alt": "Освещение"
-            },
-            "children": [
-              {
-                "url": "/catalog/osveshchenie/sole/",
-                "label": "Коллекция Sole"
-              },
-              {
-                "url": "/catalog/osveshchenie/orbit/",
-                "label": "Коллекция Orbit"
-              },
-              {
-                "url": "/catalog/osveshchenie/nordic/",
-                "label": "Коллекция Nordic"
-              },
-              {
-                "url": "/catalog/osveshchenie/linea/",
-                "label": "Коллекция Linea"
-              },
-              {
-                "url": "/catalog/osveshchenie/rail/",
-                "label": "Коллекция Rail"
-              }
-            ]
           }
         ],
         "promo": {
@@ -276,36 +104,12 @@
       "burgerNav": {
         "navCategory": [
           {
-            "url": "/catalog/divany/",
-            "label": "Диваны"
-          },
-          {
-            "url": "/catalog/krovati/",
-            "label": "Кровати"
-          },
-          {
-            "url": "/catalog/shkafy/",
-            "label": "Шкафы и гардеробные"
+            "url": "/catalog/korpusnaya-mebel/",
+            "label": "Корпусная мебель"
           },
           {
             "url": "/catalog/kuhni/",
             "label": "Кухни"
-          },
-          {
-            "url": "/catalog/stoly-i-stulya/",
-            "label": "Столы и стулья"
-          },
-          {
-            "url": "/catalog/kresla/",
-            "label": "Кресла"
-          },
-          {
-            "url": "/catalog/tumby/",
-            "label": "Тумбы и комоды"
-          },
-          {
-            "url": "/catalog/osveshchenie/",
-            "label": "Освещение"
           }
         ],
         "navigation": [
@@ -374,36 +178,24 @@
           "title": "Каталог",
           "links": [
             {
-              "url": "/catalog/divany/",
-              "label": "Диваны"
-            },
-            {
-              "url": "/catalog/krovati/",
-              "label": "Кровати"
+              "url": "/catalog/korpusnaya-mebel/",
+              "label": "Корпусная мебель"
             },
             {
               "url": "/catalog/shkafy/",
               "label": "Шкафы и гардеробные"
             },
             {
-              "url": "/catalog/kuhni/",
-              "label": "Кухни"
+              "url": "/catalog/tumby/",
+              "label": "Комоды и тумбы"
             },
             {
               "url": "/catalog/stoly-i-stulya/",
               "label": "Столы и стулья"
             },
             {
-              "url": "/catalog/kresla/",
-              "label": "Кресла"
-            },
-            {
-              "url": "/catalog/tumby/",
-              "label": "Тумбы и комоды"
-            },
-            {
-              "url": "/catalog/osveshchenie/",
-              "label": "Освещение"
+              "url": "/catalog/kuhni/",
+              "label": "Кухни"
             }
           ]
         },
