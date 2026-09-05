@@ -24946,5 +24946,172 @@
   "price-request": {
     "success": true,
     "message": "Прайс-лист отправлен на указанную почту. Если письма нет — проверьте папку «Спам»."
+  },
+  "registration": {
+    "seo": {
+      "h1": "Регистрация",
+      "title": "Регистрация — Мебель Шоп",
+      "meta": [
+        {
+          "name": "description",
+          "content": "Регистрация в интернет-магазине мебели «Мебель Шоп»."
+        },
+        {
+          "name": "keywords",
+          "content": "регистрация, личный кабинет"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "canonical": ""
+    },
+    "schemaOrg": [],
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Главная"
+      },
+      {
+        "url": "/registration/",
+        "label": "Регистрация"
+      }
+    ],
+    "title": "Регистрация",
+    "text": "Заведите личный кабинет, чтобы следить за заказами и хранить избранное.",
+    "note": "На указанную почту придёт код подтверждения — введите его в открывшемся окне."
+  },
+  "success-registration": {
+    "seo": {
+      "h1": "Регистрация завершена",
+      "title": "Регистрация завершена — Мебель Шоп",
+      "meta": [
+        {
+          "name": "description",
+          "content": "Регистрация в интернет-магазине «Мебель Шоп» успешно завершена."
+        },
+        {
+          "name": "keywords",
+          "content": "регистрация завершена"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "canonical": ""
+    },
+    "schemaOrg": [],
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Главная"
+      },
+      {
+        "url": "/success-registration/",
+        "label": "Регистрация завершена"
+      }
+    ],
+    "title": "Аккаунт создан",
+    "text": "Почта подтверждена, личный кабинет готов. Можно возвращаться к покупкам."
+  },
+  "password-recovery": {
+    "seo": {
+      "h1": "Восстановление пароля",
+      "title": "Восстановление пароля — Мебель Шоп",
+      "meta": [
+        {
+          "name": "description",
+          "content": "Восстановление пароля от личного кабинета «Мебель Шоп»."
+        },
+        {
+          "name": "keywords",
+          "content": "восстановление пароля, забыл пароль"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "canonical": ""
+    },
+    "schemaOrg": [],
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Главная"
+      },
+      {
+        "url": "/password-recovery/",
+        "label": "Восстановление пароля"
+      }
+    ],
+    "title": "Восстановление пароля",
+    "text": "Укажите почту, на которую зарегистрирован кабинет — пришлём код для смены пароля."
+  },
+  "new-password": {
+    "seo": {
+      "h1": "Новый пароль",
+      "title": "Новый пароль — Мебель Шоп",
+      "meta": [
+        {
+          "name": "description",
+          "content": "Установка нового пароля от личного кабинета «Мебель Шоп»."
+        },
+        {
+          "name": "keywords",
+          "content": "новый пароль, смена пароля"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        }
+      ],
+      "canonical": ""
+    },
+    "schemaOrg": [],
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Главная"
+      },
+      {
+        "url": "/new-password/",
+        "label": "Новый пароль"
+      }
+    ],
+    "title": "Новый пароль",
+    "text": "Придумайте пароль не короче восьми символов и повторите его."
+  },
+  "register": {
+    "success": true,
+    "message": "Код подтверждения отправлен на указанную почту."
+  },
+  "auth-registration": {
+    "token": "demo-token-mebel-shop",
+    "user": {
+      "id": 1,
+      "name": "Анна Ковалёва",
+      "phone": "+7 (916) 100-20-30",
+      "email": "anna@example.com"
+    }
+  },
+  "code-verification-request": {
+    "success": true,
+    "message": "Почта подтверждена.",
+    "regToken": "demo-reg-token-mebel-shop"
+  },
+  "repeat-code-verification-request": {
+    "success": true,
+    "message": "Новый код отправлен на почту."
+  },
+  "password-recovery-request": {
+    "success": true,
+    "message": "Код для смены пароля отправлен на почту."
+  },
+  "new-password-request": {
+    "success": true,
+    "message": "Пароль изменён. Войдите с новым паролем."
   }
 }
