@@ -137,18 +137,25 @@ export default defineNuxtConfig({
 			staticDemo: process.env.STATIC_DEMO === 'true',
 		},
 	},
+	/* Линтер на лету нужен только в разработке. В продакшн-сборке он лишний:
+	   перед build отрабатывает npm run lint, а в CI линт вынесен отдельным шагом.
+	   Заодно из сборки уходит vite-plugin-checker с его конфликтом версий meow */
+	$development: {
+		vite: {
+			plugins: [
+				checker({
+					eslint: {
+						useFlatConfig: true,
+						lintCommand: 'eslint "**/*.{js,ts,vue}"',
+					},
+					stylelint: {
+						lintCommand: 'stylelint "**/*.{css,scss,vue}"',
+					},
+				}) as any,
+			],
+		},
+	},
 	vite: {
-		plugins: [
-			checker({
-				eslint: {
-					useFlatConfig: true,
-					lintCommand: 'eslint "**/*.{js,ts,vue}"',
-				},
-				stylelint: {
-					lintCommand: 'stylelint "**/*.{css,scss,vue}"',
-				},
-			}) as any,
-		],
 		css: {
 			preprocessorOptions: {
 				scss: {

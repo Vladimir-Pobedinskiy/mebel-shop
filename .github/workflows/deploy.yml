@@ -52,6 +52,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # В сборке линтера больше нет — проверяем код отдельным шагом
+      - name: Lint
+        run: npm run lint
+
       - name: Start json-server
         run: |
           npx json-server --watch db.json --routes routes.json --port 3001 &
