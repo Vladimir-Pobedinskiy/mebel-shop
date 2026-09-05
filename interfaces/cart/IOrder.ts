@@ -1,4 +1,4 @@
-import type { ICartItem } from '@/interfaces/cart/ICartItem'
+import type { ICartItem } from '~~/interfaces/cart/ICartItem'
 
 export interface IOrderCustomer {
 	name: string

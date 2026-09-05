@@ -1,5 +1,5 @@
-import type { IImg } from '@/interfaces/IImg'
-import type { ILink } from '@/interfaces/ILink'
+import type { IImg } from '~~/interfaces/IImg'
+import type { ILink } from '~~/interfaces/ILink'
 
 export interface ICategory {
 	id: number

@@ -1,4 +1,4 @@
-import type { IImg } from '@/interfaces/IImg'
+import type { IImg } from '~~/interfaces/IImg'
 
 export interface ILinkWithImg {
 	url: string

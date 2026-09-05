@@ -1,10 +1,10 @@
-import type { IPageBase } from '@/interfaces/IPageBase'
-import type { IImg } from '@/interfaces/IImg'
-import type { ILink } from '@/interfaces/ILink'
-import type { IProduct } from '@/interfaces/product/IProduct'
-import type { IReview } from '@/interfaces/IReview'
-import type { IArticlePreview } from '@/interfaces/article/IArticlePreview'
-import type { IAdvantage } from '@/interfaces/IAdvantage'
+import type { IPageBase } from '~~/interfaces/IPageBase'
+import type { IImg } from '~~/interfaces/IImg'
+import type { ILink } from '~~/interfaces/ILink'
+import type { IProduct } from '~~/interfaces/product/IProduct'
+import type { IReview } from '~~/interfaces/IReview'
+import type { IArticlePreview } from '~~/interfaces/article/IArticlePreview'
+import type { IAdvantage } from '~~/interfaces/IAdvantage'
 
 export interface IHomeHero {
 	subtitle: string

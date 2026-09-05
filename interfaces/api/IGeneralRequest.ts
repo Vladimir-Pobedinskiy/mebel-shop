@@ -1,4 +1,4 @@
-import type { IHeader, IFooter, ISocialLink, IContacts, ITrustUnit } from '@/interfaces/IGeneral'
+import type { IHeader, IFooter, ISocialLink, IContacts, ITrustUnit } from '~~/interfaces/IGeneral'
 
 export interface IGeneralRequest {
 	header: IHeader

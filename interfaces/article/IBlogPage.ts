@@ -1,7 +1,7 @@
-import type { IPageBase } from '@/interfaces/IPageBase'
-import type { ILink } from '@/interfaces/ILink'
-import type { IPagination } from '@/interfaces/IPagination'
-import type { IArticlePreview } from '@/interfaces/article/IArticlePreview'
+import type { IPageBase } from '~~/interfaces/IPageBase'
+import type { ILink } from '~~/interfaces/ILink'
+import type { IPagination } from '~~/interfaces/IPagination'
+import type { IArticlePreview } from '~~/interfaces/article/IArticlePreview'
 
 /* Раздел блога в списке разделов (табы на списке и внутри раздела) */
 export interface IBlogSection {
