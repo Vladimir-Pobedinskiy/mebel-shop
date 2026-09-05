@@ -10,10 +10,10 @@
 
 ## 0. Доноры и что берём из каждого
 
-| Донор          | Путь                               | Что берём                                                                                                                                                                                              |
-| -------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `avto-landing` | `d:\work\my_projects\avto-landing` | Структура Nuxt 4 (`app/`), версии пакетов, `eslint.config.mjs`, `stylelint.config.mjs`, `.prettierrc`, `.editorconfig`, `tsconfig.json`, `.prettierignore`, husky 9, `lint-staged`, набор npm-скриптов |
-| `rexas`        | `d:\work\my_projects\rexas`        | Флоу регистрации: страницы, формы, модалка кода подтверждения, серверные эндпоинты, секция `auth` в `nuxt.config.ts`                                                                                   |
+| Донор          | Путь                               | Что берём                                                                                                                                                                                                          |
+| -------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `avto-landing` | `d:\work\my_projects\avto-landing` | Структура Nuxt 4 (`app/`), версии пакетов, `eslint.config.mjs`, `stylelint.config.mjs`, `.prettierrc`, `.editorconfig`, `tsconfig.json`, `.prettierignore`, `.vscode/`, husky 9, `lint-staged`, набор npm-скриптов |
+| `rexas`        | `d:\work\my_projects\rexas`        | Флоу регистрации: страницы, формы, модалка кода подтверждения, серверные эндпоинты, секция `auth` в `nuxt.config.ts`                                                                                               |
 
 **Не копировать из доноров:** `.nuxt`, `.output`, `node_modules`, `.git`, `dist`,
 `.env`, ключи (`YANDEX_MAPS_API_KEY`, `PUBLIC_CAPTCHA_KEY`, `API_KEY_CDEK`,
@@ -73,6 +73,7 @@ mebel-shop/
 ├─ db.json, routes.json
 ├─ nuxt.config.ts, tsconfig.json, config.d.ts
 ├─ eslint.config.mjs, stylelint.config.mjs, .prettierrc, .prettierignore, .editorconfig
+├─ .vscode/                (settings.json, extensions.json)
 └─ .github/workflows/deploy.yml
 ```
 
@@ -168,6 +169,7 @@ mebel-shop/
 | `.editorconfig`        | добавить — сейчас его нет                                                                                                  |
 | `tsconfig.json`        | заменить на форму с `references` на `.nuxt/tsconfig.{app,server,shared,node}.json`                                         |
 | `.prettierignore`      | заменить                                                                                                                   |
+| `.vscode/`             | скопировать `settings.json` и `extensions.json`: сохранение файла чинит порядок свойств stylelint и прогоняет eslint       |
 | `config.d.ts`          | добавить, если после обновления `swiper` ругается на `swiper/css`                                                          |
 | `.husky/pre-commit`    | обновить под husky 9: убрать строку с `husky.sh`, оставить `npx lint-staged`                                               |
 | `lint-staged`          | секция из `avto-landing`: `eslint --fix`, `stylelint --fix`, `prettier --write`                                            |
