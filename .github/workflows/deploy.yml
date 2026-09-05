@@ -34,19 +34,23 @@ jobs:
       NUXT_APP_BASE_URL: /mebel-shop/
       # Бэкенда на Pages нет: формы показывают успех, не уходя в /api/
       STATIC_DEMO: 'true'
+      # Git-хуки в CI не нужны и только мешают установке
+      HUSKY: '0'
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Та же версия, что и локально: package-lock.json собран npm 11,
+      # на Node 20 с npm 10 установка падает
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Start json-server
         run: |
