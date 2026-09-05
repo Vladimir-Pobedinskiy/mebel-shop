@@ -30,8 +30,13 @@ const currentIndex = ref<number>(0)
 const currentStep = computed(() => steps.value[currentIndex.value]?.name ?? 'contacts')
 const isLastStep = computed(() => currentIndex.value === steps.value.length - 1)
 
-/* Поля каждого шага — их и проверяем перед переходом дальше */
-const stepFields: Record<string, string[]> = {
+/* Поля каждого шага — их и проверяем перед переходом дальше. Перечислены
+   явным типом: validateField принимает их без приведения, а лишнее поле
+   в шаге ловится на этапе сборки */
+type TCheckoutField =
+	'name' | 'phone' | 'email' | 'deliveryType' | 'city' | 'address' | 'date' | 'paymentType' | 'comment' | 'agreement'
+
+const stepFields: Record<string, TCheckoutField[]> = {
 	contacts: ['name', 'phone', 'email'],
 	delivery: ['deliveryType', 'city', 'address', 'date'],
 	payment: ['paymentType', 'comment'],

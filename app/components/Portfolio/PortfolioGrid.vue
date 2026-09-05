@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { LocationQuery } from 'vue-router'
 import type { IProjectPreview } from '~~/interfaces/portfolio/IPortfolioPage'
 
 const props = defineProps<{
@@ -13,7 +14,7 @@ const router = useRouter()
 const activeCategory = computed(() => String(route.query.type || 'all'))
 
 const setCategory = (slug: string) => {
-	const query = Object.assign({}, route.query, { type: slug })
+	const query: LocationQuery = { ...route.query, type: slug }
 	if (slug === 'all') delete query.type
 
 	router.push({ query })

@@ -113,10 +113,16 @@ export default defineNuxtConfig({
 			priority: 0.7,
 		},
 	},
-	yandexMaps: {
-		apikey: process.env.YANDEX_MAPS_KEY || '',
-		lang: 'ru_RU',
-	},
+	/* Настройки карт задаются только вместе с самим модулем: без ключа он не
+	   подключён, и типа для ключа yandexMaps в конфиге тогда не существует */
+	...(process.env.YANDEX_MAPS_KEY
+		? {
+				yandexMaps: {
+					apikey: process.env.YANDEX_MAPS_KEY,
+					lang: 'ru_RU',
+				},
+			}
+		: {}),
 	nitro: {
 		prerender: {
 			// Страницы ещё нет, а ссылки на неё в шапке и подвале есть:

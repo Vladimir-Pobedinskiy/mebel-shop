@@ -47,8 +47,10 @@ const rangeValue = (filter: IFilter): number[] => {
 const onRangeChange = (filter: IFilter, value: number[]) => {
 	const min = filter.min ?? 0
 	const max = filter.max ?? 0
+	// Ползунок всегда отдаёт пару, но подстраховываемся границами фильтра
+	const [from = min, to = max] = value
 
-	store.setRange(filter.name as ICatalogRangeName, value[0] <= min ? null : value[0], value[1] >= max ? null : value[1])
+	store.setRange(filter.name as ICatalogRangeName, from <= min ? null : from, to >= max ? null : to)
 }
 
 // Шаг ползунка: цена ходит тысячами, габариты — сантиметрами

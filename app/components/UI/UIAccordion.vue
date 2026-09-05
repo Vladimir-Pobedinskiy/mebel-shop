@@ -29,9 +29,11 @@ const emits = defineEmits<{
 		v-slot="{ open }"
 		as="div"
 		:default-open="defaultOpen"
-		:class="['accordion', { accordion_open: open, accordion_compact: isCompact }]"
+		:class="['accordion', { accordion_compact: isCompact }]"
 	>
-		<div v-auto-animate="{ duration: 300 }" class="accordion__inner">
+		<!-- Модификатор раскрытия висит на __inner, а не на корне: open из v-slot
+		     доступен только детям, на самом Disclosure он ещё не определён -->
+		<div v-auto-animate="{ duration: 300 }" :class="['accordion__inner', { accordion__inner_open: open }]">
 			<DisclosureButton class="accordion__head" :disabled="disabled" @click="emits('toggle', !open)">
 				<span :class="['accordion__title', isCompact ? 'title-14' : 'h4']">{{ title }}</span>
 				<span class="accordion__icon-wrapper">
@@ -102,11 +104,13 @@ const emits = defineEmits<{
 		color: variables.$color-ink-soft;
 	}
 
-	&_open {
-		.accordion__icon-wrapper {
-			color: variables.$color-accent;
-			border-color: variables.$color-accent;
-			transform: rotate(180deg);
+	&__inner {
+		&_open {
+			.accordion__icon-wrapper {
+				color: variables.$color-accent;
+				border-color: variables.$color-accent;
+				transform: rotate(180deg);
+			}
 		}
 	}
 

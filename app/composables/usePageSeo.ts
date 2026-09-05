@@ -1,3 +1,4 @@
+import type { ResolvableMeta } from '@unhead/vue'
 import type { ComputedRef } from 'vue'
 import type { ISeo } from '~~/interfaces/seo/ISeo'
 import type { ISchemaOrg, ISchemaOrgNode } from '~~/interfaces/seo/ISchemaOrg'
@@ -56,7 +57,10 @@ export const usePageSeo = (data: ComputedRef<ISeoPageData | null | undefined>, o
 		useHead({
 			title: data.value.seo.title,
 			link: [{ rel: 'canonical', href: canonical.value }],
-			meta: metaComputed.value,
+			/* ResolvableMeta — объединение вариантов, каждый со своим опознавательным
+			   ключом. Список ниже смешивает теги с name и с property, и вывод типов
+			   сводит их к форме, которая не подходит ни под один вариант */
+			meta: metaComputed.value as ResolvableMeta[],
 		})
 	}
 

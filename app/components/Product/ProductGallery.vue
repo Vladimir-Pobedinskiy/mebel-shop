@@ -39,7 +39,9 @@ const slides = computed<IGallerySlide[]>(() => {
 
 const activeIndex = ref<number>(0)
 
-const activeSlide = computed(() => slides.value[activeIndex.value] || slides.value[0])
+/* Разметка галереи рендерится только при непустом slides (v-if в шаблоне),
+   поэтому первый слайд здесь всегда есть */
+const activeSlide = computed(() => slides.value[activeIndex.value] ?? slides.value[0]!)
 
 const setActive = (index: number) => {
 	activeIndex.value = index

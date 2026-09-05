@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { LocationQuery } from 'vue-router'
 const props = withDefaults(
 	defineProps<{
 		pageTotal: number
@@ -56,7 +57,7 @@ const croppedPages = computed(() => {
 const onPage = (n: number | string) => {
 	if (n === '...') return
 
-	const query = Object.assign({}, route.query, { page: n })
+	const query: LocationQuery = { ...route.query, page: String(n) }
 	if (Number(n) === 1) delete query.page
 
 	router.push({ query })

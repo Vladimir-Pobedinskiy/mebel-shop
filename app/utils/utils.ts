@@ -12,10 +12,11 @@ export const screens = {
 	fourK: '3840px',
 }
 
-/* Склонение числительных */
-export const declOfNum = (number: number, txt: string) => {
+/* Склонение числительных. Второй аргумент — три формы: «товар», «товара», «товаров» */
+export const declOfNum = (number: number, txt: string[]) => {
 	const cases = [2, 0, 1, 1, 1, 2]
-	return txt[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]]
+	const caseIndex = number % 100 > 4 && number % 100 < 20 ? 2 : (cases[number % 10 < 5 ? number % 10 : 5] ?? 2)
+	return txt[caseIndex] ?? ''
 }
 
 // priceFormatter
@@ -23,7 +24,7 @@ export const priceFormatter = (value: number) => {
 	if (value === null || value === undefined) return ''
 	if (value === 0) return '0 ₽'
 	const parts = value.toString().split('.')
-	parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0')
+	parts[0] = (parts[0] ?? '').replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0')
 	return `${parts.join(',')} ₽`
 }
 
