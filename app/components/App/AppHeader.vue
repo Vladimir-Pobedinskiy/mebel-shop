@@ -203,11 +203,8 @@ watch(
 						</ClientOnly>
 					</NuxtLink>
 
-					<NuxtLink
-						class="header__action header__action_hide-mobile"
-						to="/personal-account/orders/"
-						aria-label="Личный кабинет"
-					>
+					<!-- Личного кабинета пока нет, поэтому иконка ведёт на вход -->
+					<NuxtLink class="header__action header__action_hide-mobile" to="/login/" aria-label="Вход в аккаунт">
 						<NuxtIcon class="header__action-icon" name="icon-user" filled />
 					</NuxtLink>
 

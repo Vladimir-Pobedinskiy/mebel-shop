@@ -177,8 +177,11 @@ export default defineNuxtConfig({
 	auth: {
 		globalAppMiddleware: false,
 		disableServerSideAuth: false,
-		originEnvKey: process.env.BASE_URL,
-		baseURL: `${process.env.BASE_URL}/api/`,
+		/* Свой /api/, а не адрес json-server. Модуль ходит по этим путям сам,
+		   и POST напрямую в json-server перезаписывал бы ключ-заглушку телом
+		   запроса: singular-ресурс отвечает на POST заменой значения.
+		   Наши обработчики в server/api/auth-* читают заглушку через GET */
+		baseURL: '/api/',
 		provider: {
 			type: 'local',
 			pages: {
