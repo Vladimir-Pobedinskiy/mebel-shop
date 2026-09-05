@@ -4,6 +4,7 @@ import { useMenuStore } from '@/stores/storeMenu'
 import { useReducedMotion } from '@/composables/useReducedMotion'
 import { useSwipeHandler } from '@/composables/useSwipeHandler'
 import { useCommercialModals } from '@/composables/useCommercialModals'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 import { screens } from '@/utils/utils'
 
 withDefaults(
@@ -27,6 +28,7 @@ const contacts = computed(() => storeGeneral.contacts)
 const socials = computed(() => storeGeneral.socials)
 
 const { openCallback, openCalcPrice } = useCommercialModals()
+const { assetUrl } = useAssetUrl()
 
 const storeMenu = useMenuStore()
 const menuName = computed(() => storeMenu.menuName)
@@ -139,7 +141,7 @@ onUnmounted(() => {
 							<UIButton
 								v-if="contacts?.catalogFile"
 								as="a"
-								:href="contacts.catalogFile.url"
+								:href="assetUrl(contacts.catalogFile.url)"
 								variant="secondary"
 								color="dark"
 								size="small"

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useGeneralStore } from '@/stores/storeGeneral'
 import { useGLightbox } from '@/composables/useGLightbox'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
 /* Сквозной блок доверия: сертификаты, фото производства, счётчики и отзывы.
@@ -15,6 +16,8 @@ const props = withDefaults(
 		reviewsRole: 'all',
 	}
 )
+
+const { assetUrl } = useAssetUrl()
 
 const storeGeneral = useGeneralStore()
 const trustUnit = computed(() => storeGeneral.trustUnit)
@@ -58,7 +61,7 @@ onMounted(() => {
 					<li v-for="item in trustUnit.certificates.items" :key="item.title" class="trust-unit__certificate">
 						<a
 							class="trust-unit__certificate-media glightbox-trust"
-							:href="item.img.url"
+							:href="assetUrl(item.img.url)"
 							data-gallery="trust-certificates"
 							:aria-label="`Открыть документ: ${item.title}`"
 						>
@@ -98,7 +101,7 @@ onMounted(() => {
 					<li v-for="img in trustUnit.production.gallery" :key="img.url" class="trust-unit__production-item">
 						<a
 							class="trust-unit__production-media glightbox-trust"
-							:href="img.url"
+							:href="assetUrl(img.url)"
 							data-gallery="trust-production"
 							:aria-label="`Открыть фото: ${img.alt}`"
 						>

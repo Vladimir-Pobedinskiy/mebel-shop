@@ -2,6 +2,7 @@
 import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 withDefaults(
 	defineProps<{
@@ -16,6 +17,8 @@ withDefaults(
 const isOpen = defineModel<boolean>('modelValue', { default: false })
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Консультация из каталога: минимум полей — имя, телефон и вопрос */
 const validationSchema = yup.object({
@@ -44,7 +47,10 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/ask-question/', { method: 'POST', body: values })
+		await submitForm('/api/ask-question/', values, {
+			success: true,
+			message: 'Спасибо! Мы получили вопрос и ответим в течение 15 минут.',
+		})
 
 		showToast({ title: 'Заявка отправлена', text: 'Ответим в течение 15 минут в рабочее время' })
 		resetForm()

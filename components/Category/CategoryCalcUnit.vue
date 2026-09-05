@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import type { ICategoryCalcUnit } from '@/interfaces/catalog/ICategoryUnits'
 import { useGsapReveal, splitTextToSpans } from '@/composables/useGsapReveal'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 const props = withDefaults(
 	defineProps<{
@@ -21,6 +22,8 @@ const titleRef = ref<HTMLElement | null>(null)
 
 const { createAnimation } = useGsapReveal()
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Быстрый расчёт: те же правила, что в форме дизайн-проекта на главной,
    плюс размеры проёма — без них считать нечего */
@@ -52,7 +55,11 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/calculate-project/', { method: 'POST', body: { ...values, subject: props.subject } })
+		await submitForm(
+			'/api/calculate-project/',
+			{ ...values, subject: props.subject },
+			{ success: true, message: 'Заявка на дизайн-проект принята.' }
+		)
 
 		showToast({ title: 'Заявка на расчёт принята', text: 'Пришлём смету в течение рабочего дня' })
 		resetForm()

@@ -1,6 +1,9 @@
 module.exports = {
 	extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],
 	plugins: [],
+	// Собранная и минифицированная вёрстка не проверяется: иначе повторный
+	// npm run generate падает на собственном выводе в dist/ и .output/
+	ignoreFiles: ['dist/**', '.output/**', '.nuxt/**', 'node_modules/**'],
 	rules: {
 		'block-no-empty': process.env.NODE_ENV === 'production' ? true : null,
 		'color-hex-length': 'long',

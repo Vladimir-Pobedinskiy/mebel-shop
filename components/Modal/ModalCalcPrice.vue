@@ -3,6 +3,7 @@ import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import { useGeneralStore } from '@/stores/storeGeneral'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 const props = withDefaults(
 	defineProps<{
@@ -20,6 +21,8 @@ const storeGeneral = useGeneralStore()
 const contacts = computed(() => storeGeneral.contacts)
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Расчёт стоимости: без размеров проёма считать нечего, поэтому поле обязательное */
 const validationSchema = yup.object({
@@ -50,7 +53,11 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/calculate-project/', { method: 'POST', body: { ...values, subject: props.subject } })
+		await submitForm(
+			'/api/calculate-project/',
+			{ ...values, subject: props.subject },
+			{ success: true, message: 'Заявка на дизайн-проект принята.' }
+		)
 
 		showToast({
 			title: 'Заявка на расчёт принята',

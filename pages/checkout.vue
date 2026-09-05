@@ -4,12 +4,13 @@ import * as yup from 'yup'
 import type { ICheckoutPage } from '@/interfaces/checkout/ICheckoutPage'
 import type { ICheckoutOrderResponse } from '@/interfaces/checkout/ICheckoutOrderResponse'
 import { useCartStore } from '@/stores/storeCart'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 import { priceFormatter, productsCountLabel } from '@/utils/utils'
 
-const { data, error, status } = await useAsyncData('checkout-page', async () =>
-	$fetch<ICheckoutPage>('/api/checkout/')
-)
+const { data, error, status } = await useAsyncData('checkout-page', async () => $fetch<ICheckoutPage>('/api/checkout/'))
 const pending = computed(() => status.value === 'pending')
+
+const { submitForm } = useFormSubmit()
 
 if (error.value) {
 	throw createError({
@@ -136,23 +137,26 @@ const onSubmit = async () => {
 	isSending.value = true
 
 	try {
-		const response = await $fetch<ICheckoutOrderResponse>('/api/checkout-order/', {
-			method: 'POST',
-			body: {
-				customer: { name: values.name, phone: values.phone, email: values.email },
-				delivery: {
-					type: selectedDelivery.value?.label ?? '',
-					city: values.city,
-					address: values.address,
-					date: values.date,
-					price: deliveryPrice.value,
-				},
-				payment: selectedPayment.value?.label ?? '',
-				comment: values.comment,
-				items: storeCart.items,
-				discount: storeCart.discount + storeCart.promoDiscount,
-				total: storeCart.totalPrice + deliveryPrice.value,
+		const order = {
+			customer: { name: values.name, phone: values.phone, email: values.email },
+			delivery: {
+				type: selectedDelivery.value?.label ?? '',
+				city: values.city,
+				address: values.address,
+				date: values.date,
+				price: deliveryPrice.value,
 			},
+			payment: selectedPayment.value?.label ?? '',
+			comment: values.comment,
+			items: storeCart.items,
+			discount: storeCart.discount + storeCart.promoDiscount,
+			total: storeCart.totalPrice + deliveryPrice.value,
+		}
+
+		const response = await submitForm<ICheckoutOrderResponse>('/api/checkout-order/', order, {
+			success: true,
+			message: 'Заказ оформлен',
+			number: 'МШ-26-004518',
 		})
 
 		isOrderPlaced.value = true

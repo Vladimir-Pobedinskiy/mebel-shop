@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import type { ICategoryProjectsUnit } from '@/interfaces/catalog/ICategoryUnits'
 import { useGLightbox } from '@/composables/useGLightbox'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
 defineProps<{
 	projectsUnit: ICategoryProjectsUnit
 }>()
+
+const { assetUrl } = useAssetUrl()
 
 useGLightbox()
 
@@ -42,7 +45,7 @@ onMounted(() => {
 				<li v-for="img in projectsUnit.gallery" :key="img.url" class="category-projects__item">
 					<a
 						class="category-projects__media glightbox"
-						:href="img.url"
+						:href="assetUrl(img.url)"
 						data-gallery="category-projects"
 						:aria-label="`Открыть фото: ${img.alt}`"
 					>

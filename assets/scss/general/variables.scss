@@ -53,6 +53,12 @@ $color-telegram: #00b2ff;
 $container-width: 1392px;
 $padding-offset: max(16px, calc((100% - 1360px) / 2));
 
+/* Высота шапки: строка контактов (46px + разделитель) + основной ряд + нижняя граница.
+   До 1024px строка контактов скрыта. На эту величину .pull-under-header поднимает первый экран */
+$header-height: 65px;
+$header-height-desktop-small: 112px;
+$header-height-desktop: 128px;
+
 /* Скругления и тени */
 $radius-s: 8px;
 $radius-m: 16px;

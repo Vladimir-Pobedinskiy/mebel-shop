@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import type { IImg } from '@/interfaces/IImg'
 import { useGLightbox } from '@/composables/useGLightbox'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
 defineProps<{
 	gallery: IImg[]
 	title: string
 }>()
+
+const { assetUrl } = useAssetUrl()
 
 useGLightbox()
 
@@ -24,7 +27,7 @@ onMounted(() => {
 		<li v-for="(img, index) in gallery" :key="img.url" class="portfolio-gallery__item">
 			<a
 				class="portfolio-gallery__link glightbox hover-scale"
-				:href="img.url"
+				:href="assetUrl(img.url)"
 				:data-gallery="`portfolio-${title}`"
 				:aria-label="`Открыть фото: ${img.alt}`"
 			>

@@ -3,6 +3,7 @@ import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import type { IProductDetails } from '@/interfaces/product/IProduct'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 import { priceFormatter } from '@/utils/utils'
 
 const props = defineProps<{
@@ -10,6 +11,8 @@ const props = defineProps<{
 }>()
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Расчёт по модели: те же правила, что в форме раздела, плюс размеры проёма —
    без них конструктор не посчитает смету */
@@ -48,10 +51,11 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/calculate-project/', {
-			method: 'POST',
-			body: { ...values, subject: props.product.title, productUrl: props.product.url },
-		})
+		await submitForm(
+			'/api/calculate-project/',
+			{ ...values, subject: props.product.title, productUrl: props.product.url },
+			{ success: true, message: 'Заявка на дизайн-проект принята.' }
+		)
 
 		showToast({ title: 'Заявка на расчёт принята', text: 'Пришлём смету в течение рабочего дня' })
 		resetForm()

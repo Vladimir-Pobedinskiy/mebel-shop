@@ -6,6 +6,7 @@ import { useFavoritesStore } from '@/stores/storeFavorites'
 import { useCompareStore } from '@/stores/storeCompare'
 import { useScreenHandler } from '@/composables/useScreenHandler'
 import { useCommercialModals } from '@/composables/useCommercialModals'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 import { screens } from '@/utils/utils'
 
 const route = useRoute()
@@ -19,6 +20,7 @@ const contacts = computed(() => storeGeneral.contacts)
 
 /* Коммерческие кнопки шапки открывают общие модалки из AppCommercialModals */
 const { openCallback, openCalcPrice } = useCommercialModals()
+const { assetUrl } = useAssetUrl()
 
 const storeMenu = useMenuStore()
 const menuName = computed(() => storeMenu.menuName)
@@ -126,7 +128,7 @@ watch(
 					<a
 						v-if="contacts?.catalogFile"
 						class="header__top-line-link text-xs hover-link"
-						:href="contacts.catalogFile.url"
+						:href="assetUrl(contacts.catalogFile.url)"
 						:title="`${contacts.catalogFile.title}, ${contacts.catalogFile.size}`"
 						download
 					>
@@ -143,14 +145,9 @@ watch(
 						{{ header.phone.label }}
 					</a>
 
-					<UIButton
-						class="header__top-line-btn"
-						as="button"
-						type="button"
-						size="small"
-						label="Рассчитать стоимость"
-						@click="openCalcPrice('')"
-					/>
+					<button class="header__top-line-btn button-typo" type="button" @click="openCalcPrice('')">
+						Рассчитать стоимость
+					</button>
 				</div>
 			</div>
 		</div>
@@ -217,10 +214,7 @@ watch(
 					<NuxtLink class="header__action header__action_cart" to="/cart/" aria-label="Корзина" data-cart-target>
 						<NuxtIcon class="header__action-icon" name="icon-cart" filled />
 						<ClientOnly>
-							<span
-								v-if="storeCart.totalCount"
-								:class="['header__counter', { 'header__counter_bump': isCounterBumped }]"
-							>
+							<span v-if="storeCart.totalCount" :class="['header__counter', { header__counter_bump: isCounterBumped }]">
 								{{ storeCart.totalCount }}
 							</span>
 						</ClientOnly>
@@ -332,10 +326,23 @@ watch(
 		gap: 24px;
 	}
 
+	// При нехватке ширины ужимается промо-строка, а не контакты справа
+	&__top-line-text {
+		overflow: hidden;
+		min-width: 0;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
 	&__top-line-actions {
 		display: flex;
+		flex-shrink: 0;
 		align-items: center;
-		gap: 20px;
+		gap: 16px;
+
+		@media (min-width: variables.$desktop) {
+			gap: 20px;
+		}
 	}
 
 	&__top-line-link {
@@ -345,6 +352,7 @@ watch(
 		color: inherit;
 		cursor: pointer;
 		gap: 6px;
+		white-space: nowrap;
 	}
 
 	&__top-line-icon {
@@ -353,12 +361,28 @@ watch(
 	}
 
 	&__top-line-phone {
+		white-space: nowrap;
 		font-weight: 600;
 	}
 
-	// Кнопка расчёта выступает за нижнюю границу строки — это главный CTA шапки
+	// Компактный CTA: обычная кнопка в 40px распирает строку контактов
 	&__top-line-btn {
-		margin: -6px 0;
+		height: 30px;
+		padding: 0 16px;
+		display: flex;
+		align-items: center;
+		border-radius: 999px;
+		background-color: variables.$color-accent;
+		color: variables.$color-white;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+		white-space: nowrap;
+
+		@media (min-width: variables.$desktop-small) {
+			&:hover {
+				background-color: variables.$color-accent-hover;
+			}
+		}
 	}
 
 	&__inner {
@@ -574,5 +598,4 @@ watch(
 		cursor: default;
 	}
 }
-
 </style>

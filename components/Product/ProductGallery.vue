@@ -2,6 +2,7 @@
 import type { IImg } from '@/interfaces/IImg'
 import type { IProductBadge, IProductVideo } from '@/interfaces/product/IProduct'
 import { useGLightbox } from '@/composables/useGLightbox'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 
 interface IGallerySlide {
 	url: string
@@ -22,6 +23,8 @@ const props = withDefaults(
 		video: null,
 	}
 )
+
+const { assetUrl } = useAssetUrl()
 
 useGLightbox()
 
@@ -62,7 +65,7 @@ watch(
 
 			<a
 				:class="['product-gallery__zoom glightbox', { 'product-gallery__zoom_video': activeSlide.isVideo }]"
-				:href="activeSlide.url"
+				:href="assetUrl(activeSlide.url)"
 				:data-type="activeSlide.isVideo ? 'video' : undefined"
 				:data-gallery="`product-${title}`"
 				:aria-label="activeSlide.isVideo ? `Смотреть видео: ${title}` : `Открыть фото: ${activeSlide.img.alt}`"

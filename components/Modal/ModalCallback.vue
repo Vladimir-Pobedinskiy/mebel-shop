@@ -3,6 +3,7 @@ import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import { useGeneralStore } from '@/stores/storeGeneral'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 const isOpen = defineModel<boolean>('modelValue', { default: false })
 
@@ -10,6 +11,8 @@ const storeGeneral = useGeneralStore()
 const contacts = computed(() => storeGeneral.contacts)
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Обратный звонок: имя, телефон и удобное время — остальное менеджер уточнит сам */
 const validationSchema = yup.object({
@@ -38,7 +41,10 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/callback/', { method: 'POST', body: values })
+		await submitForm('/api/callback/', values, {
+			success: true,
+			message: 'Заявка принята, менеджер перезвонит в ближайшее время.',
+		})
 
 		showToast({
 			title: 'Заявка на звонок принята',

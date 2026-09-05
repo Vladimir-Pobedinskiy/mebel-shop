@@ -3,6 +3,7 @@ import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import type { IProduct } from '@/interfaces/product/IProduct'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 import { priceFormatter } from '@/utils/utils'
 
 const props = defineProps<{
@@ -12,6 +13,8 @@ const props = defineProps<{
 const isOpen = defineModel<boolean>('modelValue', { default: false })
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Быстрый заказ: только имя и телефон, остальное менеджер уточняет по звонку */
 const validationSchema = yup.object({
@@ -38,10 +41,11 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/callback/', {
-			method: 'POST',
-			body: { ...values, product: props.product.title, productUrl: props.product.url },
-		})
+		await submitForm(
+			'/api/callback/',
+			{ ...values, product: props.product.title, productUrl: props.product.url },
+			{ success: true, message: 'Заявка принята, менеджер перезвонит в ближайшее время.' }
+		)
 
 		showToast({ title: 'Заказ принят', text: 'Ответим в течение 15 минут в рабочее время' })
 		resetForm()

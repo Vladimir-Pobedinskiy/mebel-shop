@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import type { IProductFile } from '@/interfaces/product/IProduct'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 
 defineProps<{
 	files: IProductFile[]
 }>()
+
+const { assetUrl } = useAssetUrl()
 
 /* Иконка по типу файла: отдельная иконка есть только у PDF,
    чертежи и 3D-модели получают общую иконку загрузки */
@@ -27,7 +30,7 @@ const fileTypeLabel = (type: IProductFile['type']) => {
 
 		<ul class="product-files__list">
 			<li v-for="file in files" :key="file.url" class="product-files__item">
-				<a class="product-files__link" :href="file.url" download target="_blank" rel="noopener">
+				<a class="product-files__link" :href="assetUrl(file.url)" download target="_blank" rel="noopener">
 					<NuxtIcon class="product-files__icon" :name="fileIcon(file.type)" filled />
 
 					<span class="product-files__body">

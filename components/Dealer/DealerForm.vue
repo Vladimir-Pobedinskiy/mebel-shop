@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 withDefaults(
 	defineProps<{
@@ -39,6 +40,8 @@ const { value: comment, errorMessage: commentError } = useField<string>('comment
 const { value: agreement, errorMessage: agreementError } = useField<boolean>('agreement')
 
 const isSending = ref<boolean>(false)
+
+const { submitForm } = useFormSubmit()
 const isToastShown = ref<boolean>(false)
 const toastType = ref<'success' | 'error'>('success')
 const toastTitle = ref<string>('')
@@ -48,9 +51,9 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		const response = await $fetch<{ success: boolean; message: string }>('/api/become-dealer-application/', {
-			method: 'POST',
-			body: values,
+		const response = await submitForm('/api/become-dealer-application/', values, {
+			success: true,
+			message: 'Заявка отправлена, менеджер по партнёрам свяжется с вами.',
 		})
 
 		toastType.value = 'success'

@@ -1,0 +1,73 @@
+# Статическая витрина «Мебель Шоп» на GitHub Pages.
+# Данные из db.json запекаются в HTML на этапе сборки: json-server нужен только здесь,
+# после деплоя сайт работает без бэкенда.
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ['main']
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    env:
+      # Адрес json-server, который поднимаем ниже
+      BASE_URL: http://localhost:3001
+      # Адрес витрины: идёт в canonical, Open Graph и sitemap.xml
+      SITE_URL: https://vladimir-pobedinskiy.github.io/mebel-shop
+      # Проект лежит в подпапке домена — префикс для ассетов и ссылок
+      NUXT_APP_BASE_URL: /mebel-shop/
+      # Бэкенда на Pages нет: формы показывают успех, не уходя в /api/
+      STATIC_DEMO: 'true'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start json-server
+        run: |
+          npx json-server --watch db.json --routes routes.json --port 3001 &
+          for i in $(seq 1 60); do
+            curl -sf http://localhost:3001/api/general/ > /dev/null && break
+            sleep 1
+          done
+          curl -sf http://localhost:3001/api/general/ > /dev/null || { echo 'json-server не поднялся'; exit 1; }
+
+      - name: Generate static site
+        run: npm run generate
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './.output/public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

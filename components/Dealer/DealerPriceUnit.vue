@@ -2,6 +2,7 @@
 import type { IDealerPriceUnit } from '@/interfaces/content/IContentPages'
 import { useCommercialModals } from '@/composables/useCommercialModals'
 import { useGsapReveal } from '@/composables/useGsapReveal'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 
 const props = defineProps<{
 	priceUnit: IDealerPriceUnit
@@ -10,6 +11,8 @@ const props = defineProps<{
 /* Прайс можно забрать двумя способами: скачать файл или получить письмом —
    форму отправки открывает общая модалка ModalPriceRequest */
 const { openPriceRequest } = useCommercialModals()
+
+const { assetUrl } = useAssetUrl()
 
 const rootRef = ref<HTMLElement | null>(null)
 
@@ -47,7 +50,7 @@ onMounted(() => {
 				<div class="dealer-price__actions">
 					<UIButton
 						as="a"
-						:href="priceUnit.file.url"
+						:href="assetUrl(priceUnit.file.url)"
 						:label="priceUnit.file.label"
 						icon="icon-download"
 						download

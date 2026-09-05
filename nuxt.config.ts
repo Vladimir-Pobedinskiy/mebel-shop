@@ -12,6 +12,18 @@ const noindexRoutes = [
 	'/personal-account/**',
 ]
 
+/* Адрес витрины. Когда проект живёт в подпапке домена (GitHub Pages), модулям
+   site-config — sitemap и schema.org — нужен origin: базовый префикс они
+   подставляют в путь сами, и полный адрес дал бы его дважды.
+   usePageSeo работает с полным адресом из runtimeConfig.public.siteUrl. */
+const siteUrl = process.env.SITE_URL || ''
+const siteOrigin = siteUrl ? new URL(siteUrl).origin : undefined
+
+/* Базовый путь витрины: '/' в обычной сборке, '/mebel-shop/' на GitHub Pages.
+   Адреса в sitemap модуль сверяет уже с префиксом, поэтому исключения тоже с ним */
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+const withBase = (route: string) => (baseURL === '/' ? route : `${baseURL.replace(/\/$/, '')}${route}`)
+
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	devtools: { enabled: false },
@@ -70,7 +82,7 @@ export default defineNuxtConfig({
 		},
 	},
 	site: {
-		url: process.env.SITE_URL,
+		url: siteOrigin,
 		name: 'Мебель Шоп',
 		description: 'Интернет-магазин мебели «Мебель Шоп»: диваны, кровати, шкафы, кухни и столы с доставкой и сборкой',
 		defaultLocale: 'ru', // not needed if you have @nuxtjs/i18n installed
@@ -81,10 +93,15 @@ export default defineNuxtConfig({
 	robots: {
 		// В robots.txt закрывающий слэш уже покрывает вложенные адреса, glob-звёздочки не нужны
 		disallow: noindexRoutes.map(route => route.replace('/**', '/')),
+		// robots.txt читается только из корня домена. Когда витрина собирается в подпапку
+		// (GitHub Pages), файл отдать некуда — модуль в этом случае откажется его собирать
+		robotsTxt: !process.env.NUXT_APP_BASE_URL,
 	},
 	sitemap: {
 		autoLastmod: true,
-		exclude: noindexRoutes,
+		// Корневой маршрут витрины в подпапке приходит в модуль уже с префиксом и получает
+		// его второй раз — этот ложный адрес убираем. Главная попадает в карту отдельно
+		exclude: [...noindexRoutes.map(withBase), ...(baseURL === '/' ? [] : [withBase(baseURL)])],
 		// Динамические URL (категории, коллекции, товары, статьи, проекты) отдаёт свой эндпоинт
 		sources: ['/api/__sitemap__/urls'],
 		defaults: {
@@ -96,6 +113,19 @@ export default defineNuxtConfig({
 		apikey: process.env.YANDEX_MAPS_KEY || '',
 		lang: 'ru_RU',
 	},
+	nitro: {
+		prerender: {
+			// Страницы ещё нет, а ссылки на неё в шапке и подвале есть:
+			// без этого краулер получает 404 и роняет nuxt generate.
+			// Регулярка, а не строка: при сборке в подпапку домена путь идёт с префиксом.
+			// Личный кабинет по той же причине: ссылка в шапке есть, страницы ещё нет
+			ignore: [/\/sale\/$/, /\/personal-account\//],
+			// Маршруты без завершающего слэша (их добавляет сам Nuxt) отвечают редиректом.
+			// С autoSubfolderIndex они писались бы в тот же index.html, что и готовая
+			// страница, и затирали её заглушкой-редиректом — храним их отдельными .html
+			autoSubfolderIndex: false,
+		},
+	},
 	css: ['normalize.css', 'vue-final-modal/style.css', '~/assets/css/main.css', '~/assets/scss/main.scss'],
 	runtimeConfig: {
 		public: {
@@ -103,6 +133,8 @@ export default defineNuxtConfig({
 			siteUrl: process.env.SITE_URL,
 			// Флаг для страниц: без ключа модуль карт не подключён, показываем список салонов
 			yandexMapsEnabled: Boolean(process.env.YANDEX_MAPS_KEY),
+			// Витрина без бэкенда (GitHub Pages): формы показывают успех, не уходя в /api/
+			staticDemo: process.env.STATIC_DEMO === 'true',
 		},
 	},
 	vite: {

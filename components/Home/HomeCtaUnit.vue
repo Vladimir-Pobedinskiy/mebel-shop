@@ -4,12 +4,15 @@ import * as yup from 'yup'
 import type { IImg } from '@/interfaces/IImg'
 import { useGsapReveal, splitTextToSpans } from '@/composables/useGsapReveal'
 import { useMagneticHover } from '@/composables/useMagneticHover'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 defineProps<{
 	ctaUnit: { title: string; text: string; img: IImg; note: string }
 }>()
 
 const rootRef = ref<HTMLElement | null>(null)
+
+const { submitForm } = useFormSubmit()
 const titleRef = ref<HTMLElement | null>(null)
 const mediaRef = ref<HTMLElement | null>(null)
 
@@ -48,7 +51,7 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		await $fetch('/api/calculate-project/', { method: 'POST', body: values })
+		await submitForm('/api/calculate-project/', values, { success: true, message: 'Заявка на дизайн-проект принята.' })
 
 		toastType.value = 'success'
 		toastTitle.value = 'Заявка отправлена'

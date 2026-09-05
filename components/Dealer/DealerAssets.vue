@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import type { IDealerAssetsUnit, IDealerFile } from '@/interfaces/content/IContentPages'
 import { useGsapReveal } from '@/composables/useGsapReveal'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 
 defineProps<{
 	assetsUnit: IDealerAssetsUnit
 }>()
+
+const { assetUrl } = useAssetUrl()
 
 /* Своя иконка есть только у PDF, остальным типам — общая иконка загрузки */
 const fileIcon = (type: IDealerFile['type']) => (type === 'pdf' ? 'icon-pdf' : 'icon-download')
@@ -27,7 +30,7 @@ onMounted(() => {
 
 		<ul class="dealer-assets__list">
 			<li v-for="file in assetsUnit.files" :key="file.url" class="dealer-assets__item">
-				<a class="dealer-assets__link" :href="file.url" download>
+				<a class="dealer-assets__link" :href="assetUrl(file.url)" download>
 					<NuxtIcon class="dealer-assets__icon" :name="fileIcon(file.type)" filled />
 
 					<span class="dealer-assets__body">

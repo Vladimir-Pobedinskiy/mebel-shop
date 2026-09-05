@@ -3,6 +3,7 @@ import { useForm, useField } from 'vee-validate'
 import * as yup from 'yup'
 import { useGeneralStore } from '@/stores/storeGeneral'
 import { useToaster } from '@/composables/useToaster'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
 withDefaults(
 	defineProps<{
@@ -20,6 +21,8 @@ const storeGeneral = useGeneralStore()
 const contacts = computed(() => storeGeneral.contacts)
 
 const { showToast } = useToaster()
+
+const { submitForm } = useFormSubmit()
 
 /* Прайс уходит на почту, поэтому e-mail и компания обязательны: по ним менеджер
    считает условия под объём дилера */
@@ -53,9 +56,9 @@ const onSubmit = handleSubmit(async values => {
 	isSending.value = true
 
 	try {
-		const response = await $fetch<{ success: boolean; message: string }>('/api/price-request/', {
-			method: 'POST',
-			body: values,
+		const response = await submitForm('/api/price-request/', values, {
+			success: true,
+			message: 'Прайс-лист отправлен на указанную почту. Если письма нет — проверьте папку «Спам».',
 		})
 
 		showToast({

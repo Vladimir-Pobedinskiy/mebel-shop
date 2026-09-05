@@ -129,16 +129,16 @@ body {
 // Значения равны реальной высоте AppHeader на каждом брейкпоинте: только так секция
 // с min-height: 100svh занимает ровно экран и снизу не выглядывает следующая.
 .pull-under-header {
-	margin-top: -65px;
-	padding-top: 65px;
+	margin-top: -#{variables.$header-height};
+	padding-top: variables.$header-height;
 
 	@media (min-width: variables.$desktop-small) {
-		margin-top: -99px;
-		padding-top: 99px;
+		margin-top: -#{variables.$header-height-desktop-small};
+		padding-top: variables.$header-height-desktop-small;
 	}
 
 	@media (min-width: variables.$desktop) {
-		margin-top: -115px;
-		padding-top: 115px;
+		margin-top: -#{variables.$header-height-desktop};
+		padding-top: variables.$header-height-desktop;
 	}
 }
