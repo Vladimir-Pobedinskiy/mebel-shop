@@ -21,12 +21,7 @@ usePageSeo(computed(() => data.value))
 
 		<template v-if="data">
 			<div class="container">
-				<ContentIntro
-					:breadcrumbs="data.breadcrumbs"
-					:title="data.seo.h1"
-					:text="data.description"
-					subtitle="Блог"
-				>
+				<ContentIntro :breadcrumbs="data.breadcrumbs" :title="data.seo.h1" :text="data.description" subtitle="Блог">
 					<template #content>
 						<BlogSections :sections="data.sections" active-slug="all" />
 					</template>

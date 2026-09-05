@@ -58,10 +58,10 @@ usePageSeo(computed(() => data.value))
 		gap: 16px;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 32px;
 		padding: 24px;
-		border-radius: variables.$radius-m;
+		margin-top: 32px;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__note {

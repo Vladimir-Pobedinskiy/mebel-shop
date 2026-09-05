@@ -30,15 +30,15 @@ withDefaults(
 @use '@/assets/scss/general/variables';
 
 .socials-link {
-	width: 44px;
-	min-width: 44px;
-	height: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 44px;
+	min-width: 44px;
+	height: 44px;
+	background-color: transparent;
 	border: 1px solid transparent;
 	border-radius: 50%;
-	background-color: transparent;
 	transition:
 		background-color 0.3s ease-in-out,
 		color 0.3s ease-in-out,
@@ -46,20 +46,20 @@ withDefaults(
 
 	@media (min-width: variables.$desktop-small) {
 		&:hover {
+			color: variables.$color-white;
 			background-color: variables.$color-accent;
 			border-color: variables.$color-accent;
-			color: variables.$color-white;
 		}
 	}
 
 	&_dark {
-		border-color: variables.$color-line;
 		color: variables.$color-ink;
+		border-color: variables.$color-line;
 	}
 
 	&_white {
-		border-color: rgba(255 255 255 / 30%);
 		color: variables.$color-white;
+		border-color: rgb(255 255 255 / 30%);
 	}
 
 	&__icon {

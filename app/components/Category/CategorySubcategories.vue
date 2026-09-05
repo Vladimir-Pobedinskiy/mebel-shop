@@ -92,12 +92,12 @@ onMounted(() => {
 
 	&__link {
 		display: flex;
-		overflow: hidden;
-		width: 100%;
 		flex-direction: column;
+		width: 100%;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 		transition: border-color 0.4s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -128,9 +128,9 @@ onMounted(() => {
 		left: 12px;
 		display: inline-flex;
 		padding: 6px 12px;
-		border-radius: 999px;
-		background-color: variables.$color-surface;
 		color: variables.$color-ink-soft;
+		background-color: variables.$color-surface;
+		border-radius: 999px;
 	}
 
 	&__body {

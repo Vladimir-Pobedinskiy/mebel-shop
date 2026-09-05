@@ -42,8 +42,8 @@ const modelValue = defineModel<string>('modelValue')
 
 .label-radio {
 	&_disabled {
-		opacity: 0.5;
 		pointer-events: none;
+		opacity: 0.5;
 	}
 
 	&__input:checked ~ .label-radio__title {

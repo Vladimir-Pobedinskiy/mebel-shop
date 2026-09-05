@@ -68,8 +68,8 @@ onMounted(() => {
 
 	&__list {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: 1fr;
+		gap: 16px;
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(2, 1fr);
@@ -95,17 +95,17 @@ onMounted(() => {
 
 	&__min-order {
 		display: grid;
-		margin-top: 24px;
+		gap: 24px;
 		padding: 28px 20px;
+		margin-top: 24px;
+		background-color: variables.$color-muted;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-muted;
-		gap: 24px;
 
 		@media (min-width: variables.$desktop) {
-			padding: 40px;
 			grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
 			gap: 48px;
+			padding: 40px;
 		}
 	}
 
@@ -125,8 +125,8 @@ onMounted(() => {
 
 	&__min-order-list {
 		display: grid;
-		gap: 12px;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
 
 		@media (min-width: variables.$tablet) {
 			grid-template-columns: repeat(4, 1fr);
@@ -136,10 +136,10 @@ onMounted(() => {
 	&__min-order-item {
 		display: flex;
 		flex-direction: column;
-		padding: 16px;
-		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 		gap: 6px;
+		padding: 16px;
+		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 	}
 
 	&__min-order-label {

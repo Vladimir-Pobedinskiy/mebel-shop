@@ -89,14 +89,14 @@ const socials = computed(() => storeGeneral.socials)
 
 .footer {
 	padding-bottom: 24px;
-	border-top: 1px solid variables.$color-line;
 	background-color: variables.$color-surface;
+	border-top: 1px solid variables.$color-line;
 
 	&__marquee {
 		padding: 24px 0;
 		overflow: hidden;
-		border-bottom: 1px solid variables.$color-line;
 		color: variables.$color-ink;
+		border-bottom: 1px solid variables.$color-line;
 
 		@media (min-width: variables.$desktop) {
 			padding: 32px 0;
@@ -105,29 +105,29 @@ const socials = computed(() => storeGeneral.socials)
 
 	&__marquee-item {
 		display: inline-flex;
-		align-items: center;
 		gap: 24px;
+		align-items: center;
 		padding-right: 24px;
 		white-space: nowrap;
 	}
 
 	&__marquee-decor {
-		color: variables.$color-accent;
 		font-size: 0.4em;
+		color: variables.$color-accent;
 	}
 
 	&__inner {
-		padding-top: 48px;
 		display: grid;
 		gap: 32px;
+		padding-top: 48px;
 
 		@media (min-width: variables.$tablet) {
 			grid-template-columns: repeat(2, 1fr);
 		}
 
 		@media (min-width: variables.$desktop-small) {
-			gap: 40px;
 			grid-template-columns: 1.4fr repeat(3, 1fr) 1.2fr;
+			gap: 40px;
 		}
 	}
 
@@ -159,24 +159,24 @@ const socials = computed(() => storeGeneral.socials)
 	}
 
 	&__phones {
-		margin-top: 12px;
 		gap: 6px;
+		margin-top: 12px;
 	}
 
 	&__email {
-		margin-top: 10px;
 		display: inline-block;
+		margin-top: 10px;
 	}
 
 	&__payments {
-		margin-top: 40px;
-		padding-top: 24px;
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		gap: 12px;
-		border-top: 1px solid variables.$color-line;
+		align-items: center;
+		padding-top: 24px;
+		margin-top: 40px;
 		color: variables.$color-ink-soft;
+		border-top: 1px solid variables.$color-line;
 	}
 
 	&__payments-list {
@@ -186,15 +186,15 @@ const socials = computed(() => storeGeneral.socials)
 	}
 
 	&__bottom {
-		margin-top: 20px;
-		padding-top: 20px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px 24px;
 		align-items: center;
 		justify-content: space-between;
-		border-top: 1px solid variables.$color-line;
+		padding-top: 20px;
+		margin-top: 20px;
 		color: variables.$color-ink-soft;
+		border-top: 1px solid variables.$color-line;
 	}
 
 	&__legal {

@@ -73,9 +73,9 @@ onMounted(() => {
 		display: flex;
 		gap: 16px;
 		padding: 24px 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop-small) {
 			flex-direction: column;
@@ -86,17 +86,17 @@ onMounted(() => {
 
 	&__step {
 		display: flex;
-		width: 40px;
-		height: 40px;
 		flex: 0 0 auto;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-accent-soft;
-		color: variables.$color-accent;
+		width: 40px;
+		height: 40px;
 		font-family: variables.$font-secondary;
 		font-size: 18px;
 		line-height: 1;
+		color: variables.$color-accent;
+		background-color: variables.$color-accent-soft;
+		border-radius: 50%;
 	}
 
 	&__body {
@@ -108,8 +108,8 @@ onMounted(() => {
 	&__item-head {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 	}
 
 	&__item-title {
@@ -119,9 +119,9 @@ onMounted(() => {
 	&__term {
 		display: inline-flex;
 		padding: 4px 10px;
-		border-radius: 999px;
-		background-color: variables.$color-muted;
 		color: variables.$color-ink-soft;
+		background-color: variables.$color-muted;
+		border-radius: 999px;
 	}
 
 	&__item-text {

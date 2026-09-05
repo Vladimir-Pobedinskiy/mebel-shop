@@ -76,25 +76,25 @@ watch(
 
 .suggest {
 	position: absolute;
-	left: 0;
 	top: calc(100% + 8px);
+	left: 0;
 	z-index: 20;
 	width: 100%;
-	overflow: hidden;
 	max-height: 0;
-	opacity: 0;
-	border-radius: variables.$radius-m;
-	background-color: variables.$color-surface;
-	box-shadow: variables.$shadow-soft;
+	overflow: hidden;
 	pointer-events: none;
+	background-color: variables.$color-surface;
+	border-radius: variables.$radius-m;
+	box-shadow: variables.$shadow-soft;
+	opacity: 0;
 	transition:
 		max-height 0.4s ease-in-out,
 		opacity 0.3s ease-in-out;
 
 	&.active {
 		max-height: 340px;
-		opacity: 1;
 		pointer-events: all;
+		opacity: 1;
 	}
 
 	&__inner {
@@ -107,29 +107,29 @@ watch(
 	}
 
 	&__btns {
-		overflow-y: auto;
-		max-height: 300px;
 		display: flex;
 		flex-direction: column;
+		max-height: 300px;
+		overflow-y: auto;
 	}
 
 	&__btn {
-		padding: 10px 12px;
-		width: 100%;
 		display: block;
-		border-radius: variables.$radius-s;
-		background-color: transparent;
+		width: 100%;
+		padding: 10px 12px;
 		color: variables.$color-ink;
 		text-align: left;
 		cursor: pointer;
+		background-color: transparent;
+		border-radius: variables.$radius-s;
 		transition:
 			background-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-muted;
 				color: variables.$color-accent;
+				background-color: variables.$color-muted;
 			}
 		}
 	}

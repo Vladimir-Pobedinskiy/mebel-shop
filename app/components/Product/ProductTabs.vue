@@ -94,7 +94,9 @@ const ratingsCount = computed(() => props.reviews.length)
 				</Tab>
 
 				<Tab v-slot="{ selected }" as="template">
-					<button :class="['product-tabs__nav-item menu', { active: selected }]" type="button">{{ reviewsLabel }}</button>
+					<button :class="['product-tabs__nav-item menu', { active: selected }]" type="button">
+						{{ reviewsLabel }}
+					</button>
 				</Tab>
 			</TabList>
 
@@ -179,8 +181,7 @@ const ratingsCount = computed(() => props.reviews.length)
 						<p class="product-tabs__warranty-term h4">Гарантия {{ product.warranty?.term }}</p>
 						<p class="product-tabs__warranty-text text-m">{{ product.warranty?.text }}</p>
 						<p class="product-tabs__note text-xs">
-							Гарантийные обращения принимаем по телефону и в мессенджерах, мастер выезжает в течение трёх рабочих
-							дней.
+							Гарантийные обращения принимаем по телефону и в мессенджерах, мастер выезжает в течение трёх рабочих дней.
 						</p>
 					</div>
 				</TabPanel>
@@ -199,11 +200,11 @@ const ratingsCount = computed(() => props.reviews.length)
 .product-tabs {
 	&__nav {
 		display: flex;
-		overflow-x: auto;
-		margin-bottom: 24px;
-		border-bottom: 1px solid variables.$color-line;
 		gap: 8px;
+		margin-bottom: 24px;
+		overflow-x: auto;
 		scrollbar-width: none;
+		border-bottom: 1px solid variables.$color-line;
 
 		&::-webkit-scrollbar {
 			display: none;
@@ -213,12 +214,12 @@ const ratingsCount = computed(() => props.reviews.length)
 	&__nav-item {
 		position: relative;
 		padding: 14px 4px;
-		border: 0;
 		margin-right: 16px;
-		background-color: transparent;
 		color: variables.$color-ink-soft;
-		cursor: pointer;
 		white-space: nowrap;
+		cursor: pointer;
+		background-color: transparent;
+		border: 0;
 		transition: color 0.3s ease-in-out;
 
 		&::after {
@@ -227,8 +228,8 @@ const ratingsCount = computed(() => props.reviews.length)
 			bottom: -1px;
 			left: 0;
 			height: 2px;
-			background-color: variables.$color-accent;
 			content: '';
+			background-color: variables.$color-accent;
 			transform: scaleX(0);
 			transform-origin: left center;
 			transition: transform 0.3s ease-in-out;
@@ -255,18 +256,18 @@ const ratingsCount = computed(() => props.reviews.length)
 
 	&__characteristics {
 		display: grid;
-		max-width: 860px;
 		grid-template-columns: 1fr;
 		gap: 0;
+		max-width: 860px;
 	}
 
 	&__characteristic {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 8px 20px;
 		justify-content: space-between;
 		padding: 12px 0;
 		border-bottom: 1px solid variables.$color-line;
-		gap: 8px 20px;
 
 		&:last-child {
 			border-bottom: 0;
@@ -294,9 +295,9 @@ const ratingsCount = computed(() => props.reviews.length)
 
 	&__hardware-item {
 		padding: 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__hardware-brand {
@@ -310,22 +311,22 @@ const ratingsCount = computed(() => props.reviews.length)
 
 	&__modifications {
 		display: flex;
-		max-width: 860px;
 		flex-direction: column;
 		gap: 12px;
+		max-width: 860px;
 	}
 
 	&__modification {
 		display: flex;
+		gap: 10px;
 		align-items: flex-start;
 		color: variables.$color-ink-soft;
-		gap: 10px;
 	}
 
 	&__modification-icon {
+		flex: 0 0 auto;
 		width: 18px;
 		height: 18px;
-		flex: 0 0 auto;
 		color: variables.$color-accent;
 	}
 
@@ -341,9 +342,9 @@ const ratingsCount = computed(() => props.reviews.length)
 
 	&__delivery-item {
 		padding: 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__delivery-title {

@@ -46,8 +46,8 @@ const reviewsLabel = computed(() => {
 
 .rating {
 	display: flex;
-	align-items: center;
 	gap: 8px;
+	align-items: center;
 
 	&__stars {
 		position: relative;
@@ -58,8 +58,8 @@ const reviewsLabel = computed(() => {
 	&__stars-empty,
 	&__stars-fill {
 		display: flex;
-		align-items: center;
 		gap: 2px;
+		align-items: center;
 	}
 
 	&__stars-empty {
@@ -68,8 +68,8 @@ const reviewsLabel = computed(() => {
 
 	&__stars-fill {
 		position: absolute;
-		left: 0;
 		top: 0;
+		left: 0;
 		overflow: hidden;
 		color: variables.$color-warning;
 		white-space: nowrap;

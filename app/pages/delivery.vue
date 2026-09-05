@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { IDeliveryPage } from '~~/interfaces/content/IContentPages'
 
-const { data, error, status } = await useAsyncData('delivery-page', async () =>
-	$fetch<IDeliveryPage>('/api/delivery/')
-)
+const { data, error, status } = await useAsyncData('delivery-page', async () => $fetch<IDeliveryPage>('/api/delivery/'))
 const pending = computed(() => status.value === 'pending')
 
 if (error.value) {

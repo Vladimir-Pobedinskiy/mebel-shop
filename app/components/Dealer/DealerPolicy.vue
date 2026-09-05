@@ -82,8 +82,8 @@ onMounted(() => {
 
 	&__columns {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: 1fr;
+		gap: 16px;
 
 		@media (min-width: variables.$desktop-small) {
 			grid-template-columns: repeat(2, 1fr);
@@ -121,20 +121,20 @@ onMounted(() => {
 
 	&__step-number {
 		display: flex;
-		width: 32px;
-		height: 32px;
 		flex: 0 0 auto;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-accent-soft;
+		width: 32px;
+		height: 32px;
 		color: variables.$color-accent;
+		background-color: variables.$color-accent-soft;
+		border-radius: 50%;
 	}
 
 	&__item-icon {
+		flex: 0 0 auto;
 		width: 24px;
 		height: 24px;
-		flex: 0 0 auto;
 		color: variables.$color-accent;
 	}
 
@@ -151,10 +151,10 @@ onMounted(() => {
 	}
 
 	&__note {
-		margin: 24px 0 0;
 		padding-top: 16px;
-		border-top: 1px solid variables.$color-line;
+		margin: 24px 0 0;
 		color: variables.$color-ink-soft;
+		border-top: 1px solid variables.$color-line;
 	}
 }
 </style>

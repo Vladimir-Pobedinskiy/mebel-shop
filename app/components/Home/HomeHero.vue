@@ -122,13 +122,13 @@ onMounted(() => {
 .home-hero {
 	position: relative;
 	display: flex;
-	overflow: hidden;
 	align-items: flex-end;
-	background-color: variables.$color-ink;
-	color: variables.$color-white;
 
 	/* Ровно экран: .pull-under-header поднимает секцию на высоту шапки и компенсирует её отступом */
 	min-height: 100svh;
+	overflow: hidden;
+	color: variables.$color-white;
+	background-color: variables.$color-ink;
 
 	&__media {
 		position: absolute;
@@ -137,15 +137,10 @@ onMounted(() => {
 
 		&::after {
 			position: absolute;
-			z-index: 1;
-			background: linear-gradient(
-				180deg,
-				rgba(28, 26, 23, 65%) 0%,
-				rgba(28, 26, 23, 52%) 45%,
-				rgba(28, 26, 23, 85%) 100%
-			);
-			content: '';
 			inset: 0;
+			z-index: 1;
+			content: '';
+			background: linear-gradient(180deg, rgb(28, 26, 23, 65%) 0%, rgb(28, 26, 23, 52%) 45%, rgb(28, 26, 23, 85%) 100%);
 		}
 	}
 
@@ -179,7 +174,7 @@ onMounted(() => {
 
 	&__subtitle {
 		margin-bottom: 16px;
-		color: rgba(255, 255, 255, 72%);
+		color: rgb(255, 255, 255, 72%);
 	}
 
 	&__title {
@@ -190,7 +185,7 @@ onMounted(() => {
 	&__text {
 		max-width: 620px;
 		margin: 0 0 32px;
-		color: rgba(255, 255, 255, 82%);
+		color: rgb(255, 255, 255, 82%);
 	}
 
 	&__links {
@@ -204,7 +199,7 @@ onMounted(() => {
 		gap: 16px;
 		padding-top: 24px;
 		margin-top: 32px;
-		border-top: 1px solid rgba(255, 255, 255, 22%);
+		border-top: 1px solid rgb(255, 255, 255, 22%);
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(3, 1fr);
@@ -229,7 +224,7 @@ onMounted(() => {
 	}
 
 	&__stat-label {
-		color: rgba(255, 255, 255, 68%);
+		color: rgb(255, 255, 255, 68%);
 	}
 
 	&__scroll {
@@ -239,9 +234,9 @@ onMounted(() => {
 		z-index: 2;
 		display: none;
 		flex-direction: column;
-		align-items: center;
 		gap: 10px;
-		color: rgba(255, 255, 255, 72%);
+		align-items: center;
+		color: rgb(255, 255, 255, 72%);
 		transform: translateX(-50%);
 
 		@media (min-width: variables.$desktop-small) {
@@ -252,7 +247,7 @@ onMounted(() => {
 	&__scroll-line {
 		width: 1px;
 		height: 56px;
-		background: linear-gradient(180deg, rgba(255, 255, 255, 70%), rgba(255, 255, 255, 0%));
+		background: linear-gradient(180deg, rgb(255, 255, 255, 70%), rgb(255, 255, 255, 0%));
 		animation: hero-scroll-hint 2.4s ease-in-out infinite;
 	}
 }

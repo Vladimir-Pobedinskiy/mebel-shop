@@ -187,8 +187,8 @@ onMounted(() => {
 .contacts-info {
 	display: grid;
 	gap: 20px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	list-style: none;
 
 	@media (min-width: variables.$mobile-big) {
@@ -215,8 +215,8 @@ onMounted(() => {
 .contacts-departments {
 	display: grid;
 	gap: 16px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	list-style: none;
 
 	@media (min-width: variables.$mobile-big) {
@@ -233,8 +233,8 @@ onMounted(() => {
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 24px;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 		box-shadow: variables.$shadow-soft;
 	}
 
@@ -261,8 +261,8 @@ onMounted(() => {
 .contacts-showrooms {
 	display: grid;
 	gap: 16px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	list-style: none;
 
 	@media (min-width: variables.$mobile-big) {
@@ -276,8 +276,8 @@ onMounted(() => {
 
 	&__item {
 		overflow: hidden;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 		box-shadow: variables.$shadow-soft;
 	}
 
@@ -321,8 +321,8 @@ onMounted(() => {
 
 .contacts-requisites {
 	padding: 24px;
-	border-radius: variables.$radius-m;
 	background-color: variables.$color-muted;
+	border-radius: variables.$radius-m;
 
 	&__title {
 		margin: 0 0 20px;
@@ -334,8 +334,8 @@ onMounted(() => {
 
 	&__row {
 		& + & {
-			margin-top: 14px;
 			padding-top: 14px;
+			margin-top: 14px;
 			border-top: 1px solid variables.$color-line;
 		}
 	}

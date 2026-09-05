@@ -163,16 +163,16 @@ const onResetPromo = () => {
 
 .cart-summary {
 	padding: 24px;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: variables.$radius-m;
-	background-color: variables.$color-surface;
 
 	@media (min-width: variables.$desktop-small) {
 		position: sticky;
 		top: 100px;
 		padding: 32px;
-		backdrop-filter: blur(12px);
 		box-shadow: variables.$shadow-soft;
+		backdrop-filter: blur(12px);
 	}
 
 	&__title {
@@ -180,17 +180,17 @@ const onResetPromo = () => {
 	}
 
 	&__rows {
-		margin: 0 0 20px;
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
+		margin: 0 0 20px;
 	}
 
 	&__row {
 		display: flex;
+		gap: 16px;
 		align-items: baseline;
 		justify-content: space-between;
-		gap: 16px;
 	}
 
 	&__label {
@@ -209,11 +209,11 @@ const onResetPromo = () => {
 	}
 
 	&__total {
-		padding-top: 20px;
 		display: flex;
+		gap: 16px;
 		align-items: baseline;
 		justify-content: space-between;
-		gap: 16px;
+		padding-top: 20px;
 		border-top: 1px solid variables.$color-line;
 	}
 
@@ -222,15 +222,15 @@ const onResetPromo = () => {
 	}
 
 	&__promo {
-		margin-top: 24px;
 		padding-top: 24px;
+		margin-top: 24px;
 		border-top: 1px solid variables.$color-line;
 	}
 
 	&__promo-form {
 		display: flex;
-		align-items: flex-start;
 		gap: 8px;
+		align-items: flex-start;
 	}
 
 	&__promo-input {
@@ -243,12 +243,12 @@ const onResetPromo = () => {
 
 	&__promo-applied {
 		display: flex;
+		gap: 12px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 12px;
 		padding: 12px 16px;
-		border-radius: variables.$radius-s;
 		background-color: variables.$color-accent-soft;
+		border-radius: variables.$radius-s;
 	}
 
 	&__promo-code {

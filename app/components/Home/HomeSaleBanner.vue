@@ -134,9 +134,9 @@ onUnmounted(() => {
 	&__inner {
 		position: relative;
 		overflow: hidden;
-		border-radius: variables.$radius-l;
-		background-color: variables.$color-accent-2;
 		color: variables.$color-white;
+		background-color: variables.$color-accent-2;
+		border-radius: variables.$radius-l;
 	}
 
 	&__media {
@@ -147,9 +147,9 @@ onUnmounted(() => {
 
 		&::after {
 			position: absolute;
-			background: linear-gradient(90deg, rgba(47, 74, 63, 92%) 0%, rgba(47, 74, 63, 45%) 100%);
-			content: '';
 			inset: 0;
+			content: '';
+			background: linear-gradient(90deg, rgb(47, 74, 63, 92%) 0%, rgb(47, 74, 63, 45%) 100%);
 		}
 	}
 
@@ -163,9 +163,9 @@ onUnmounted(() => {
 		position: relative;
 		z-index: 1;
 		display: flex;
-		max-width: 720px;
 		flex-direction: column;
 		align-items: flex-start;
+		max-width: 720px;
 		padding: 40px 24px;
 
 		@media (min-width: variables.$tablet) {
@@ -179,7 +179,7 @@ onUnmounted(() => {
 
 	&__subtitle {
 		margin: 0 0 14px;
-		color: rgba(255, 255, 255, 72%);
+		color: rgb(255, 255, 255, 72%);
 	}
 
 	&__title {
@@ -188,7 +188,7 @@ onUnmounted(() => {
 
 	&__text {
 		margin: 0 0 32px;
-		color: rgba(255, 255, 255, 82%);
+		color: rgb(255, 255, 255, 82%);
 	}
 
 	&__timer {
@@ -200,19 +200,19 @@ onUnmounted(() => {
 
 	&__timer-unit {
 		display: flex;
-		min-width: 84px;
 		flex-direction: column;
-		align-items: center;
 		gap: 4px;
+		align-items: center;
+		min-width: 84px;
 		padding: 14px 12px;
-		border: 1px solid rgba(255, 255, 255, 24%);
+		background-color: rgb(255, 255, 255, 8%);
+		border: 1px solid rgb(255, 255, 255, 24%);
 		border-radius: variables.$radius-m;
-		background-color: rgba(255, 255, 255, 8%);
 		backdrop-filter: blur(6px);
 	}
 
 	&__timer-label {
-		color: rgba(255, 255, 255, 68%);
+		color: rgb(255, 255, 255, 68%);
 	}
 }
 </style>

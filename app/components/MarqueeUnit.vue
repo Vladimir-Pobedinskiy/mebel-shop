@@ -33,9 +33,9 @@ const { isReducedMotion } = useReducedMotion()
 
 .marquee-unit {
 	padding: 40px 0;
+	background-color: variables.$color-muted;
 	border-top: 1px solid variables.$color-line;
 	border-bottom: 1px solid variables.$color-line;
-	background-color: variables.$color-muted;
 
 	@media (min-width: variables.$desktop) {
 		padding: 64px 0;
@@ -43,8 +43,8 @@ const { isReducedMotion } = useReducedMotion()
 
 	&__item {
 		display: flex;
-		align-items: center;
 		gap: 24px;
+		align-items: center;
 		padding-right: 24px;
 		color: variables.$color-ink;
 		white-space: nowrap;

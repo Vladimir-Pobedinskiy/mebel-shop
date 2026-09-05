@@ -148,12 +148,12 @@ const addToCart = (product: IProduct) => {
 
 .compare-table {
 	&__toolbar {
-		margin-bottom: 20px;
 		display: flex;
-		align-items: center;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		gap: 12px 24px;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 20px;
 	}
 
 	&__toolbar-label {
@@ -162,8 +162,8 @@ const addToCart = (product: IProduct) => {
 
 	&__clear {
 		display: inline-flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 		color: variables.$color-ink-soft;
 		transition: color 0.3s ease-in-out;
 
@@ -187,15 +187,15 @@ const addToCart = (product: IProduct) => {
 
 	&__scroll {
 		overflow-x: auto;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 	}
 
 	&__table {
 		width: 100%;
 		min-width: 640px;
-		border-collapse: collapse;
 		text-align: left;
+		border-collapse: collapse;
 	}
 
 	&__corner {
@@ -205,9 +205,9 @@ const addToCart = (product: IProduct) => {
 	}
 
 	&__product-cell {
-		padding: 20px 16px;
 		width: 240px;
 		min-width: 240px;
+		padding: 20px 16px;
 		vertical-align: top;
 		border-left: 1px solid variables.$color-line;
 	}
@@ -224,14 +224,14 @@ const addToCart = (product: IProduct) => {
 		top: 0;
 		right: 0;
 		z-index: 2;
-		width: 32px;
-		height: 32px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
+		width: 32px;
+		height: 32px;
 		color: variables.$color-ink-soft;
 		background-color: variables.$color-muted;
+		border-radius: 50%;
 		transition:
 			color 0.3s ease-in-out,
 			background-color 0.3s ease-in-out;
@@ -256,11 +256,11 @@ const addToCart = (product: IProduct) => {
 	}
 
 	&__media {
-		overflow: hidden;
-		aspect-ratio: 4 / 3;
 		display: block;
-		border-radius: variables.$radius-s;
+		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-s;
 	}
 
 	&__img {
@@ -282,14 +282,14 @@ const addToCart = (product: IProduct) => {
 	&__row-label {
 		padding: 14px 16px;
 		font-weight: 500;
-		color: variables.$color-ink-soft;
 		vertical-align: top;
+		color: variables.$color-ink-soft;
 	}
 
 	&__cell {
 		padding: 14px 16px;
-		border-left: 1px solid variables.$color-line;
 		vertical-align: top;
+		border-left: 1px solid variables.$color-line;
 	}
 
 	&__no-rows {

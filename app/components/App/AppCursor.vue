@@ -75,16 +75,16 @@ onUnmounted(() => {
 
 .app-cursor {
 	position: fixed;
-	left: 0;
 	top: 0;
+	left: 0;
 	z-index: 1000;
 	width: 12px;
 	height: 12px;
 	margin: -6px 0 0 -6px;
-	border-radius: 50%;
-	background-color: variables.$color-accent;
-	opacity: 0;
 	pointer-events: none;
+	background-color: variables.$color-accent;
+	border-radius: 50%;
+	opacity: 0;
 	transition:
 		opacity 0.3s ease-in-out,
 		width 0.3s ease-in-out,
@@ -101,7 +101,7 @@ onUnmounted(() => {
 		width: 44px;
 		height: 44px;
 		margin: -22px 0 0 -22px;
-		background-color: rgba(180 99 42 / 22%);
+		background-color: rgb(180 99 42 / 22%);
 	}
 }
 </style>

@@ -28,21 +28,21 @@ defineProps<{
 @use '@/assets/scss/general/variables';
 
 .status {
-	padding: 6px 12px;
-	width: fit-content;
 	display: inline-flex;
-	align-items: center;
 	gap: 8px;
-	border-radius: 999px;
-	background-color: variables.$color-muted;
+	align-items: center;
+	width: fit-content;
+	padding: 6px 12px;
 	color: variables.$color-ink;
+	background-color: variables.$color-muted;
+	border-radius: 999px;
 
 	&__decor {
 		width: 8px;
 		min-width: 8px;
 		height: 8px;
-		border-radius: 50%;
 		background-color: variables.$color-ink-soft;
+		border-radius: 50%;
 	}
 
 	&_new .status__decor,

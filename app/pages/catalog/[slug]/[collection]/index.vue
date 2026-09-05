@@ -38,9 +38,7 @@ if (data.value && !products.value.length) {
 
 const collectionTitle = computed(() => products.value[0]?.collection || '')
 
-const collectionLink = computed(() =>
-	(data.value?.category?.collections || []).find(link => link.url === route.path)
-)
+const collectionLink = computed(() => (data.value?.category?.collections || []).find(link => link.url === route.path))
 
 /* Фильтр «Коллекция» на этой странице лишний, остальные пересчитываются
    по товарам коллекции — иначе счётчики и диапазон цены обещают несуществующее */

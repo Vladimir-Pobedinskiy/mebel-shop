@@ -188,9 +188,10 @@ mebel-shop/
 
 1. `compatibilityDate: '2025-07-15'` (как у обоих доноров).
 2. `modules`: состав по 4.4, без `@nuxtjs/seo`.
-3. Подключить `pinia-plugin-persistedstate/nuxt` и секцию `piniaPluginPersistedstate`
-   (в `avto-landing` и `rexas` он есть). Переводить на него избранное и сравнение
-   не обязательно, но корзина должна переживать перезагрузку страницы.
+3. `pinia-plugin-persistedstate` **не подключать**, хотя он есть у обоих доноров.
+   Корзина, избранное и сравнение уже персистятся через `useLocalStorage` из
+   `@vueuse/core` с `initOnMounted` — это осознанный обход гидрации, при котором
+   пустой SSR-пейлоад не затирает localStorage. Плагин задвоил бы механизм.
 4. `auth.provider.endpoints`: добавить `signUp: { path: '/auth-registration/', method: 'post' }`.
 5. `auth.provider.session.dataType` — по образцу `rexas`, поля под нас:
    `{ id: 'string | number', fio: 'string', email: 'string', tel: 'string' }`.
@@ -244,12 +245,20 @@ mebel-shop/
 
 ### 8.2. Компоненты — `app/components/Auth/`
 
+**Идиома форм — наша, не донорская.** `rexas` пишет формы на компонентах `<Form>`/`<Field>`
+из `vee-validate`; в `mebel-shop` все формы (`ModalCallback`, `ProductRequestForm` и прочие)
+собраны на `useForm`/`useField` + `useFormSubmit` + `useToaster`, а поля зовутся
+`name`, `phone`, `agreement` (не `fio`, `tel`, `agree`). Из донора берём **логику и
+последовательность шагов**, пишем в своём стиле — иначе в проекте окажутся две несовместимые
+школы форм. Поля сессии — те же, что уже отдаёт `/api/auth-session/`: `id`, `name`, `phone`, `email`.
+
 - `AuthLoginForm.vue` — email + пароль, ссылки «Забыли пароль?» → `/password-recovery/`
   и «Регистрация» → `/registration/`.
-- `AuthRegistrationForm.vue` — по донорской схеме, **без** блока капчи и
-  **без** `AuthSignInWithSocials`. Поля: `fio`, `email`, `tel`, `password`,
-  `repeatPassword`, `agree`. Yup-схему с русскими сообщениями взять из донора один в один
-  (там аккуратно разобраны спецсимволы, цифры и латиница в ФИО), правило `captchaToken` убрать.
+- `AuthRegistrationForm.vue` — по донорскому сценарию, **без** блока капчи и
+  **без** `AuthSignInWithSocials`. Поля: `name`, `email`, `phone`, `password`,
+  `repeatPassword`, `agreement`. Правила валидации с русскими сообщениями взять из донора
+  (там аккуратно разобраны спецсимволы, цифры и латиница в имени), переложив на `yup`
+  в нашей записи; правило `captchaToken` убрать.
 - `AuthPasswordRecoveryForm.vue` — email → код → переход на `/new-password/`.
 - `AuthNewPasswordForm.vue` — новый пароль + повтор.
 

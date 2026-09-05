@@ -84,12 +84,12 @@ const storeFavorites = useFavoritesStore()
 	}
 
 	&__head {
-		margin-bottom: 28px;
 		display: flex;
-		align-items: baseline;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		gap: 12px 24px;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 28px;
 
 		@media (min-width: variables.$desktop) {
 			margin-bottom: 40px;
@@ -102,9 +102,9 @@ const storeFavorites = useFavoritesStore()
 
 	&__head-meta {
 		display: flex;
-		align-items: baseline;
 		flex-wrap: wrap;
 		gap: 8px 20px;
+		align-items: baseline;
 	}
 
 	&__count {
@@ -114,8 +114,8 @@ const storeFavorites = useFavoritesStore()
 
 	&__clear {
 		display: inline-flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 		color: variables.$color-ink-soft;
 		transition: color 0.3s ease-in-out;
 

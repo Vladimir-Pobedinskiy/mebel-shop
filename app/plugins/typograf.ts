@@ -10,12 +10,12 @@ export default defineNuxtPlugin(nuxtApp => {
 		},
 		updated(el) {
 			el.innerHTML = tp.execute(el.innerHTML)
-		}
+		},
 	})
 
 	return {
 		provide: {
-			typograf: tp
-		}
+			typograf: tp,
+		},
 	}
 })

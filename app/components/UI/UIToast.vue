@@ -78,14 +78,14 @@ onUnmounted(() => clearTimer())
 	right: 16px;
 	bottom: 16px;
 	z-index: 10000;
-	padding: 16px;
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
 	width: calc(100% - 32px);
 	max-width: 380px;
-	display: flex;
-	align-items: flex-start;
-	gap: 12px;
-	border-radius: variables.$radius-m;
+	padding: 16px;
 	background-color: variables.$color-surface;
+	border-radius: variables.$radius-m;
 	box-shadow: variables.$shadow-hover;
 
 	@media (min-width: variables.$desktop) {
@@ -94,15 +94,15 @@ onUnmounted(() => clearTimer())
 	}
 
 	&__icon-wrapper {
-		width: 36px;
-		min-width: 36px;
-		height: 36px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-muted;
+		width: 36px;
+		min-width: 36px;
+		height: 36px;
 		color: variables.$color-accent-2;
+		background-color: variables.$color-muted;
+		border-radius: 50%;
 	}
 
 	&__icon {
@@ -120,15 +120,15 @@ onUnmounted(() => clearTimer())
 	}
 
 	&__close {
-		width: 24px;
-		min-width: 24px;
-		height: 24px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: transparent;
+		width: 24px;
+		min-width: 24px;
+		height: 24px;
 		color: variables.$color-ink-soft;
 		cursor: pointer;
+		background-color: transparent;
 	}
 
 	&__close-icon {

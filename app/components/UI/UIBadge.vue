@@ -14,30 +14,30 @@ defineProps<{
 @use '@/assets/scss/general/variables';
 
 .badge {
-	padding: 5px 10px;
-	width: fit-content;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 999px;
+	width: fit-content;
+	padding: 5px 10px;
+	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
-	font-size: 11px;
 	white-space: nowrap;
+	border-radius: 999px;
 
 	&_hit {
-		background-color: variables.$color-ink;
 		color: variables.$color-white;
+		background-color: variables.$color-ink;
 	}
 
 	&_new {
-		background-color: variables.$color-accent-2;
 		color: variables.$color-white;
+		background-color: variables.$color-accent-2;
 	}
 
 	&_sale {
-		background-color: variables.$color-accent;
 		color: variables.$color-white;
+		background-color: variables.$color-accent;
 	}
 }
 </style>

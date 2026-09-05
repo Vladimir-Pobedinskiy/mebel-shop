@@ -28,10 +28,10 @@ defineProps<{
 	}
 
 	&__date {
-		margin: 32px 0 0;
 		padding-top: 20px;
-		border-top: 1px solid variables.$color-line;
+		margin: 32px 0 0;
 		color: variables.$color-ink-soft;
+		border-top: 1px solid variables.$color-line;
 	}
 }
 </style>

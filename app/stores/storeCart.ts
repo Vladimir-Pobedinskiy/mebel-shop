@@ -33,7 +33,10 @@ export const useCartStore = defineStore('cart', () => {
 
 	// Сумма выгоды по акциям: разница между старыми ценами и текущими
 	const discount = computed(() =>
-		itemsStorage.value.reduce((sum, item) => sum + (item.oldPrice ? (item.oldPrice - item.price) * item.quantity : 0), 0)
+		itemsStorage.value.reduce(
+			(sum, item) => sum + (item.oldPrice ? (item.oldPrice - item.price) * item.quantity : 0),
+			0
+		)
 	)
 
 	const promoPercent = computed(() => PROMO_CODES[promoStorage.value] ?? 0)

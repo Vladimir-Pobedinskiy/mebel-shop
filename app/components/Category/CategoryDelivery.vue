@@ -88,13 +88,13 @@ onMounted(() => {
 
 	&__item {
 		display: flex;
-		height: 100%;
 		flex-direction: column;
 		gap: 10px;
+		height: 100%;
 		padding: 28px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__item-title {
@@ -109,11 +109,11 @@ onMounted(() => {
 	&__term {
 		display: inline-flex;
 		width: fit-content;
-		margin: 0;
 		padding: 4px 10px;
-		border-radius: 999px;
-		background-color: variables.$color-muted;
+		margin: 0;
 		color: variables.$color-ink-soft;
+		background-color: variables.$color-muted;
+		border-radius: 999px;
 	}
 
 	&__item-text {
@@ -124,33 +124,33 @@ onMounted(() => {
 	&__footer {
 		display: flex;
 		flex-direction: column;
-		margin-top: 24px;
-		padding: 24px 20px;
-		border-radius: variables.$radius-m;
-		background-color: variables.$color-muted;
 		gap: 16px;
+		padding: 24px 20px;
+		margin-top: 24px;
+		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 
 		@media (min-width: variables.$tablet) {
 			flex-direction: row;
+			gap: 24px;
 			align-items: center;
 			justify-content: space-between;
 			padding: 28px 32px;
-			gap: 24px;
 		}
 	}
 
 	&__note {
 		display: flex;
+		gap: 12px;
 		align-items: flex-start;
 		margin: 0;
-		gap: 12px;
 		color: variables.$color-ink-soft;
 	}
 
 	&__note-icon {
+		flex: 0 0 auto;
 		width: 20px;
 		height: 20px;
-		flex: 0 0 auto;
 		margin-top: 2px;
 		color: variables.$color-accent;
 	}

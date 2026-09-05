@@ -62,9 +62,9 @@ withDefaults(
 	}
 
 	&__text {
-		margin-top: 20px;
 		width: 100%;
 		max-width: 760px;
+		margin-top: 20px;
 		color: variables.$color-ink-soft;
 	}
 
@@ -83,7 +83,7 @@ withDefaults(
 		}
 
 		.intro__text {
-			color: rgba(255 255 255 / 75%);
+			color: rgb(255 255 255 / 75%);
 		}
 	}
 }

@@ -66,11 +66,11 @@ withDefaults(
 
 	&__summary {
 		display: flex;
+		gap: 20px;
 		align-items: center;
 		padding: 20px;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-muted;
-		gap: 20px;
+		border-radius: variables.$radius-m;
 	}
 
 	&__rating {
@@ -102,26 +102,26 @@ withDefaults(
 	&__item {
 		display: flex;
 		flex-direction: column;
+		gap: 12px;
 		padding: 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
-		gap: 12px;
 	}
 
 	&__item-head {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 8px 16px;
 		align-items: flex-start;
 		justify-content: space-between;
-		gap: 8px 16px;
 	}
 
 	&__item-meta {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
 		gap: 4px;
+		align-items: flex-end;
 	}
 
 	&__author {
@@ -140,8 +140,8 @@ withDefaults(
 	}
 
 	&__product {
-		margin-top: auto;
 		padding-top: 4px;
+		margin-top: auto;
 	}
 }
 </style>

@@ -121,17 +121,17 @@ watch(
 
 	&__main {
 		position: relative;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
-		border-radius: variables.$radius-l;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-l;
 	}
 
 	&__badges {
 		position: absolute;
-		z-index: 2;
 		top: 16px;
 		left: 16px;
+		z-index: 2;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 6px;
@@ -157,17 +157,17 @@ watch(
 
 	&__play {
 		position: absolute;
-		z-index: 2;
 		top: 50%;
 		left: 50%;
+		z-index: 2;
 		display: flex;
-		width: 72px;
-		height: 72px;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-surface;
+		width: 72px;
+		height: 72px;
 		color: variables.$color-accent;
+		background-color: variables.$color-surface;
+		border-radius: 50%;
 		transform: translate(-50%, -50%);
 		transition: transform 0.3s ease-in-out;
 	}
@@ -196,14 +196,14 @@ watch(
 	&__thumb {
 		position: relative;
 		display: block;
-		overflow: hidden;
 		width: 100%;
 		aspect-ratio: 1 / 1;
 		padding: 0;
+		overflow: hidden;
+		cursor: pointer;
+		background-color: variables.$color-muted;
 		border: 2px solid transparent;
 		border-radius: variables.$radius-s;
-		background-color: variables.$color-muted;
-		cursor: pointer;
 		transition: border-color 0.3s ease-in-out;
 
 		&_active {
@@ -232,13 +232,13 @@ watch(
 		top: 50%;
 		left: 50%;
 		display: flex;
-		width: 28px;
-		height: 28px;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-surface;
+		width: 28px;
+		height: 28px;
 		color: variables.$color-accent;
+		background-color: variables.$color-surface;
+		border-radius: 50%;
 		transform: translate(-50%, -50%);
 	}
 

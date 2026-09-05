@@ -136,33 +136,33 @@ const onMore = () => {
 .pagination {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	gap: 24px;
+	align-items: center;
 
 	&__pages {
 		display: flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 	}
 
 	&__list {
 		display: flex;
-		align-items: center;
 		gap: 4px;
+		align-items: center;
 	}
 
 	&__page,
 	&__arrow {
-		min-width: 40px;
-		height: 40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 1px solid transparent;
-		border-radius: 50%;
-		background-color: transparent;
+		min-width: 40px;
+		height: 40px;
 		color: variables.$color-ink;
 		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid transparent;
+		border-radius: 50%;
 		transition:
 			background-color 0.3s ease-in-out,
 			border-color 0.3s ease-in-out,
@@ -182,9 +182,9 @@ const onMore = () => {
 
 	&__page {
 		&.active {
-			background-color: variables.$color-accent;
 			color: variables.$color-white;
 			pointer-events: none;
+			background-color: variables.$color-accent;
 		}
 	}
 
@@ -197,18 +197,18 @@ const onMore = () => {
 	}
 
 	&__dots {
-		min-width: 24px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		min-width: 24px;
 		color: variables.$color-ink-soft;
 	}
 
 	&__page:disabled,
 	&__arrow:disabled {
-		opacity: 0.35;
-		cursor: default;
 		pointer-events: none;
+		cursor: default;
+		opacity: 0.35;
 	}
 }
 </style>

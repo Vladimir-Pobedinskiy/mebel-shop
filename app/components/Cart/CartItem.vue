@@ -60,21 +60,21 @@ const oldSum = computed(() => (props.item.oldPrice ? props.item.oldPrice * props
 
 .cart-item {
 	position: relative;
-	padding: 16px;
 	display: grid;
 	grid-template-columns: 88px 1fr;
-	align-items: start;
 	gap: 16px;
+	align-items: start;
+	padding: 16px;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: variables.$radius-m;
-	background-color: variables.$color-surface;
 	transition: border-color 0.3s ease-in-out;
 
 	@media (min-width: variables.$tablet) {
-		padding: 20px;
 		grid-template-columns: 140px 1fr auto;
-		align-items: center;
 		gap: 24px;
+		align-items: center;
+		padding: 20px;
 	}
 
 	@media (min-width: variables.$desktop-small) {
@@ -84,11 +84,11 @@ const oldSum = computed(() => (props.item.oldPrice ? props.item.oldPrice * props
 	}
 
 	&__media {
-		overflow: hidden;
-		aspect-ratio: 4 / 3;
 		display: block;
-		border-radius: variables.$radius-s;
+		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-s;
 	}
 
 	&__img {
@@ -123,23 +123,23 @@ const oldSum = computed(() => (props.item.oldPrice ? props.item.oldPrice * props
 	}
 
 	&__controls {
-		grid-column: 1 / -1;
 		display: flex;
+		grid-column: 1 / -1;
+		gap: 16px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 16px;
 
 		@media (min-width: variables.$tablet) {
 			grid-column: auto;
-			justify-content: flex-end;
 			gap: 24px;
+			justify-content: flex-end;
 		}
 	}
 
 	&__price {
 		flex-direction: column;
-		align-items: flex-end;
 		gap: 2px;
+		align-items: flex-end;
 
 		@media (min-width: variables.$tablet) {
 			min-width: 130px;
@@ -147,15 +147,15 @@ const oldSum = computed(() => (props.item.oldPrice ? props.item.oldPrice * props
 	}
 
 	&__remove {
-		width: 40px;
-		min-width: 40px;
-		height: 40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
+		width: 40px;
+		min-width: 40px;
+		height: 40px;
 		color: variables.$color-ink-soft;
 		background-color: variables.$color-muted;
+		border-radius: 50%;
 		transition:
 			color 0.3s ease-in-out,
 			background-color 0.3s ease-in-out;

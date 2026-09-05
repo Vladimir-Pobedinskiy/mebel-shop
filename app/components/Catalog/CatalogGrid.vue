@@ -79,13 +79,13 @@ withDefaults(
 
 	&__skeleton {
 		display: flex;
-		width: 100%;
 		flex-direction: column;
 		gap: 12px;
+		width: 100%;
 		padding: 16px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__empty {

@@ -96,10 +96,10 @@ watch(
 	}
 
 	&__media {
-		overflow: hidden;
 		margin-bottom: 32px;
-		border-radius: variables.$radius-l;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-l;
 
 		@media (min-width: variables.$desktop) {
 			margin-bottom: 56px;
@@ -125,9 +125,9 @@ watch(
 
 	&__toc {
 		padding: 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop-small) {
 			position: sticky;

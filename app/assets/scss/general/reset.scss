@@ -70,10 +70,10 @@ a {
 
 button {
 	padding: 0;
-	border: 0;
-	background-color: transparent;
 	color: inherit;
 	cursor: pointer;
+	background-color: transparent;
+	border: 0;
 }
 
 input {
@@ -81,6 +81,6 @@ input {
 }
 
 textarea {
-	resize: none;
 	overflow-y: auto;
+	resize: none;
 }

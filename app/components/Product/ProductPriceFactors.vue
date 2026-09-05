@@ -63,8 +63,8 @@ onMounted(() => {
 
 .product-price-factors {
 	padding: 28px 20px;
-	border-radius: variables.$radius-l;
 	background-color: variables.$color-muted;
+	border-radius: variables.$radius-l;
 
 	@media (min-width: variables.$desktop-small) {
 		padding: 40px;
@@ -73,8 +73,8 @@ onMounted(() => {
 	&__head {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 24px;
 		gap: 20px;
+		margin-bottom: 24px;
 
 		@media (min-width: variables.$desktop-small) {
 			flex-direction: row;
@@ -117,8 +117,8 @@ onMounted(() => {
 
 	&__item {
 		padding: 20px;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 	}
 
 	&__item-title {

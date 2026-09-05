@@ -129,7 +129,11 @@ const actionsRef = ref<HTMLElement | null>(null)
 
 const addToCart = () => {
 	// Цена выбранной отделки уже посчитана — в корзину уходит именно она
-	storeCart.add({ ...props.product, price: price.value, oldPrice: oldPrice.value }, quantity.value, selectionLabel.value)
+	storeCart.add(
+		{ ...props.product, price: price.value, oldPrice: oldPrice.value },
+		quantity.value,
+		selectionLabel.value
+	)
 
 	// Клон летит из галереи товара в иконку корзины
 	flyToCart(document.querySelector('.product-gallery__main') as HTMLElement | null)
@@ -358,8 +362,8 @@ watch(
 	&__meta {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		gap: 8px 20px;
+		align-items: center;
 	}
 
 	&__article,
@@ -375,12 +379,12 @@ watch(
 	&__price-block {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 12px 20px;
 		align-items: center;
 		justify-content: space-between;
 		padding: 20px;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-muted;
-		gap: 12px 20px;
+		border-radius: variables.$radius-m;
 	}
 
 	&__price-body {
@@ -391,13 +395,13 @@ watch(
 
 	&__price-hint {
 		padding: 0;
-		border: 0;
-		background-color: transparent;
 		color: variables.$color-ink-soft;
-		cursor: pointer;
 		text-align: left;
 		text-decoration: underline;
 		text-underline-offset: 3px;
+		cursor: pointer;
+		background-color: transparent;
+		border: 0;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -430,10 +434,10 @@ watch(
 	&__spec {
 		display: flex;
 		flex-direction: column;
+		gap: 4px;
 		padding: 12px 14px;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-s;
-		gap: 4px;
 	}
 
 	&__spec-label {
@@ -443,19 +447,19 @@ watch(
 	&__variants-title {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 6px;
 		align-items: baseline;
 		margin: 0 0 10px;
-		gap: 6px;
 	}
 
 	&__variants-value {
-		color: variables.$color-ink-soft;
 		font-weight: 400;
+		color: variables.$color-ink-soft;
 	}
 
 	&__variants-diff {
-		color: variables.$color-accent;
 		font-weight: 400;
+		color: variables.$color-accent;
 	}
 
 	&__variants-list {
@@ -467,8 +471,8 @@ watch(
 	&__actions {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		gap: 12px;
+		align-items: center;
 	}
 
 	&__quantity {
@@ -501,13 +505,13 @@ watch(
 
 	&__icon-btn {
 		display: inline-flex;
+		gap: 8px;
 		align-items: center;
 		padding: 0;
-		border: 0;
-		background-color: transparent;
 		color: variables.$color-ink-soft;
 		cursor: pointer;
-		gap: 8px;
+		background-color: transparent;
+		border: 0;
 		transition: color 0.3s ease-in-out;
 
 		&_active {
@@ -534,22 +538,22 @@ watch(
 	&__benefits {
 		display: flex;
 		flex-direction: column;
+		gap: 12px;
 		padding-top: 8px;
 		border-top: 1px solid variables.$color-line;
-		gap: 12px;
 	}
 
 	&__benefit {
 		display: flex;
+		gap: 10px;
 		align-items: flex-start;
 		color: variables.$color-ink-soft;
-		gap: 10px;
 	}
 
 	&__benefit-icon {
+		flex: 0 0 auto;
 		width: 20px;
 		height: 20px;
-		flex: 0 0 auto;
 		color: variables.$color-accent;
 	}
 }

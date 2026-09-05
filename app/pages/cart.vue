@@ -63,11 +63,7 @@ const onClear = () => {
 						</div>
 
 						<aside class="cart-page__aside">
-							<CartSummary
-								:promo-note="data.promoNote"
-								submit-to="/checkout/"
-								submit-label="Перейти к оформлению"
-							/>
+							<CartSummary :promo-note="data.promoNote" submit-to="/checkout/" submit-label="Перейти к оформлению" />
 						</aside>
 					</div>
 
@@ -113,11 +109,11 @@ const onClear = () => {
 	}
 
 	&__head {
-		margin-bottom: 28px;
 		display: flex;
-		align-items: baseline;
 		flex-wrap: wrap;
 		gap: 8px 16px;
+		align-items: baseline;
+		margin-bottom: 28px;
 
 		@media (min-width: variables.$desktop) {
 			margin-bottom: 40px;
@@ -136,8 +132,8 @@ const onClear = () => {
 	&__layout {
 		display: grid;
 		grid-template-columns: 1fr;
-		align-items: start;
 		gap: 24px;
+		align-items: start;
 
 		@media (min-width: variables.$desktop-small) {
 			grid-template-columns: minmax(0, 1fr) 380px;
@@ -156,10 +152,10 @@ const onClear = () => {
 	}
 
 	&__clear {
-		margin-top: 20px;
 		display: inline-flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
+		margin-top: 20px;
 		color: variables.$color-ink-soft;
 		transition: color 0.3s ease-in-out;
 

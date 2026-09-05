@@ -43,41 +43,41 @@ const modelValue = defineModel<boolean>('modelValue')
 	position: relative;
 	display: flex;
 	align-items: center;
-	padding-left: 32px;
 	width: fit-content;
+	padding-left: 32px;
 	cursor: pointer;
 
 	&__checkbox-icon-wrapper {
 		position: absolute;
-		left: 0;
 		top: 50%;
-		transform: translateY(-50%);
-		width: 20px;
-		min-width: 20px;
-		height: 20px;
+		left: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 20px;
+		min-width: 20px;
+		height: 20px;
+		color: variables.$color-white;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line-strong;
 		border-radius: 6px;
-		background-color: variables.$color-surface;
-		color: variables.$color-white;
+		transform: translateY(-50%);
 		transition:
 			background-color 0.3s ease,
 			border-color 0.3s ease;
 	}
 
 	&__checkbox-icon {
-		transform: scale(0);
 		width: 14px;
 		height: 14px;
+		transform: scale(0);
 		transition: transform 0.3s ease;
 	}
 
 	&__checkbox-error {
 		position: absolute;
-		left: 0;
 		top: 105%;
+		left: 0;
 		color: variables.$color-error;
 	}
 }

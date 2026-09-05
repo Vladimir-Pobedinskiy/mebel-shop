@@ -23,7 +23,7 @@ $font-secondary: 'Steppe', 'Arial', sans-serif;
 
 /* Палитра — тёплая «премиум-мебельная» */
 $color-bg: #f7f4ef; // тёплый песочный фон
-$color-surface: #ffffff;
+$color-surface: #fff;
 $color-ink: #1c1a17; // основной текст
 $color-ink-soft: #6b6357; // вторичный текст
 $color-accent: #b4632a; // терракота / орех — CTA
@@ -34,8 +34,8 @@ $color-accent-2-hover: #24382f;
 $color-line: #e4ddd2; // границы и разделители
 $color-line-strong: #cfc4b4;
 $color-muted: #f1ebe2; // подложки карточек и полей
-$color-black: #000000;
-$color-white: #ffffff;
+$color-black: #000;
+$color-white: #fff;
 
 /* Служебные цвета */
 $color-success: #7bc542;
@@ -45,7 +45,7 @@ $color-error: #ff5b4c;
 /* Соц-сети */
 $color-viber: #615eee;
 $color-instagram: #d82d7e;
-$color-vk: #0077ff;
+$color-vk: #07f;
 $color-whatsapp: #27b43d;
 $color-telegram: #00b2ff;
 
@@ -63,5 +63,5 @@ $header-height-desktop: 128px;
 $radius-s: 8px;
 $radius-m: 16px;
 $radius-l: 24px;
-$shadow-soft: 0 20px 60px rgba(28, 26, 23, 8%);
-$shadow-hover: 0 24px 70px rgba(28, 26, 23, 14%);
+$shadow-soft: 0 20px 60px rgb(28, 26, 23, 8%);
+$shadow-hover: 0 24px 70px rgb(28, 26, 23, 14%);

@@ -58,13 +58,13 @@ const emits = defineEmits<{
 
 	&__item {
 		display: flex;
-		align-items: center;
 		flex-grow: 1;
+		align-items: center;
 
 		&:not(:last-child)::after {
-			margin: 0 8px;
-			height: 1px;
 			flex-grow: 1;
+			height: 1px;
+			margin: 0 8px;
 			content: '';
 			background-color: variables.$color-line;
 
@@ -80,33 +80,33 @@ const emits = defineEmits<{
 
 	&__btn {
 		display: flex;
-		align-items: center;
 		gap: 10px;
-		text-align: left;
+		align-items: center;
 		color: variables.$color-ink-soft;
+		text-align: left;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
 			.checkout-steps__item_done &:hover {
-				cursor: pointer;
 				color: variables.$color-accent;
+				cursor: pointer;
 			}
 		}
 	}
 
 	&__num {
-		width: 32px;
-		min-width: 32px;
-		height: 32px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 32px;
+		min-width: 32px;
+		height: 32px;
 		font-family: variables.$font;
 		font-size: 14px;
 		font-weight: 600;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: 50%;
-		background-color: variables.$color-surface;
 		transition:
 			color 0.3s ease-in-out,
 			border-color 0.3s ease-in-out,
@@ -114,8 +114,8 @@ const emits = defineEmits<{
 
 		.checkout-steps__item_active & {
 			color: variables.$color-white;
-			border-color: variables.$color-accent;
 			background-color: variables.$color-accent;
+			border-color: variables.$color-accent;
 		}
 
 		.checkout-steps__item_done & {

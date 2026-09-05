@@ -295,16 +295,16 @@ watch(
 		color 0.4s ease-in-out;
 
 	&_solid {
-		border-bottom: 1px solid variables.$color-line;
-		background-color: rgba(247 244 239 / 80%);
-		backdrop-filter: blur(16px);
 		color: variables.$color-ink;
+		background-color: rgb(247 244 239 / 80%);
+		border-bottom: 1px solid variables.$color-line;
+		backdrop-filter: blur(16px);
 	}
 
 	&_transparent {
-		border-bottom: 1px solid transparent;
-		background-color: transparent;
 		color: variables.$color-white;
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
 	}
 
 	&__top-line {
@@ -313,23 +313,23 @@ watch(
 
 		@media (min-width: variables.$desktop-small) {
 			display: block;
-			border-color: rgba(107 99 87 / 15%);
+			border-color: rgb(107 99 87 / 15%);
 		}
 	}
 
 	&__top-line-inner {
-		padding-top: 8px;
-		padding-bottom: 8px;
 		display: flex;
+		gap: 24px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 24px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 
 	// При нехватке ширины ужимается промо-строка, а не контакты справа
 	&__top-line-text {
-		overflow: hidden;
 		min-width: 0;
+		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
@@ -337,8 +337,8 @@ watch(
 	&__top-line-actions {
 		display: flex;
 		flex-shrink: 0;
-		align-items: center;
 		gap: 16px;
+		align-items: center;
 
 		@media (min-width: variables.$desktop) {
 			gap: 20px;
@@ -347,12 +347,12 @@ watch(
 
 	&__top-line-link {
 		display: flex;
-		align-items: center;
-		background-color: transparent;
-		color: inherit;
-		cursor: pointer;
 		gap: 6px;
+		align-items: center;
+		color: inherit;
 		white-space: nowrap;
+		cursor: pointer;
+		background-color: transparent;
 	}
 
 	&__top-line-icon {
@@ -361,22 +361,22 @@ watch(
 	}
 
 	&__top-line-phone {
-		white-space: nowrap;
 		font-weight: 600;
+		white-space: nowrap;
 	}
 
 	// Компактный CTA: обычная кнопка в 40px распирает строку контактов
 	&__top-line-btn {
-		height: 30px;
-		padding: 0 16px;
 		display: flex;
 		align-items: center;
-		border-radius: 999px;
-		background-color: variables.$color-accent;
+		height: 30px;
+		padding: 0 16px;
 		color: variables.$color-white;
-		cursor: pointer;
-		transition: background-color 0.3s ease-in-out;
 		white-space: nowrap;
+		cursor: pointer;
+		background-color: variables.$color-accent;
+		border-radius: 999px;
+		transition: background-color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
@@ -387,9 +387,9 @@ watch(
 
 	&__inner {
 		display: flex;
+		gap: 16px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 16px;
 		min-height: 64px;
 
 		@media (min-width: variables.$desktop) {
@@ -403,8 +403,8 @@ watch(
 
 		@media (min-width: variables.$desktop-small) {
 			display: flex;
-			align-items: center;
 			gap: 20px;
+			align-items: center;
 			margin-right: auto;
 		}
 
@@ -420,11 +420,11 @@ watch(
 
 	&__nav-btn {
 		display: flex;
-		align-items: center;
 		gap: 8px;
-		background-color: transparent;
+		align-items: center;
 		color: inherit;
 		cursor: pointer;
+		background-color: transparent;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -446,8 +446,8 @@ watch(
 
 	&__actions {
 		display: flex;
-		align-items: center;
 		gap: 2px;
+		align-items: center;
 
 		@media (min-width: variables.$desktop) {
 			gap: 4px;
@@ -456,23 +456,23 @@ watch(
 
 	&__action {
 		position: relative;
-		width: 44px;
-		height: 44px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: transparent;
+		width: 44px;
+		height: 44px;
 		color: inherit;
 		cursor: pointer;
+		background-color: transparent;
+		border-radius: 50%;
 		transition:
 			background-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-accent;
 				color: variables.$color-white;
+				background-color: variables.$color-accent;
 			}
 		}
 
@@ -494,17 +494,17 @@ watch(
 		position: absolute;
 		top: 4px;
 		right: 0;
-		min-width: 18px;
-		height: 18px;
-		padding: 0 5px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 999px;
-		background-color: variables.$color-accent;
-		color: variables.$color-white;
+		min-width: 18px;
+		height: 18px;
+		padding: 0 5px;
 		font-size: 11px;
 		font-weight: 600;
+		color: variables.$color-white;
+		background-color: variables.$color-accent;
+		border-radius: 999px;
 	}
 
 	&__counter_bump {
@@ -518,8 +518,8 @@ watch(
 	}
 
 	&__search {
-		border-top: 1px solid variables.$color-line;
 		background-color: variables.$color-surface;
+		border-top: 1px solid variables.$color-line;
 	}
 
 	&__search-inner {
@@ -529,8 +529,8 @@ watch(
 
 	&__mega-menu {
 		display: none;
-		border-top: 1px solid variables.$color-line;
 		background-color: variables.$color-bg;
+		border-top: 1px solid variables.$color-line;
 
 		@media (min-width: variables.$desktop-small) {
 			display: block;
@@ -538,11 +538,11 @@ watch(
 	}
 
 	&__mega-menu-inner {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 32px;
 		padding-top: 32px;
 		padding-bottom: 40px;
-		display: grid;
-		gap: 32px;
-		grid-template-columns: 1fr;
 
 		@media (min-width: variables.$desktop) {
 			grid-template-columns: 1fr 300px;
@@ -551,8 +551,8 @@ watch(
 
 	&__mega-menu-categories {
 		display: grid;
-		gap: 28px 24px;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 28px 24px;
 
 		@media (min-width: variables.$desktop) {
 			grid-template-columns: repeat(4, 1fr);
@@ -560,10 +560,10 @@ watch(
 	}
 
 	&__mega-menu-children {
-		margin-top: 12px;
 		display: flex;
 		flex-direction: column;
 		gap: 6px;
+		margin-top: 12px;
 	}
 
 	&__mega-menu-child {
@@ -571,11 +571,11 @@ watch(
 	}
 
 	&__mega-menu-promo {
-		padding: 24px;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 		gap: 12px;
+		align-items: flex-start;
+		padding: 24px;
 	}
 
 	&__mega-menu-promo-text {
@@ -588,14 +588,14 @@ watch(
 
 	&__overlay {
 		position: fixed;
-		left: 0;
 		top: 0;
+		left: 0;
 		z-index: -1;
 		width: 100%;
 		height: 100vh;
-		border: 0;
-		background-color: rgba(28 26 23 / 35%);
 		cursor: default;
+		background-color: rgb(28 26 23 / 35%);
+		border: 0;
 	}
 }
 </style>

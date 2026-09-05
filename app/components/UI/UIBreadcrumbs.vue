@@ -52,8 +52,8 @@ withDefaults(
 
 .breadcrumbs {
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
+	align-items: center;
 	color: variables.$color-ink-soft;
 
 	&_centered {
@@ -61,7 +61,7 @@ withDefaults(
 	}
 
 	&_dark {
-		color: rgba(255 255 255 / 70%);
+		color: rgb(255 255 255 / 70%);
 	}
 
 	&__item:not(:last-of-type) {
@@ -71,12 +71,12 @@ withDefaults(
 
 	li:not(:last-of-type) {
 		&::after {
-			content: '/';
 			position: absolute;
-			margin-left: 7px;
 			top: 50%;
-			transform: translateY(-50%);
+			margin-left: 7px;
+			content: '/';
 			opacity: 0.6;
+			transform: translateY(-50%);
 		}
 	}
 

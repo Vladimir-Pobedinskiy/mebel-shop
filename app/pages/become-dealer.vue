@@ -41,23 +41,11 @@ usePageSeo(computed(() => data.value))
 				/>
 
 				<!-- B2B-блоки идут по данным: страница без них рендерится как раньше -->
-				<DealerWholesale
-					v-if="data.wholesaleUnit"
-					class="dealer-page__section"
-					:wholesale-unit="data.wholesaleUnit"
-				/>
+				<DealerWholesale v-if="data.wholesaleUnit" class="dealer-page__section" :wholesale-unit="data.wholesaleUnit" />
 
-				<DealerDiscounts
-					v-if="data.discountsUnit"
-					class="dealer-page__section"
-					:discounts-unit="data.discountsUnit"
-				/>
+				<DealerDiscounts v-if="data.discountsUnit" class="dealer-page__section" :discounts-unit="data.discountsUnit" />
 
-				<DealerLogistics
-					v-if="data.logisticsUnit"
-					class="dealer-page__section"
-					:logistics-unit="data.logisticsUnit"
-				/>
+				<DealerLogistics v-if="data.logisticsUnit" class="dealer-page__section" :logistics-unit="data.logisticsUnit" />
 
 				<DealerPolicy v-if="data.policyUnit" class="dealer-page__section" :policy-unit="data.policyUnit" />
 

@@ -118,11 +118,11 @@ onMounted(() => {
 
 	&__nav {
 		display: flex;
-		overflow-x: auto;
 		flex-wrap: nowrap;
 		gap: 8px;
 		padding-bottom: 4px;
 		margin-bottom: 28px;
+		overflow-x: auto;
 		scrollbar-width: none;
 
 		&::-webkit-scrollbar {
@@ -137,35 +137,35 @@ onMounted(() => {
 
 	&__nav-item {
 		padding: 10px 18px;
+		color: variables.$color-ink-soft;
+		white-space: nowrap;
+		cursor: pointer;
+		background-color: transparent;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
-		background-color: transparent;
-		color: variables.$color-ink-soft;
-		cursor: pointer;
-		white-space: nowrap;
 		transition:
 			background-color 0.3s ease-in-out,
 			border-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
 
 		&.active {
-			border-color: variables.$color-ink;
-			background-color: variables.$color-ink;
 			color: variables.$color-white;
+			background-color: variables.$color-ink;
+			border-color: variables.$color-ink;
 		}
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover:not(.active) {
-				border-color: variables.$color-line-strong;
 				color: variables.$color-ink;
+				border-color: variables.$color-line-strong;
 			}
 		}
 	}
 
 	&__panel {
 		display: grid;
-		overflow: hidden;
 		gap: 24px;
+		overflow: hidden;
 		border-radius: variables.$radius-l;
 
 		@media (min-width: variables.$tablet-big) {
@@ -194,8 +194,8 @@ onMounted(() => {
 	&__panel-body {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 		gap: 16px;
+		align-items: flex-start;
 	}
 
 	&__panel-title {
@@ -209,9 +209,9 @@ onMounted(() => {
 
 	&__panel-items {
 		display: flex;
-		width: 100%;
 		flex-direction: column;
 		gap: 10px;
+		width: 100%;
 		padding-top: 8px;
 		border-top: 1px solid variables.$color-line;
 	}

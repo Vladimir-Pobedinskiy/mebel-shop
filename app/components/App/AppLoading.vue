@@ -29,21 +29,21 @@ withDefaults(
 	top: 0;
 	left: 0;
 	z-index: 100000;
-	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(247 244 239 / 65%);
+	width: 100%;
+	height: 100%;
+	background-color: rgb(247 244 239 / 65%);
 	backdrop-filter: blur(6px);
 
 	&.loading-local {
 		position: relative;
 		z-index: 1;
-		width: 100%;
-		min-height: 60vh;
-		height: auto;
 		flex: 1 1 auto;
+		width: 100%;
+		height: auto;
+		min-height: 60vh;
 		background-color: variables.$color-bg;
 		backdrop-filter: none;
 	}

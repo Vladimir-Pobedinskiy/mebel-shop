@@ -48,14 +48,14 @@ const value = defineModel<string>('value')
 	width: 100%;
 
 	&__field {
-		padding: 16px;
-		width: 100%;
 		display: block;
+		width: 100%;
+		padding: 16px;
+		color: variables.$color-ink;
 		resize: vertical;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-s;
-		background-color: variables.$color-surface;
-		color: variables.$color-ink;
 		transition:
 			border-color 0.4s ease-in-out,
 			box-shadow 0.4s ease-in-out;
@@ -74,8 +74,8 @@ const value = defineModel<string>('value')
 		}
 
 		&:disabled {
-			background-color: variables.$color-muted;
 			pointer-events: none;
+			background-color: variables.$color-muted;
 		}
 
 		&.error {
@@ -85,27 +85,27 @@ const value = defineModel<string>('value')
 
 	&__title {
 		position: absolute;
-		left: 16px;
 		top: 18px;
+		left: 16px;
 		color: variables.$color-ink-soft;
-		cursor: text;
 		pointer-events: none;
+		cursor: text;
 		transition: all 0.3s ease-in-out;
 	}
 
 	&__field:focus + &__title,
 	&__field:not(:placeholder-shown) + &__title {
 		padding: 0 6px;
-		transform: translateY(-30px);
 		font-size: 12px;
-		border-radius: 4px;
-		background-color: variables.$color-surface;
 		color: variables.$color-accent;
+		background-color: variables.$color-surface;
+		border-radius: 4px;
+		transform: translateY(-30px);
 	}
 
 	&__error-message {
-		margin-top: 4px;
 		display: block;
+		margin-top: 4px;
 		color: variables.$color-error;
 	}
 }
@@ -114,8 +114,8 @@ const value = defineModel<string>('value')
 	pointer-events: all;
 
 	&.disabled {
-		opacity: 0.6;
 		pointer-events: none;
+		opacity: 0.6;
 	}
 }
 </style>

@@ -200,8 +200,8 @@ onMounted(() => {
 
 	&__certificates {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
 
 		@media (min-width: variables.$tablet) {
 			grid-template-columns: repeat(3, 1fr);
@@ -214,11 +214,11 @@ onMounted(() => {
 
 	&__certificate-media {
 		display: block;
-		overflow: hidden;
 		margin-bottom: 12px;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 		transition: box-shadow 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -247,8 +247,8 @@ onMounted(() => {
 
 	&__production {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: 1fr;
+		gap: 16px;
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(2, 1fr);
@@ -262,8 +262,8 @@ onMounted(() => {
 	&__production-media {
 		display: block;
 		overflow: hidden;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__production-img {
@@ -283,8 +283,8 @@ onMounted(() => {
 
 	&__reviews {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: 1fr;
+		gap: 16px;
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(2, 1fr);
@@ -299,26 +299,26 @@ onMounted(() => {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		padding: 24px 20px;
 		gap: 12px;
+		padding: 24px 20px;
 	}
 
 	&__review-text {
-		margin: 0;
 		flex: 1 1 auto;
+		margin: 0;
 		color: variables.$color-ink-soft;
 	}
 
 	&__review-author {
 		display: flex;
 		flex-direction: column;
-		margin: 0;
 		gap: 4px;
+		margin: 0;
 	}
 
 	&__review-company {
-		color: variables.$color-ink-soft;
 		font-weight: 400;
+		color: variables.$color-ink-soft;
 	}
 
 	&__review-tag {

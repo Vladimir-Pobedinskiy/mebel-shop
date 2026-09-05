@@ -192,8 +192,8 @@ onUnmounted(() => {
 	&__btn-line {
 		width: 22px;
 		height: 2px;
-		border-radius: 2px;
 		background-color: variables.$color-ink;
+		border-radius: 2px;
 		transition:
 			transform 0.35s ease-in-out,
 			opacity 0.25s ease-in-out;
@@ -202,16 +202,16 @@ onUnmounted(() => {
 	&__btn {
 		position: relative;
 		z-index: 999;
-		width: 44px;
-		height: 44px;
 		display: flex;
 		flex-direction: column;
+		gap: 5px;
 		align-items: center;
 		justify-content: center;
-		gap: 5px;
-		border-radius: 50%;
-		background-color: transparent;
+		width: 44px;
+		height: 44px;
 		cursor: pointer;
+		background-color: transparent;
+		border-radius: 50%;
 
 		&_dark .burger__btn-line {
 			background-color: variables.$color-ink;
@@ -239,8 +239,8 @@ onUnmounted(() => {
 
 .burger-nav {
 	position: fixed;
-	left: 0;
 	top: 0;
+	left: 0;
 	z-index: 998;
 	width: 100%;
 	height: 100%;
@@ -249,14 +249,14 @@ onUnmounted(() => {
 	background-color: variables.$color-bg;
 
 	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		justify-content: space-between;
+		height: 100%;
 		padding-top: 88px;
 		padding-bottom: 32px;
 		overflow-y: auto;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		gap: 40px;
 	}
 
 	&__columns {

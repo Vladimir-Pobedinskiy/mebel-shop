@@ -70,14 +70,14 @@ usePageSeo(computed(() => data.value))
 		gap: 24px;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 48px;
 		padding: 28px;
-		border-radius: variables.$radius-l;
+		margin-top: 48px;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-l;
 
 		@media (min-width: variables.$desktop) {
-			margin-top: 88px;
 			padding: 40px;
+			margin-top: 88px;
 		}
 	}
 

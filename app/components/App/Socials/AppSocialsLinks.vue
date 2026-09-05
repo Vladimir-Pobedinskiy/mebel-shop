@@ -22,7 +22,7 @@ withDefaults(
 <style lang="scss">
 .socials-links {
 	display: flex;
-	align-items: center;
 	gap: 10px;
+	align-items: center;
 }
 </style>

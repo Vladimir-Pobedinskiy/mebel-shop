@@ -84,15 +84,15 @@ const modelValue = computed({
 
 .multiselect {
 	min-height: 52px;
-	color: variables.$color-ink;
 	font-family: variables.$font;
+	color: variables.$color-ink;
 
 	&__tags {
-		padding: 15px 40px 0 16px;
 		min-height: 52px;
+		padding: 15px 40px 0 16px;
+		font-size: 14px;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-s;
-		font-size: 14px;
 		transition:
 			border-color 0.4s ease-in-out,
 			box-shadow 0.4s ease-in-out;
@@ -105,27 +105,27 @@ const modelValue = computed({
 
 	&.primary {
 		.multiselect__tags {
-			border-color: variables.$color-line;
 			background-color: variables.$color-surface;
+			border-color: variables.$color-line;
 		}
 	}
 
 	&.secondary {
 		.multiselect__tags {
-			border-color: transparent;
 			background-color: variables.$color-muted;
+			border-color: transparent;
 		}
 	}
 
 	&__placeholder,
 	&__single,
 	&__input {
-		margin-bottom: 8px;
 		padding-left: 0;
-		background-color: transparent;
-		color: variables.$color-ink;
+		margin-bottom: 8px;
 		font-size: 14px;
 		line-height: 1.4;
+		color: variables.$color-ink;
+		background-color: transparent;
 	}
 
 	&__placeholder {
@@ -135,21 +135,21 @@ const modelValue = computed({
 	&__content-wrapper {
 		margin-top: 6px;
 		overflow-x: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-s;
-		background-color: variables.$color-surface;
 		box-shadow: variables.$shadow-soft;
 	}
 
 	&__option {
-		padding: 12px 16px;
 		min-height: 44px;
+		padding: 12px 16px;
 		font-size: 14px;
 		white-space: normal;
 
 		&--highlight {
-			background-color: variables.$color-muted;
 			color: variables.$color-ink;
+			background-color: variables.$color-muted;
 
 			&::after {
 				display: none;
@@ -157,9 +157,9 @@ const modelValue = computed({
 		}
 
 		&--selected {
-			background-color: variables.$color-accent-soft;
-			color: variables.$color-accent;
 			font-weight: 600;
+			color: variables.$color-accent;
+			background-color: variables.$color-accent-soft;
 
 			&::after {
 				display: none;
@@ -168,21 +168,21 @@ const modelValue = computed({
 	}
 
 	&--disabled {
-		opacity: 0.6;
-		background-color: transparent;
 		pointer-events: none;
+		background-color: transparent;
+		opacity: 0.6;
 	}
 }
 
 .select-caret-icon {
 	position: absolute;
-	right: 14px;
 	top: 50%;
-	transform: translateY(-50%);
+	right: 14px;
 	width: 16px;
 	height: 16px;
 	color: variables.$color-ink-soft;
 	pointer-events: none;
+	transform: translateY(-50%);
 	transition: transform 0.3s ease-in-out;
 }
 

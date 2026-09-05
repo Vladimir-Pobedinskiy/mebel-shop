@@ -130,8 +130,8 @@ const formatValue = (value: number) => (props.isPrice ? priceFormatter(value) : 
 	width: 100%;
 
 	&_disabled {
-		opacity: 0.5;
 		pointer-events: none;
+		opacity: 0.5;
 	}
 
 	&__fields {
@@ -140,14 +140,14 @@ const formatValue = (value: number) => (props.isPrice ? priceFormatter(value) : 
 	}
 
 	&__field {
-		padding: 8px 12px;
-		flex: 1 1 0;
 		display: flex;
-		align-items: center;
+		flex: 1 1 0;
 		gap: 8px;
+		align-items: center;
+		padding: 8px 12px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-s;
-		background-color: variables.$color-surface;
 	}
 
 	&__field-title {
@@ -156,12 +156,12 @@ const formatValue = (value: number) => (props.isPrice ? priceFormatter(value) : 
 
 	&__field-input {
 		width: 100%;
-		border: 0;
-		background-color: transparent;
-		color: variables.$color-ink;
 		font-family: variables.$font;
 		font-size: 14px;
 		font-weight: 600;
+		color: variables.$color-ink;
+		background-color: transparent;
+		border: 0;
 
 		&:focus {
 			outline: transparent;
@@ -170,8 +170,8 @@ const formatValue = (value: number) => (props.isPrice ? priceFormatter(value) : 
 
 	&__track-wrapper {
 		position: relative;
-		margin: 24px 0 8px;
 		height: 4px;
+		margin: 24px 0 8px;
 	}
 
 	&__track,
@@ -194,35 +194,35 @@ const formatValue = (value: number) => (props.isPrice ? priceFormatter(value) : 
 
 	&__input {
 		position: absolute;
-		left: 0;
 		top: -8px;
+		left: 0;
 		width: 100%;
 		height: 20px;
 		margin: 0;
 		appearance: none;
-		background-color: transparent;
 		pointer-events: none;
+		background-color: transparent;
 
 		&::-webkit-slider-thumb {
-			appearance: none;
 			width: 20px;
 			height: 20px;
+			appearance: none;
+			pointer-events: all;
+			cursor: pointer;
+			background-color: variables.$color-surface;
 			border: 2px solid variables.$color-accent;
 			border-radius: 50%;
-			background-color: variables.$color-surface;
 			box-shadow: variables.$shadow-soft;
-			cursor: pointer;
-			pointer-events: all;
 		}
 
 		&::-moz-range-thumb {
 			width: 20px;
 			height: 20px;
+			pointer-events: all;
+			cursor: pointer;
+			background-color: variables.$color-surface;
 			border: 2px solid variables.$color-accent;
 			border-radius: 50%;
-			background-color: variables.$color-surface;
-			cursor: pointer;
-			pointer-events: all;
 		}
 
 		&:focus {

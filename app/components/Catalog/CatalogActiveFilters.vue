@@ -92,8 +92,8 @@ const activeFilters = computed<IActiveFilter[]>(() => {
 .catalog-active-filters {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	gap: 10px 16px;
+	align-items: center;
 
 	&__list {
 		display: flex;
@@ -103,10 +103,10 @@ const activeFilters = computed<IActiveFilter[]>(() => {
 
 	&__reset {
 		padding: 0;
-		border: 0;
-		background-color: transparent;
 		color: variables.$color-ink-soft;
 		cursor: pointer;
+		background-color: transparent;
+		border: 0;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {

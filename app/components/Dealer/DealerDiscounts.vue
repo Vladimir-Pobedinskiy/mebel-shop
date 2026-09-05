@@ -109,40 +109,40 @@ onMounted(() => {
 	&__row {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 12px;
+		gap: 10px;
 		padding: 20px;
+		margin-bottom: 12px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
-		gap: 10px;
 
 		@media (min-width: variables.$tablet) {
 			display: table-row;
-			margin-bottom: 0;
 			padding: 0;
+			margin-bottom: 0;
+			background-color: transparent;
 			border: 0;
 			border-radius: 0;
-			background-color: transparent;
 		}
 	}
 
 	&__td {
 		display: flex;
+		gap: 16px;
 		align-items: baseline;
 		justify-content: space-between;
-		gap: 16px;
 
 		&::before {
-			content: attr(data-label);
-			color: variables.$color-ink-soft;
 			font-size: 12px;
+			color: variables.$color-ink-soft;
+			content: attr(data-label);
 		}
 
 		@media (min-width: variables.$tablet) {
 			display: table-cell;
 			padding: 18px 16px;
-			border-bottom: 1px solid variables.$color-line;
 			vertical-align: top;
+			border-bottom: 1px solid variables.$color-line;
 
 			&::before {
 				content: none;

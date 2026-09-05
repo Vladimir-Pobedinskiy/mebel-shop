@@ -104,8 +104,8 @@ watch(
 	z-index: 400;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
 	gap: 12px;
+	align-items: flex-end;
 
 	@media (min-width: variables.$desktop) {
 		right: 28px;
@@ -114,30 +114,30 @@ watch(
 
 	&__list {
 		display: flex;
-		max-width: calc(100vw - 32px);
 		flex-direction: column;
-		align-items: flex-end;
 		gap: 10px;
+		align-items: flex-end;
+		max-width: calc(100vw - 32px);
 	}
 
 	&__icon {
+		flex: 0 0 auto;
 		width: 22px;
 		height: 22px;
-		flex: 0 0 auto;
 	}
 
 	&__link {
 		display: flex;
+		gap: 12px;
 		align-items: center;
 		padding: 12px 16px;
+		color: variables.$color-ink;
+		text-align: left;
+		cursor: pointer;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 		box-shadow: variables.$shadow-soft;
-		color: variables.$color-ink;
-		cursor: pointer;
-		gap: 12px;
-		text-align: left;
 		transition:
 			border-color 0.3s ease-in-out,
 			box-shadow 0.3s ease-in-out;
@@ -175,16 +175,16 @@ watch(
 
 	&__toggle {
 		position: relative;
-		width: 56px;
-		height: 56px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-accent;
-		box-shadow: variables.$shadow-hover;
+		width: 56px;
+		height: 56px;
 		color: variables.$color-white;
 		cursor: pointer;
+		background-color: variables.$color-accent;
+		border-radius: 50%;
+		box-shadow: variables.$shadow-hover;
 		transition: background-color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -208,12 +208,12 @@ watch(
 	// Пульс подсказывает, что кнопка кликабельна; при reduced-motion не запускается
 	&__pulse {
 		position: absolute;
-		left: 0;
 		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
-		border-radius: 50%;
 		background-color: variables.$color-accent;
+		border-radius: 50%;
 		animation: floating-actions-pulse 2.4s ease-out infinite;
 	}
 }

@@ -121,17 +121,17 @@ const handleClosed = () => {
 }
 
 .modal-overlay {
-	background-color: rgba(28 26 23 / 45%);
+	background-color: rgb(28 26 23 / 45%);
 	backdrop-filter: blur(6px);
 }
 
 .modal-content {
 	position: relative;
-	padding: 24px 16px;
 	width: calc(100% - 32px);
 	max-height: 90vh;
-	border-radius: variables.$radius-l;
+	padding: 24px 16px;
 	background-color: variables.$color-surface;
+	border-radius: variables.$radius-l;
 	box-shadow: variables.$shadow-hover;
 
 	@media (min-width: variables.$desktop) {
@@ -152,8 +152,8 @@ const handleClosed = () => {
 }
 
 .modal-inner {
-	overflow-y: auto;
 	max-height: calc(90vh - 48px);
+	overflow-y: auto;
 
 	@media (min-width: variables.$desktop) {
 		max-height: calc(90vh - 80px);
@@ -161,37 +161,37 @@ const handleClosed = () => {
 }
 
 .modal-header {
-	margin-bottom: 20px;
 	padding-right: 40px;
+	margin-bottom: 20px;
 }
 
 .modal-close-btn {
 	position: absolute;
-	right: 12px;
 	top: 12px;
+	right: 12px;
 	z-index: 2;
-	width: 40px;
-	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
-	background-color: variables.$color-muted;
+	width: 40px;
+	height: 40px;
 	color: variables.$color-ink;
 	cursor: pointer;
+	background-color: variables.$color-muted;
+	border-radius: 50%;
 	transition:
 		background-color 0.3s ease-in-out,
 		color 0.3s ease-in-out;
 
 	@media (min-width: variables.$desktop) {
-		right: 20px;
 		top: 20px;
+		right: 20px;
 	}
 
 	@media (min-width: variables.$desktop-small) {
 		&:hover {
-			background-color: variables.$color-accent;
 			color: variables.$color-white;
+			background-color: variables.$color-accent;
 		}
 	}
 }

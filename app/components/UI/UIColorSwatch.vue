@@ -40,14 +40,14 @@ const emits = defineEmits<{
 @use '@/assets/scss/general/variables';
 
 .color-swatch {
-	padding: 3px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 3px;
+	cursor: pointer;
+	background-color: transparent;
 	border: 1px solid transparent;
 	border-radius: 50%;
-	background-color: transparent;
-	cursor: pointer;
 	transition: border-color 0.3s ease-in-out;
 
 	@media (min-width: variables.$desktop-small) {
@@ -57,9 +57,9 @@ const emits = defineEmits<{
 	}
 
 	&:disabled {
-		opacity: 0.4;
-		cursor: default;
 		pointer-events: none;
+		cursor: default;
+		opacity: 0.4;
 	}
 
 	&_selected {

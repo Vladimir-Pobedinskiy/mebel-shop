@@ -76,13 +76,13 @@ const isShown = computed(() => isMounted.value && Boolean(props.triggerEl) && !i
 
 .product-sticky-bar {
 	position: fixed;
-	z-index: 50;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 50;
 	padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-	border-top: 1px solid variables.$color-line;
 	background-color: variables.$color-surface;
+	border-top: 1px solid variables.$color-line;
 	box-shadow: variables.$shadow-hover;
 
 	// Панель нужна только на мобиле: на десктопе кнопки карточки и так под рукой
@@ -92,23 +92,23 @@ const isShown = computed(() => isMounted.value && Boolean(props.triggerEl) && !i
 
 	&__inner {
 		display: flex;
+		gap: 12px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 12px;
 	}
 
 	&__body {
 		display: flex;
-		min-width: 0;
 		flex-direction: column;
 		gap: 2px;
+		min-width: 0;
 	}
 
 	&__title {
-		overflow: hidden;
 		margin: 0;
-		color: variables.$color-ink-soft;
+		overflow: hidden;
 		text-overflow: ellipsis;
+		color: variables.$color-ink-soft;
 		white-space: nowrap;
 	}
 

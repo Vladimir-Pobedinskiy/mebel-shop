@@ -83,12 +83,12 @@ const categoryCount = (slug: string) => {
 
 	&__filter {
 		display: flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 		padding: 10px 18px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
-		background-color: variables.$color-surface;
 		transition:
 			color 0.3s ease-in-out,
 			border-color 0.3s ease-in-out,
@@ -98,20 +98,20 @@ const categoryCount = (slug: string) => {
 			cursor: pointer;
 
 			&:hover {
-				border-color: variables.$color-accent;
 				color: variables.$color-accent;
+				border-color: variables.$color-accent;
 			}
 		}
 
 		&_active {
-			border-color: variables.$color-ink;
 			color: variables.$color-white;
 			background-color: variables.$color-ink;
+			border-color: variables.$color-ink;
 
 			@media (min-width: variables.$desktop-small) {
 				&:hover {
-					border-color: variables.$color-ink;
 					color: variables.$color-white;
+					border-color: variables.$color-ink;
 				}
 			}
 		}

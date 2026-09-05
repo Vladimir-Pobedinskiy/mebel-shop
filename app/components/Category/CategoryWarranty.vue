@@ -60,8 +60,8 @@ onMounted(() => {
 
 		@media (min-width: variables.$desktop-small) {
 			grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
-			align-items: start;
 			gap: 48px;
+			align-items: start;
 		}
 	}
 
@@ -74,14 +74,14 @@ onMounted(() => {
 
 	&__icon-wrapper {
 		display: flex;
-		width: 52px;
-		height: 52px;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
+		width: 52px;
+		height: 52px;
 		margin-bottom: 20px;
-		background-color: variables.$color-accent-soft;
 		color: variables.$color-accent;
+		background-color: variables.$color-accent-soft;
+		border-radius: 50%;
 	}
 
 	&__icon {
@@ -122,13 +122,13 @@ onMounted(() => {
 
 	&__item {
 		display: flex;
-		height: 100%;
 		flex-direction: column;
 		gap: 10px;
+		height: 100%;
 		padding: 28px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__item-title {

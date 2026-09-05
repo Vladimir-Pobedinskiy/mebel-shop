@@ -36,44 +36,44 @@ const emits = defineEmits<{
 @use '@/assets/scss/general/variables';
 
 .tag {
-	padding: 6px 12px;
-	width: fit-content;
 	display: flex;
-	align-items: center;
 	gap: 6px;
+	align-items: center;
+	width: fit-content;
+	padding: 6px 12px;
 	text-align: center;
 	border: 1px solid transparent;
 	border-radius: 999px;
 
 	&_light {
-		background-color: variables.$color-muted;
 		color: variables.$color-ink;
+		background-color: variables.$color-muted;
 	}
 
 	&_accent {
-		background-color: variables.$color-accent;
 		color: variables.$color-white;
+		background-color: variables.$color-accent;
 	}
 
 	&_green {
-		background-color: variables.$color-accent-2;
 		color: variables.$color-white;
+		background-color: variables.$color-accent-2;
 	}
 
 	&_outline {
-		border-color: variables.$color-line-strong;
 		color: variables.$color-ink-soft;
+		border-color: variables.$color-line-strong;
 	}
 
 	&__remove {
-		width: 16px;
-		height: 16px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: transparent;
+		width: 16px;
+		height: 16px;
 		color: inherit;
 		cursor: pointer;
+		background-color: transparent;
 		opacity: 0.6;
 		transition: opacity 0.3s ease-in-out;
 

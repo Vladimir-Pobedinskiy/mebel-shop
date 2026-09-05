@@ -71,14 +71,14 @@ onMounted(() => {
 	&__head {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 28px;
 		gap: 20px;
+		margin-bottom: 28px;
 
 		@media (min-width: variables.$tablet) {
 			flex-direction: row;
+			gap: 32px;
 			align-items: flex-end;
 			justify-content: space-between;
-			gap: 32px;
 		}
 	}
 
@@ -119,10 +119,10 @@ onMounted(() => {
 
 	&__media {
 		display: block;
-		overflow: hidden;
 		width: 100%;
-		border-radius: variables.$radius-m;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__img {

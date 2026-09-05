@@ -92,9 +92,9 @@ onMounted(() => {
 
 		@media (min-width: variables.$tablet-big) {
 			flex-direction: row;
+			gap: 32px;
 			align-items: flex-end;
 			justify-content: space-between;
-			gap: 32px;
 		}
 	}
 
@@ -118,17 +118,17 @@ onMounted(() => {
 
 	&__card {
 		display: flex;
-		height: 100%;
 		flex-direction: column;
 		gap: 16px;
+		height: 100%;
 	}
 
 	&__card-media {
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
-		border-radius: variables.$radius-m;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__card-img {
@@ -149,8 +149,8 @@ onMounted(() => {
 	}
 
 	&__card-date {
-		margin-top: auto;
 		padding-top: 8px;
+		margin-top: auto;
 		color: variables.$color-ink-soft;
 	}
 }

@@ -31,7 +31,8 @@ const rangeFilters = computed(() =>
 
 const listFilters = computed(() =>
 	props.filters.filter(
-		filter => (filter.type === 'checkbox' || filter.type === 'color') && isMultiKey(filter.name) && filter.options?.length
+		filter =>
+			(filter.type === 'checkbox' || filter.type === 'color') && isMultiKey(filter.name) && filter.options?.length
 	)
 )
 
@@ -40,18 +41,14 @@ const toggleFilter = computed(() => props.filters.find(filter => filter.type ===
 // В сторе null означает «границу не трогали»: так в URL не попадают значения по умолчанию
 const rangeValue = (filter: IFilter): number[] => {
 	const { from, to } = store.rangeValue(filter.name as ICatalogRangeName)
-	return [from ?? (filter.min ?? 0), to ?? (filter.max ?? 0)]
+	return [from ?? filter.min ?? 0, to ?? filter.max ?? 0]
 }
 
 const onRangeChange = (filter: IFilter, value: number[]) => {
 	const min = filter.min ?? 0
 	const max = filter.max ?? 0
 
-	store.setRange(
-		filter.name as ICatalogRangeName,
-		value[0] <= min ? null : value[0],
-		value[1] >= max ? null : value[1]
-	)
+	store.setRange(filter.name as ICatalogRangeName, value[0] <= min ? null : value[0], value[1] >= max ? null : value[1])
 }
 
 // Шаг ползунка: цена ходит тысячами, габариты — сантиметрами
@@ -73,9 +70,7 @@ const inStock = computed({
 		<div v-if="isModal" class="catalog-filters-panel__head">
 			<p class="catalog-filters-panel__head-title h4">Фильтры</p>
 
-			<p v-if="store.activeCount" class="catalog-filters-panel__head-count text-s">
-				выбрано: {{ store.activeCount }}
-			</p>
+			<p v-if="store.activeCount" class="catalog-filters-panel__head-count text-s">выбрано: {{ store.activeCount }}</p>
 		</div>
 
 		<div class="catalog-filters-panel__body">
@@ -183,11 +178,11 @@ const inStock = computed({
 
 	&__head {
 		display: flex;
+		gap: 16px;
 		align-items: baseline;
 		justify-content: space-between;
 		padding-bottom: 16px;
 		border-bottom: 1px solid variables.$color-line;
-		gap: 16px;
 	}
 
 	&__head-title {
@@ -231,8 +226,8 @@ const inStock = computed({
 
 	&__option {
 		display: inline-flex;
-		align-items: baseline;
 		gap: 6px;
+		align-items: baseline;
 	}
 
 	&__option-count {
@@ -242,8 +237,8 @@ const inStock = computed({
 	&__footer {
 		display: flex;
 		flex-direction: column;
-		padding-top: 16px;
 		gap: 10px;
+		padding-top: 16px;
 	}
 }
 </style>

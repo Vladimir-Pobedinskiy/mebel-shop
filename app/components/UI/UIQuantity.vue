@@ -76,25 +76,25 @@ const onInput = (event: Event) => {
 .quantity {
 	display: inline-flex;
 	align-items: center;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: 999px;
-	background-color: variables.$color-surface;
 
 	&_disabled {
-		opacity: 0.5;
 		pointer-events: none;
+		opacity: 0.5;
 	}
 
 	&__btn {
-		width: 40px;
-		height: 40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: transparent;
+		width: 40px;
+		height: 40px;
 		color: variables.$color-ink;
 		cursor: pointer;
+		background-color: transparent;
+		border-radius: 50%;
 		transition:
 			background-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
@@ -106,9 +106,9 @@ const onInput = (event: Event) => {
 		}
 
 		&:disabled {
-			opacity: 0.35;
-			cursor: default;
 			pointer-events: none;
+			cursor: default;
+			opacity: 0.35;
 		}
 	}
 
@@ -120,13 +120,13 @@ const onInput = (event: Event) => {
 	&__input {
 		width: 40px;
 		height: 40px;
-		border: 0;
-		background-color: transparent;
-		color: variables.$color-ink;
 		font-family: variables.$font;
 		font-size: 15px;
 		font-weight: 600;
+		color: variables.$color-ink;
 		text-align: center;
+		background-color: transparent;
+		border: 0;
 
 		&:focus {
 			outline: transparent;

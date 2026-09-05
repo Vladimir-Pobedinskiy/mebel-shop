@@ -51,8 +51,8 @@ defineProps<{
 	width: 100%;
 
 	&__slide {
-		height: auto;
 		display: flex;
+		height: auto;
 	}
 
 	.swiper-slide > * {
@@ -61,17 +61,17 @@ defineProps<{
 }
 
 .slider-nav-btn {
-	width: 48px;
-	min-width: 48px;
-	height: 48px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid variables.$color-line-strong;
-	border-radius: 50%;
-	background-color: variables.$color-surface;
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
 	color: variables.$color-ink;
 	cursor: pointer;
+	background-color: variables.$color-surface;
+	border: 1px solid variables.$color-line-strong;
+	border-radius: 50%;
 	transition:
 		background-color 0.3s ease-in-out,
 		border-color 0.3s ease-in-out,
@@ -79,15 +79,15 @@ defineProps<{
 
 	@media (min-width: variables.$desktop-small) {
 		&:hover {
+			color: variables.$color-white;
 			background-color: variables.$color-accent;
 			border-color: variables.$color-accent;
-			color: variables.$color-white;
 		}
 	}
 
 	&.swiper-button-disabled {
-		opacity: 0.35;
 		pointer-events: none;
+		opacity: 0.35;
 	}
 
 	&__icon {
@@ -101,10 +101,10 @@ defineProps<{
 }
 
 .swiper-pagination-wrapper {
-	margin-top: 20px;
 	display: flex;
+	gap: 8px;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	margin-top: 20px;
 }
 </style>

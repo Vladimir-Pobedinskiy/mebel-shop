@@ -20,7 +20,10 @@ if (error.value) {
 	})
 }
 
-usePageSeo(computed(() => data.value), { type: 'product' })
+usePageSeo(
+	computed(() => data.value),
+	{ type: 'product' }
+)
 
 const product = computed(() => data.value?.product)
 
@@ -98,10 +101,7 @@ const scrollToRequest = () => {
 			</div>
 
 			<!-- Блок доверия сквозной: показываем его у развёрнутой карточки модели -->
-			<AppTrustUnit
-				v-if="product.priceFactors?.length || product.configurations?.length"
-				class="product-page__trust"
-			/>
+			<AppTrustUnit v-if="product.priceFactors?.length || product.configurations?.length" class="product-page__trust" />
 		</template>
 	</div>
 </template>

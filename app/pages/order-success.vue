@@ -81,16 +81,16 @@ onMounted(() => {
 	}
 
 	&__card {
-		margin: 0 auto;
-		padding: 40px 24px;
-		max-width: 720px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-width: 720px;
+		padding: 40px 24px;
+		margin: 0 auto;
 		text-align: center;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-surface;
 		box-shadow: variables.$shadow-soft;
 
 		@media (min-width: variables.$desktop) {
@@ -99,15 +99,15 @@ onMounted(() => {
 	}
 
 	&__icon-wrapper {
-		margin-bottom: 24px;
-		width: 72px;
-		height: 72px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
+		width: 72px;
+		height: 72px;
+		margin-bottom: 24px;
 		color: variables.$color-white;
 		background-color: variables.$color-accent-2;
+		border-radius: 50%;
 	}
 
 	&__icon {
@@ -124,14 +124,14 @@ onMounted(() => {
 	}
 
 	&__number {
-		margin: 0 0 24px;
-		padding: 12px 24px;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		gap: 4px;
-		border-radius: variables.$radius-m;
+		align-items: center;
+		padding: 12px 24px;
+		margin: 0 0 24px;
 		background-color: variables.$color-accent-soft;
+		border-radius: variables.$radius-m;
 	}
 
 	&__number-label {
@@ -143,45 +143,45 @@ onMounted(() => {
 	}
 
 	&__text {
-		margin: 0 0 32px;
 		max-width: 520px;
+		margin: 0 0 32px;
 		color: variables.$color-ink-soft;
 	}
 
 	&__steps {
-		margin: 0 0 32px;
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		margin: 0 0 32px;
 		text-align: left;
 	}
 
 	&__step {
 		display: flex;
-		align-items: center;
 		gap: 12px;
+		align-items: center;
 	}
 
 	&__step-num {
-		width: 28px;
-		min-width: 28px;
-		height: 28px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 28px;
+		min-width: 28px;
+		height: 28px;
 		font-family: variables.$font;
 		font-size: 13px;
 		font-weight: 600;
-		border-radius: 50%;
 		color: variables.$color-accent;
 		background-color: variables.$color-muted;
+		border-radius: 50%;
 	}
 
 	&__actions {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
 		gap: 12px;
+		justify-content: center;
 	}
 }
 </style>

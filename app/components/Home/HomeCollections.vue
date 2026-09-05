@@ -104,8 +104,8 @@ onMounted(() => {
 	&__sticky {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		gap: 32px;
+		justify-content: center;
 
 		@media (min-width: variables.$desktop-small) {
 			min-height: 100svh;
@@ -126,22 +126,22 @@ onMounted(() => {
 	}
 
 	&__viewport {
-		overflow: hidden;
 		width: 100%;
+		overflow: hidden;
 	}
 
 	&__track {
 		display: flex;
-		overflow-x: auto;
 		gap: 16px;
 		padding: 0 16px 8px;
+		overflow-x: auto;
 		scroll-snap-type: x mandatory;
 		will-change: transform;
 
 		@media (min-width: variables.$desktop-small) {
-			overflow-x: visible;
 			gap: 24px;
 			padding: 0 max(16px, calc((100vw - #{variables.$container-width}) / 2 + 16px));
+			overflow-x: visible;
 		}
 	}
 
@@ -162,18 +162,18 @@ onMounted(() => {
 
 	&__card {
 		display: flex;
-		overflow: hidden;
-		height: 100%;
 		flex-direction: column;
+		height: 100%;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-surface;
 	}
 
 	&__card-media {
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -197,10 +197,10 @@ onMounted(() => {
 
 	&__card-link {
 		display: flex;
-		align-items: center;
 		gap: 8px;
-		margin-top: auto;
+		align-items: center;
 		padding-top: 12px;
+		margin-top: auto;
 		color: variables.$color-accent;
 	}
 

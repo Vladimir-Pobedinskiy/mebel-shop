@@ -68,8 +68,8 @@ onMounted(() => {
 
 	&__list {
 		display: grid;
-		gap: 12px;
 		grid-template-columns: 1fr;
+		gap: 12px;
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(2, 1fr);
@@ -86,14 +86,14 @@ onMounted(() => {
 
 	&__link {
 		display: flex;
-		width: 100%;
+		gap: 14px;
 		align-items: flex-start;
+		width: 100%;
 		padding: 20px;
+		color: variables.$color-ink;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
-		color: variables.$color-ink;
-		gap: 14px;
 		transition:
 			border-color 0.3s ease-in-out,
 			box-shadow 0.3s ease-in-out;
@@ -107,18 +107,18 @@ onMounted(() => {
 	}
 
 	&__icon {
+		flex: 0 0 auto;
 		width: 28px;
 		height: 28px;
-		flex: 0 0 auto;
 		color: variables.$color-accent;
 	}
 
 	&__body {
 		display: flex;
-		min-width: 0;
 		flex: 1 1 auto;
 		flex-direction: column;
 		gap: 6px;
+		min-width: 0;
 	}
 
 	&__description,
@@ -127,9 +127,9 @@ onMounted(() => {
 	}
 
 	&__download {
+		flex: 0 0 auto;
 		width: 20px;
 		height: 20px;
-		flex: 0 0 auto;
 		color: variables.$color-ink-soft;
 	}
 

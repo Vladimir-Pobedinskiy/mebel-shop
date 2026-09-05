@@ -107,8 +107,8 @@ onMounted(() => {
 
 		@media (min-width: variables.$desktop-small) {
 			grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
-			align-items: start;
 			gap: 48px;
+			align-items: start;
 		}
 	}
 
@@ -151,9 +151,9 @@ onMounted(() => {
 		flex-direction: column;
 		gap: 6px;
 		padding: 20px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__stat-value {

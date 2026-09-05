@@ -171,9 +171,9 @@ const onSubmit = handleSubmit(async values => {
 
 .dealer-form {
 	padding: 28px 20px;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: variables.$radius-l;
-	background-color: variables.$color-surface;
 
 	@media (min-width: variables.$desktop) {
 		padding: 40px;

@@ -43,13 +43,13 @@ const close = () => {
 		   Ограничение высоты без скролла как раз и роняло панель на футер. */
 		@media (min-width: variables.$desktop-small) {
 			position: sticky;
-			z-index: 1;
 			top: 115px;
+			z-index: 1;
 			display: block;
 			padding: 4px 20px;
+			background-color: variables.$color-surface;
 			border: 1px solid variables.$color-line;
 			border-radius: variables.$radius-m;
-			background-color: variables.$color-surface;
 		}
 	}
 }

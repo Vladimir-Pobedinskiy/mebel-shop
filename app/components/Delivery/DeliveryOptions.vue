@@ -74,14 +74,14 @@ onMounted(() => {
 		display: grid;
 		gap: 16px;
 		padding: 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$tablet-big) {
 			grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
-			align-items: center;
 			gap: 32px;
+			align-items: center;
 			padding: 28px;
 		}
 	}

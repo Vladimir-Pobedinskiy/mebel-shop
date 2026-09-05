@@ -60,8 +60,8 @@ onMounted(() => {
 
 	&__list {
 		display: grid;
-		gap: 16px;
 		grid-template-columns: 1fr;
+		gap: 16px;
 
 		@media (min-width: variables.$mobile-big) {
 			grid-template-columns: repeat(2, 1fr);
@@ -93,9 +93,9 @@ onMounted(() => {
 	&__param {
 		display: flex;
 		flex-direction: column;
+		gap: 2px;
 		padding-top: 10px;
 		border-top: 1px solid variables.$color-line;
-		gap: 2px;
 	}
 
 	&__param-label {

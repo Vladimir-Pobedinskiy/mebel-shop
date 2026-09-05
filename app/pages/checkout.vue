@@ -455,8 +455,8 @@ const onSubmit = async () => {
 	&__layout {
 		display: grid;
 		grid-template-columns: 1fr;
-		align-items: start;
 		gap: 24px;
+		align-items: start;
 
 		@media (min-width: variables.$desktop-small) {
 			grid-template-columns: minmax(0, 1fr) 380px;
@@ -470,9 +470,9 @@ const onSubmit = async () => {
 
 	&__form {
 		padding: 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$tablet) {
 			padding: 32px;
@@ -485,8 +485,8 @@ const onSubmit = async () => {
 	}
 
 	&__legend {
-		margin-bottom: 24px;
 		padding: 0;
+		margin-bottom: 24px;
 	}
 
 	&__hint {
@@ -495,10 +495,10 @@ const onSubmit = async () => {
 	}
 
 	&__radio-list {
-		margin-bottom: 28px;
 		display: flex;
 		flex-direction: column;
 		gap: 14px;
+		margin-bottom: 28px;
 	}
 
 	&__radio-body {
@@ -528,10 +528,10 @@ const onSubmit = async () => {
 	}
 
 	&__recap {
-		margin: 0 0 24px;
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		margin: 0 0 24px;
 	}
 
 	&__recap-row {
@@ -564,10 +564,10 @@ const onSubmit = async () => {
 	}
 
 	&__actions {
-		margin-top: 28px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px;
+		margin-top: 28px;
 	}
 }
 </style>

@@ -175,9 +175,9 @@ onMounted(() => {
 	&__inner {
 		display: grid;
 		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$tablet-big) {
 			grid-template-columns: 1fr 1fr;
@@ -186,8 +186,8 @@ onMounted(() => {
 
 	&__media-wrapper {
 		position: relative;
-		overflow: hidden;
 		min-height: 240px;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 
 		@media (min-width: variables.$tablet-big) {

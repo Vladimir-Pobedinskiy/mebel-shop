@@ -78,9 +78,9 @@ onMounted(() => {
 
 	&__item {
 		padding: 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop) {
 			padding: 28px;
@@ -88,16 +88,16 @@ onMounted(() => {
 	}
 
 	&__value {
-		margin: 0 0 8px;
 		display: flex;
-		align-items: baseline;
 		gap: 2px;
+		align-items: baseline;
+		margin: 0 0 8px;
 		font-family: variables.$font-secondary;
 		font-size: 34px;
 		font-weight: 600;
 		line-height: 1.1;
-		letter-spacing: -0.02em;
 		color: variables.$color-accent;
+		letter-spacing: -0.02em;
 
 		@media (min-width: variables.$desktop) {
 			font-size: 44px;

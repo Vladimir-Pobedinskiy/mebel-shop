@@ -4,8 +4,8 @@
 	color: variables.$color-ink;
 
 	img {
-		border-radius: variables.$radius-m;
 		margin-bottom: 40px;
+		border-radius: variables.$radius-m;
 
 		@media (min-width: variables.$desktop) {
 			margin-bottom: 64px;
@@ -34,21 +34,21 @@
 			margin-bottom: 8px;
 
 			&::before {
-				content: '';
 				position: absolute;
-				left: 0;
 				top: 9px;
+				left: 0;
 				width: 6px;
 				height: 6px;
-				border-radius: 50%;
+				content: '';
 				background-color: variables.$color-accent;
+				border-radius: 50%;
 			}
 		}
 	}
 
 	table {
-		border-collapse: collapse;
 		width: 100%;
+		border-collapse: collapse;
 	}
 
 	th,

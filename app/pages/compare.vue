@@ -73,11 +73,11 @@ const storeCompare = useCompareStore()
 	}
 
 	&__head {
-		margin-bottom: 28px;
 		display: flex;
-		align-items: baseline;
 		flex-wrap: wrap;
 		gap: 8px 16px;
+		align-items: baseline;
+		margin-bottom: 28px;
 
 		@media (min-width: variables.$desktop) {
 			margin-bottom: 40px;

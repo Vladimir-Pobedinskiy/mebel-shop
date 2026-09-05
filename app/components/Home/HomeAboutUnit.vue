@@ -128,10 +128,10 @@ onMounted(() => {
 
 	&__media {
 		position: relative;
-		overflow: hidden;
 		aspect-ratio: 4 / 5;
-		border-radius: variables.$radius-l;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-l;
 
 		@media (min-width: variables.$tablet-big) {
 			aspect-ratio: 1 / 1;
@@ -169,13 +169,13 @@ onMounted(() => {
 
 	&__counters {
 		display: grid;
-		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 24px;
+		width: 100%;
 		padding: 28px 0;
+		margin-bottom: 32px;
 		border-top: 1px solid variables.$color-line;
 		border-bottom: 1px solid variables.$color-line;
-		margin-bottom: 32px;
-		grid-template-columns: repeat(2, 1fr);
 
 		@media (min-width: variables.$desktop) {
 			grid-template-columns: repeat(4, 1fr);

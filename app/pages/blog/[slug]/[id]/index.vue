@@ -20,7 +20,10 @@ if (error.value) {
 	})
 }
 
-usePageSeo(computed(() => data.value), { type: 'article' })
+usePageSeo(
+	computed(() => data.value),
+	{ type: 'article' }
+)
 </script>
 
 <template>
@@ -87,8 +90,8 @@ usePageSeo(computed(() => data.value), { type: 'article' })
 	&__related-list {
 		display: grid;
 		gap: 16px;
-		margin: 0;
 		padding: 0;
+		margin: 0;
 		list-style: none;
 
 		@media (min-width: variables.$mobile-big) {

@@ -30,7 +30,10 @@ withDefaults(
 		<ul v-if="collections?.length" class="catalog-header__collections">
 			<li v-for="collection in collections" :key="collection.url">
 				<NuxtLink
-					:class="['catalog-header__collection text-s', { 'catalog-header__collection_active': collection.url === activeUrl }]"
+					:class="[
+						'catalog-header__collection text-s',
+						{ 'catalog-header__collection_active': collection.url === activeUrl },
+					]"
 					:to="collection.url"
 				>
 					{{ collection.label }}
@@ -71,25 +74,25 @@ withDefaults(
 	&__collection {
 		display: inline-flex;
 		padding: 8px 16px;
+		color: variables.$color-ink-soft;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
-		background-color: variables.$color-surface;
-		color: variables.$color-ink-soft;
 		transition:
 			border-color 0.3s ease-in-out,
 			background-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
 
 		&_active {
-			border-color: variables.$color-accent;
-			background-color: variables.$color-accent;
 			color: variables.$color-white;
+			background-color: variables.$color-accent;
+			border-color: variables.$color-accent;
 		}
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				border-color: variables.$color-accent;
 				color: variables.$color-accent;
+				border-color: variables.$color-accent;
 			}
 
 			&_active:hover {

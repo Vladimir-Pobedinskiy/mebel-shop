@@ -34,20 +34,20 @@ defineProps<{
 
 .status-stage {
 	display: flex;
-	align-items: center;
 	gap: 12px;
+	align-items: center;
 
 	&__icon-wrapper {
-		width: 28px;
-		min-width: 28px;
-		height: 28px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 28px;
+		min-width: 28px;
+		height: 28px;
+		color: variables.$color-white;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line-strong;
 		border-radius: 50%;
-		background-color: variables.$color-surface;
-		color: variables.$color-white;
 		transition:
 			background-color 0.3s ease,
 			border-color 0.3s ease;
@@ -89,8 +89,8 @@ defineProps<{
 	}
 
 	&_disabled {
-		opacity: 0.5;
 		pointer-events: none;
+		opacity: 0.5;
 	}
 }
 </style>

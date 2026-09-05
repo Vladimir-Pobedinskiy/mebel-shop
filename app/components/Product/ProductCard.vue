@@ -204,7 +204,12 @@ const onTiltLeave = () => {
 				size="medium"
 			/>
 
-			<button v-if="isCommerce" class="product-card__quick text-xs hover-underline" type="button" @click="openQuickOrder">
+			<button
+				v-if="isCommerce"
+				class="product-card__quick text-xs hover-underline"
+				type="button"
+				@click="openQuickOrder"
+			>
 				Быстрый заказ
 			</button>
 		</div>
@@ -219,12 +224,12 @@ const onTiltLeave = () => {
 .product-card {
 	position: relative;
 	display: flex;
-	overflow: hidden;
-	width: 100%;
 	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: variables.$radius-m;
-	background-color: variables.$color-surface;
 	transition:
 		transform 0.4s ease-out,
 		border-color 0.4s ease-in-out,
@@ -249,8 +254,8 @@ const onTiltLeave = () => {
 
 	&__media {
 		position: relative;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -294,33 +299,33 @@ const onTiltLeave = () => {
 
 	&__favorite {
 		display: flex;
-		width: 40px;
-		height: 40px;
 		align-items: center;
 		justify-content: center;
-		border: 0;
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 88%);
+		width: 40px;
+		height: 40px;
 		color: variables.$color-ink;
 		cursor: pointer;
+		background-color: rgb(255, 255, 255, 88%);
+		border: 0;
+		border-radius: 50%;
 		transition:
 			background-color 0.3s ease-in-out,
 			color 0.3s ease-in-out;
 
 		&.active {
-			background-color: variables.$color-accent;
 			color: variables.$color-white;
+			background-color: variables.$color-accent;
 		}
 
 		&:disabled {
-			opacity: 0.5;
 			cursor: not-allowed;
+			opacity: 0.5;
 		}
 
 		@media (min-width: variables.$desktop-small) {
 			&:not(:disabled):hover {
-				background-color: variables.$color-accent;
 				color: variables.$color-white;
+				background-color: variables.$color-accent;
 			}
 		}
 	}
@@ -378,17 +383,17 @@ const onTiltLeave = () => {
 	}
 
 	&__price {
-		margin-top: auto;
 		padding-top: 8px;
+		margin-top: auto;
 	}
 
 	&__quick {
 		align-self: flex-start;
 		padding: 0;
-		border: 0;
-		background-color: transparent;
 		color: variables.$color-ink-soft;
 		cursor: pointer;
+		background-color: transparent;
+		border: 0;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {

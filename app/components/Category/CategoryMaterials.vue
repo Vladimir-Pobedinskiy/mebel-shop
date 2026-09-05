@@ -81,9 +81,9 @@ onMounted(() => {
 
 	&__group {
 		padding: 28px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop) {
 			padding: 36px 32px;
@@ -114,8 +114,8 @@ onMounted(() => {
 
 	&__spec-label {
 		@media (min-width: variables.$mobile-big) {
-			width: 44%;
 			flex: 0 0 auto;
+			width: 44%;
 		}
 	}
 
@@ -125,15 +125,15 @@ onMounted(() => {
 	}
 
 	&__hardware {
-		margin-top: 16px;
 		padding: 28px 24px;
-		border-radius: variables.$radius-m;
-		background-color: variables.$color-accent-2;
+		margin-top: 16px;
 		color: variables.$color-white;
+		background-color: variables.$color-accent-2;
+		border-radius: variables.$radius-m;
 
 		@media (min-width: variables.$desktop) {
-			margin-top: 24px;
 			padding: 40px 32px;
+			margin-top: 24px;
 		}
 	}
 

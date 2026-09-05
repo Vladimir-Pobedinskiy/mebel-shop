@@ -36,8 +36,8 @@ const selected = computed({
 
 .catalog-sort {
 	display: flex;
-	align-items: center;
 	gap: 10px;
+	align-items: center;
 
 	&__label {
 		display: none;

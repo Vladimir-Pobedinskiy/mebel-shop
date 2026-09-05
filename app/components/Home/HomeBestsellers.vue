@@ -113,9 +113,9 @@ onMounted(() => {
 
 		@media (min-width: variables.$tablet-big) {
 			flex-direction: row;
+			gap: 32px;
 			align-items: flex-end;
 			justify-content: space-between;
-			gap: 32px;
 		}
 	}
 
@@ -134,8 +134,8 @@ onMounted(() => {
 
 	&__head-aside {
 		display: flex;
-		align-items: center;
 		gap: 16px;
+		align-items: center;
 	}
 
 	&__nav {

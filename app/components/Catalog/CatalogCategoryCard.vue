@@ -46,12 +46,12 @@ defineProps<{
 
 .catalog-category-card {
 	display: flex;
-	overflow: hidden;
-	height: 100%;
 	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	background-color: variables.$color-surface;
 	border: 1px solid variables.$color-line;
 	border-radius: variables.$radius-m;
-	background-color: variables.$color-surface;
 	transition:
 		border-color 0.4s ease-in-out,
 		box-shadow 0.4s ease-in-out;
@@ -70,8 +70,8 @@ defineProps<{
 	&__media {
 		position: relative;
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -87,9 +87,9 @@ defineProps<{
 		bottom: 12px;
 		left: 12px;
 		padding: 6px 12px;
-		border-radius: 999px;
-		background-color: rgba(255, 255, 255, 90%);
 		color: variables.$color-ink;
+		background-color: rgb(255, 255, 255, 90%);
+		border-radius: 999px;
 	}
 
 	&__body {
@@ -112,17 +112,17 @@ defineProps<{
 	&__collections {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: auto;
 		gap: 6px;
 		padding-top: 8px;
+		margin-top: auto;
 	}
 
 	&__collection {
 		display: inline-flex;
 		padding: 5px 10px;
+		color: variables.$color-ink-soft;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
-		color: variables.$color-ink-soft;
 		transition:
 			border-color 0.3s ease-in-out,
 			background-color 0.3s ease-in-out,
@@ -130,9 +130,9 @@ defineProps<{
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				border-color: variables.$color-accent;
-				background-color: variables.$color-accent-soft;
 				color: variables.$color-accent;
+				background-color: variables.$color-accent-soft;
+				border-color: variables.$color-accent;
 			}
 		}
 	}

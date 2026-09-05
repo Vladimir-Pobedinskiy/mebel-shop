@@ -27,9 +27,7 @@ const percent = computed(() => discountPercent(props.price, props.oldPrice))
 
 <template>
 	<div :class="['price', `price_${size}`, { price_light: isLight }]">
-		<span class="price__current">
-			<span v-if="isFrom" class="price__from">от </span>{{ priceFormatter(price) }}
-		</span>
+		<span class="price__current"> <span v-if="isFrom" class="price__from">от </span>{{ priceFormatter(price) }} </span>
 
 		<template v-if="percent">
 			<span class="price__old text-s">{{ priceFormatter(oldPrice as number) }}</span>
@@ -43,36 +41,36 @@ const percent = computed(() => discountPercent(props.price, props.oldPrice))
 
 .price {
 	display: flex;
-	align-items: baseline;
 	flex-wrap: wrap;
 	gap: 8px 10px;
+	align-items: baseline;
 
 	&__current {
 		font-family: variables.$font;
 		font-weight: 600;
 		line-height: 1.2;
-		letter-spacing: -0.01em;
 		color: variables.$color-ink;
+		letter-spacing: -0.01em;
 		white-space: nowrap;
 	}
 
 	&__from {
-		color: variables.$color-ink-soft;
 		font-weight: 400;
+		color: variables.$color-ink-soft;
 	}
 
 	&__old {
 		color: variables.$color-ink-soft;
-		text-decoration: line-through;
 		white-space: nowrap;
+		text-decoration: line-through;
 	}
 
 	&__discount {
 		padding: 3px 8px;
-		border-radius: 999px;
-		background-color: variables.$color-accent;
 		color: variables.$color-white;
 		white-space: nowrap;
+		background-color: variables.$color-accent;
+		border-radius: 999px;
 	}
 
 	&_big &__current {
@@ -93,7 +91,7 @@ const percent = computed(() => discountPercent(props.price, props.oldPrice))
 		}
 
 		.price__old {
-			color: rgba(255 255 255 / 70%);
+			color: rgb(255 255 255 / 70%);
 		}
 	}
 }

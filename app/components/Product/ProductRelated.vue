@@ -76,10 +76,10 @@ onMounted(() => {
 
 	&__head {
 		display: flex;
+		gap: 20px;
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 24px;
-		gap: 20px;
 	}
 
 	&__title {

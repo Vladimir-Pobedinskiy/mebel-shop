@@ -79,16 +79,16 @@ onMounted(() => {
 
 	&__item {
 		display: flex;
-		overflow: hidden;
 		flex-direction: column;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__media {
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -102,8 +102,8 @@ onMounted(() => {
 		display: flex;
 		flex: 1 1 auto;
 		flex-direction: column;
-		padding: 20px;
 		gap: 8px;
+		padding: 20px;
 	}
 
 	&__item-title {
@@ -119,10 +119,10 @@ onMounted(() => {
 		display: inline-flex;
 		width: fit-content;
 		padding: 6px 12px;
-		border-radius: 999px;
 		margin: auto 0 0;
-		background-color: variables.$color-accent-soft;
 		color: variables.$color-accent;
+		background-color: variables.$color-accent-soft;
+		border-radius: 999px;
 	}
 }
 </style>

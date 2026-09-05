@@ -135,16 +135,16 @@ const onSubmit = handleSubmit(async values => {
 
 .product-request {
 	display: grid;
-	padding: 28px 20px;
-	border-radius: variables.$radius-l;
-	background-color: variables.$color-muted;
-	gap: 28px;
 	grid-template-columns: 1fr;
+	gap: 28px;
+	padding: 28px 20px;
+	background-color: variables.$color-muted;
+	border-radius: variables.$radius-l;
 
 	@media (min-width: variables.$desktop-small) {
-		padding: 48px;
-		gap: 48px;
 		grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+		gap: 48px;
+		padding: 48px;
 	}
 
 	&__title {
@@ -159,30 +159,30 @@ const onSubmit = handleSubmit(async values => {
 	&__benefits {
 		display: flex;
 		flex-direction: column;
-		margin-top: 20px;
 		gap: 12px;
+		margin-top: 20px;
 	}
 
 	&__benefit {
 		display: flex;
+		gap: 10px;
 		align-items: flex-start;
 		color: variables.$color-ink-soft;
-		gap: 10px;
 	}
 
 	&__benefit-icon {
+		flex: 0 0 auto;
 		width: 18px;
 		height: 18px;
-		flex: 0 0 auto;
 		color: variables.$color-accent;
 	}
 
 	&__form {
 		display: grid;
-		padding: 24px 20px;
-		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 		gap: 16px;
+		padding: 24px 20px;
+		background-color: variables.$color-surface;
+		border-radius: variables.$radius-m;
 
 		@media (min-width: variables.$desktop-small) {
 			padding: 32px;

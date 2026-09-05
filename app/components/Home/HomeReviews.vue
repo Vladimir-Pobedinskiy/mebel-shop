@@ -113,9 +113,9 @@ onMounted(() => {
 
 		@media (min-width: variables.$tablet-big) {
 			flex-direction: row;
+			gap: 32px;
 			align-items: flex-end;
 			justify-content: space-between;
-			gap: 32px;
 		}
 	}
 
@@ -134,8 +134,8 @@ onMounted(() => {
 
 	&__head-aside {
 		display: flex;
-		align-items: center;
 		gap: 20px;
+		align-items: center;
 	}
 
 	&__nav {
@@ -158,13 +158,13 @@ onMounted(() => {
 
 	&__card {
 		display: flex;
-		height: 100%;
 		flex-direction: column;
 		gap: 16px;
+		height: 100%;
 		padding: 28px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__card-text {
@@ -173,8 +173,8 @@ onMounted(() => {
 	}
 
 	&__card-footer {
-		margin-top: auto;
 		padding-top: 16px;
+		margin-top: auto;
 		border-top: 1px solid variables.$color-line;
 	}
 

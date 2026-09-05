@@ -93,9 +93,9 @@ onMounted(() => {
 	&__item {
 		position: relative;
 		padding: 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop) {
 			padding: 28px;
@@ -104,8 +104,8 @@ onMounted(() => {
 
 	&_flat &__item {
 		padding: 0;
-		border: 0;
 		background-color: transparent;
+		border: 0;
 	}
 
 	&__number {
@@ -115,9 +115,9 @@ onMounted(() => {
 		width: 36px;
 		height: 36px;
 		margin-bottom: 16px;
-		border-radius: 50%;
 		color: variables.$color-white;
 		background-color: variables.$color-accent;
+		border-radius: 50%;
 	}
 
 	&__item-title {

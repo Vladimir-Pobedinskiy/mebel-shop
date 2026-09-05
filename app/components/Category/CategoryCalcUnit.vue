@@ -182,9 +182,9 @@ onMounted(() => {
 	&__inner {
 		display: grid;
 		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$tablet-big) {
 			grid-template-columns: 1fr 1fr;
@@ -218,15 +218,15 @@ onMounted(() => {
 
 	&__benefit {
 		display: flex;
-		align-items: flex-start;
 		gap: 10px;
+		align-items: flex-start;
 		color: variables.$color-ink;
 	}
 
 	&__benefit-icon {
+		flex: 0 0 auto;
 		width: 16px;
 		height: 16px;
-		flex: 0 0 auto;
 		margin-top: 4px;
 		color: variables.$color-accent;
 	}

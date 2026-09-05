@@ -87,15 +87,15 @@ const onClear = () => {
 		width: 100%;
 
 		&_disabled {
-			opacity: 0.6;
 			pointer-events: none;
+			opacity: 0.6;
 		}
 	}
 
 	&__input {
-		padding: 14px 48px 14px 20px;
 		width: 100%;
 		height: 52px;
+		padding: 14px 48px 14px 20px;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
 		transition:
@@ -113,17 +113,17 @@ const onClear = () => {
 		}
 
 		&_light {
-			background-color: variables.$color-surface;
 			color: variables.$color-ink;
+			background-color: variables.$color-surface;
 		}
 
 		&_dark {
-			border-color: rgba(255 255 255 / 25%);
-			background-color: rgba(255 255 255 / 8%);
 			color: variables.$color-white;
+			background-color: rgb(255 255 255 / 8%);
+			border-color: rgb(255 255 255 / 25%);
 
 			&::placeholder {
-				color: rgba(255 255 255 / 60%);
+				color: rgb(255 255 255 / 60%);
 			}
 		}
 	}
@@ -131,16 +131,16 @@ const onClear = () => {
 	&__search-icon,
 	&__btn-clear {
 		position: absolute;
-		right: 18px;
 		top: 50%;
-		transform: translateY(-50%);
-		width: 20px;
-		height: 20px;
+		right: 18px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: transparent;
+		width: 20px;
+		height: 20px;
 		color: variables.$color-ink-soft;
+		background-color: transparent;
+		transform: translateY(-50%);
 	}
 
 	&__btn-clear {

@@ -18,9 +18,7 @@ const props = withDefaults(
 
 // Страницы ошибок из индекса исключаем, но заголовок всё равно осмысленный
 useHead({
-	title: computed(() =>
-		props.error?.statusCode === 404 ? 'Страница не найдена — Мебель Шоп' : 'Ошибка — Мебель Шоп'
-	),
+	title: computed(() => (props.error?.statusCode === 404 ? 'Страница не найдена — Мебель Шоп' : 'Ошибка — Мебель Шоп')),
 	meta: [{ name: 'robots', content: 'noindex, nofollow' }],
 })
 
@@ -46,8 +44,8 @@ onMounted(() => {
 					</h1>
 
 					<p v-if="error?.statusCode === 404" class="error-page__text text-m">
-						Возможно, страница была удалена или в адресной строке допущена опечатка. Загляните в каталог — там более
-						2 400 моделей мебели.
+						Возможно, страница была удалена или в адресной строке допущена опечатка. Загляните в каталог — там более 2
+						400 моделей мебели.
 					</p>
 
 					<div class="error-page__actions">
@@ -66,8 +64,8 @@ onMounted(() => {
 @use '@/assets/scss/general/variables';
 
 .error-page {
-	flex: 1 1 auto;
 	display: flex;
+	flex: 1 1 auto;
 	align-items: center;
 	padding: 80px 0;
 
@@ -87,8 +85,8 @@ onMounted(() => {
 		font-size: clamp(90px, 18vw, 240px);
 		font-weight: 600;
 		line-height: 1;
-		letter-spacing: -0.04em;
 		color: variables.$color-accent;
+		letter-spacing: -0.04em;
 	}
 
 	&__title {
@@ -110,9 +108,9 @@ onMounted(() => {
 
 	&__btn {
 		padding: 16px 32px;
-		border-radius: 999px;
-		background-color: variables.$color-accent;
 		color: variables.$color-white;
+		background-color: variables.$color-accent;
+		border-radius: 999px;
 		transition: background-color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {

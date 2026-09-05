@@ -112,9 +112,9 @@ const setMarker = (id: number) => {
 
 	&__city {
 		padding: 10px 18px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: 999px;
-		background-color: variables.$color-surface;
 		transition:
 			color 0.3s ease-in-out,
 			border-color 0.3s ease-in-out,
@@ -124,15 +124,15 @@ const setMarker = (id: number) => {
 			cursor: pointer;
 
 			&:hover {
-				border-color: variables.$color-accent;
 				color: variables.$color-accent;
+				border-color: variables.$color-accent;
 			}
 		}
 
 		&_active {
-			border-color: variables.$color-ink;
 			color: variables.$color-white;
 			background-color: variables.$color-ink;
+			border-color: variables.$color-ink;
 		}
 	}
 
@@ -154,16 +154,16 @@ const setMarker = (id: number) => {
 
 	&__item {
 		padding: 20px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__card {
 		display: flex;
-		width: 100%;
 		flex-direction: column;
 		gap: 8px;
+		width: 100%;
 		text-align: left;
 
 		@media (min-width: variables.$desktop-small) {
@@ -181,8 +181,8 @@ const setMarker = (id: number) => {
 
 	&__card-line {
 		display: flex;
-		align-items: center;
 		gap: 8px;
+		align-items: center;
 		color: variables.$color-ink-soft;
 	}
 
@@ -202,11 +202,11 @@ const setMarker = (id: number) => {
 	}
 
 	&__map {
-		overflow: hidden;
 		min-height: 360px;
+		overflow: hidden;
+		background-color: variables.$color-muted;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-l;
-		background-color: variables.$color-muted;
 
 		@media (min-width: variables.$desktop-small) {
 			min-height: 560px;
@@ -215,12 +215,12 @@ const setMarker = (id: number) => {
 
 	&__fallback {
 		display: flex;
-		height: 100%;
-		min-height: 360px;
 		flex-direction: column;
+		gap: 12px;
 		align-items: center;
 		justify-content: center;
-		gap: 12px;
+		height: 100%;
+		min-height: 360px;
 		padding: 32px;
 		text-align: center;
 	}

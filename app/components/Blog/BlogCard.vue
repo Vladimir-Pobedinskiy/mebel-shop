@@ -50,18 +50,18 @@ withDefaults(
 
 	&__link {
 		display: flex;
-		overflow: hidden;
-		width: 100%;
 		flex-direction: column;
+		width: 100%;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__media {
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 3 / 2;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -114,8 +114,8 @@ withDefaults(
 
 		.blog-card__media {
 			@media (min-width: variables.$tablet-big) {
-				width: 55%;
 				flex: 0 0 55%;
+				width: 55%;
 				aspect-ratio: auto;
 			}
 		}

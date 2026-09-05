@@ -1,6 +1,6 @@
 import checker from 'vite-plugin-checker'
 
-// Страницы магазинного флоу и личного кабинета: закрыты от индексации
+// Страницы магазинного флоу, авторизации и личного кабинета: закрыты от индексации
 const noindexRoutes = [
 	'/cart/',
 	'/checkout/',
@@ -9,6 +9,10 @@ const noindexRoutes = [
 	'/compare/',
 	'/search/',
 	'/login/',
+	'/registration/',
+	'/success-registration/',
+	'/password-recovery/',
+	'/new-password/',
 	'/personal-account/**',
 ]
 
@@ -25,7 +29,7 @@ const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 const withBase = (route: string) => (baseURL === '/' ? route : `${baseURL.replace(/\/$/, '')}${route}`)
 
 export default defineNuxtConfig({
-	compatibilityDate: '2024-11-01',
+	compatibilityDate: '2025-07-15',
 	devtools: { enabled: false },
 	devServer: {
 		port: 3000,
@@ -176,8 +180,19 @@ export default defineNuxtConfig({
 			},
 			endpoints: {
 				signIn: { path: '/auth-login/', method: 'post' },
+				signUp: { path: '/auth-registration/', method: 'post' },
 				signOut: { path: '/auth-logout/', method: 'post' },
 				getSession: { path: '/auth-session/', method: 'get' },
+			},
+			// Форма полей сессии: из неё модуль выводит типы для useAuth().data.
+			// Поля те же, что отдаёт /api/auth-session/ в db.json
+			session: {
+				dataType: {
+					id: 'string | number',
+					name: 'string',
+					phone: 'string',
+					email: 'string',
+				},
 			},
 			token: {
 				signInResponseTokenPointer: '/token',

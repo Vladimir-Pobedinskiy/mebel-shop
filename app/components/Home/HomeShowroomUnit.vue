@@ -101,9 +101,9 @@ onMounted(() => {
 
 		@media (min-width: variables.$tablet-big) {
 			flex-direction: row;
+			gap: 32px;
 			align-items: flex-end;
 			justify-content: space-between;
-			gap: 32px;
 		}
 	}
 
@@ -131,18 +131,18 @@ onMounted(() => {
 
 	&__item {
 		display: flex;
-		overflow: hidden;
-		height: 100%;
 		flex-direction: column;
+		height: 100%;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__item-media {
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 16 / 10;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -166,8 +166,8 @@ onMounted(() => {
 
 	&__item-line {
 		display: flex;
-		align-items: flex-start;
 		gap: 8px;
+		align-items: flex-start;
 		margin: 0;
 		color: variables.$color-ink-soft;
 	}
@@ -181,8 +181,8 @@ onMounted(() => {
 	}
 
 	&__item-phone {
-		margin-top: auto;
 		padding-top: 12px;
+		margin-top: auto;
 	}
 }
 </style>

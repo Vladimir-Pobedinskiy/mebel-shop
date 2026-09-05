@@ -154,13 +154,13 @@ onMounted(() => {
 
 .about-banner {
 	position: relative;
-	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	min-height: 320px;
 	padding: 24px;
-	border-radius: variables.$radius-l;
+	overflow: hidden;
 	background-color: variables.$color-muted;
+	border-radius: variables.$radius-l;
 
 	@media (min-width: variables.$desktop) {
 		min-height: 520px;
@@ -181,7 +181,7 @@ onMounted(() => {
 		max-width: 760px;
 		margin: 0;
 		color: variables.$color-white;
-		text-shadow: 0 2px 24px rgba(28, 26, 23, 40%);
+		text-shadow: 0 2px 24px rgb(28, 26, 23, 40%);
 	}
 }
 
@@ -217,8 +217,8 @@ onMounted(() => {
 
 	&__shot {
 		overflow: hidden;
-		border-radius: variables.$radius-m;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__shot-img {
@@ -253,14 +253,14 @@ onMounted(() => {
 		border-top: 2px solid variables.$color-line;
 
 		&::before {
-			content: '';
 			position: absolute;
 			top: -6px;
 			left: 0;
 			width: 10px;
 			height: 10px;
-			border-radius: 50%;
+			content: '';
 			background-color: variables.$color-accent;
+			border-radius: 50%;
 		}
 	}
 

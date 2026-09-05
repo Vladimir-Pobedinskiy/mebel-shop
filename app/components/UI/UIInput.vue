@@ -95,14 +95,14 @@ const preventInvalidKeys = (event: KeyboardEvent) => {
 	height: 52px;
 
 	&__input {
-		padding: 14px 16px;
 		width: 100%;
 		height: 52px;
-		border: 1px solid variables.$color-line;
-		border-radius: variables.$radius-s;
-		background-color: variables.$color-surface;
+		padding: 14px 16px;
 		color: variables.$color-ink;
 		pointer-events: all;
+		background-color: variables.$color-surface;
+		border: 1px solid variables.$color-line;
+		border-radius: variables.$radius-s;
 		transition:
 			border-color 0.4s ease-in-out,
 			box-shadow 0.4s ease-in-out;
@@ -121,9 +121,9 @@ const preventInvalidKeys = (event: KeyboardEvent) => {
 		}
 
 		&:disabled {
-			background-color: variables.$color-muted;
-			cursor: default;
 			pointer-events: none;
+			cursor: default;
+			background-color: variables.$color-muted;
 		}
 
 		&.error {
@@ -132,32 +132,32 @@ const preventInvalidKeys = (event: KeyboardEvent) => {
 	}
 
 	&__title {
-		display: block;
 		position: absolute;
-		left: 16px;
 		top: 50%;
-		transform: translateY(-50%);
-		background-color: transparent;
+		left: 16px;
+		display: block;
 		color: variables.$color-ink-soft;
-		cursor: text;
 		pointer-events: none;
-		will-change: transform;
+		cursor: text;
+		background-color: transparent;
+		transform: translateY(-50%);
 		transition: all 0.3s ease-in-out;
+		will-change: transform;
 	}
 
 	&__input:focus + &__title,
 	&__input:not(:placeholder-shown) + &__title {
 		padding: 0 6px;
-		transform: translateY(-36px);
 		font-size: 12px;
-		border-radius: 4px;
-		background-color: variables.$color-surface;
 		color: variables.$color-accent;
+		background-color: variables.$color-surface;
+		border-radius: 4px;
+		transform: translateY(-36px);
 	}
 
 	&__error-message {
-		margin-top: 4px;
 		display: block;
+		margin-top: 4px;
 		color: variables.$color-error;
 	}
 }
@@ -167,8 +167,8 @@ const preventInvalidKeys = (event: KeyboardEvent) => {
 	background-color: transparent;
 
 	&.disabled {
-		opacity: 0.6;
 		pointer-events: none;
+		opacity: 0.6;
 
 		.label-input__title {
 			cursor: default;
@@ -182,17 +182,17 @@ const preventInvalidKeys = (event: KeyboardEvent) => {
 
 .toggle-password-visibility-btn {
 	position: absolute;
-	right: 12px;
 	top: 50%;
-	transform: translateY(-50%);
-	width: 28px;
-	height: 28px;
+	right: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: transparent;
+	width: 28px;
+	height: 28px;
 	color: variables.$color-ink-soft;
 	cursor: pointer;
+	background-color: transparent;
+	transform: translateY(-50%);
 
 	.icon-eye-password,
 	.icon-eye-password-hidden {
@@ -215,8 +215,8 @@ input[type='tel']:focus::placeholder {
 /* убираем стрелки у input[type="number"] */
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
-	appearance: none;
 	margin: 0;
+	appearance: none;
 }
 
 input[type='number'] {

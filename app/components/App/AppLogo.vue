@@ -48,9 +48,9 @@ const currentRouteNameComputed = computed(() => route.name)
 @use '@/assets/scss/general/variables';
 
 .logo {
+	z-index: 999;
 	display: inline-block;
 	flex-shrink: 0;
-	z-index: 999;
 
 	&__icon-mobile {
 		width: 40px;

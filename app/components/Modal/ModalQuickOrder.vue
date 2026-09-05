@@ -125,20 +125,20 @@ const onSubmit = handleSubmit(async values => {
 
 	&__product {
 		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid variables.$color-line;
 		gap: 14px;
+		align-items: center;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid variables.$color-line;
 	}
 
 	&__img {
+		flex: 0 0 auto;
 		width: 72px;
 		height: 72px;
-		flex: 0 0 auto;
-		border-radius: variables.$radius-s;
-		background-color: variables.$color-muted;
 		object-fit: cover;
+		background-color: variables.$color-muted;
+		border-radius: variables.$radius-s;
 	}
 
 	&__product-title {

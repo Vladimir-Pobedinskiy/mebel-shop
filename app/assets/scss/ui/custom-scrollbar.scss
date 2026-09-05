@@ -10,14 +10,14 @@
 	}
 
 	&::-webkit-scrollbar-track {
-		border-radius: 8px;
 		background-color: transparent;
+		border-radius: 8px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		border-radius: 8px;
 		background-color: variables.$color-ink;
-		border: 3px solid transparent; /* регулируйте это значение по необходимости */
 		background-clip: padding-box; /* используем padding-box для сохранения border-radius */
+		border: 3px solid transparent; /* регулируйте это значение по необходимости */
+		border-radius: 8px;
 	}
 }

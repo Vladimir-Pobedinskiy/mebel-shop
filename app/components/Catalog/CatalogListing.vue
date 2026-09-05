@@ -112,15 +112,15 @@ watch(
 
 		@media (min-width: variables.$desktop-small) {
 			flex-direction: row;
-			align-items: flex-start;
 			gap: 32px;
+			align-items: flex-start;
 		}
 	}
 
 	&__aside {
 		@media (min-width: variables.$desktop-small) {
-			width: 280px;
 			flex: 0 0 auto;
+			width: 280px;
 		}
 
 		@media (min-width: variables.$desktop-big) {
@@ -130,29 +130,29 @@ watch(
 
 	&__main {
 		display: flex;
-		min-width: 0;
 		flex: 1 1 auto;
 		flex-direction: column;
 		gap: 20px;
+		min-width: 0;
 	}
 
 	&__toolbar {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
 		gap: 12px;
+		align-items: center;
 	}
 
 	&__filters-btn {
 		display: inline-flex;
+		gap: 8px;
 		align-items: center;
 		padding: 10px 16px;
-		border: 1px solid variables.$color-line;
-		border-radius: 999px;
-		background-color: variables.$color-surface;
 		color: variables.$color-ink;
 		cursor: pointer;
-		gap: 8px;
+		background-color: variables.$color-surface;
+		border: 1px solid variables.$color-line;
+		border-radius: 999px;
 		transition: border-color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -167,16 +167,16 @@ watch(
 
 	&__filters-count {
 		display: inline-flex;
-		min-width: 20px;
-		height: 20px;
 		align-items: center;
 		justify-content: center;
+		min-width: 20px;
+		height: 20px;
 		padding: 0 6px;
-		border-radius: 999px;
-		background-color: variables.$color-accent;
-		color: variables.$color-white;
 		font-size: 12px;
 		line-height: 1;
+		color: variables.$color-white;
+		background-color: variables.$color-accent;
+		border-radius: 999px;
 	}
 
 	&__total {
@@ -199,19 +199,19 @@ watch(
 	&__consult {
 		display: flex;
 		flex-direction: column;
-		margin-top: 12px;
+		gap: 16px;
 		padding: 24px 20px;
+		margin-top: 12px;
+		background-color: variables.$color-muted;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-muted;
-		gap: 16px;
 
 		@media (min-width: variables.$tablet) {
 			flex-direction: row;
+			gap: 24px;
 			align-items: center;
 			justify-content: space-between;
 			padding: 28px 32px;
-			gap: 24px;
 		}
 	}
 

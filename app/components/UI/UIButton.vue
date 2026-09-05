@@ -114,34 +114,34 @@ const hidden = () => {
 
 .btn-primary,
 .btn-secondary {
-	width: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	width: 100%;
 	text-align: center;
-	border-radius: 999px;
-	border: 1px solid transparent;
 	pointer-events: all;
-	will-change: transform;
+	border: 1px solid transparent;
+	border-radius: 999px;
 	transition: all 0.4s ease-in-out;
+	will-change: transform;
 
 	@media (min-width: variables.$tablet) {
 		width: fit-content;
 	}
 
 	&.big {
-		padding: 12px 22px;
 		height: 48px;
+		padding: 12px 22px;
 
 		@media (min-width: variables.$desktop) {
-			padding: 14px 28px;
 			height: 52px;
+			padding: 14px 28px;
 		}
 	}
 
 	&.small {
-		padding: 8px 16px;
 		height: 40px;
+		padding: 8px 16px;
 	}
 
 	&.full {
@@ -153,8 +153,8 @@ const hidden = () => {
 		width: fit-content;
 		max-width: 100%;
 		white-space: nowrap;
-		will-change: max-width;
 		transition: all 0.4s ease-in-out;
+		will-change: max-width;
 
 		&.hidden {
 			max-width: 0;
@@ -164,23 +164,23 @@ const hidden = () => {
 	}
 
 	.btn-icon {
+		flex-shrink: 0;
 		width: 20px;
 		height: 20px;
-		flex-shrink: 0;
 	}
 }
 
 /* Заливка */
 .btn-primary {
-	background-color: variables.$color-accent;
 	color: variables.$color-white;
+	background-color: variables.$color-accent;
 
 	@media (min-width: variables.$desktop-small) {
 		&:hover {
-			background-color: variables.$color-accent-hover;
 			cursor: pointer;
-			transform: translateY(-2px);
+			background-color: variables.$color-accent-hover;
 			box-shadow: variables.$shadow-soft;
+			transform: translateY(-2px);
 		}
 	}
 
@@ -209,25 +209,25 @@ const hidden = () => {
 	}
 
 	&_white {
-		background-color: variables.$color-surface;
 		color: variables.$color-ink;
+		background-color: variables.$color-surface;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-accent;
 				color: variables.$color-white;
+				background-color: variables.$color-accent;
 			}
 		}
 	}
 
 	&_transparent {
-		background-color: transparent;
 		color: variables.$color-ink;
+		background-color: transparent;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-muted;
 				color: variables.$color-ink;
+				background-color: variables.$color-muted;
 			}
 		}
 	}
@@ -235,69 +235,69 @@ const hidden = () => {
 
 /* Обводка */
 .btn-secondary {
+	color: variables.$color-ink;
 	background-color: transparent;
 	border-color: variables.$color-line-strong;
-	color: variables.$color-ink;
 
 	@media (min-width: variables.$desktop-small) {
 		&:hover {
-			border-color: variables.$color-accent;
 			color: variables.$color-accent;
 			cursor: pointer;
+			border-color: variables.$color-accent;
 		}
 	}
 
 	&_accent {
-		border-color: variables.$color-accent;
 		color: variables.$color-accent;
+		border-color: variables.$color-accent;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-accent;
 				color: variables.$color-white;
+				background-color: variables.$color-accent;
 			}
 		}
 	}
 
 	&_green {
-		border-color: variables.$color-accent-2;
 		color: variables.$color-accent-2;
+		border-color: variables.$color-accent-2;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-accent-2;
 				color: variables.$color-white;
+				background-color: variables.$color-accent-2;
 			}
 		}
 	}
 
 	&_dark {
-		border-color: variables.$color-ink;
 		color: variables.$color-ink;
+		border-color: variables.$color-ink;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-ink;
 				color: variables.$color-white;
+				background-color: variables.$color-ink;
 			}
 		}
 	}
 
 	&_white {
-		border-color: variables.$color-white;
 		color: variables.$color-white;
+		border-color: variables.$color-white;
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				background-color: variables.$color-white;
 				color: variables.$color-ink;
+				background-color: variables.$color-white;
 			}
 		}
 	}
 
 	&_transparent {
-		border-color: transparent;
 		color: variables.$color-ink;
+		border-color: transparent;
 	}
 }
 
@@ -306,8 +306,8 @@ const hidden = () => {
 .btn-primary:disabled,
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-	opacity: 0.45;
-	cursor: default;
 	pointer-events: none;
+	cursor: default;
+	opacity: 0.45;
 }
 </style>

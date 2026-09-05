@@ -53,11 +53,7 @@ onMounted(() => {
 					</template>
 				</ContentIntro>
 
-				<PortfolioGallery
-					class="project-page__gallery"
-					:gallery="data.project.gallery"
-					:title="data.project.title"
-				/>
+				<PortfolioGallery class="project-page__gallery" :gallery="data.project.gallery" :title="data.project.title" />
 
 				<div class="project-page__body">
 					<section v-if="data.project.tasks?.length" class="project-tasks">
@@ -145,8 +141,8 @@ onMounted(() => {
 	&__related-list {
 		display: grid;
 		gap: 16px;
-		margin: 0;
 		padding: 0;
+		margin: 0;
 		list-style: none;
 
 		@media (min-width: variables.$mobile-big) {
@@ -191,16 +187,16 @@ onMounted(() => {
 
 .project-tasks {
 	padding: 24px;
-	border-radius: variables.$radius-m;
 	background-color: variables.$color-muted;
+	border-radius: variables.$radius-m;
 
 	&__title {
 		margin: 0 0 16px;
 	}
 
 	&__list {
-		margin: 0;
 		padding: 0;
+		margin: 0;
 		list-style: none;
 	}
 
@@ -210,14 +206,14 @@ onMounted(() => {
 		color: variables.$color-ink-soft;
 
 		&::before {
-			content: '';
 			position: absolute;
 			top: 10px;
 			left: 0;
 			width: 8px;
 			height: 8px;
-			border-radius: 50%;
+			content: '';
 			background-color: variables.$color-accent;
+			border-radius: 50%;
 		}
 
 		& + & {

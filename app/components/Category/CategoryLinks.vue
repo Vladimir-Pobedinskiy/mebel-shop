@@ -72,9 +72,9 @@ onMounted(() => {
 
 	&__group {
 		padding: 28px 24px;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__group-title {

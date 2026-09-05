@@ -81,15 +81,15 @@ onMounted(() => {
 .dealer-price {
 	&__inner {
 		display: grid;
-		padding: 28px 20px;
-		border-radius: variables.$radius-l;
-		background-color: variables.$color-muted;
 		gap: 28px;
+		padding: 28px 20px;
+		background-color: variables.$color-muted;
+		border-radius: variables.$radius-l;
 
 		@media (min-width: variables.$desktop-small) {
-			padding: 48px;
 			grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
 			gap: 48px;
+			padding: 48px;
 		}
 	}
 
@@ -104,20 +104,20 @@ onMounted(() => {
 
 	&__benefits {
 		display: grid;
-		margin-top: 24px;
 		gap: 10px;
+		margin-top: 24px;
 	}
 
 	&__benefit {
 		display: flex;
-		align-items: flex-start;
 		gap: 10px;
+		align-items: flex-start;
 	}
 
 	&__benefit-icon {
+		flex: 0 0 auto;
 		width: 16px;
 		height: 16px;
-		flex: 0 0 auto;
 		margin-top: 3px;
 		color: variables.$color-accent;
 	}

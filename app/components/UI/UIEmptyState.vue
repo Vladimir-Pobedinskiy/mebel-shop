@@ -47,28 +47,28 @@ withDefaults(
 @use '@/assets/scss/general/variables';
 
 .empty-state {
-	padding: 48px 24px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 48px 24px;
 	text-align: center;
-	border-radius: variables.$radius-l;
 	background-color: variables.$color-surface;
+	border-radius: variables.$radius-l;
 
 	@media (min-width: variables.$desktop) {
 		padding: 80px 40px;
 	}
 
 	&__icon-wrapper {
-		margin-bottom: 24px;
-		width: 72px;
-		height: 72px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
-		background-color: variables.$color-muted;
+		width: 72px;
+		height: 72px;
+		margin-bottom: 24px;
 		color: variables.$color-accent;
+		background-color: variables.$color-muted;
+		border-radius: 50%;
 	}
 
 	&__icon {
@@ -77,8 +77,8 @@ withDefaults(
 	}
 
 	&__text {
-		margin-top: 12px;
 		max-width: 520px;
+		margin-top: 12px;
 		color: variables.$color-ink-soft;
 	}
 

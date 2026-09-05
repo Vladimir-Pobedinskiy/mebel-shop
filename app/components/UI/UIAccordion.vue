@@ -55,16 +55,16 @@ const emits = defineEmits<{
 	border-bottom: 1px solid variables.$color-line;
 
 	&__head {
-		padding: 20px 0;
-		width: 100%;
 		display: flex;
+		gap: 16px;
 		align-items: center;
 		justify-content: space-between;
-		gap: 16px;
-		background-color: transparent;
+		width: 100%;
+		padding: 20px 0;
 		color: variables.$color-ink;
 		text-align: left;
 		cursor: pointer;
+		background-color: transparent;
 		transition: color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
@@ -74,19 +74,19 @@ const emits = defineEmits<{
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			cursor: default;
 			pointer-events: none;
+			cursor: default;
+			opacity: 0.5;
 		}
 	}
 
 	&__icon-wrapper {
-		width: 32px;
-		min-width: 32px;
-		height: 32px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 32px;
+		min-width: 32px;
+		height: 32px;
 		border: 1px solid variables.$color-line;
 		border-radius: 50%;
 		transition: transform 0.4s ease-in-out;
@@ -104,9 +104,9 @@ const emits = defineEmits<{
 
 	&_open {
 		.accordion__icon-wrapper {
-			transform: rotate(180deg);
-			border-color: variables.$color-accent;
 			color: variables.$color-accent;
+			border-color: variables.$color-accent;
+			transform: rotate(180deg);
 		}
 	}
 

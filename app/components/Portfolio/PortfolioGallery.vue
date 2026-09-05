@@ -74,10 +74,10 @@ onMounted(() => {
 
 	&__link {
 		display: block;
-		overflow: hidden;
 		width: 100%;
-		border-radius: variables.$radius-m;
+		overflow: hidden;
 		background-color: variables.$color-muted;
+		border-radius: variables.$radius-m;
 	}
 
 	&__media {

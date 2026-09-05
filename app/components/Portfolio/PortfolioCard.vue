@@ -45,19 +45,19 @@ defineProps<{
 
 	&__link {
 		display: flex;
-		overflow: hidden;
-		width: 100%;
 		flex-direction: column;
+		width: 100%;
+		overflow: hidden;
+		background-color: variables.$color-surface;
 		border: 1px solid variables.$color-line;
 		border-radius: variables.$radius-m;
-		background-color: variables.$color-surface;
 	}
 
 	&__media {
 		position: relative;
 		display: block;
-		overflow: hidden;
 		aspect-ratio: 4 / 3;
+		overflow: hidden;
 		background-color: variables.$color-muted;
 	}
 
@@ -72,9 +72,9 @@ defineProps<{
 		top: 12px;
 		left: 12px;
 		padding: 6px 12px;
-		border-radius: 999px;
 		color: variables.$color-ink;
-		background-color: rgba(255, 255, 255, 88%);
+		background-color: rgb(255, 255, 255, 88%);
+		border-radius: 999px;
 		backdrop-filter: blur(6px);
 	}
 

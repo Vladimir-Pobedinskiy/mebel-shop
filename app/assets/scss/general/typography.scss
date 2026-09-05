@@ -46,8 +46,8 @@
 	font-size: clamp(32px, 6vw, 96px);
 	font-weight: 600;
 	line-height: 1.1;
-	letter-spacing: -0.02em;
 	text-transform: uppercase;
+	letter-spacing: -0.02em;
 }
 
 /* Текстовые стили */
@@ -63,8 +63,8 @@
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 1.3;
-	letter-spacing: 0.04em;
 	text-transform: uppercase;
+	letter-spacing: 0.04em;
 }
 
 .card-subtitle {
@@ -72,9 +72,9 @@
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 1.3;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
 	color: variables.$color-ink-soft;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
 }
 
 .text-xs {

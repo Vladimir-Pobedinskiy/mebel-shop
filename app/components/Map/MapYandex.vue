@@ -27,11 +27,7 @@ const mapSettings = computed(() => ({
 		<YandexMapDefaultSchemeLayer />
 		<YandexMapDefaultFeaturesLayer />
 
-		<YandexMapMarker
-			v-for="marker in markers"
-			:key="marker.id"
-			:settings="{ coordinates: toLngLat(marker.coords) }"
-		>
+		<YandexMapMarker v-for="marker in markers" :key="marker.id" :settings="{ coordinates: toLngLat(marker.coords) }">
 			<button
 				:class="['map-yandex__pin', { 'map-yandex__pin_active': marker.id === activeId }]"
 				type="button"
@@ -51,14 +47,14 @@ const mapSettings = computed(() => ({
 .map-yandex {
 	&__pin {
 		display: flex;
-		align-items: center;
 		gap: 6px;
+		align-items: center;
 		padding: 8px 12px;
-		transform: translate(-50%, -100%);
-		border-radius: 999px;
 		color: variables.$color-white;
 		background-color: variables.$color-ink;
+		border-radius: 999px;
 		box-shadow: variables.$shadow-soft;
+		transform: translate(-50%, -100%);
 		transition: background-color 0.3s ease-in-out;
 
 		@media (min-width: variables.$desktop-small) {
