@@ -23,6 +23,9 @@ export default defineEventHandler(async (): Promise<ISitemapUrl[]> => {
 		urls.push({ loc, priority, changefreq })
 	}
 
+	// Раздел корпусной мебели — точка входа коммерческого трафика, добавляем явно
+	add('/catalog/korpusnaya-mebel/', 0.9, 'daily')
+
 	try {
 		const catalog = await $fetch<ICatalogPage>(`${baseUrl}/api/catalog/`)
 

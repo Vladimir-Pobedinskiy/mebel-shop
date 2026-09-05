@@ -5,6 +5,7 @@ import { useCartStore } from '@/stores/storeCart'
 import { useFavoritesStore } from '@/stores/storeFavorites'
 import { useCompareStore } from '@/stores/storeCompare'
 import { useScreenHandler } from '@/composables/useScreenHandler'
+import { useCommercialModals } from '@/composables/useCommercialModals'
 import { screens } from '@/utils/utils'
 
 const route = useRoute()
@@ -14,6 +15,10 @@ const { isMatchedScreen } = useScreenHandler(screens.desktopSmall)
 
 const storeGeneral = useGeneralStore()
 const header = computed(() => storeGeneral.header)
+const contacts = computed(() => storeGeneral.contacts)
+
+/* Коммерческие кнопки шапки открывают общие модалки из AppCommercialModals */
+const { openCallback, openCalcPrice } = useCommercialModals()
 
 const storeMenu = useMenuStore()
 const menuName = computed(() => storeMenu.menuName)
@@ -116,9 +121,37 @@ watch(
 		<div v-if="header?.topLine" class="header__top-line">
 			<div class="container header__top-line-inner">
 				<p class="header__top-line-text text-xs">{{ header.topLine }}</p>
-				<a v-if="header.phone" class="header__top-line-phone text-xs hover-link" :href="`tel:${header.phone.url}`">
-					{{ header.phone.label }}
-				</a>
+
+				<div class="header__top-line-actions">
+					<a
+						v-if="contacts?.catalogFile"
+						class="header__top-line-link text-xs hover-link"
+						:href="contacts.catalogFile.url"
+						:title="`${contacts.catalogFile.title}, ${contacts.catalogFile.size}`"
+						download
+					>
+						<NuxtIcon class="header__top-line-icon" name="icon-download" filled />
+						<span>{{ contacts.catalogFile.label }}</span>
+					</a>
+
+					<button class="header__top-line-link text-xs hover-link" type="button" @click="openCallback">
+						<NuxtIcon class="header__top-line-icon" name="icon-phone" filled />
+						<span>Заказать звонок</span>
+					</button>
+
+					<a v-if="header.phone" class="header__top-line-phone text-xs hover-link" :href="`tel:${header.phone.url}`">
+						{{ header.phone.label }}
+					</a>
+
+					<UIButton
+						class="header__top-line-btn"
+						as="button"
+						type="button"
+						size="small"
+						label="Рассчитать стоимость"
+						@click="openCalcPrice('')"
+					/>
+				</div>
 			</div>
 		</div>
 
@@ -299,8 +332,33 @@ watch(
 		gap: 24px;
 	}
 
+	&__top-line-actions {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__top-line-link {
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		color: inherit;
+		cursor: pointer;
+		gap: 6px;
+	}
+
+	&__top-line-icon {
+		width: 14px;
+		height: 14px;
+	}
+
 	&__top-line-phone {
 		font-weight: 600;
+	}
+
+	// Кнопка расчёта выступает за нижнюю границу строки — это главный CTA шапки
+	&__top-line-btn {
+		margin: -6px 0;
 	}
 
 	&__inner {

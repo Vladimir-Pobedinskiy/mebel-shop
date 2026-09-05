@@ -27,7 +27,7 @@ usePageSeo(computed(() => data.value))
 					:breadcrumbs="data.breadcrumbs"
 					:title="data.seo.h1"
 					:text="data.slogan?.text"
-					subtitle="Сотрудничество"
+					subtitle="Оптовые поставки"
 				/>
 
 				<ContentCounters v-if="data.counters?.length" class="dealer-page__counters" :items="data.counters" />
@@ -36,9 +36,32 @@ usePageSeo(computed(() => data.value))
 					v-if="data.audience?.length"
 					class="dealer-page__section"
 					:items="data.audience"
-					title="С кем работаем"
-					:columns="3"
+					title="Кому поставляем корпусную мебель оптом"
+					:columns="4"
 				/>
+
+				<!-- B2B-блоки идут по данным: страница без них рендерится как раньше -->
+				<DealerWholesale
+					v-if="data.wholesaleUnit"
+					class="dealer-page__section"
+					:wholesale-unit="data.wholesaleUnit"
+				/>
+
+				<DealerDiscounts
+					v-if="data.discountsUnit"
+					class="dealer-page__section"
+					:discounts-unit="data.discountsUnit"
+				/>
+
+				<DealerLogistics
+					v-if="data.logisticsUnit"
+					class="dealer-page__section"
+					:logistics-unit="data.logisticsUnit"
+				/>
+
+				<DealerPolicy v-if="data.policyUnit" class="dealer-page__section" :policy-unit="data.policyUnit" />
+
+				<DealerAssets v-if="data.assetsUnit" class="dealer-page__section" :assets-unit="data.assetsUnit" />
 
 				<ContentCards
 					v-if="data.terms?.length"
@@ -53,11 +76,20 @@ usePageSeo(computed(() => data.value))
 					v-if="data.steps?.length"
 					class="dealer-page__section"
 					:items="data.steps"
-					title="Как начать"
+					title="Как стать дилером"
 					variant="numbered"
 					:columns="4"
 				/>
 
+				<DealerReviews v-if="data.reviewsUnit" class="dealer-page__section" :reviews-unit="data.reviewsUnit" />
+
+				<DealerPriceUnit v-if="data.priceUnit" class="dealer-page__section" :price-unit="data.priceUnit" />
+			</div>
+
+			<!-- Сертификаты, фото производства и счётчики — те же, что на витрине -->
+			<AppTrustUnit class="dealer-page__section" reviews-role="client" />
+
+			<div class="container">
 				<section class="dealer-page__form-section">
 					<DealerForm :note="data.formNote" />
 				</section>

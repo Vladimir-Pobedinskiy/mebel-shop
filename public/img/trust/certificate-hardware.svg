@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1188" viewBox="0 0 840 1188" role="img" aria-label="Сертификат фурнитуры">
+	<rect width="840" height="1188" fill="#f7f4ef"/>
+	<rect x="40" y="40" width="760" height="1108" fill="none" stroke="#cfc4b4" stroke-width="4"/>
+	<rect x="64" y="64" width="712" height="1060" fill="none" stroke="#e4ddd2" stroke-width="2"/>
+	<circle cx="420" cy="320" r="110" fill="#f0e0d3"/>
+	<circle cx="420" cy="320" r="78" fill="none" stroke="#b4632a" stroke-width="6"/>
+	<text x="420" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#1c1a17">Сертификат фурнитуры</text>
+	<text x="420" y="624" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#6b6357">Blum, Hettich — 200 000 циклов</text>
+	<rect x="200" y="700" width="440" height="3" fill="#e4ddd2"/>
+	<text x="420" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#6b6357">Мебель Шоп</text>
+</svg>

@@ -3,6 +3,7 @@ import { useGeneralStore } from '@/stores/storeGeneral'
 import { useMenuStore } from '@/stores/storeMenu'
 import { useReducedMotion } from '@/composables/useReducedMotion'
 import { useSwipeHandler } from '@/composables/useSwipeHandler'
+import { useCommercialModals } from '@/composables/useCommercialModals'
 import { screens } from '@/utils/utils'
 
 withDefaults(
@@ -22,7 +23,10 @@ const { isReducedMotion } = useReducedMotion()
 const storeGeneral = useGeneralStore()
 const burgerNav = computed(() => storeGeneral.header?.burgerNav)
 const phone = computed(() => storeGeneral.header?.phone)
+const contacts = computed(() => storeGeneral.contacts)
 const socials = computed(() => storeGeneral.socials)
+
+const { openCallback, openCalcPrice } = useCommercialModals()
 
 const storeMenu = useMenuStore()
 const menuName = computed(() => storeMenu.menuName)
@@ -113,6 +117,39 @@ onUnmounted(() => {
 					<div class="burger-nav__bottom">
 						<a v-if="phone" class="burger-nav__phone h4 hover-link" :href="`tel:${phone.url}`">{{ phone.label }}</a>
 
+						<div class="burger-nav__commercial">
+							<UIButton
+								as="button"
+								type="button"
+								size="small"
+								label="Рассчитать стоимость"
+								@click="openCalcPrice('')"
+							/>
+
+							<UIButton
+								as="button"
+								type="button"
+								variant="secondary"
+								color="dark"
+								size="small"
+								label="Заказать звонок"
+								@click="openCallback"
+							/>
+
+							<UIButton
+								v-if="contacts?.catalogFile"
+								as="a"
+								:href="contacts.catalogFile.url"
+								variant="secondary"
+								color="dark"
+								size="small"
+								icon="icon-download"
+								:label="contacts.catalogFile.label"
+								download
+								show-icon
+							/>
+						</div>
+
 						<div class="burger-nav__actions">
 							<UIButton
 								as="NuxtLink"
@@ -135,6 +172,12 @@ onUnmounted(() => {
 
 <style lang="scss">
 @use '@/assets/scss/general/variables';
+
+.burger-nav__commercial {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
 
 .burger {
 	display: flex;

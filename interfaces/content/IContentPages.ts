@@ -35,7 +35,93 @@ export interface IDeliveryPage extends IPageBase {
 	faq: IFaqItem[]
 }
 
-/* /become-dealer/ — сотрудничество */
+/* /become-dealer/ — оптовая работа и дилерство. B2B-блоки опциональны:
+   страница без них рендерится ровно так же, как раньше */
+export interface IDealerLabelValue {
+	label: string
+	value: string
+}
+
+export interface IDealerWholesaleUnit {
+	title: string
+	text: string
+	items: ITextItem[]
+	minOrder: { title: string; text: string; items: IDealerLabelValue[]; note: string }
+}
+
+export interface IDealerDiscountRow {
+	level: string
+	volume: string
+	discount: string
+	deferment: string
+	bonus: string
+}
+
+export interface IDealerDiscountsUnit {
+	title: string
+	text: string
+	columns: string[]
+	rows: IDealerDiscountRow[]
+	note: string
+}
+
+export interface IDealerLogisticsUnit {
+	title: string
+	text: string
+	groups: { title: string; text: string; items: IDealerLabelValue[] }[]
+	note: string
+}
+
+export interface IDealerPolicyUnit {
+	title: string
+	text: string
+	claims: { title: string; text: string; steps: ITextItem[]; note: string }
+	warranty: { title: string; text: string; items: ITextItem[]; note: string }
+}
+
+export interface IDealerFile {
+	title: string
+	text: string
+	url: string
+	size: string
+	format: string
+	/** '3d' | 'dwg' | 'photo' | 'pdf' — от типа зависит иконка */
+	type: string
+}
+
+export interface IDealerAssetsUnit {
+	title: string
+	text: string
+	files: IDealerFile[]
+	note: string
+}
+
+export interface IDealerReview {
+	id: number
+	author: string
+	company: string
+	city: string
+	since: string
+	rating: number
+	text: string
+}
+
+export interface IDealerReviewsUnit {
+	title: string
+	text: string
+	items: IDealerReview[]
+}
+
+export interface IDealerPriceUnit {
+	title: string
+	text: string
+	updatedAt: string
+	file: { title: string; label: string; url: string; size: string; format: string }
+	benefits: string[]
+	formTitle: string
+	formNote: string
+}
+
 export interface IBecomeDealerPage extends IPageBase {
 	slogan: { title: string; text: string }
 	counters: { value: number; suffix: string; label: string }[]
@@ -43,6 +129,13 @@ export interface IBecomeDealerPage extends IPageBase {
 	terms: ITextItem[]
 	steps: ITextItem[]
 	formNote: string
+	wholesaleUnit?: IDealerWholesaleUnit
+	discountsUnit?: IDealerDiscountsUnit
+	logisticsUnit?: IDealerLogisticsUnit
+	policyUnit?: IDealerPolicyUnit
+	assetsUnit?: IDealerAssetsUnit
+	reviewsUnit?: IDealerReviewsUnit
+	priceUnit?: IDealerPriceUnit
 }
 
 /* Правовые страницы: единый html-документ */

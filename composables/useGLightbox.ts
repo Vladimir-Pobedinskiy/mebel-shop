@@ -1,7 +1,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useScrollController } from '@/composables/useScrollController'
 
-export function useGLightbox() {
+/* selector позволяет держать несколько независимых лайтбоксов на странице:
+   один экземпляр на класс, иначе обработчики клика навешиваются дважды */
+export function useGLightbox(selector = '.glightbox') {
 	const gLightBox = ref<any | null>(null)
 
 	const initGLightbox = async () => {
@@ -10,7 +12,7 @@ export function useGLightbox() {
 			await import('glightbox/dist/css/glightbox.css')
 
 			gLightBox.value = GLightbox({
-				selector: '.glightbox',
+				selector,
 				autoplayVideos: false,
 				width: '100%',
 				height: 'auto',

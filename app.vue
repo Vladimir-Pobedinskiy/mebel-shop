@@ -16,8 +16,11 @@ useSiteSchemaOrg()
 
 		<AppFooter />
 
+		<AppFloatingActions />
+
 		<AppCursor />
 		<AppToaster />
+		<AppCommercialModals />
 	</div>
 </template>
 

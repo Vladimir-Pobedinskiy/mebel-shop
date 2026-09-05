@@ -60,3 +60,48 @@ export interface ISocialLink {
 	label: string
 	name: string
 }
+
+/* Мессенджер в плавающих кнопках: name — имя иконки без префикса icon- */
+export interface IMessengerLink {
+	name: string
+	url: string
+	label: string
+	text: string
+}
+
+/* Сквозные коммерческие контакты: телефон, мессенджеры и файл каталога */
+export interface IContacts {
+	phone: ILink
+	email: ILink
+	workingHours: string
+	replyTime: string
+	messengers: IMessengerLink[]
+	consult: { title: string; text: string }
+	catalogFile: { url: string; label: string; title: string; size: string }
+}
+
+export interface ITrustCertificate {
+	title: string
+	text: string
+	img: IImg
+}
+
+export interface ITrustReview {
+	id: number
+	author: string
+	/** 'client' — покупатель, 'dealer' — партнёр */
+	role: 'client' | 'dealer'
+	company: string
+	rating: number
+	text: string
+}
+
+/* Блок доверия: сертификаты, фото производства, счётчики и отзывы */
+export interface ITrustUnit {
+	title: string
+	text: string
+	certificates: { title: string; text: string; items: ITrustCertificate[] }
+	production: { title: string; text: string; gallery: IImg[]; link?: ILink }
+	counters: { value: number; suffix: string; label: string }[]
+	reviews: { title: string; text: string; items: ITrustReview[] }
+}
