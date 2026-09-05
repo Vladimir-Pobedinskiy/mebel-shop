@@ -34,7 +34,7 @@ onMounted(() => {
 
 		timeline
 			.to('.home-hero__subtitle', { y: 0, opacity: 1, duration: 0.7 }, '-=0.6')
-			.to('.home-hero__text', { y: 0, opacity: 1, duration: 0.7 }, '-=0.5')
+			.to('.home-hero__text', { y: 0, opacity: 1, duration: 0.7 }, '-=0.45')
 			.to('.home-hero__link', { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }, '-=0.45')
 			.to('.home-hero__stat', { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 }, '-=0.4')
 
