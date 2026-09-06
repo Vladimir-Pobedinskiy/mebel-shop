@@ -1,4 +1,4 @@
-import checker from 'vite-plugin-checker'
+import { checker } from 'vite-plugin-checker'
 
 // Страницы магазинного флоу, авторизации и личного кабинета: закрыты от индексации
 const noindexRoutes = [
@@ -30,11 +30,19 @@ const withBase = (route: string) => (baseURL === '/' ? route : `${baseURL.replac
 
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
-	devtools: { enabled: false },
+	typescript: {
+		tsConfig: {
+			compilerOptions: {
+				module: 'ESNext',
+				target: 'ESNext',
+			},
+		},
+	},
 	devServer: {
 		port: 3000,
 		host: '0.0.0.0',
 	},
+	devtools: { enabled: false },
 	router: {
 		// https://router.vuejs.org/api/interfaces/routeroptions.html
 		options: {
@@ -43,6 +51,7 @@ export default defineNuxtConfig({
 		},
 	},
 	app: {
+		layoutTransition: { name: 'layout', mode: 'out-in' },
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
 			htmlAttrs: { lang: 'ru' },
@@ -164,7 +173,7 @@ export default defineNuxtConfig({
 					stylelint: {
 						lintCommand: 'stylelint "**/*.{css,scss,vue}"',
 					},
-				}) as any,
+				}),
 			],
 		},
 	},
@@ -175,6 +184,28 @@ export default defineNuxtConfig({
 					silenceDeprecations: ['legacy-js-api'],
 				},
 			},
+		},
+		/* Тяжёлые зависимости пребандлим заранее: иначе первый переход на страницу,
+		   которая их тянет, упирается в пересборку на лету. Список — только то,
+		   что действительно импортируется в app/ */
+		optimizeDeps: {
+			include: [
+				'glightbox',
+				'gsap',
+				'gsap/ScrollTrigger',
+				'vue-imask',
+				'vue-final-modal',
+				'vue-multiselect',
+				'typograf',
+				'@vueuse/core',
+				'@headlessui/vue',
+				'vee-validate',
+				'yup',
+				'vue3-marquee',
+				'swiper',
+				'swiper/vue',
+				'swiper/modules',
+			],
 		},
 	},
 	auth: {
