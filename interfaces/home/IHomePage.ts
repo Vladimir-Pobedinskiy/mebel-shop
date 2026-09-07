@@ -11,6 +11,7 @@ export interface IHomeHero {
 	title: string
 	text: string
 	img: IImg
+	video?: string
 	links: ILink[]
 	stats: { value: string; label: string }[]
 }
