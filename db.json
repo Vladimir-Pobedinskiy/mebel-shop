@@ -964,7 +964,7 @@
           "title": "Horizon",
           "text": "Шкафы-купе во всю стену: профиль без обрамления, зеркальные и матовые фасады.",
           "img": {
-            "url": "/img/home/collection-1.svg",
+            "url": "/img/home/collection-1.webp",
             "alt": "Коллекция Horizon"
           },
           "link": {
@@ -976,7 +976,7 @@
           "title": "Atelier",
           "text": "Комоды и тумбы со шпоном ореха и латунной фурнитурой. Для спальни и прихожей.",
           "img": {
-            "url": "/img/home/collection-2.svg",
+            "url": "/img/home/collection-2.webp",
             "alt": "Коллекция Atelier"
           },
           "link": {
@@ -988,7 +988,7 @@
           "title": "Verona",
           "text": "Кровати из массива дуба с мягким изголовьем и коробом для белья.",
           "img": {
-            "url": "/img/home/collection-3.svg",
+            "url": "/img/home/collection-3.webp",
             "alt": "Коллекция Verona"
           },
           "link": {
@@ -1000,7 +1000,7 @@
           "title": "Eco",
           "text": "Кухни с фасадами из шпона и кварцевой столешницей. Прямые, угловые и с островом.",
           "img": {
-            "url": "/img/home/collection-4.svg",
+            "url": "/img/home/collection-4.webp",
             "alt": "Коллекция Eco"
           },
           "link": {

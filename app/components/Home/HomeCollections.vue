@@ -13,8 +13,15 @@ const titleRef = ref<HTMLElement | null>(null)
 
 const { createAnimation } = useGsapReveal()
 
+/* Сколько экранов прокрутки уходит на сам сдвиг трека и на «выдержку» после него */
+const moveScreens = 1.5
+const dwellScreens = 0.7
+
+/* Шапка сайта sticky и перекрывает закреплённую секцию — на её высоту сдвигаем старт пина */
+const getHeaderOffset = () => (document.querySelector('.header') as HTMLElement | null)?.offsetHeight ?? 0
+
 onMounted(() => {
-	createAnimation(rootRef.value, ({ gsap }) => {
+	createAnimation(rootRef.value, ({ gsap, ScrollTrigger }) => {
 		const words = titleRef.value ? splitTextToSpans(titleRef.value, 'words') : []
 
 		gsap.set(words, { yPercent: 110 })
@@ -38,19 +45,29 @@ onMounted(() => {
 			const sticky = stickyRef.value
 			if (!track || !sticky) return
 
+			const syncHeaderOffset = () => sticky.style.setProperty('--collections-header-offset', `${getHeaderOffset()}px`)
+			syncHeaderOffset()
+
+			// Сдвиг трека по x равен его «остатку» за краем экрана. Вертикальную дистанцию считаем
+			// от высоты экрана, а не от остатка: остаток растёт вместе с шириной монитора, и на
+			// широких экранах секция начинала бы требовать заметно больше прокрутки, чем на узких.
 			const getDistance = () => Math.max(0, track.scrollWidth - sticky.clientWidth)
 
-			gsap.to(track, {
-				x: () => -getDistance(),
-				ease: 'none',
-				scrollTrigger: {
-					trigger: sticky,
-					pin: true,
-					scrub: 1,
-					invalidateOnRefresh: true,
-					anticipatePin: 1,
-					end: () => `+=${getDistance()}`,
-				},
+			const timeline = gsap.timeline()
+			timeline.to(track, { x: () => -getDistance(), ease: 'none', duration: moveScreens })
+			// Выдержка: трек стоит на месте, секция ещё закреплена — последние карточки успевают прочитаться
+			timeline.to(track, { x: () => -getDistance(), ease: 'none', duration: dwellScreens })
+
+			ScrollTrigger.create({
+				trigger: sticky,
+				start: () => `top ${getHeaderOffset()}px`,
+				end: () => `+=${Math.round(window.innerHeight * (moveScreens + dwellScreens))}`,
+				pin: true,
+				scrub: 1,
+				anticipatePin: 1,
+				invalidateOnRefresh: true,
+				animation: timeline,
+				onRefresh: syncHeaderOffset,
 			})
 		})
 	})
@@ -108,19 +125,20 @@ onMounted(() => {
 		justify-content: center;
 
 		@media (min-width: variables.$desktop-small) {
-			min-height: 100svh;
+			// Закреплённая секция встаёт под sticky-шапкой, поэтому вычитаем её высоту
+			min-height: calc(100svh - var(--collections-header-offset, 0px));
 		}
 	}
 
-	&__head {
-		max-width: 760px;
-	}
-
+	// Заголовок лежит в .container и совпадает по левому краю с первой карточкой трека,
+	// поэтому ширину колонки текста ограничиваем на самих строках, а не на контейнере
 	&__title {
+		max-width: 760px;
 		margin: 0 0 14px;
 	}
 
 	&__text {
+		max-width: 760px;
 		margin: 0;
 		color: variables.$color-ink-soft;
 	}
@@ -136,6 +154,10 @@ onMounted(() => {
 		padding: 0 16px 8px;
 		overflow-x: auto;
 		scroll-snap-type: x mandatory;
+
+		// Без scroll-padding обязательный snap гасит левый отступ трека,
+		// и первая карточка встаёт вплотную к краю экрана — мимо заголовка
+		scroll-padding-left: 16px;
 		will-change: transform;
 
 		@media (min-width: variables.$desktop-small) {
