@@ -293,7 +293,7 @@ watch(
 
 	&_solid {
 		color: variables.$color-ink;
-		background-color: rgb(247 244 239 / 80%);
+		background-color: rgb(44 44 46 / 80%);
 		border-bottom: 1px solid variables.$color-line;
 		backdrop-filter: blur(16px);
 	}
@@ -310,7 +310,7 @@ watch(
 
 		@media (min-width: variables.$desktop-small) {
 			display: block;
-			border-color: rgb(107 99 87 / 15%);
+			border-color: rgb(168 159 144 / 15%);
 		}
 	}
 
@@ -591,7 +591,7 @@ watch(
 		width: 100%;
 		height: 100vh;
 		cursor: default;
-		background-color: rgb(28 26 23 / 35%);
+		background-color: rgb(0 0 0 / 50%);
 		border: 0;
 	}
 }

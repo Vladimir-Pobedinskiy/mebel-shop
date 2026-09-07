@@ -11,6 +11,12 @@ body {
 	background-color: variables.$color-bg;
 }
 
+// Тёмная тема сайта: нативные элементы (скроллбар, выделение текста, чекбоксы без своих стилей)
+// подстраиваются под неё сами
+html {
+	color-scheme: dark;
+}
+
 .body-inner {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +28,13 @@ body {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
+}
+
+// Светлая тема для каталога и карточки товара (layouts/catalog-light.vue) —
+// .theme-light переопределяет CSS custom properties (main.css), красим сам блок в них же
+.theme-light {
+	color: variables.$color-ink;
+	background-color: variables.$color-bg;
 }
 
 .visually-hidden {
@@ -109,7 +122,7 @@ body {
 
 // Стеклянная подложка для шапки и sticky-панелей
 .glass {
-	background-color: rgb(247, 244, 239, 72%);
+	background-color: rgb(44 44 46 / 72%);
 	backdrop-filter: blur(16px);
 }
 

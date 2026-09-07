@@ -305,7 +305,7 @@ const onTiltLeave = () => {
 		height: 40px;
 		color: variables.$color-ink;
 		cursor: pointer;
-		background-color: rgb(255, 255, 255, 88%);
+		background-color: variables.$color-surface;
 		border: 0;
 		border-radius: 50%;
 		transition:

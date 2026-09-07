@@ -34,7 +34,7 @@ withDefaults(
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(247 244 239 / 65%);
+	background-color: rgb(44 44 46 / 65%);
 	backdrop-filter: blur(6px);
 
 	&.loading-local {

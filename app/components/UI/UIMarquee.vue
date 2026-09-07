@@ -26,7 +26,7 @@ withDefaults(
 		loop: 0,
 		clone: true,
 		gradient: false,
-		gradientColor: [247, 244, 239],
+		gradientColor: [36, 36, 34],
 		gradientLength: '30px',
 		vertical: false,
 		animateOnOverflowOnly: false,

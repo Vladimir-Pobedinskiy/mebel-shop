@@ -73,7 +73,7 @@ defineProps<{
 		left: 12px;
 		padding: 6px 12px;
 		color: variables.$color-ink;
-		background-color: rgb(255, 255, 255, 88%);
+		background-color: variables.$color-surface;
 		border-radius: 999px;
 		backdrop-filter: blur(6px);
 	}

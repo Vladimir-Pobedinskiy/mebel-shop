@@ -2,6 +2,8 @@
 import type { ICategoryPage } from '~~/interfaces/catalog/ICategoryPage'
 import { QUERY_KEYS } from '@/composables/useCatalogFilters'
 
+definePageMeta({ layout: 'catalog-light' })
+
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 

@@ -149,7 +149,7 @@ onUnmounted(() => {
 			position: absolute;
 			inset: 0;
 			content: '';
-			background: linear-gradient(90deg, rgb(47, 74, 63, 92%) 0%, rgb(47, 74, 63, 45%) 100%);
+			background: linear-gradient(90deg, rgb(74, 157, 115, 92%) 0%, rgb(74, 157, 115, 45%) 100%);
 		}
 	}
 

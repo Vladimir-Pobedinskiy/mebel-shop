@@ -150,8 +150,8 @@ onMounted(() => {
 
 		&.active {
 			color: variables.$color-white;
-			background-color: variables.$color-ink;
-			border-color: variables.$color-ink;
+			background-color: variables.$color-accent;
+			border-color: variables.$color-accent;
 		}
 
 		@media (min-width: variables.$desktop-small) {

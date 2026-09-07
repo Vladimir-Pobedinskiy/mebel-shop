@@ -277,7 +277,7 @@ const hidden = () => {
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				color: variables.$color-white;
+				color: variables.$color-bg;
 				background-color: variables.$color-ink;
 			}
 		}
@@ -289,7 +289,7 @@ const hidden = () => {
 
 		@media (min-width: variables.$desktop-small) {
 			&:hover {
-				color: variables.$color-ink;
+				color: variables.$color-bg;
 				background-color: variables.$color-white;
 			}
 		}

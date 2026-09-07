@@ -194,7 +194,7 @@ watch(
 		}
 
 		&.active {
-			background-color: variables.$color-ink;
+			background-color: variables.$color-surface;
 		}
 	}
 

@@ -3,6 +3,8 @@ import type { ICategoryPage } from '~~/interfaces/catalog/ICategoryPage'
 import type { IFilter } from '~~/interfaces/catalog/IFilter'
 import { slugify } from '@/utils/utils'
 
+definePageMeta({ layout: 'catalog-light' })
+
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 const collectionSlug = computed(() => String(route.params.collection))

@@ -21,19 +21,22 @@ $desktop-big-for-max-width: 1399px;
 $font: 'Montserrat', 'Arial', sans-serif;
 $font-secondary: 'Steppe', 'Arial', sans-serif;
 
-/* Палитра — тёплая «премиум-мебельная» */
-$color-bg: #f7f4ef; // тёплый песочный фон
-$color-surface: #fff;
-$color-ink: #1c1a17; // основной текст
-$color-ink-soft: #6b6357; // вторичный текст
-$color-accent: #b4632a; // терракота / орех — CTA
-$color-accent-hover: #9a5323;
-$color-accent-soft: #f0e0d3;
-$color-accent-2: #2f4a3f; // глубокий зелёный — акцент секций
-$color-accent-2-hover: #24382f;
-$color-line: #e4ddd2; // границы и разделители
-$color-line-strong: #cfc4b4;
-$color-muted: #f1ebe2; // подложки карточек и полей
+/* Палитра — тёплая «премиум-мебельная». Значения живут в CSS custom properties
+   (main.css): по умолчанию тёмная тема (фон как у донора alt-mk.ru), а раздел
+   .theme-light (каталог и карточка товара) переопределяет их на светлые —
+   поэтому здесь просто ссылки на переменные, а не литералы */
+$color-bg: var(--color-bg); // основной фон
+$color-surface: var(--color-surface); // приподнятые панели и карточки
+$color-ink: var(--color-ink); // основной текст
+$color-ink-soft: var(--color-ink-soft); // вторичный текст
+$color-accent: var(--color-accent); // терракота / орех — CTA
+$color-accent-hover: var(--color-accent-hover);
+$color-accent-soft: var(--color-accent-soft);
+$color-accent-2: var(--color-accent-2); // глубокий зелёный — акцент секций
+$color-accent-2-hover: var(--color-accent-2-hover);
+$color-line: var(--color-line); // границы и разделители
+$color-line-strong: var(--color-line-strong);
+$color-muted: var(--color-muted); // подложки карточек и полей
 $color-black: #000;
 $color-white: #fff;
 
@@ -63,5 +66,5 @@ $header-height-desktop: 128px;
 $radius-s: 8px;
 $radius-m: 16px;
 $radius-l: 24px;
-$shadow-soft: 0 20px 60px rgb(28, 26, 23, 8%);
-$shadow-hover: 0 24px 70px rgb(28, 26, 23, 14%);
+$shadow-soft: var(--shadow-soft);
+$shadow-hover: var(--shadow-hover);

@@ -27,7 +27,7 @@ defineProps<{
 
 	&_hit {
 		color: variables.$color-white;
-		background-color: variables.$color-ink;
+		background-color: rgb(0 0 0 / 55%);
 	}
 
 	&_new {

@@ -2,6 +2,8 @@
 import type { IProductPage } from '~~/interfaces/product/IProductPage'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
+definePageMeta({ layout: 'catalog-light' })
+
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 

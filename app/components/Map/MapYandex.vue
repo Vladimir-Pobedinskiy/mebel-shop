@@ -51,7 +51,7 @@ const mapSettings = computed(() => ({
 		align-items: center;
 		padding: 8px 12px;
 		color: variables.$color-white;
-		background-color: variables.$color-ink;
+		background-color: variables.$color-bg;
 		border-radius: 999px;
 		box-shadow: variables.$shadow-soft;
 		transform: translate(-50%, -100%);

@@ -2,6 +2,8 @@
 import type { ICatalogPage } from '~~/interfaces/catalog/ICatalogPage'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
+definePageMeta({ layout: 'catalog-light' })
+
 const { data, error, status } = await useAsyncData('catalog-page', async () => $fetch<ICatalogPage>('/api/catalog/'))
 const pending = computed(() => status.value === 'pending')
 
