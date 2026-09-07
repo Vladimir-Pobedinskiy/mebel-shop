@@ -313,12 +313,6 @@
       "replyTime": "Ответим в течение 15 минут в рабочее время",
       "messengers": [
         {
-          "name": "whatsapp",
-          "url": "https://wa.me/78001234567",
-          "label": "Написать в WhatsApp",
-          "text": "Пришлём смету и фото материалов"
-        },
-        {
           "name": "telegram",
           "url": "https://t.me/mebelshop",
           "label": "Написать в Телеграм",
@@ -542,51 +536,13 @@
         }
       ]
     },
-    "categoryTabs": [
-      {
-        "name": "shkafy",
-        "nav": {
-          "label": "Шкафы и гардеробные"
-        },
-        "panel": {
-          "title": "Шкафы и гардеробные",
-          "text": "Распашные и раздвижные шкафы, гардеробные системы под потолок. Доводчики Blum, зеркальные и стеклянные фасады, подсветка полок.",
-          "img": {
-            "url": "/img/categories/shkafy.jpg",
-            "alt": "Шкафы и гардеробные"
-          },
-          "link": {
-            "url": "/catalog/shkafy/",
-            "label": "Смотреть шкафы и гардеробные"
-          },
-          "items": [
-            {
-              "url": "/product/shkaf-kupe-horizon-2400/",
-              "label": "Шкаф-купе Horizon 2400"
-            },
-            {
-              "url": "/product/shkaf-raspashnoj-bergen/",
-              "label": "Шкаф распашной Bergen"
-            },
-            {
-              "url": "/product/garderobnaya-sistema-atelier/",
-              "label": "Гардеробная система Atelier"
-            },
-            {
-              "url": "/product/shkaf-uglovoj-nova/",
-              "label": "Шкаф угловой Nova"
-            }
-          ]
-        }
-      },
-      {
-        "name": "kuhni",
-        "nav": {
-          "label": "Кухни"
-        },
-        "panel": {
+    "categoryTiles": {
+      "title": "Выбирайте по категориям",
+      "text": "Восемь разделов каталога — от диванов до освещения. Все модели с доставкой, подъёмом и сборкой.",
+      "items": [
+        {
+          "name": "kuhni",
           "title": "Кухни",
-          "text": "Кухонные гарнитуры на заказ: прямые, угловые и с островом. Фасады из МДФ с эмалью и шпоном, кварцевые и HPL-столешницы.",
           "img": {
             "url": "/img/categories/kuhni.jpg",
             "alt": "Кухни"
@@ -594,100 +550,58 @@
           "link": {
             "url": "/catalog/kuhni/",
             "label": "Смотреть кухни"
-          },
-          "items": [
-            {
-              "url": "/product/kuhnya-luna-3-2/",
-              "label": "Кухня Luna прямая 3.2 м"
-            },
-            {
-              "url": "/product/kuhnya-urban-uglovaya/",
-              "label": "Кухня Urban угловая"
-            },
-            {
-              "url": "/product/kuhnya-eco-s-ostrovom/",
-              "label": "Кухня Eco с островом"
-            },
-            {
-              "url": "/product/kuhnya-village/",
-              "label": "Кухня Village классическая"
-            }
-          ]
-        }
-      },
-      {
-        "name": "krovati",
-        "nav": {
-          "label": "Кровати"
+          }
         },
-        "panel": {
-          "title": "Кровати",
-          "text": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
+        {
+          "name": "spalni",
+          "title": "Спальни",
           "img": {
             "url": "/img/categories/krovati.jpg",
-            "alt": "Кровати"
+            "alt": "Спальни"
           },
           "link": {
             "url": "/catalog/krovati/",
-            "label": "Смотреть кровати"
-          },
-          "items": [
-            {
-              "url": "/product/krovat-verona-160/",
-              "label": "Кровать Verona 160×200"
-            },
-            {
-              "url": "/product/krovat-aurora/",
-              "label": "Кровать Aurora с подъёмным механизмом"
-            },
-            {
-              "url": "/product/krovat-kyoto-nizkaya/",
-              "label": "Кровать Kyoto низкая"
-            },
-            {
-              "url": "/product/krovat-bianca-140/",
-              "label": "Кровать Bianca 140×200"
-            }
-          ]
-        }
-      },
-      {
-        "name": "tumby",
-        "nav": {
-          "label": "Тумбы и комоды"
+            "label": "Смотреть спальни"
+          }
         },
-        "panel": {
-          "title": "Тумбы и комоды",
-          "text": "Комоды, ТВ-тумбы и прикроватные тумбы. Шпон дуба и ореха, крашеный МДФ, направляющие с доводчиками и скрытые ручки.",
+        {
+          "name": "gostinye",
+          "title": "Гостиные",
           "img": {
             "url": "/img/categories/tumby.jpg",
-            "alt": "Тумбы и комоды"
+            "alt": "Гостиные"
           },
           "link": {
             "url": "/catalog/tumby/",
-            "label": "Смотреть тумбы и комоды"
+            "label": "Смотреть гостиные"
+          }
+        },
+        {
+          "name": "prihozhie",
+          "title": "Прихожие",
+          "img": {
+            "url": "/img/categories/shkafy.jpg",
+            "alt": "Прихожие"
           },
-          "items": [
-            {
-              "url": "/product/komod-bergen-6/",
-              "label": "Комод Bergen 6 ящиков"
-            },
-            {
-              "url": "/product/tv-tumba-horizon-1800/",
-              "label": "ТВ-тумба Horizon 1800"
-            },
-            {
-              "url": "/product/prikrovatnaya-tumba-aurora/",
-              "label": "Прикроватная тумба Aurora"
-            },
-            {
-              "url": "/product/komod-atelier-s-zerkalom/",
-              "label": "Комод Atelier с зеркалом"
-            }
-          ]
+          "link": {
+            "url": "/catalog/shkafy/",
+            "label": "Смотреть прихожие"
+          }
+        },
+        {
+          "name": "vannye",
+          "title": "Ванные",
+          "img": {
+            "url": "/img/categories/vannye.webp",
+            "alt": "Ванные"
+          },
+          "link": {
+            "url": "/catalog/",
+            "label": "Смотреть каталог"
+          }
         }
-      }
-    ],
+      ]
+    },
     "bestsellers": {
       "title": "Хиты продаж",
       "text": "Модели, которые чаще всего заказывают этой осенью",
@@ -921,41 +835,6 @@
           "url": "/product/tv-tumba-horizon-1800/"
         }
       ]
-    },
-    "aboutUnit": {
-      "subtitle": "О компании",
-      "title": "Делаем мебель с 2014 года",
-      "text": "Своя фабрика в Подмосковье, три салона и служба сборки в штате. Мы отвечаем за изделие на всём пути: от эскиза и распила до последнего винта в вашей квартире.",
-      "img": {
-        "url": "/img/home/about.webp",
-        "alt": "Производство «Мебель Шоп»"
-      },
-      "counters": [
-        {
-          "value": 12,
-          "suffix": " лет",
-          "label": "на рынке мебели"
-        },
-        {
-          "value": 18500,
-          "suffix": "+",
-          "label": "выполненных заказов"
-        },
-        {
-          "value": 3,
-          "suffix": "",
-          "label": "салона в двух городах"
-        },
-        {
-          "value": 98,
-          "suffix": "%",
-          "label": "заказов в срок"
-        }
-      ],
-      "link": {
-        "url": "/about/",
-        "label": "Подробнее о компании"
-      }
     },
     "collections": {
       "title": "Коллекции",

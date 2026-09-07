@@ -16,24 +16,10 @@ export interface IHomeHero {
 	stats: { value: string; label: string }[]
 }
 
-export interface IHomeCategoryTab {
+export interface IHomeCategoryTile {
 	name: string
-	nav: { label: string }
-	panel: {
-		title: string
-		text: string
-		img: IImg
-		link: ILink
-		items: ILink[]
-	}
-}
-
-export interface IHomeAboutUnit {
-	subtitle: string
 	title: string
-	text: string
 	img: IImg
-	counters: { value: number; suffix: string; label: string }[]
 	link: ILink
 }
 
@@ -64,9 +50,8 @@ export interface IHomeShowroom {
 
 export interface IHomePage extends IPageBase {
 	hero: IHomeHero
-	categoryTabs: IHomeCategoryTab[]
+	categoryTiles: { title: string; text: string; items: IHomeCategoryTile[] }
 	bestsellers: { title: string; text: string; link: ILink; products: IProduct[] }
-	aboutUnit: IHomeAboutUnit
 	collections: { title: string; text: string; items: IHomeCollection[] }
 	saleBanner: IHomeSaleBanner
 	marqueeUnit: { title: string; marqueeContent: string[] }

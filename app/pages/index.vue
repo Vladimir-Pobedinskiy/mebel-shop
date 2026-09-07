@@ -23,9 +23,8 @@ usePageSeo(computed(() => data.value))
 			<h1 class="visually-hidden">{{ data.seo.h1 }}</h1>
 
 			<HomeHero v-if="data.hero" :hero="data.hero" />
-			<HomeCategoryTabs v-if="data.categoryTabs" :tabs="data.categoryTabs" />
+			<HomeCategoryTiles v-if="data.categoryTiles" :category-tiles="data.categoryTiles" />
 			<HomeBestsellers v-if="data.bestsellers" :bestsellers="data.bestsellers" />
-			<HomeAboutUnit v-if="data.aboutUnit" :about-unit="data.aboutUnit" />
 			<HomeCollections v-if="data.collections" :collections="data.collections" />
 			<HomeSaleBanner v-if="data.saleBanner" :sale-banner="data.saleBanner" />
 			<MarqueeUnit v-if="data.marqueeUnit" :marquee-unit="data.marqueeUnit" />

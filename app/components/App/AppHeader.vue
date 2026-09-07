@@ -66,6 +66,10 @@ const isTransparent = computed(
 )
 const colorScheme = computed(() => (isTransparent.value ? 'white' : 'dark'))
 
+/* Каталог и карточка товара — светлая тема (layouts/catalog-light.vue): шапка
+   держит собственный светло-серый фон вместо тёмного, как на донорском сайте */
+const isLightPage = computed(() => route.meta.layout === 'catalog-light')
+
 const onScroll = () => {
 	isScrolled.value = window.scrollY > 40
 }
@@ -117,6 +121,7 @@ watch(
 			{ header_transparent: isTransparent },
 			{ header_solid: !isTransparent },
 			{ 'header_menu-open': isMegaMenuOpen },
+			{ 'header_light-page theme-light': isLightPage },
 		]"
 		@keydown.esc="closeMegaMenu"
 	>
@@ -302,6 +307,12 @@ watch(
 		color: variables.$color-white;
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
+	}
+
+	// Каталог и карточка товара — светлая тема: серая шапка вместо тёмной, как у донора
+	&_light-page.header_solid {
+		background-color: rgb(245 245 245 / 92%);
+		border-bottom-color: variables.$color-line;
 	}
 
 	&__top-line {

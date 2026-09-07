@@ -4,9 +4,9 @@
 	--color-surface: #38373a;
 	--color-ink: #f2ede6;
 	--color-ink-soft: #a89f90;
-	--color-accent: #c2703a;
-	--color-accent-hover: #d5854e;
-	--color-accent-soft: rgb(194 112 58 / 16%);
+	--color-accent: #007bdc;
+	--color-accent-hover: #2f96e8;
+	--color-accent-soft: rgb(0 123 220 / 18%);
 	--color-accent-2: #4a9d73;
 	--color-accent-2-hover: #3d8562;
 	--color-line: #47423b;
@@ -16,22 +16,23 @@
 	--shadow-hover: 0 24px 70px rgb(0 0 0 / 45%);
 }
 
-/* Светлая тема — каталог и карточка товара (layouts/catalog-light.vue) */
+/* Светлая тема — каталог, карточка товара (layouts/catalog-light.vue) и отдельные
+   секции главной (чередование тёмных и светлых блоков) */
 .theme-light {
 	color-scheme: light;
 
-	--color-bg: #f7f4ef;
+	--color-bg: #fff;
 	--color-surface: #fff;
 	--color-ink: #1c1a17;
 	--color-ink-soft: #6b6357;
-	--color-accent: #b4632a;
-	--color-accent-hover: #9a5323;
-	--color-accent-soft: #f0e0d3;
+	--color-accent: #007bdc;
+	--color-accent-hover: #0064b3;
+	--color-accent-soft: #dcecfa;
 	--color-accent-2: #2f4a3f;
 	--color-accent-2-hover: #24382f;
 	--color-line: #e4ddd2;
 	--color-line-strong: #cfc4b4;
-	--color-muted: #f1ebe2;
+	--color-muted: #f5f5f5;
 	--shadow-soft: 0 20px 60px rgb(28 26 23 / 8%);
 	--shadow-hover: 0 24px 70px rgb(28 26 23 / 14%);
 }

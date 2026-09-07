@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { useGeneralStore } from '@/stores/storeGeneral'
 
+const route = useRoute()
+
 const storeGeneral = useGeneralStore()
 const footer = computed(() => storeGeneral.footer)
 const socials = computed(() => storeGeneral.socials)
+
+/* Каталог и карточка товара — светлая тема (layouts/catalog-light.vue): подвал
+   держит собственный светло-серый фон вместо тёмного, как на донорском сайте */
+const isLightPage = computed(() => route.meta.layout === 'catalog-light')
 </script>
 
 <template>
-	<footer v-if="footer" class="footer">
+	<footer v-if="footer" :class="['footer', { 'footer_light-page theme-light': isLightPage }]">
 		<div v-if="footer.marqueeUnit" class="footer__marquee">
 			<UIMarquee :duration="30" :pause-on-hover="false">
 				<template #content>
@@ -91,6 +97,11 @@ const socials = computed(() => storeGeneral.socials)
 	padding-bottom: 24px;
 	background-color: variables.$color-surface;
 	border-top: 1px solid variables.$color-line;
+
+	// Каталог и карточка товара — светлая тема: серый подвал вместо тёмного, как у донора
+	&_light-page {
+		background-color: #f5f5f5;
+	}
 
 	&__marquee {
 		padding: 24px 0;

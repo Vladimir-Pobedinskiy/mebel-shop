@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<section ref="rootRef" class="home-reviews offset">
+	<section ref="rootRef" class="home-reviews offset theme-light">
 		<div class="container">
 			<div class="home-reviews__head">
 				<div class="home-reviews__head-main">

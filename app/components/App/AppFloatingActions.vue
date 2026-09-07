@@ -149,10 +149,6 @@ watch(
 			}
 		}
 
-		&_whatsapp .floating-actions__icon {
-			color: variables.$color-whatsapp;
-		}
-
 		&_telegram .floating-actions__icon {
 			color: variables.$color-telegram;
 		}

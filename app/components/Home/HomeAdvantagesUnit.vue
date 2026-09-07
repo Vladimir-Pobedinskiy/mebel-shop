@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<section ref="rootRef" class="home-advantages offset">
+	<section ref="rootRef" class="home-advantages offset theme-light">
 		<div class="container">
 			<div class="home-advantages__head">
 				<p ref="titleRef" class="home-advantages__title h2">{{ advantagesUnit.title }}</p>

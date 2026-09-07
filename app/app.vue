@@ -6,7 +6,7 @@ useSiteSchemaOrg()
 </script>
 
 <template>
-	<NuxtLoadingIndicator :color="'#c2703a'" />
+	<NuxtLoadingIndicator :color="'#007bdc'" />
 	<div class="body-inner">
 		<AppHeader />
 

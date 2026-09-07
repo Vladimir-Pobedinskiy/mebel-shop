@@ -101,7 +101,7 @@ onUnmounted(() => {
 		width: 44px;
 		height: 44px;
 		margin: -22px 0 0 -22px;
-		background-color: rgb(194 112 58 / 22%);
+		background-color: rgb(0 123 220 / 22%);
 	}
 }
 </style>

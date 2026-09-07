@@ -96,7 +96,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<section ref="rootRef" class="home-cta offset">
+	<section ref="rootRef" class="home-cta offset theme-light">
 		<div class="container">
 			<div class="home-cta__inner">
 				<div class="home-cta__media-wrapper">

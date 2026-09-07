@@ -75,7 +75,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<section ref="rootRef" class="home-collections offset">
+	<section ref="rootRef" class="home-collections offset theme-light">
 		<div ref="stickyRef" class="home-collections__sticky">
 			<div class="container home-collections__head">
 				<p ref="titleRef" class="home-collections__title h2">{{ collections.title }}</p>
