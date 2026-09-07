@@ -3,12 +3,14 @@ import type { IHomeHero } from '~~/interfaces/home/IHomePage'
 import { useGsapReveal, splitTextToSpans } from '@/composables/useGsapReveal'
 import { useMagneticHover } from '@/composables/useMagneticHover'
 import { useReducedMotion } from '@/composables/useReducedMotion'
+import { useAssetUrl } from '@/composables/useAssetUrl'
 
 defineProps<{
 	hero: IHomeHero
 }>()
 
 const { isReducedMotion } = useReducedMotion()
+const { assetUrl } = useAssetUrl()
 
 const rootRef = ref<HTMLElement | null>(null)
 const titleRef = ref<HTMLElement | null>(null)
@@ -77,14 +79,14 @@ onMounted(() => {
 			<video
 				v-if="hero.video && !isReducedMotion"
 				class="home-hero__img home-hero__video"
-				:poster="hero.img.url"
+				:poster="assetUrl(hero.img.url)"
 				autoplay
 				loop
 				muted
 				playsinline
 				preload="auto"
 			>
-				<source :src="hero.video" type="video/mp4" />
+				<source :src="assetUrl(hero.video)" type="video/mp4" />
 			</video>
 
 			<NuxtImg
