@@ -52,8 +52,8 @@
                 "label": "Комоды и тумбы"
               },
               {
-                "url": "/catalog/stoly-i-stulya/",
-                "label": "Столы и стулья"
+                "url": "/catalog/krovati/",
+                "label": "Кровати"
               }
             ]
           },
@@ -190,8 +190,8 @@
               "label": "Комоды и тумбы"
             },
             {
-              "url": "/catalog/stoly-i-stulya/",
-              "label": "Столы и стулья"
+              "url": "/catalog/krovati/",
+              "label": "Кровати"
             },
             {
               "url": "/catalog/kuhni/",
@@ -615,37 +615,37 @@
         }
       },
       {
-        "name": "stoly-i-stulya",
+        "name": "krovati",
         "nav": {
-          "label": "Столы и стулья"
+          "label": "Кровати"
         },
         "panel": {
-          "title": "Столы и стулья",
-          "text": "Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой.",
+          "title": "Кровати",
+          "text": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
           "img": {
-            "url": "/img/categories/stoly-i-stulya.svg",
-            "alt": "Столы и стулья"
+            "url": "/img/categories/krovati.jpg",
+            "alt": "Кровати"
           },
           "link": {
-            "url": "/catalog/stoly-i-stulya/",
-            "label": "Смотреть столы и стулья"
+            "url": "/catalog/krovati/",
+            "label": "Смотреть кровати"
           },
           "items": [
             {
-              "url": "/product/stol-tavolo-razdvizhnoj/",
-              "label": "Обеденный стол Tavolo раздвижной"
+              "url": "/product/krovat-verona-160/",
+              "label": "Кровать Verona 160×200"
             },
             {
-              "url": "/product/stol-oak-round-120/",
-              "label": "Стол Oak Round 120"
+              "url": "/product/krovat-aurora/",
+              "label": "Кровать Aurora с подъёмным механизмом"
             },
             {
-              "url": "/product/stul-vienna-myagkij/",
-              "label": "Стул Vienna мягкий"
+              "url": "/product/krovat-kyoto-nizkaya/",
+              "label": "Кровать Kyoto низкая"
             },
             {
-              "url": "/product/polukreslo-como/",
-              "label": "Полукресло Como"
+              "url": "/product/krovat-bianca-140/",
+              "label": "Кровать Bianca 140×200"
             }
           ]
         }
@@ -721,11 +721,11 @@
           "colorHex": "#c8a271",
           "sizes": "1800×620×2300 мм",
           "img": {
-            "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+            "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
             "alt": "Шкаф распашной Bergen"
           },
           "imgHover": {
-            "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+            "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
             "alt": "Шкаф распашной Bergen — вид сбоку"
           },
           "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -808,15 +808,15 @@
           "url": "/product/kuhnya-urban-uglovaya/"
         },
         {
-          "id": 19,
-          "slug": "stol-tavolo-razdvizhnoj",
-          "title": "Обеденный стол Tavolo раздвижной",
-          "category": "Столы и стулья",
-          "categorySlug": "stoly-i-stulya",
-          "collection": "Tavolo",
+          "id": 6,
+          "slug": "krovat-verona-160",
+          "title": "Кровать Verona 160×200",
+          "category": "Кровати",
+          "categorySlug": "krovati",
+          "collection": "Verona",
           "brand": "Мебель Шоп",
-          "price": 46800,
-          "oldPrice": 56200,
+          "price": 74300,
+          "oldPrice": 89000,
           "currency": "RUB",
           "badges": [
             {
@@ -826,66 +826,62 @@
             {
               "name": "sale",
               "label": "Скидка"
+            }
+          ],
+          "rating": 4.9,
+          "reviewsCount": 72,
+          "inStock": true,
+          "availability": "В наличии на складе",
+          "material": "Массив дуба",
+          "color": "Медовый дуб",
+          "colorHex": "#c19a5b",
+          "sizes": "1780×2120×1200 мм",
+          "img": {
+            "url": "/img/products/krovat-verona-160-1.webp",
+            "alt": "Кровать Verona 160×200"
+          },
+          "imgHover": {
+            "url": "/img/products/krovat-verona-160-2.webp",
+            "alt": "Кровать Verona 160×200 — вид сбоку"
+          },
+          "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+          "url": "/product/krovat-verona-160/"
+        },
+        {
+          "id": 7,
+          "slug": "krovat-aurora",
+          "title": "Кровать Aurora с подъёмным механизмом",
+          "category": "Кровати",
+          "categorySlug": "krovati",
+          "collection": "Aurora",
+          "brand": "Aurora Home",
+          "price": 92500,
+          "oldPrice": null,
+          "currency": "RUB",
+          "badges": [
+            {
+              "name": "hit",
+              "label": "Хит"
             }
           ],
           "rating": 4.8,
-          "reviewsCount": 61,
+          "reviewsCount": 45,
           "inStock": true,
           "availability": "В наличии на складе",
-          "material": "Керамика и массив",
-          "color": "Мрамор Calacatta",
-          "colorHex": "#eee9e2",
-          "sizes": "1600–2000×900×760 мм",
+          "material": "Велюр",
+          "color": "Изумрудный",
+          "colorHex": "#2f4a3f",
+          "sizes": "1800×2150×1300 мм",
           "img": {
-            "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-            "alt": "Обеденный стол Tavolo раздвижной"
+            "url": "/img/products/krovat-aurora-1.webp",
+            "alt": "Кровать Aurora с подъёмным механизмом"
           },
           "imgHover": {
-            "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-            "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
+            "url": "/img/products/krovat-aurora-2.webp",
+            "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
           },
-          "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-          "url": "/product/stol-tavolo-razdvizhnoj/"
-        },
-        {
-          "id": 21,
-          "slug": "stul-vienna-myagkij",
-          "title": "Стул Vienna мягкий",
-          "category": "Столы и стулья",
-          "categorySlug": "stoly-i-stulya",
-          "collection": "Vienna",
-          "brand": "Мебель Шоп",
-          "price": 8900,
-          "oldPrice": 11400,
-          "currency": "RUB",
-          "badges": [
-            {
-              "name": "sale",
-              "label": "Скидка"
-            },
-            {
-              "name": "hit",
-              "label": "Хит"
-            }
-          ],
-          "rating": 4.6,
-          "reviewsCount": 118,
-          "inStock": true,
-          "availability": "В наличии на складе",
-          "material": "Велюр и бук",
-          "color": "Терракотовый",
-          "colorHex": "#b4632a",
-          "sizes": "470×550×880 мм",
-          "img": {
-            "url": "/img/products/stul-vienna-myagkij-1.svg",
-            "alt": "Стул Vienna мягкий"
-          },
-          "imgHover": {
-            "url": "/img/products/stul-vienna-myagkij-2.svg",
-            "alt": "Стул Vienna мягкий — вид сбоку"
-          },
-          "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-          "url": "/product/stul-vienna-myagkij/"
+          "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+          "url": "/product/krovat-aurora/"
         },
         {
           "id": 29,
@@ -913,11 +909,11 @@
           "colorHex": "#3b3a38",
           "sizes": "1800×420×450 мм",
           "img": {
-            "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+            "url": "/img/products/tv-tumba-horizon-1800-1.webp",
             "alt": "ТВ-тумба Horizon 1800"
           },
           "imgHover": {
-            "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+            "url": "/img/products/tv-tumba-horizon-1800-2.webp",
             "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
           },
           "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -989,14 +985,14 @@
           }
         },
         {
-          "title": "Tavolo",
-          "text": "Раздвижные обеденные столы из массива дуба. Раскладываются до трёх метров.",
+          "title": "Verona",
+          "text": "Кровати из массива дуба с мягким изголовьем и коробом для белья.",
           "img": {
             "url": "/img/home/collection-3.svg",
-            "alt": "Коллекция Tavolo"
+            "alt": "Коллекция Verona"
           },
           "link": {
-            "url": "/catalog/stoly-i-stulya/tavolo/",
+            "url": "/catalog/krovati/verona/",
             "label": "Смотреть коллекцию"
           }
         },
@@ -1305,7 +1301,7 @@
         "id": 9,
         "slug": "korpusnaya-mebel",
         "title": "Корпусная мебель",
-        "description": "Шкафы, комоды, тумбы, обеденные и рабочие столы — серийные модели со склада и изготовление по вашим размерам.",
+        "description": "Шкафы, комоды, тумбы и кровати — серийные модели со склада и изготовление по вашим размерам.",
         "img": {
           "url": "/img/categories/korpusnaya-mebel.jpg",
           "alt": "Корпусная мебель"
@@ -1321,8 +1317,8 @@
             "label": "Комоды и тумбы"
           },
           {
-            "url": "/catalog/stoly-i-stulya/",
-            "label": "Столы и стулья"
+            "url": "/catalog/krovati/",
+            "label": "Кровати"
           }
         ],
         "url": "/catalog/korpusnaya-mebel/"
@@ -1605,11 +1601,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -1654,11 +1650,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -1703,11 +1699,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -1752,11 +1748,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -2139,11 +2135,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -2188,18 +2184,18 @@
       "totalPages": 1
     }
   },
-  "stoly-i-stulya": {
+  "krovati": {
     "seo": {
-      "h1": "Столы и стулья",
-      "title": "Столы и стулья — купить в интернет-магазине — Мебель Шоп",
+      "h1": "Кровати",
+      "title": "Кровати — купить в интернет-магазине — Мебель Шоп",
       "meta": [
         {
           "name": "description",
-          "content": "Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Доставка по России, сборка и гарантия 24 месяца."
+          "content": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса. Доставка по России, сборка и гарантия 24 месяца."
         },
         {
           "name": "keywords",
-          "content": "столы и стулья, купить столы и стулья, стол цена"
+          "content": "кровати, купить кровати, кровать цена"
         },
         {
           "name": "robots",
@@ -2219,51 +2215,47 @@
         "label": "Каталог"
       },
       {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
+        "url": "/catalog/krovati/",
+        "label": "Кровати"
       }
     ],
     "category": {
-      "id": 5,
-      "slug": "stoly-i-stulya",
-      "title": "Столы и стулья",
-      "description": "Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой.",
+      "id": 2,
+      "slug": "krovati",
+      "title": "Кровати",
+      "description": "Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса.",
       "img": {
-        "url": "/img/categories/stoly-i-stulya.svg",
-        "alt": "Столы и стулья"
+        "url": "/img/categories/krovati.jpg",
+        "alt": "Кровати"
       },
-      "productsCount": 5,
+      "productsCount": 4,
       "collections": [
         {
-          "url": "/catalog/stoly-i-stulya/tavolo/",
-          "label": "Коллекция Tavolo"
+          "url": "/catalog/krovati/verona/",
+          "label": "Коллекция Verona"
         },
         {
-          "url": "/catalog/stoly-i-stulya/oak/",
-          "label": "Коллекция Oak"
+          "url": "/catalog/krovati/aurora/",
+          "label": "Коллекция Aurora"
         },
         {
-          "url": "/catalog/stoly-i-stulya/vienna/",
-          "label": "Коллекция Vienna"
+          "url": "/catalog/krovati/kyoto/",
+          "label": "Коллекция Kyoto"
         },
         {
-          "url": "/catalog/stoly-i-stulya/como/",
-          "label": "Коллекция Como"
-        },
-        {
-          "url": "/catalog/stoly-i-stulya/loft/",
-          "label": "Коллекция Loft"
+          "url": "/catalog/krovati/bianca/",
+          "label": "Коллекция Bianca"
         }
       ],
-      "url": "/catalog/stoly-i-stulya/"
+      "url": "/catalog/krovati/"
     },
     "filters": [
       {
         "name": "price",
         "label": "Цена, ₽",
         "type": "range",
-        "min": 8900,
-        "max": 46800
+        "min": 51200,
+        "max": 92500
       },
       {
         "name": "collection",
@@ -2271,28 +2263,23 @@
         "type": "checkbox",
         "options": [
           {
-            "value": "Tavolo",
-            "label": "Tavolo",
+            "value": "Verona",
+            "label": "Verona",
             "count": 1
           },
           {
-            "value": "Oak",
-            "label": "Oak",
+            "value": "Aurora",
+            "label": "Aurora",
             "count": 1
           },
           {
-            "value": "Vienna",
-            "label": "Vienna",
+            "value": "Kyoto",
+            "label": "Kyoto",
             "count": 1
           },
           {
-            "value": "Como",
-            "label": "Como",
-            "count": 1
-          },
-          {
-            "value": "Loft",
-            "label": "Loft",
+            "value": "Bianca",
+            "label": "Bianca",
             "count": 1
           }
         ]
@@ -2303,28 +2290,23 @@
         "type": "checkbox",
         "options": [
           {
-            "value": "Керамика и массив",
-            "label": "Керамика и массив",
-            "count": 1
-          },
-          {
             "value": "Массив дуба",
             "label": "Массив дуба",
             "count": 1
           },
           {
-            "value": "Велюр и бук",
-            "label": "Велюр и бук",
+            "value": "Велюр",
+            "label": "Велюр",
             "count": 1
           },
           {
-            "value": "Рогожка и металл",
-            "label": "Рогожка и металл",
+            "value": "Массив бука",
+            "label": "Массив бука",
             "count": 1
           },
           {
-            "value": "Экокожа и сталь",
-            "label": "Экокожа и сталь",
+            "value": "Букле",
+            "label": "Букле",
             "count": 1
           }
         ]
@@ -2335,34 +2317,28 @@
         "type": "color",
         "options": [
           {
-            "value": "Мрамор Calacatta",
-            "label": "Мрамор Calacatta",
-            "count": 1,
-            "colorHex": "#eee9e2"
-          },
-          {
             "value": "Медовый дуб",
             "label": "Медовый дуб",
             "count": 1,
             "colorHex": "#c19a5b"
           },
           {
-            "value": "Терракотовый",
-            "label": "Терракотовый",
+            "value": "Изумрудный",
+            "label": "Изумрудный",
             "count": 1,
-            "colorHex": "#b4632a"
+            "colorHex": "#2f4a3f"
           },
           {
-            "value": "Тёплый серый",
-            "label": "Тёплый серый",
+            "value": "Натуральный бук",
+            "label": "Натуральный бук",
             "count": 1,
-            "colorHex": "#a8a094"
+            "colorHex": "#d9bd94"
           },
           {
-            "value": "Тёмно-коричневый",
-            "label": "Тёмно-коричневый",
+            "value": "Молочный",
+            "label": "Молочный",
             "count": 1,
-            "colorHex": "#4a382a"
+            "colorHex": "#f2ece1"
           }
         ]
       },
@@ -2377,18 +2353,13 @@
             "count": 2
           },
           {
+            "value": "Aurora Home",
+            "label": "Aurora Home",
+            "count": 1
+          },
+          {
             "value": "Nordhaus",
             "label": "Nordhaus",
-            "count": 1
-          },
-          {
-            "value": "Como",
-            "label": "Como",
-            "count": 1
-          },
-          {
-            "value": "Loft Studio",
-            "label": "Loft Studio",
             "count": 1
           }
         ]
@@ -2401,7 +2372,7 @@
           {
             "value": "1",
             "label": "В наличии",
-            "count": 5
+            "count": 4
           }
         ]
       }
@@ -2430,15 +2401,15 @@
     ],
     "products": [
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
+        "id": 6,
+        "slug": "krovat-verona-160",
+        "title": "Кровать Verona 160×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Verona",
         "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "price": 74300,
+        "oldPrice": 89000,
         "currency": "RUB",
         "badges": [
           {
@@ -2450,105 +2421,70 @@
             "label": "Скидка"
           }
         ],
-        "rating": 4.8,
-        "reviewsCount": 61,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
-        "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
-        },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
-      },
-      {
-        "id": 20,
-        "slug": "stol-oak-round-120",
-        "title": "Стол Oak Round 120",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Oak",
-        "brand": "Nordhaus",
-        "price": 38900,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.7,
-        "reviewsCount": 34,
+        "rating": 4.9,
+        "reviewsCount": 72,
         "inStock": true,
         "availability": "В наличии на складе",
         "material": "Массив дуба",
         "color": "Медовый дуб",
         "colorHex": "#c19a5b",
-        "sizes": "Ø1200×760 мм",
+        "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
-        "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "url": "/product/stol-oak-round-120/"
+        "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+        "url": "/product/krovat-verona-160/"
       },
       {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
-        "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
+        "id": 7,
+        "slug": "krovat-aurora",
+        "title": "Кровать Aurora с подъёмным механизмом",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Aurora",
+        "brand": "Aurora Home",
+        "price": 92500,
+        "oldPrice": null,
         "currency": "RUB",
         "badges": [
-          {
-            "name": "sale",
-            "label": "Скидка"
-          },
           {
             "name": "hit",
             "label": "Хит"
           }
         ],
-        "rating": 4.6,
-        "reviewsCount": 118,
+        "rating": 4.8,
+        "reviewsCount": 45,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
+        "material": "Велюр",
+        "color": "Изумрудный",
+        "colorHex": "#2f4a3f",
+        "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
+        "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+        "url": "/product/krovat-aurora/"
       },
       {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
+        "id": 8,
+        "slug": "krovat-kyoto-nizkaya",
+        "title": "Кровать Kyoto низкая",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Kyoto",
+        "brand": "Nordhaus",
+        "price": 58900,
         "oldPrice": null,
         "currency": "RUB",
         "badges": [
@@ -2557,61 +2493,66 @@
             "label": "Новинка"
           }
         ],
-        "rating": 4.5,
-        "reviewsCount": 74,
+        "rating": 4.6,
+        "reviewsCount": 31,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
+        "material": "Массив бука",
+        "color": "Натуральный бук",
+        "colorHex": "#d9bd94",
+        "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
+        "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+        "url": "/product/krovat-kyoto-nizkaya/"
       },
       {
-        "id": 23,
-        "slug": "barnyj-stul-loft",
-        "title": "Барный стул Loft",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Loft",
-        "brand": "Loft Studio",
-        "price": 9700,
-        "oldPrice": null,
+        "id": 9,
+        "slug": "krovat-bianca-140",
+        "title": "Кровать Bianca 140×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Bianca",
+        "brand": "Мебель Шоп",
+        "price": 51200,
+        "oldPrice": 62400,
         "currency": "RUB",
-        "badges": [],
-        "rating": 4.4,
-        "reviewsCount": 52,
+        "badges": [
+          {
+            "name": "sale",
+            "label": "Скидка"
+          }
+        ],
+        "rating": 4.7,
+        "reviewsCount": 58,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Экокожа и сталь",
-        "color": "Тёмно-коричневый",
-        "colorHex": "#4a382a",
-        "sizes": "420×450×1050 мм",
+        "material": "Букле",
+        "color": "Молочный",
+        "colorHex": "#f2ece1",
+        "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
-        "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-        "url": "/product/barnyj-stul-loft/"
+        "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+        "url": "/product/krovat-bianca-140/"
       }
     ],
     "pagination": {
       "page": 1,
       "perPage": 12,
-      "total": 5,
+      "total": 4,
       "totalPages": 1
     }
   },
@@ -2862,11 +2803,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -2898,11 +2839,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -2934,11 +2875,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -2970,11 +2911,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -3018,9 +2959,9 @@
         "category": "Шкафы и гардеробные",
         "material": "ЛДСП Egger 16 мм",
         "image": [
-          "/img/products/shkaf-kupe-horizon-2400-1.jpg",
-          "/img/products/shkaf-kupe-horizon-2400-2.jpg",
-          "/img/products/shkaf-kupe-horizon-2400-3.jpg"
+          "/img/products/shkaf-kupe-horizon-2400-1.webp",
+          "/img/products/shkaf-kupe-horizon-2400-2.webp",
+          "/img/products/shkaf-kupe-horizon-2400-3.webp"
         ],
         "brand": {
           "@type": "Brand",
@@ -3109,32 +3050,32 @@
       "colorHex": "#3b3a38",
       "sizes": "2400×600×2500 мм",
       "img": {
-        "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+        "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
         "alt": "Шкаф-купе Horizon 2400"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+        "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
         "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400 — общий вид"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — фасады крупным планом"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-4.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-4.webp",
           "alt": "Шкаф-купе Horizon 2400 — фурнитура раздвижной системы"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-5.svg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-5.webp",
           "alt": "Шкаф-купе Horizon 2400 — внутреннее наполнение"
         },
         {
-          "url": "/img/products/shkaf-kupe-horizon-2400-3.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-3.webp",
           "alt": "Шкаф-купе Horizon 2400 — в интерьере"
         }
       ],
@@ -3297,7 +3238,7 @@
         {
           "title": "Базовая конфигурация 2 400 мм",
           "img": {
-            "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+            "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
             "alt": "Шкаф-купе Horizon 2400 — базовая конфигурация"
           },
           "description": "Две двери ЛДСП, пять полок, штанга и два ящика. Глубина 600 мм, высота 2 500 мм.",
@@ -3306,7 +3247,7 @@
         {
           "title": "С антресолью до потолка",
           "img": {
-            "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+            "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
             "alt": "Шкаф-купе Horizon 2400 — с антресолью"
           },
           "description": "Корпус наращивается до высоты помещения, сверху добавляется антресольная секция.",
@@ -3315,7 +3256,7 @@
         {
           "title": "Зеркальные двери и подсветка",
           "img": {
-            "url": "/img/products/shkaf-kupe-horizon-2400-3.jpg",
+            "url": "/img/products/shkaf-kupe-horizon-2400-3.webp",
             "alt": "Шкаф-купе Horizon 2400 — зеркальные двери"
           },
           "description": "Зеркало на всю высоту дверей, LED-подсветка полок с датчиком движения.",
@@ -3444,11 +3385,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -3493,11 +3434,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -3542,11 +3483,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -3673,28 +3614,28 @@
       "colorHex": "#c8a271",
       "sizes": "1800×620×2300 мм",
       "img": {
-        "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+        "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
         "alt": "Шкаф распашной Bergen"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+        "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
         "alt": "Шкаф распашной Bergen — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-3.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-3.webp",
           "alt": "Шкаф распашной Bergen — в интерьере"
         },
         {
-          "url": "/img/products/shkaf-raspashnoj-bergen-4.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-4.webp",
           "alt": "Шкаф распашной Bergen — детали"
         }
       ],
@@ -3802,11 +3743,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -3851,11 +3792,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -3900,11 +3841,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -4031,28 +3972,28 @@
       "colorHex": "#f5f0e8",
       "sizes": "3000×550×2600 мм",
       "img": {
-        "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+        "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
         "alt": "Гардеробная система Atelier"
       },
       "imgHover": {
-        "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+        "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
         "alt": "Гардеробная система Atelier — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-3.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-3.webp",
           "alt": "Гардеробная система Atelier — в интерьере"
         },
         {
-          "url": "/img/products/garderobnaya-sistema-atelier-4.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-4.webp",
           "alt": "Гардеробная система Atelier — детали"
         }
       ],
@@ -4160,11 +4101,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -4209,11 +4150,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -4258,11 +4199,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -4389,28 +4330,28 @@
       "colorHex": "#ddd3c4",
       "sizes": "1200×1200×2400 мм",
       "img": {
-        "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+        "url": "/img/products/shkaf-uglovoj-nova-1.webp",
         "alt": "Шкаф угловой Nova"
       },
       "imgHover": {
-        "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+        "url": "/img/products/shkaf-uglovoj-nova-2.webp",
         "alt": "Шкаф угловой Nova — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-3.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-3.webp",
           "alt": "Шкаф угловой Nova — в интерьере"
         },
         {
-          "url": "/img/products/shkaf-uglovoj-nova-4.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-4.webp",
           "alt": "Шкаф угловой Nova — детали"
         }
       ],
@@ -4505,11 +4446,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -4554,11 +4495,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -4603,11 +4544,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -4939,11 +4880,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -5293,11 +5234,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -5647,11 +5588,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -5809,20 +5750,20 @@
       "colorHex": "#efe6d5",
       "sizes": "3000×600×2200 мм",
       "img": {
-        "url": "/img/products/kuhnya-village-1.jpg",
+        "url": "/img/products/kuhnya-village-1.webp",
         "alt": "Кухня Village классическая"
       },
       "imgHover": {
-        "url": "/img/products/kuhnya-village-2.jpg",
+        "url": "/img/products/kuhnya-village-2.webp",
         "alt": "Кухня Village классическая — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         {
@@ -5830,7 +5771,7 @@
           "alt": "Кухня Village классическая — в интерьере"
         },
         {
-          "url": "/img/products/kuhnya-village-4.jpg",
+          "url": "/img/products/kuhnya-village-4.webp",
           "alt": "Кухня Village классическая — детали"
         }
       ],
@@ -6386,11 +6327,11 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
@@ -6430,18 +6371,18 @@
       }
     ]
   },
-  "stol-tavolo-razdvizhnoj": {
+  "krovat-verona-160": {
     "seo": {
-      "h1": "Обеденный стол Tavolo раздвижной",
-      "title": "Обеденный стол Tavolo раздвижной — Мебель Шоп",
+      "h1": "Кровать Verona 160×200",
+      "title": "Кровать Verona 160×200 — Мебель Шоп",
       "meta": [
         {
           "name": "description",
-          "content": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм. Цена 46 800 ₽. Доставка и сборка."
+          "content": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм. Цена 74 300 ₽. Доставка и сборка."
         },
         {
           "name": "keywords",
-          "content": "обеденный стол tavolo раздвижной, купить обеденный стол tavolo раздвижной, столы и стулья"
+          "content": "кровать verona 160×200, купить кровать verona 160×200, кровати"
         },
         {
           "name": "robots",
@@ -6453,22 +6394,22 @@
     "schemaOrg": [
       {
         "@type": "Product",
-        "name": "Обеденный стол Tavolo раздвижной",
-        "description": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
+        "name": "Кровать Verona 160×200",
+        "description": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
         "brand": {
           "@type": "Brand",
           "name": "Мебель Шоп"
         },
         "offers": {
           "@type": "Offer",
-          "price": 46800,
+          "price": 74300,
           "priceCurrency": "RUB",
           "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": 4.8,
-          "reviewCount": 61
+          "ratingValue": 4.9,
+          "reviewCount": 72
         }
       }
     ],
@@ -6482,24 +6423,24 @@
         "label": "Каталог"
       },
       {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
+        "url": "/catalog/krovati/",
+        "label": "Кровати"
       },
       {
-        "url": "/product/stol-tavolo-razdvizhnoj/",
-        "label": "Обеденный стол Tavolo раздвижной"
+        "url": "/product/krovat-verona-160/",
+        "label": "Кровать Verona 160×200"
       }
     ],
     "product": {
-      "id": 19,
-      "slug": "stol-tavolo-razdvizhnoj",
-      "title": "Обеденный стол Tavolo раздвижной",
-      "category": "Столы и стулья",
-      "categorySlug": "stoly-i-stulya",
-      "collection": "Tavolo",
+      "id": 6,
+      "slug": "krovat-verona-160",
+      "title": "Кровать Verona 160×200",
+      "category": "Кровати",
+      "categorySlug": "krovati",
+      "collection": "Verona",
       "brand": "Мебель Шоп",
-      "price": 46800,
-      "oldPrice": 56200,
+      "price": 74300,
+      "oldPrice": 89000,
       "currency": "RUB",
       "badges": [
         {
@@ -6511,395 +6452,51 @@
           "label": "Скидка"
         }
       ],
-      "rating": 4.8,
-      "reviewsCount": 61,
+      "rating": 4.9,
+      "reviewsCount": 72,
       "inStock": true,
       "availability": "В наличии на складе",
       "deliveryDays": 3,
-      "material": "Керамика и массив",
-      "color": "Мрамор Calacatta",
-      "colorHex": "#eee9e2",
-      "sizes": "1600–2000×900×760 мм",
+      "material": "Массив дуба",
+      "color": "Медовый дуб",
+      "colorHex": "#c19a5b",
+      "sizes": "1780×2120×1200 мм",
       "img": {
-        "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-        "alt": "Обеденный стол Tavolo раздвижной"
+        "url": "/img/products/krovat-verona-160-1.webp",
+        "alt": "Кровать Verona 160×200"
       },
       "imgHover": {
-        "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-        "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
+        "url": "/img/products/krovat-verona-160-2.webp",
+        "alt": "Кровать Verona 160×200 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
         {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-3.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — в интерьере"
+          "url": "/img/products/krovat-verona-160-3.webp",
+          "alt": "Кровать Verona 160×200 — в интерьере"
         },
         {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-4.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — детали"
+          "url": "/img/products/krovat-verona-160-4.webp",
+          "alt": "Кровать Verona 160×200 — детали"
         }
       ],
-      "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-      "description": "Обеденный стол Tavolo раздвижной — модель коллекции Tavolo. Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
+      "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+      "description": "Кровать Verona 160×200 — модель коллекции Verona. Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
       "characteristics": [
         {
           "label": "Коллекция",
-          "value": "Tavolo"
+          "value": "Verona"
         },
         {
           "label": "Бренд",
           "value": "Мебель Шоп"
-        },
-        {
-          "label": "Материал",
-          "value": "Керамика и массив"
-        },
-        {
-          "label": "Цвет",
-          "value": "Мрамор Calacatta"
-        },
-        {
-          "label": "Габариты (Ш×Г×В)",
-          "value": "1600–2000×900×760 мм"
-        },
-        {
-          "label": "Гарантия",
-          "value": "24 месяца"
-        },
-        {
-          "label": "Страна производства",
-          "value": "Россия"
-        },
-        {
-          "label": "Срок изготовления",
-          "value": "Есть на складе"
-        }
-      ],
-      "variants": [
-        {
-          "name": "base",
-          "label": "Мрамор Calacatta",
-          "color": "#eee9e2",
-          "priceDiff": 0
-        },
-        {
-          "name": "graphite",
-          "label": "Графит",
-          "color": "#3b3a38",
-          "priceDiff": 0
-        },
-        {
-          "name": "olive",
-          "label": "Оливковый",
-          "color": "#6f7a55",
-          "priceDiff": 3400
-        },
-        {
-          "name": "terracotta",
-          "label": "Терракотовый",
-          "color": "#b4632a",
-          "priceDiff": 5200
-        }
-      ],
-      "url": "/product/stol-tavolo-razdvizhnoj/"
-    },
-    "related": [
-      {
-        "id": 20,
-        "slug": "stol-oak-round-120",
-        "title": "Стол Oak Round 120",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Oak",
-        "brand": "Nordhaus",
-        "price": 38900,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.7,
-        "reviewsCount": 34,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Массив дуба",
-        "color": "Медовый дуб",
-        "colorHex": "#c19a5b",
-        "sizes": "Ø1200×760 мм",
-        "img": {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
-        },
-        "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "url": "/product/stol-oak-round-120/"
-      },
-      {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
-        "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
-        "currency": "RUB",
-        "badges": [
-          {
-            "name": "sale",
-            "label": "Скидка"
-          },
-          {
-            "name": "hit",
-            "label": "Хит"
-          }
-        ],
-        "rating": 4.6,
-        "reviewsCount": 118,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
-        "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
-        },
-        "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
-        },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
-      },
-      {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [
-          {
-            "name": "new",
-            "label": "Новинка"
-          }
-        ],
-        "rating": 4.5,
-        "reviewsCount": 74,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
-        "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
-        },
-        "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
-        },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
-      },
-      {
-        "id": 23,
-        "slug": "barnyj-stul-loft",
-        "title": "Барный стул Loft",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Loft",
-        "brand": "Loft Studio",
-        "price": 9700,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.4,
-        "reviewsCount": 52,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Экокожа и сталь",
-        "color": "Тёмно-коричневый",
-        "colorHex": "#4a382a",
-        "sizes": "420×450×1050 мм",
-        "img": {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
-        },
-        "imgHover": {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
-        },
-        "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-        "url": "/product/barnyj-stul-loft/"
-      }
-    ],
-    "reviews": [
-      {
-        "id": 1,
-        "author": "Анна К.",
-        "city": "Москва",
-        "date": "2026-08-12",
-        "rating": 5,
-        "text": "Заказывали диван Milano и комод Bergen. Привезли на день раньше срока, сборщики аккуратные, упаковку унесли с собой. Ткань в жизни ровно такая, как на образце.",
-        "avatar": null,
-        "productTitle": "Диван Milano"
-      },
-      {
-        "id": 2,
-        "author": "Игорь и Мария",
-        "city": "Санкт-Петербург",
-        "date": "2026-07-30",
-        "rating": 5,
-        "text": "Кухню Luna делали по нашим размерам, ниша нестандартная. Замерщик приехал через день после заявки, проект переделали дважды без вопросов и доплат.",
-        "avatar": null,
-        "productTitle": "Кухня Luna прямая 3.2 м"
-      },
-      {
-        "id": 3,
-        "author": "Дмитрий С.",
-        "city": "Казань",
-        "date": "2026-07-15",
-        "rating": 4,
-        "text": "Кровать Verona отличная, массив честный. Снял звезду за доставку: перенесли на два дня из-за задержки транспортной компании, но предупредили заранее.",
-        "avatar": null,
-        "productTitle": "Кровать Verona 160×200"
-      }
-    ]
-  },
-  "stol-oak-round-120": {
-    "seo": {
-      "h1": "Стол Oak Round 120",
-      "title": "Стол Oak Round 120 — Мебель Шоп",
-      "meta": [
-        {
-          "name": "description",
-          "content": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм. Цена 38 900 ₽. Доставка и сборка."
-        },
-        {
-          "name": "keywords",
-          "content": "стол oak round 120, купить стол oak round 120, столы и стулья"
-        },
-        {
-          "name": "robots",
-          "content": "index, follow"
-        }
-      ],
-      "canonical": ""
-    },
-    "schemaOrg": [
-      {
-        "@type": "Product",
-        "name": "Стол Oak Round 120",
-        "description": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Nordhaus"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": 38900,
-          "priceCurrency": "RUB",
-          "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": 4.7,
-          "reviewCount": 34
-        }
-      }
-    ],
-    "breadcrumbs": [
-      {
-        "url": "/",
-        "label": "Главная"
-      },
-      {
-        "url": "/catalog/",
-        "label": "Каталог"
-      },
-      {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
-      },
-      {
-        "url": "/product/stol-oak-round-120/",
-        "label": "Стол Oak Round 120"
-      }
-    ],
-    "product": {
-      "id": 20,
-      "slug": "stol-oak-round-120",
-      "title": "Стол Oak Round 120",
-      "category": "Столы и стулья",
-      "categorySlug": "stoly-i-stulya",
-      "collection": "Oak",
-      "brand": "Nordhaus",
-      "price": 38900,
-      "oldPrice": null,
-      "currency": "RUB",
-      "badges": [],
-      "rating": 4.7,
-      "reviewsCount": 34,
-      "inStock": true,
-      "availability": "В наличии на складе",
-      "deliveryDays": 4,
-      "material": "Массив дуба",
-      "color": "Медовый дуб",
-      "colorHex": "#c19a5b",
-      "sizes": "Ø1200×760 мм",
-      "img": {
-        "url": "/img/products/stol-oak-round-120-1.svg",
-        "alt": "Стол Oak Round 120"
-      },
-      "imgHover": {
-        "url": "/img/products/stol-oak-round-120-2.svg",
-        "alt": "Стол Oak Round 120 — вид сбоку"
-      },
-      "gallery": [
-        {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
-        },
-        {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
-        },
-        {
-          "url": "/img/products/stol-oak-round-120-3.svg",
-          "alt": "Стол Oak Round 120 — в интерьере"
-        },
-        {
-          "url": "/img/products/stol-oak-round-120-4.svg",
-          "alt": "Стол Oak Round 120 — детали"
-        }
-      ],
-      "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-      "description": "Стол Oak Round 120 — модель коллекции Oak. Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
-      "characteristics": [
-        {
-          "label": "Коллекция",
-          "value": "Oak"
-        },
-        {
-          "label": "Бренд",
-          "value": "Nordhaus"
         },
         {
           "label": "Материал",
@@ -6911,7 +6508,7 @@
         },
         {
           "label": "Габариты (Ш×Г×В)",
-          "value": "Ø1200×760 мм"
+          "value": "1780×2120×1200 мм"
         },
         {
           "label": "Гарантия",
@@ -6952,98 +6549,54 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/stol-oak-round-120/"
+      "url": "/product/krovat-verona-160/"
     },
     "related": [
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
-        "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "id": 7,
+        "slug": "krovat-aurora",
+        "title": "Кровать Aurora с подъёмным механизмом",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Aurora",
+        "brand": "Aurora Home",
+        "price": 92500,
+        "oldPrice": null,
         "currency": "RUB",
         "badges": [
-          {
-            "name": "hit",
-            "label": "Хит"
-          },
-          {
-            "name": "sale",
-            "label": "Скидка"
-          }
-        ],
-        "rating": 4.8,
-        "reviewsCount": 61,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
-        "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
-        },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
-      },
-      {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
-        "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
-        "currency": "RUB",
-        "badges": [
-          {
-            "name": "sale",
-            "label": "Скидка"
-          },
           {
             "name": "hit",
             "label": "Хит"
           }
         ],
-        "rating": 4.6,
-        "reviewsCount": 118,
+        "rating": 4.8,
+        "reviewsCount": 45,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
+        "material": "Велюр",
+        "color": "Изумрудный",
+        "colorHex": "#2f4a3f",
+        "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
+        "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+        "url": "/product/krovat-aurora/"
       },
       {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
+        "id": 8,
+        "slug": "krovat-kyoto-nizkaya",
+        "title": "Кровать Kyoto низкая",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Kyoto",
+        "brand": "Nordhaus",
+        "price": 58900,
         "oldPrice": null,
         "currency": "RUB",
         "badges": [
@@ -7052,55 +6605,60 @@
             "label": "Новинка"
           }
         ],
-        "rating": 4.5,
-        "reviewsCount": 74,
+        "rating": 4.6,
+        "reviewsCount": 31,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
+        "material": "Массив бука",
+        "color": "Натуральный бук",
+        "colorHex": "#d9bd94",
+        "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
+        "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+        "url": "/product/krovat-kyoto-nizkaya/"
       },
       {
-        "id": 23,
-        "slug": "barnyj-stul-loft",
-        "title": "Барный стул Loft",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Loft",
-        "brand": "Loft Studio",
-        "price": 9700,
-        "oldPrice": null,
+        "id": 9,
+        "slug": "krovat-bianca-140",
+        "title": "Кровать Bianca 140×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Bianca",
+        "brand": "Мебель Шоп",
+        "price": 51200,
+        "oldPrice": 62400,
         "currency": "RUB",
-        "badges": [],
-        "rating": 4.4,
-        "reviewsCount": 52,
+        "badges": [
+          {
+            "name": "sale",
+            "label": "Скидка"
+          }
+        ],
+        "rating": 4.7,
+        "reviewsCount": 58,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Экокожа и сталь",
-        "color": "Тёмно-коричневый",
-        "colorHex": "#4a382a",
-        "sizes": "420×450×1050 мм",
+        "material": "Букле",
+        "color": "Молочный",
+        "colorHex": "#f2ece1",
+        "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
-        "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-        "url": "/product/barnyj-stul-loft/"
+        "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+        "url": "/product/krovat-bianca-140/"
       }
     ],
     "reviews": [
@@ -7136,18 +6694,18 @@
       }
     ]
   },
-  "stul-vienna-myagkij": {
+  "krovat-aurora": {
     "seo": {
-      "h1": "Стул Vienna мягкий",
-      "title": "Стул Vienna мягкий — Мебель Шоп",
+      "h1": "Кровать Aurora с подъёмным механизмом",
+      "title": "Кровать Aurora с подъёмным механизмом — Мебель Шоп",
       "meta": [
         {
           "name": "description",
-          "content": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм. Цена 8 900 ₽. Доставка и сборка."
+          "content": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм. Цена 92 500 ₽. Доставка и сборка."
         },
         {
           "name": "keywords",
-          "content": "стул vienna мягкий, купить стул vienna мягкий, столы и стулья"
+          "content": "кровать aurora с подъёмным механизмом, купить кровать aurora с подъёмным механизмом, кровати"
         },
         {
           "name": "robots",
@@ -7159,22 +6717,22 @@
     "schemaOrg": [
       {
         "@type": "Product",
-        "name": "Стул Vienna мягкий",
-        "description": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
+        "name": "Кровать Aurora с подъёмным механизмом",
+        "description": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
         "brand": {
           "@type": "Brand",
-          "name": "Мебель Шоп"
+          "name": "Aurora Home"
         },
         "offers": {
           "@type": "Offer",
-          "price": 8900,
+          "price": 92500,
           "priceCurrency": "RUB",
           "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": 4.6,
-          "reviewCount": 118
+          "ratingValue": 4.8,
+          "reviewCount": 45
         }
       }
     ],
@@ -7188,92 +6746,88 @@
         "label": "Каталог"
       },
       {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
+        "url": "/catalog/krovati/",
+        "label": "Кровати"
       },
       {
-        "url": "/product/stul-vienna-myagkij/",
-        "label": "Стул Vienna мягкий"
+        "url": "/product/krovat-aurora/",
+        "label": "Кровать Aurora с подъёмным механизмом"
       }
     ],
     "product": {
-      "id": 21,
-      "slug": "stul-vienna-myagkij",
-      "title": "Стул Vienna мягкий",
-      "category": "Столы и стулья",
-      "categorySlug": "stoly-i-stulya",
-      "collection": "Vienna",
-      "brand": "Мебель Шоп",
-      "price": 8900,
-      "oldPrice": 11400,
+      "id": 7,
+      "slug": "krovat-aurora",
+      "title": "Кровать Aurora с подъёмным механизмом",
+      "category": "Кровати",
+      "categorySlug": "krovati",
+      "collection": "Aurora",
+      "brand": "Aurora Home",
+      "price": 92500,
+      "oldPrice": null,
       "currency": "RUB",
       "badges": [
-        {
-          "name": "sale",
-          "label": "Скидка"
-        },
         {
           "name": "hit",
           "label": "Хит"
         }
       ],
-      "rating": 4.6,
-      "reviewsCount": 118,
+      "rating": 4.8,
+      "reviewsCount": 45,
       "inStock": true,
       "availability": "В наличии на складе",
-      "deliveryDays": 5,
-      "material": "Велюр и бук",
-      "color": "Терракотовый",
-      "colorHex": "#b4632a",
-      "sizes": "470×550×880 мм",
+      "deliveryDays": 4,
+      "material": "Велюр",
+      "color": "Изумрудный",
+      "colorHex": "#2f4a3f",
+      "sizes": "1800×2150×1300 мм",
       "img": {
-        "url": "/img/products/stul-vienna-myagkij-1.svg",
-        "alt": "Стул Vienna мягкий"
+        "url": "/img/products/krovat-aurora-1.webp",
+        "alt": "Кровать Aurora с подъёмным механизмом"
       },
       "imgHover": {
-        "url": "/img/products/stul-vienna-myagkij-2.svg",
-        "alt": "Стул Vienna мягкий — вид сбоку"
+        "url": "/img/products/krovat-aurora-2.webp",
+        "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
         {
-          "url": "/img/products/stul-vienna-myagkij-3.svg",
-          "alt": "Стул Vienna мягкий — в интерьере"
+          "url": "/img/products/krovat-aurora-3.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — в интерьере"
         },
         {
-          "url": "/img/products/stul-vienna-myagkij-4.svg",
-          "alt": "Стул Vienna мягкий — детали"
+          "url": "/img/products/krovat-aurora-4.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — детали"
         }
       ],
-      "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-      "description": "Стул Vienna мягкий — модель коллекции Vienna. Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
+      "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+      "description": "Кровать Aurora с подъёмным механизмом — модель коллекции Aurora. Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
       "characteristics": [
         {
           "label": "Коллекция",
-          "value": "Vienna"
+          "value": "Aurora"
         },
         {
           "label": "Бренд",
-          "value": "Мебель Шоп"
+          "value": "Aurora Home"
         },
         {
           "label": "Материал",
-          "value": "Велюр и бук"
+          "value": "Велюр"
         },
         {
           "label": "Цвет",
-          "value": "Терракотовый"
+          "value": "Изумрудный"
         },
         {
           "label": "Габариты (Ш×Г×В)",
-          "value": "470×550×880 мм"
+          "value": "1800×2150×1300 мм"
         },
         {
           "label": "Гарантия",
@@ -7291,8 +6845,8 @@
       "variants": [
         {
           "name": "base",
-          "label": "Терракотовый",
-          "color": "#b4632a",
+          "label": "Изумрудный",
+          "color": "#2f4a3f",
           "priceDiff": 0
         },
         {
@@ -7314,19 +6868,19 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/stul-vienna-myagkij/"
+      "url": "/product/krovat-aurora/"
     },
     "related": [
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
+        "id": 6,
+        "slug": "krovat-verona-160",
+        "title": "Кровать Verona 160×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Verona",
         "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "price": 74300,
+        "oldPrice": 89000,
         "currency": "RUB",
         "badges": [
           {
@@ -7338,65 +6892,34 @@
             "label": "Скидка"
           }
         ],
-        "rating": 4.8,
-        "reviewsCount": 61,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
-        "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
-        },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
-      },
-      {
-        "id": 20,
-        "slug": "stol-oak-round-120",
-        "title": "Стол Oak Round 120",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Oak",
-        "brand": "Nordhaus",
-        "price": 38900,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.7,
-        "reviewsCount": 34,
+        "rating": 4.9,
+        "reviewsCount": 72,
         "inStock": true,
         "availability": "В наличии на складе",
         "material": "Массив дуба",
         "color": "Медовый дуб",
         "colorHex": "#c19a5b",
-        "sizes": "Ø1200×760 мм",
+        "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
-        "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "url": "/product/stol-oak-round-120/"
+        "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+        "url": "/product/krovat-verona-160/"
       },
       {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
+        "id": 8,
+        "slug": "krovat-kyoto-nizkaya",
+        "title": "Кровать Kyoto низкая",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Kyoto",
+        "brand": "Nordhaus",
+        "price": 58900,
         "oldPrice": null,
         "currency": "RUB",
         "badges": [
@@ -7405,55 +6928,60 @@
             "label": "Новинка"
           }
         ],
-        "rating": 4.5,
-        "reviewsCount": 74,
+        "rating": 4.6,
+        "reviewsCount": 31,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
+        "material": "Массив бука",
+        "color": "Натуральный бук",
+        "colorHex": "#d9bd94",
+        "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
+        "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+        "url": "/product/krovat-kyoto-nizkaya/"
       },
       {
-        "id": 23,
-        "slug": "barnyj-stul-loft",
-        "title": "Барный стул Loft",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Loft",
-        "brand": "Loft Studio",
-        "price": 9700,
-        "oldPrice": null,
+        "id": 9,
+        "slug": "krovat-bianca-140",
+        "title": "Кровать Bianca 140×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Bianca",
+        "brand": "Мебель Шоп",
+        "price": 51200,
+        "oldPrice": 62400,
         "currency": "RUB",
-        "badges": [],
-        "rating": 4.4,
-        "reviewsCount": 52,
+        "badges": [
+          {
+            "name": "sale",
+            "label": "Скидка"
+          }
+        ],
+        "rating": 4.7,
+        "reviewsCount": 58,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Экокожа и сталь",
-        "color": "Тёмно-коричневый",
-        "colorHex": "#4a382a",
-        "sizes": "420×450×1050 мм",
+        "material": "Букле",
+        "color": "Молочный",
+        "colorHex": "#f2ece1",
+        "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
-        "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-        "url": "/product/barnyj-stul-loft/"
+        "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+        "url": "/product/krovat-bianca-140/"
       }
     ],
     "reviews": [
@@ -7489,18 +7017,18 @@
       }
     ]
   },
-  "polukreslo-como": {
+  "krovat-kyoto-nizkaya": {
     "seo": {
-      "h1": "Полукресло Como",
-      "title": "Полукресло Como — Мебель Шоп",
+      "h1": "Кровать Kyoto низкая",
+      "title": "Кровать Kyoto низкая — Мебель Шоп",
       "meta": [
         {
           "name": "description",
-          "content": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм. Цена 13 400 ₽. Доставка и сборка."
+          "content": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм. Цена 58 900 ₽. Доставка и сборка."
         },
         {
           "name": "keywords",
-          "content": "полукресло como, купить полукресло como, столы и стулья"
+          "content": "кровать kyoto низкая, купить кровать kyoto низкая, кровати"
         },
         {
           "name": "robots",
@@ -7512,22 +7040,22 @@
     "schemaOrg": [
       {
         "@type": "Product",
-        "name": "Полукресло Como",
-        "description": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
+        "name": "Кровать Kyoto низкая",
+        "description": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
         "brand": {
           "@type": "Brand",
-          "name": "Como"
+          "name": "Nordhaus"
         },
         "offers": {
           "@type": "Offer",
-          "price": 13400,
+          "price": 58900,
           "priceCurrency": "RUB",
           "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": 4.5,
-          "reviewCount": 74
+          "ratingValue": 4.6,
+          "reviewCount": 31
         }
       }
     ],
@@ -7541,23 +7069,23 @@
         "label": "Каталог"
       },
       {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
+        "url": "/catalog/krovati/",
+        "label": "Кровати"
       },
       {
-        "url": "/product/polukreslo-como/",
-        "label": "Полукресло Como"
+        "url": "/product/krovat-kyoto-nizkaya/",
+        "label": "Кровать Kyoto низкая"
       }
     ],
     "product": {
-      "id": 22,
-      "slug": "polukreslo-como",
-      "title": "Полукресло Como",
-      "category": "Столы и стулья",
-      "categorySlug": "stoly-i-stulya",
-      "collection": "Como",
-      "brand": "Como",
-      "price": 13400,
+      "id": 8,
+      "slug": "krovat-kyoto-nizkaya",
+      "title": "Кровать Kyoto низкая",
+      "category": "Кровати",
+      "categorySlug": "krovati",
+      "collection": "Kyoto",
+      "brand": "Nordhaus",
+      "price": 58900,
       "oldPrice": null,
       "currency": "RUB",
       "badges": [
@@ -7566,63 +7094,63 @@
           "label": "Новинка"
         }
       ],
-      "rating": 4.5,
-      "reviewsCount": 74,
+      "rating": 4.6,
+      "reviewsCount": 31,
       "inStock": true,
       "availability": "В наличии на складе",
-      "deliveryDays": 6,
-      "material": "Рогожка и металл",
-      "color": "Тёплый серый",
-      "colorHex": "#a8a094",
-      "sizes": "560×600×840 мм",
+      "deliveryDays": 5,
+      "material": "Массив бука",
+      "color": "Натуральный бук",
+      "colorHex": "#d9bd94",
+      "sizes": "1700×2100×900 мм",
       "img": {
-        "url": "/img/products/polukreslo-como-1.svg",
-        "alt": "Полукресло Como"
+        "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+        "alt": "Кровать Kyoto низкая"
       },
       "imgHover": {
-        "url": "/img/products/polukreslo-como-2.svg",
-        "alt": "Полукресло Como — вид сбоку"
+        "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+        "alt": "Кровать Kyoto низкая — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
         {
-          "url": "/img/products/polukreslo-como-3.svg",
-          "alt": "Полукресло Como — в интерьере"
+          "url": "/img/products/krovat-kyoto-nizkaya-3.webp",
+          "alt": "Кровать Kyoto низкая — в интерьере"
         },
         {
-          "url": "/img/products/polukreslo-como-4.svg",
-          "alt": "Полукресло Como — детали"
+          "url": "/img/products/krovat-kyoto-nizkaya-4.webp",
+          "alt": "Кровать Kyoto низкая — детали"
         }
       ],
-      "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-      "description": "Полукресло Como — модель коллекции Como. Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
+      "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+      "description": "Кровать Kyoto низкая — модель коллекции Kyoto. Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
       "characteristics": [
         {
           "label": "Коллекция",
-          "value": "Como"
+          "value": "Kyoto"
         },
         {
           "label": "Бренд",
-          "value": "Como"
+          "value": "Nordhaus"
         },
         {
           "label": "Материал",
-          "value": "Рогожка и металл"
+          "value": "Массив бука"
         },
         {
           "label": "Цвет",
-          "value": "Тёплый серый"
+          "value": "Натуральный бук"
         },
         {
           "label": "Габариты (Ш×Г×В)",
-          "value": "560×600×840 мм"
+          "value": "1700×2100×900 мм"
         },
         {
           "label": "Гарантия",
@@ -7640,8 +7168,8 @@
       "variants": [
         {
           "name": "base",
-          "label": "Тёплый серый",
-          "color": "#a8a094",
+          "label": "Натуральный бук",
+          "color": "#d9bd94",
           "priceDiff": 0
         },
         {
@@ -7663,19 +7191,19 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/polukreslo-como/"
+      "url": "/product/krovat-kyoto-nizkaya/"
     },
     "related": [
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
+        "id": 6,
+        "slug": "krovat-verona-160",
+        "title": "Кровать Verona 160×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Verona",
         "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "price": 74300,
+        "oldPrice": 89000,
         "currency": "RUB",
         "badges": [
           {
@@ -7687,126 +7215,96 @@
             "label": "Скидка"
           }
         ],
-        "rating": 4.8,
-        "reviewsCount": 61,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
-        "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
-        },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
-      },
-      {
-        "id": 20,
-        "slug": "stol-oak-round-120",
-        "title": "Стол Oak Round 120",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Oak",
-        "brand": "Nordhaus",
-        "price": 38900,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.7,
-        "reviewsCount": 34,
+        "rating": 4.9,
+        "reviewsCount": 72,
         "inStock": true,
         "availability": "В наличии на складе",
         "material": "Массив дуба",
         "color": "Медовый дуб",
         "colorHex": "#c19a5b",
-        "sizes": "Ø1200×760 мм",
+        "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
-        "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "url": "/product/stol-oak-round-120/"
+        "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+        "url": "/product/krovat-verona-160/"
       },
       {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
-        "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
+        "id": 7,
+        "slug": "krovat-aurora",
+        "title": "Кровать Aurora с подъёмным механизмом",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Aurora",
+        "brand": "Aurora Home",
+        "price": 92500,
+        "oldPrice": null,
         "currency": "RUB",
         "badges": [
-          {
-            "name": "sale",
-            "label": "Скидка"
-          },
           {
             "name": "hit",
             "label": "Хит"
           }
         ],
-        "rating": 4.6,
-        "reviewsCount": 118,
+        "rating": 4.8,
+        "reviewsCount": 45,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
+        "material": "Велюр",
+        "color": "Изумрудный",
+        "colorHex": "#2f4a3f",
+        "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
+        "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+        "url": "/product/krovat-aurora/"
       },
       {
-        "id": 23,
-        "slug": "barnyj-stul-loft",
-        "title": "Барный стул Loft",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Loft",
-        "brand": "Loft Studio",
-        "price": 9700,
-        "oldPrice": null,
+        "id": 9,
+        "slug": "krovat-bianca-140",
+        "title": "Кровать Bianca 140×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Bianca",
+        "brand": "Мебель Шоп",
+        "price": 51200,
+        "oldPrice": 62400,
         "currency": "RUB",
-        "badges": [],
-        "rating": 4.4,
-        "reviewsCount": 52,
+        "badges": [
+          {
+            "name": "sale",
+            "label": "Скидка"
+          }
+        ],
+        "rating": 4.7,
+        "reviewsCount": 58,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Экокожа и сталь",
-        "color": "Тёмно-коричневый",
-        "colorHex": "#4a382a",
-        "sizes": "420×450×1050 мм",
+        "material": "Букле",
+        "color": "Молочный",
+        "colorHex": "#f2ece1",
+        "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
-        "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-        "url": "/product/barnyj-stul-loft/"
+        "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+        "url": "/product/krovat-bianca-140/"
       }
     ],
     "reviews": [
@@ -7842,18 +7340,18 @@
       }
     ]
   },
-  "barnyj-stul-loft": {
+  "krovat-bianca-140": {
     "seo": {
-      "h1": "Барный стул Loft",
-      "title": "Барный стул Loft — Мебель Шоп",
+      "h1": "Кровать Bianca 140×200",
+      "title": "Кровать Bianca 140×200 — Мебель Шоп",
       "meta": [
         {
           "name": "description",
-          "content": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм. Цена 9 700 ₽. Доставка и сборка."
+          "content": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм. Цена 51 200 ₽. Доставка и сборка."
         },
         {
           "name": "keywords",
-          "content": "барный стул loft, купить барный стул loft, столы и стулья"
+          "content": "кровать bianca 140×200, купить кровать bianca 140×200, кровати"
         },
         {
           "name": "robots",
@@ -7865,22 +7363,22 @@
     "schemaOrg": [
       {
         "@type": "Product",
-        "name": "Барный стул Loft",
-        "description": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
+        "name": "Кровать Bianca 140×200",
+        "description": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
         "brand": {
           "@type": "Brand",
-          "name": "Loft Studio"
+          "name": "Мебель Шоп"
         },
         "offers": {
           "@type": "Offer",
-          "price": 9700,
+          "price": 51200,
           "priceCurrency": "RUB",
           "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": 4.4,
-          "reviewCount": 52
+          "ratingValue": 4.7,
+          "reviewCount": 58
         }
       }
     ],
@@ -7894,83 +7392,88 @@
         "label": "Каталог"
       },
       {
-        "url": "/catalog/stoly-i-stulya/",
-        "label": "Столы и стулья"
+        "url": "/catalog/krovati/",
+        "label": "Кровати"
       },
       {
-        "url": "/product/barnyj-stul-loft/",
-        "label": "Барный стул Loft"
+        "url": "/product/krovat-bianca-140/",
+        "label": "Кровать Bianca 140×200"
       }
     ],
     "product": {
-      "id": 23,
-      "slug": "barnyj-stul-loft",
-      "title": "Барный стул Loft",
-      "category": "Столы и стулья",
-      "categorySlug": "stoly-i-stulya",
-      "collection": "Loft",
-      "brand": "Loft Studio",
-      "price": 9700,
-      "oldPrice": null,
+      "id": 9,
+      "slug": "krovat-bianca-140",
+      "title": "Кровать Bianca 140×200",
+      "category": "Кровати",
+      "categorySlug": "krovati",
+      "collection": "Bianca",
+      "brand": "Мебель Шоп",
+      "price": 51200,
+      "oldPrice": 62400,
       "currency": "RUB",
-      "badges": [],
-      "rating": 4.4,
-      "reviewsCount": 52,
+      "badges": [
+        {
+          "name": "sale",
+          "label": "Скидка"
+        }
+      ],
+      "rating": 4.7,
+      "reviewsCount": 58,
       "inStock": true,
       "availability": "В наличии на складе",
-      "deliveryDays": 3,
-      "material": "Экокожа и сталь",
-      "color": "Тёмно-коричневый",
-      "colorHex": "#4a382a",
-      "sizes": "420×450×1050 мм",
+      "deliveryDays": 6,
+      "material": "Букле",
+      "color": "Молочный",
+      "colorHex": "#f2ece1",
+      "sizes": "1580×2120×1150 мм",
       "img": {
-        "url": "/img/products/barnyj-stul-loft-1.svg",
-        "alt": "Барный стул Loft"
+        "url": "/img/products/krovat-bianca-140-1.webp",
+        "alt": "Кровать Bianca 140×200"
       },
       "imgHover": {
-        "url": "/img/products/barnyj-stul-loft-2.svg",
-        "alt": "Барный стул Loft — вид сбоку"
+        "url": "/img/products/krovat-bianca-140-2.webp",
+        "alt": "Кровать Bianca 140×200 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/barnyj-stul-loft-1.svg",
-          "alt": "Барный стул Loft"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         {
-          "url": "/img/products/barnyj-stul-loft-2.svg",
-          "alt": "Барный стул Loft — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
         {
-          "url": "/img/products/barnyj-stul-loft-3.svg",
-          "alt": "Барный стул Loft — в интерьере"
+          "url": "/img/products/krovat-bianca-140-3.webp",
+          "alt": "Кровать Bianca 140×200 — в интерьере"
         },
         {
-          "url": "/img/products/barnyj-stul-loft-4.svg",
-          "alt": "Барный стул Loft — детали"
+          "url": "/img/products/krovat-bianca-140-4.webp",
+          "alt": "Кровать Bianca 140×200 — детали"
         }
       ],
-      "shortDescription": "Барный стул Loft: экокожа и сталь, тёмно-коричневый. Размеры 420×450×1050 мм.",
-      "description": "Барный стул Loft — модель коллекции Loft. Обеденные группы из массива, керамики и закалённого стекла. Раскладные столы, стулья и полукресла с мягкой обивкой. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
+      "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+      "description": "Кровать Bianca 140×200 — модель коллекции Bianca. Кровати с мягким изголовьем, подъёмным механизмом и вместительным коробом для белья. Массив дуба, бука и мебельные ткани премиум-класса. Каркас собран на шканты и стяжки, все несущие узлы усилены. Обивка и покрытия проходят тест на истираемость, фурнитура рассчитана на 50 000 циклов. Изделие поставляется в собранном виде, сборка на месте входит в стоимость доставки по городу.",
       "characteristics": [
         {
           "label": "Коллекция",
-          "value": "Loft"
+          "value": "Bianca"
         },
         {
           "label": "Бренд",
-          "value": "Loft Studio"
+          "value": "Мебель Шоп"
         },
         {
           "label": "Материал",
-          "value": "Экокожа и сталь"
+          "value": "Букле"
         },
         {
           "label": "Цвет",
-          "value": "Тёмно-коричневый"
+          "value": "Молочный"
         },
         {
           "label": "Габариты (Ш×Г×В)",
-          "value": "420×450×1050 мм"
+          "value": "1580×2120×1150 мм"
         },
         {
           "label": "Гарантия",
@@ -7988,8 +7491,8 @@
       "variants": [
         {
           "name": "base",
-          "label": "Тёмно-коричневый",
-          "color": "#4a382a",
+          "label": "Молочный",
+          "color": "#f2ece1",
           "priceDiff": 0
         },
         {
@@ -8011,19 +7514,19 @@
           "priceDiff": 5200
         }
       ],
-      "url": "/product/barnyj-stul-loft/"
+      "url": "/product/krovat-bianca-140/"
     },
     "related": [
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
+        "id": 6,
+        "slug": "krovat-verona-160",
+        "title": "Кровать Verona 160×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Verona",
         "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "price": 74300,
+        "oldPrice": 89000,
         "currency": "RUB",
         "badges": [
           {
@@ -8035,105 +7538,70 @@
             "label": "Скидка"
           }
         ],
-        "rating": 4.8,
-        "reviewsCount": 61,
-        "inStock": true,
-        "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
-        "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
-        },
-        "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
-        },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
-      },
-      {
-        "id": 20,
-        "slug": "stol-oak-round-120",
-        "title": "Стол Oak Round 120",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Oak",
-        "brand": "Nordhaus",
-        "price": 38900,
-        "oldPrice": null,
-        "currency": "RUB",
-        "badges": [],
-        "rating": 4.7,
-        "reviewsCount": 34,
+        "rating": 4.9,
+        "reviewsCount": 72,
         "inStock": true,
         "availability": "В наличии на складе",
         "material": "Массив дуба",
         "color": "Медовый дуб",
         "colorHex": "#c19a5b",
-        "sizes": "Ø1200×760 мм",
+        "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/stol-oak-round-120-1.svg",
-          "alt": "Стол Oak Round 120"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/stol-oak-round-120-2.svg",
-          "alt": "Стол Oak Round 120 — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
-        "shortDescription": "Стол Oak Round 120: массив дуба, медовый дуб. Размеры Ø1200×760 мм.",
-        "url": "/product/stol-oak-round-120/"
+        "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+        "url": "/product/krovat-verona-160/"
       },
       {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
-        "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
+        "id": 7,
+        "slug": "krovat-aurora",
+        "title": "Кровать Aurora с подъёмным механизмом",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Aurora",
+        "brand": "Aurora Home",
+        "price": 92500,
+        "oldPrice": null,
         "currency": "RUB",
         "badges": [
-          {
-            "name": "sale",
-            "label": "Скидка"
-          },
           {
             "name": "hit",
             "label": "Хит"
           }
         ],
-        "rating": 4.6,
-        "reviewsCount": 118,
+        "rating": 4.8,
+        "reviewsCount": 45,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
+        "material": "Велюр",
+        "color": "Изумрудный",
+        "colorHex": "#2f4a3f",
+        "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
+        "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+        "url": "/product/krovat-aurora/"
       },
       {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
+        "id": 8,
+        "slug": "krovat-kyoto-nizkaya",
+        "title": "Кровать Kyoto низкая",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Kyoto",
+        "brand": "Nordhaus",
+        "price": 58900,
         "oldPrice": null,
         "currency": "RUB",
         "badges": [
@@ -8142,24 +7610,24 @@
             "label": "Новинка"
           }
         ],
-        "rating": 4.5,
-        "reviewsCount": 74,
+        "rating": 4.6,
+        "reviewsCount": 31,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
+        "material": "Массив бука",
+        "color": "Натуральный бук",
+        "colorHex": "#d9bd94",
+        "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
+        "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+        "url": "/product/krovat-kyoto-nizkaya/"
       }
     ],
     "reviews": [
@@ -8282,28 +7750,28 @@
       "colorHex": "#c8a271",
       "sizes": "1200×450×900 мм",
       "img": {
-        "url": "/img/products/komod-bergen-6-1.jpg",
+        "url": "/img/products/komod-bergen-6-1.webp",
         "alt": "Комод Bergen 6 ящиков"
       },
       "imgHover": {
-        "url": "/img/products/komod-bergen-6-2.jpg",
+        "url": "/img/products/komod-bergen-6-2.webp",
         "alt": "Комод Bergen 6 ящиков — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         {
-          "url": "/img/products/komod-bergen-6-3.jpg",
+          "url": "/img/products/komod-bergen-6-3.webp",
           "alt": "Комод Bergen 6 ящиков — в интерьере"
         },
         {
-          "url": "/img/products/komod-bergen-6-4.jpg",
+          "url": "/img/products/komod-bergen-6-4.webp",
           "alt": "Комод Bergen 6 ящиков — детали"
         }
       ],
@@ -8398,11 +7866,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -8434,11 +7902,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -8470,11 +7938,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -8601,28 +8069,28 @@
       "colorHex": "#3b3a38",
       "sizes": "1800×420×450 мм",
       "img": {
-        "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+        "url": "/img/products/tv-tumba-horizon-1800-1.webp",
         "alt": "ТВ-тумба Horizon 1800"
       },
       "imgHover": {
-        "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+        "url": "/img/products/tv-tumba-horizon-1800-2.webp",
         "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-3.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-3.webp",
           "alt": "ТВ-тумба Horizon 1800 — в интерьере"
         },
         {
-          "url": "/img/products/tv-tumba-horizon-1800-4.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-4.webp",
           "alt": "ТВ-тумба Horizon 1800 — детали"
         }
       ],
@@ -8717,11 +8185,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -8753,11 +8221,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -8789,11 +8257,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -8920,28 +8388,28 @@
       "colorHex": "#d9bd94",
       "sizes": "450×400×520 мм",
       "img": {
-        "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+        "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
         "alt": "Прикроватная тумба Aurora"
       },
       "imgHover": {
-        "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+        "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
         "alt": "Прикроватная тумба Aurora — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-3.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-3.webp",
           "alt": "Прикроватная тумба Aurora — в интерьере"
         },
         {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-4.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-4.webp",
           "alt": "Прикроватная тумба Aurora — детали"
         }
       ],
@@ -9036,11 +8504,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -9072,11 +8540,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -9108,11 +8576,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -9239,28 +8707,28 @@
       "colorHex": "#8a5a3c",
       "sizes": "1400×450×860 мм",
       "img": {
-        "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+        "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
         "alt": "Комод Atelier с зеркалом"
       },
       "imgHover": {
-        "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+        "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
         "alt": "Комод Atelier с зеркалом — вид сбоку"
       },
       "gallery": [
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-3.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-3.webp",
           "alt": "Комод Atelier с зеркалом — в интерьере"
         },
         {
-          "url": "/img/products/komod-atelier-s-zerkalom-4.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-4.webp",
           "alt": "Комод Atelier с зеркалом — детали"
         }
       ],
@@ -9355,11 +8823,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -9391,11 +8859,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -9427,11 +8895,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -9538,11 +9006,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -9574,11 +9042,11 @@
         "colorHex": "#ddd3c4",
         "sizes": "1200×1200×2400 мм",
         "img": {
-          "url": "/img/products/shkaf-uglovoj-nova-1.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-1.webp",
           "alt": "Шкаф угловой Nova"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-uglovoj-nova-2.jpg",
+          "url": "/img/products/shkaf-uglovoj-nova-2.webp",
           "alt": "Шкаф угловой Nova — вид сбоку"
         },
         "shortDescription": "Шкаф угловой Nova: мдф эмаль, кашемир. Размеры 1200×1200×2400 мм.",
@@ -9650,26 +9118,26 @@
         "colorHex": "#efe6d5",
         "sizes": "3000×600×2200 мм",
         "img": {
-          "url": "/img/products/kuhnya-village-1.jpg",
+          "url": "/img/products/kuhnya-village-1.webp",
           "alt": "Кухня Village классическая"
         },
         "imgHover": {
-          "url": "/img/products/kuhnya-village-2.jpg",
+          "url": "/img/products/kuhnya-village-2.webp",
           "alt": "Кухня Village классическая — вид сбоку"
         },
         "shortDescription": "Кухня Village классическая: массив ясеня, слоновая кость. Размеры 3000×600×2200 мм.",
         "url": "/product/kuhnya-village/"
       },
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
+        "id": 6,
+        "slug": "krovat-verona-160",
+        "title": "Кровать Verona 160×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Verona",
         "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "price": 74300,
+        "oldPrice": 89000,
         "currency": "RUB",
         "badges": [
           {
@@ -9681,64 +9149,60 @@
             "label": "Скидка"
           }
         ],
-        "rating": 4.8,
-        "reviewsCount": 61,
+        "rating": 4.9,
+        "reviewsCount": 72,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
+        "material": "Массив дуба",
+        "color": "Медовый дуб",
+        "colorHex": "#c19a5b",
+        "sizes": "1780×2120×1200 мм",
         "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
+          "url": "/img/products/krovat-verona-160-1.webp",
+          "alt": "Кровать Verona 160×200"
         },
         "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
+          "url": "/img/products/krovat-verona-160-2.webp",
+          "alt": "Кровать Verona 160×200 — вид сбоку"
         },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
+        "shortDescription": "Кровать Verona 160×200: массив дуба, медовый дуб. Размеры 1780×2120×1200 мм.",
+        "url": "/product/krovat-verona-160/"
       },
       {
-        "id": 21,
-        "slug": "stul-vienna-myagkij",
-        "title": "Стул Vienna мягкий",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Vienna",
+        "id": 9,
+        "slug": "krovat-bianca-140",
+        "title": "Кровать Bianca 140×200",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Bianca",
         "brand": "Мебель Шоп",
-        "price": 8900,
-        "oldPrice": 11400,
+        "price": 51200,
+        "oldPrice": 62400,
         "currency": "RUB",
         "badges": [
           {
             "name": "sale",
             "label": "Скидка"
-          },
-          {
-            "name": "hit",
-            "label": "Хит"
           }
         ],
-        "rating": 4.6,
-        "reviewsCount": 118,
+        "rating": 4.7,
+        "reviewsCount": 58,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Велюр и бук",
-        "color": "Терракотовый",
-        "colorHex": "#b4632a",
-        "sizes": "470×550×880 мм",
+        "material": "Букле",
+        "color": "Молочный",
+        "colorHex": "#f2ece1",
+        "sizes": "1580×2120×1150 мм",
         "img": {
-          "url": "/img/products/stul-vienna-myagkij-1.svg",
-          "alt": "Стул Vienna мягкий"
+          "url": "/img/products/krovat-bianca-140-1.webp",
+          "alt": "Кровать Bianca 140×200"
         },
         "imgHover": {
-          "url": "/img/products/stul-vienna-myagkij-2.svg",
-          "alt": "Стул Vienna мягкий — вид сбоку"
+          "url": "/img/products/krovat-bianca-140-2.webp",
+          "alt": "Кровать Bianca 140×200 — вид сбоку"
         },
-        "shortDescription": "Стул Vienna мягкий: велюр и бук, терракотовый. Размеры 470×550×880 мм.",
-        "url": "/product/stul-vienna-myagkij/"
+        "shortDescription": "Кровать Bianca 140×200: букле, молочный. Размеры 1580×2120×1150 мм.",
+        "url": "/product/krovat-bianca-140/"
       },
       {
         "id": 28,
@@ -9766,11 +9230,11 @@
         "colorHex": "#c8a271",
         "sizes": "1200×450×900 мм",
         "img": {
-          "url": "/img/products/komod-bergen-6-1.jpg",
+          "url": "/img/products/komod-bergen-6-1.webp",
           "alt": "Комод Bergen 6 ящиков"
         },
         "imgHover": {
-          "url": "/img/products/komod-bergen-6-2.jpg",
+          "url": "/img/products/komod-bergen-6-2.webp",
           "alt": "Комод Bergen 6 ящиков — вид сбоку"
         },
         "shortDescription": "Комод Bergen 6 ящиков: шпон дуба, дуб натуральный. Размеры 1200×450×900 мм.",
@@ -9802,11 +9266,11 @@
         "colorHex": "#d9bd94",
         "sizes": "450×400×520 мм",
         "img": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-1.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-1.webp",
           "alt": "Прикроватная тумба Aurora"
         },
         "imgHover": {
-          "url": "/img/products/prikrovatnaya-tumba-aurora-2.jpg",
+          "url": "/img/products/prikrovatnaya-tumba-aurora-2.webp",
           "alt": "Прикроватная тумба Aurora — вид сбоку"
         },
         "shortDescription": "Прикроватная тумба Aurora: массив бука, натуральный бук. Размеры 450×400×520 мм.",
@@ -9885,11 +9349,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
@@ -9932,14 +9396,14 @@
         "url": "/product/kuhnya-eco-s-ostrovom/"
       },
       {
-        "id": 22,
-        "slug": "polukreslo-como",
-        "title": "Полукресло Como",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Como",
-        "brand": "Como",
-        "price": 13400,
+        "id": 8,
+        "slug": "krovat-kyoto-nizkaya",
+        "title": "Кровать Kyoto низкая",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Kyoto",
+        "brand": "Nordhaus",
+        "price": 58900,
         "oldPrice": null,
         "currency": "RUB",
         "badges": [
@@ -9948,24 +9412,24 @@
             "label": "Новинка"
           }
         ],
-        "rating": 4.5,
-        "reviewsCount": 74,
+        "rating": 4.6,
+        "reviewsCount": 31,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Рогожка и металл",
-        "color": "Тёплый серый",
-        "colorHex": "#a8a094",
-        "sizes": "560×600×840 мм",
+        "material": "Массив бука",
+        "color": "Натуральный бук",
+        "colorHex": "#d9bd94",
+        "sizes": "1700×2100×900 мм",
         "img": {
-          "url": "/img/products/polukreslo-como-1.svg",
-          "alt": "Полукресло Como"
+          "url": "/img/products/krovat-kyoto-nizkaya-1.webp",
+          "alt": "Кровать Kyoto низкая"
         },
         "imgHover": {
-          "url": "/img/products/polukreslo-como-2.svg",
-          "alt": "Полукресло Como — вид сбоку"
+          "url": "/img/products/krovat-kyoto-nizkaya-2.webp",
+          "alt": "Кровать Kyoto низкая — вид сбоку"
         },
-        "shortDescription": "Полукресло Como: рогожка и металл, тёплый серый. Размеры 560×600×840 мм.",
-        "url": "/product/polukreslo-como/"
+        "shortDescription": "Кровать Kyoto низкая: массив бука, натуральный бук. Размеры 1700×2100×900 мм.",
+        "url": "/product/krovat-kyoto-nizkaya/"
       },
       {
         "id": 31,
@@ -9993,11 +9457,11 @@
         "colorHex": "#8a5a3c",
         "sizes": "1400×450×860 мм",
         "img": {
-          "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
           "alt": "Комод Atelier с зеркалом"
         },
         "imgHover": {
-          "url": "/img/products/komod-atelier-s-zerkalom-2.jpg",
+          "url": "/img/products/komod-atelier-s-zerkalom-2.webp",
           "alt": "Комод Atelier с зеркалом — вид сбоку"
         },
         "shortDescription": "Комод Atelier с зеркалом: шпон ореха, орех американский. Размеры 1400×450×860 мм.",
@@ -12324,11 +11788,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -12375,44 +11839,40 @@
         "url": "/product/kuhnya-luna-3-2/"
       },
       {
-        "id": 19,
-        "slug": "stol-tavolo-razdvizhnoj",
-        "title": "Обеденный стол Tavolo раздвижной",
-        "category": "Столы и стулья",
-        "categorySlug": "stoly-i-stulya",
-        "collection": "Tavolo",
-        "brand": "Мебель Шоп",
-        "price": 46800,
-        "oldPrice": 56200,
+        "id": 7,
+        "slug": "krovat-aurora",
+        "title": "Кровать Aurora с подъёмным механизмом",
+        "category": "Кровати",
+        "categorySlug": "krovati",
+        "collection": "Aurora",
+        "brand": "Aurora Home",
+        "price": 92500,
+        "oldPrice": null,
         "currency": "RUB",
         "badges": [
           {
             "name": "hit",
             "label": "Хит"
-          },
-          {
-            "name": "sale",
-            "label": "Скидка"
           }
         ],
         "rating": 4.8,
-        "reviewsCount": 61,
+        "reviewsCount": 45,
         "inStock": true,
         "availability": "В наличии на складе",
-        "material": "Керамика и массив",
-        "color": "Мрамор Calacatta",
-        "colorHex": "#eee9e2",
-        "sizes": "1600–2000×900×760 мм",
+        "material": "Велюр",
+        "color": "Изумрудный",
+        "colorHex": "#2f4a3f",
+        "sizes": "1800×2150×1300 мм",
         "img": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-1.svg",
-          "alt": "Обеденный стол Tavolo раздвижной"
+          "url": "/img/products/krovat-aurora-1.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом"
         },
         "imgHover": {
-          "url": "/img/products/stol-tavolo-razdvizhnoj-2.svg",
-          "alt": "Обеденный стол Tavolo раздвижной — вид сбоку"
+          "url": "/img/products/krovat-aurora-2.webp",
+          "alt": "Кровать Aurora с подъёмным механизмом — вид сбоку"
         },
-        "shortDescription": "Обеденный стол Tavolo раздвижной: керамика и массив, мрамор calacatta. Размеры 1600–2000×900×760 мм.",
-        "url": "/product/stol-tavolo-razdvizhnoj/"
+        "shortDescription": "Кровать Aurora с подъёмным механизмом: велюр, изумрудный. Размеры 1800×2150×1300 мм.",
+        "url": "/product/krovat-aurora/"
       },
       {
         "id": 29,
@@ -12440,11 +11900,11 @@
         "colorHex": "#3b3a38",
         "sizes": "1800×420×450 мм",
         "img": {
-          "url": "/img/products/tv-tumba-horizon-1800-1.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-1.webp",
           "alt": "ТВ-тумба Horizon 1800"
         },
         "imgHover": {
-          "url": "/img/products/tv-tumba-horizon-1800-2.jpg",
+          "url": "/img/products/tv-tumba-horizon-1800-2.webp",
           "alt": "ТВ-тумба Horizon 1800 — вид сбоку"
         },
         "shortDescription": "ТВ-тумба Horizon 1800: мдф эмаль, графит. Размеры 1800×420×450 мм.",
@@ -12840,7 +12300,7 @@
           "quantity": 1,
           "variant": null,
           "img": {
-            "url": "/img/products/komod-atelier-s-zerkalom-1.jpg",
+            "url": "/img/products/komod-atelier-s-zerkalom-1.webp",
             "alt": "Комод Atelier с зеркалом"
           },
           "url": "/product/komod-atelier-s-zerkalom/"
@@ -14447,7 +13907,7 @@
         "Подобрать мебель, которая переживёт перепады влажности в доме без постоянного отопления.",
         "Связать интерьер дома с террасой."
       ],
-      "solution": "<p>Основой стал ясень: он спокойнее дуба реагирует на сезонные перепады влажности, а в доме, который зимой прогревается не каждую неделю, это решающий фактор. Все корпуса — на влагостойкой плите класса P5.</p><p>Кухня-столовая построена вокруг острова 2,8 м с раковиной и варочной панелью: хозяйка готовит лицом к гостям. Обеденный стол-трансформер раскладывается с 8 до 12 мест.</p><h2>Что сделали</h2><ul><li>Кухня 4,6 м с островом и колонной под встроенную технику.</li><li>Обеденная группа: стол Tavolo и восемь стульев Vienna.</li><li>Спальни: кровати Verona и Kyoto, шкафы Bergen.</li><li>Терраса: комплект из тика с влагостойкими подушками.</li></ul>",
+      "solution": "<p>Основой стал ясень: он спокойнее дуба реагирует на сезонные перепады влажности, а в доме, который зимой прогревается не каждую неделю, это решающий фактор. Все корпуса — на влагостойкой плите класса P5.</p><p>Кухня-столовая построена вокруг острова 2,8 м с раковиной и варочной панелью: хозяйка готовит лицом к гостям. Обеденный стол-трансформер раскладывается с 8 до 12 мест.</p><h2>Что сделали</h2><ul><li>Кухня 4,6 м с островом и колонной под встроенную технику.</li><li>Обеденная группа на восемь мест.</li><li>Спальни: кровати Verona и Kyoto, шкафы Bergen.</li><li>Терраса: комплект из тика с влагостойкими подушками.</li></ul>",
       "gallery": [
         {
           "url": "/img/portfolio/zagorodnyj-dom-v-pavlovo-1.svg",
@@ -15174,7 +14634,7 @@
       "id": 9,
       "slug": "korpusnaya-mebel",
       "title": "Корпусная мебель",
-      "description": "Шкафы, комоды, тумбы, обеденные и рабочие столы — серийные модели со склада и изготовление по вашим размерам.",
+      "description": "Шкафы, комоды, тумбы и кровати — серийные модели со склада и изготовление по вашим размерам.",
       "img": {
         "url": "/img/categories/korpusnaya-mebel.jpg",
         "alt": "Корпусная мебель"
@@ -15190,13 +14650,13 @@
           "label": "Комоды и тумбы"
         },
         {
-          "url": "/catalog/stoly-i-stulya/",
-          "label": "Столы и стулья"
+          "url": "/catalog/krovati/",
+          "label": "Кровати"
         }
       ],
       "url": "/catalog/korpusnaya-mebel/"
     },
-    "intro": "Корпусная мебель — основная специализация нашего производства: мы делаем шкафы и гардеробные системы, комоды и тумбы, обеденные и рабочие столы. Корпус собирается из ЛДСП Egger 16 мм или влагостойкой плиты 18 мм, все кромки закрываются ПВХ 2 мм, крепёж — эксцентриковые стяжки и шканты, поэтому изделие держит геометрию даже после переезда. Фасады доступны в четырёх исполнениях: ЛДСП, МДФ с эмалью, шпон дуба и ореха, массив. Фурнитура Blum и Hettich с доводчиками и ресурсом 50 000 циклов. Любую модель из каталога пересчитываем под ваш проём: меняем ширину, высоту и глубину, добавляем ящики, полки и подсветку — шкаф до потолка даёт на четверть больше полезного объёма, чем серийный на 2,2 метра. Расчёт по чертежу занимает один рабочий день, изготовление — от 14 до 25 рабочих дней. Доставляем по России, собираем на месте, гарантия 24 месяца на корпус и фурнитуру.",
+    "intro": "Корпусная мебель — основная специализация нашего производства: мы делаем шкафы и гардеробные системы, комоды и тумбы, кровати. Корпус собирается из ЛДСП Egger 16 мм или влагостойкой плиты 18 мм, все кромки закрываются ПВХ 2 мм, крепёж — эксцентриковые стяжки и шканты, поэтому изделие держит геометрию даже после переезда. Фасады доступны в четырёх исполнениях: ЛДСП, МДФ с эмалью, шпон дуба и ореха, массив. Фурнитура Blum и Hettich с доводчиками и ресурсом 50 000 циклов. Любую модель из каталога пересчитываем под ваш проём: меняем ширину, высоту и глубину, добавляем ящики, полки и подсветку — шкаф до потолка даёт на четверть больше полезного объёма, чем серийный на 2,2 метра. Расчёт по чертежу занимает один рабочий день, изготовление — от 14 до 25 рабочих дней. Доставляем по России, собираем на месте, гарантия 24 месяца на корпус и фурнитуру.",
     "introTitle": "Шкафы, гардеробные и системы хранения по вашим размерам",
     "introStats": [
       {
@@ -15241,14 +14701,14 @@
           "productsCount": 4
         },
         {
-          "title": "Столы и стулья",
-          "text": "Обеденные и рабочие столы из массива и шпона, раздвижные механизмы, стулья в тон фасадам.",
-          "url": "/catalog/stoly-i-stulya/",
+          "title": "Кровати",
+          "text": "Кровати с мягким изголовьем, подъёмным механизмом и коробом для белья, массив дуба и бука.",
+          "url": "/catalog/krovati/",
           "img": {
-            "url": "/img/categories/stoly-i-stulya.svg",
-            "alt": "Столы и стулья"
+            "url": "/img/categories/krovati.jpg",
+            "alt": "Кровати"
           },
-          "productsCount": 5
+          "productsCount": 4
         }
       ]
     },
@@ -15553,8 +15013,8 @@
               "label": "Комоды и тумбы"
             },
             {
-              "url": "/catalog/stoly-i-stulya/",
-              "label": "Столы и стулья"
+              "url": "/catalog/krovati/",
+              "label": "Кровати"
             },
             {
               "url": "/catalog/kuhni/",
@@ -15837,11 +15297,11 @@
         "colorHex": "#3b3a38",
         "sizes": "2400×600×2500 мм",
         "img": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-1.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-1.webp",
           "alt": "Шкаф-купе Horizon 2400"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-kupe-horizon-2400-2.jpg",
+          "url": "/img/products/shkaf-kupe-horizon-2400-2.webp",
           "alt": "Шкаф-купе Horizon 2400 — вид сбоку"
         },
         "shortDescription": "Шкаф-купе Horizon 2400: лдсп egger, графит. Размеры 2400×600×2500 мм.",
@@ -15906,11 +15366,11 @@
         "colorHex": "#c8a271",
         "sizes": "1800×620×2300 мм",
         "img": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-1.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-1.webp",
           "alt": "Шкаф распашной Bergen"
         },
         "imgHover": {
-          "url": "/img/products/shkaf-raspashnoj-bergen-2.jpg",
+          "url": "/img/products/shkaf-raspashnoj-bergen-2.webp",
           "alt": "Шкаф распашной Bergen — вид сбоку"
         },
         "shortDescription": "Шкаф распашной Bergen: шпон дуба, дуб натуральный. Размеры 1800×620×2300 мм.",
@@ -15975,11 +15435,11 @@
         "colorHex": "#f5f0e8",
         "sizes": "3000×550×2600 мм",
         "img": {
-          "url": "/img/products/garderobnaya-sistema-atelier-1.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-1.webp",
           "alt": "Гардеробная система Atelier"
         },
         "imgHover": {
-          "url": "/img/products/garderobnaya-sistema-atelier-2.jpg",
+          "url": "/img/products/garderobnaya-sistema-atelier-2.webp",
           "alt": "Гардеробная система Atelier — вид сбоку"
         },
         "shortDescription": "Гардеробная система Atelier: алюминий и мдф, тёплый белый. Размеры 3000×550×2600 мм.",
